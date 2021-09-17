@@ -1,0 +1,1951 @@
+{
+    "specification": {
+        "_id": "gbc1n178t1a",
+        "classID": "chart.rectangle",
+        "properties": {
+            "name": "Chart",
+            "backgroundColor": null,
+            "backgroundOpacity": 1,
+            "exposed": true
+        },
+        "mappings": {
+            "marginTop": {
+                "type": "value",
+                "value": 50
+            },
+            "width": {
+                "type": "value",
+                "value": 594.1176470588234
+            },
+            "height": {
+                "type": "value",
+                "value": 611.764705882353
+            },
+            "marginLeft": {
+                "type": "value",
+                "value": 127.64705882352943
+            }
+        },
+        "glyphs": [
+            {
+                "_id": "fee6vbiiztn",
+                "classID": "glyph.rectangle",
+                "properties": {
+                    "name": "Glyph"
+                },
+                "table": "main",
+                "marks": [
+                    {
+                        "_id": "juo4rf6c13",
+                        "classID": "mark.anchor",
+                        "properties": {
+                            "name": "Anchor"
+                        },
+                        "mappings": {
+                            "x": {
+                                "type": "parent",
+                                "parentAttribute": "icx"
+                            },
+                            "y": {
+                                "type": "parent",
+                                "parentAttribute": "icy"
+                            }
+                        }
+                    },
+                    {
+                        "_id": "46uenk7u4p5",
+                        "classID": "mark.data-axis",
+                        "properties": {
+                            "dataExpressions": [
+                                {
+                                    "name": "gwbox1k4tbf",
+                                    "expression": "avg(`Goal 1 % of Total`)"
+                                },
+                                {
+                                    "name": "tzbk7nf1ggd",
+                                    "expression": "avg(`Goal 2 % of Total`)"
+                                },
+                                {
+                                    "name": "tecai61yqhn",
+                                    "expression": "avg(`Max %`)"
+                                },
+                                {
+                                    "name": "i2paure237g",
+                                    "expression": "avg(`Value % of Total`)"
+                                },
+                                {
+                                    "name": "2728n2qwwi1",
+                                    "expression": "avg(`Value Comparison %`)"
+                                }
+                            ],
+                            "axis": {
+                                "side": "opposite",
+                                "type": "numerical",
+                                "visible": true,
+                                "autoDomainMax": true,
+                                "autoDomainMin": false,
+                                "orderMode": null,
+                                "style": {
+                                    "tickColor": {
+                                        "r": 0,
+                                        "g": 0,
+                                        "b": 0
+                                    },
+                                    "lineColor": {
+                                        "r": 0,
+                                        "g": 0,
+                                        "b": 0
+                                    },
+                                    "fontFamily": "Arial",
+                                    "fontSize": 12,
+                                    "tickSize": 5,
+                                    "wordWrap": false,
+                                    "gridlineStyle": "none",
+                                    "gridlineColor": {
+                                        "r": 234,
+                                        "g": 234,
+                                        "b": 234
+                                    },
+                                    "gridlineWidth": 1
+                                },
+                                "categories": null,
+                                "dataKind": "numerical",
+                                "domainMax": 1,
+                                "domainMin": 0,
+                                "enablePrePostGap": null,
+                                "expression": "avg(`Goal 1 % of Total`)",
+                                "gapRatio": 0.1,
+                                "numericalMode": "linear",
+                                "order": null,
+                                "rawExpression": "first(`Goal 1 % of Total`)",
+                                "tickDataExpression": null,
+                                "tickFormat": null,
+                                "valueType": "number"
+                            },
+                            "visible": false,
+                            "visibleOn": "first",
+                            "name": "DataAxis1"
+                        },
+                        "mappings": {
+                            "x1": {
+                                "type": "parent",
+                                "parentAttribute": "ix1"
+                            },
+                            "y1": {
+                                "type": "parent",
+                                "parentAttribute": "iy1"
+                            },
+                            "x2": {
+                                "type": "parent",
+                                "parentAttribute": "ix2"
+                            },
+                            "y2": {
+                                "type": "parent",
+                                "parentAttribute": "iy1"
+                            }
+                        }
+                    },
+                    {
+                        "_id": "j9vogvk31qr",
+                        "classID": "guide.guide-coordinator",
+                        "properties": {
+                            "enableTooltips": true,
+                            "enableContextMenu": true,
+                            "enableSelection": true,
+                            "name": "GuideCoordinator1",
+                            "axis": "y",
+                            "count": 4
+                        },
+                        "mappings": {
+                            "x1": {
+                                "type": "parent",
+                                "parentAttribute": "ix1"
+                            },
+                            "y1": {
+                                "type": "parent",
+                                "parentAttribute": "iy2"
+                            },
+                            "x2": {
+                                "type": "parent",
+                                "parentAttribute": "ix1"
+                            },
+                            "y2": {
+                                "type": "parent",
+                                "parentAttribute": "iy1"
+                            }
+                        }
+                    },
+                    {
+                        "_id": "wr8om74dd2i",
+                        "classID": "mark.rect",
+                        "properties": {
+                            "visible": true,
+                            "strokeStyle": "solid",
+                            "shape": "rectangle",
+                            "allowFlipping": true,
+                            "name": "Shape1"
+                        },
+                        "mappings": {
+                            "fill": {
+                                "type": "value",
+                                "value": {
+                                    "r": 254,
+                                    "g": 192,
+                                    "b": 191
+                                }
+                            },
+                            "strokeWidth": {
+                                "type": "value",
+                                "value": 1
+                            },
+                            "opacity": {
+                                "type": "value",
+                                "value": 1
+                            },
+                            "visible": {
+                                "type": "value",
+                                "value": true
+                            },
+                            "x1": {
+                                "type": "parent",
+                                "parentAttribute": "ix1"
+                            },
+                            "y1": {
+                                "type": "parent",
+                                "parentAttribute": "iy1"
+                            },
+                            "y2": {
+                                "type": "parent",
+                                "parentAttribute": "iy2"
+                            }
+                        }
+                    },
+                    {
+                        "_id": "cx45puhyki8",
+                        "classID": "mark.rect",
+                        "properties": {
+                            "visible": true,
+                            "strokeStyle": "solid",
+                            "shape": "rectangle",
+                            "allowFlipping": true,
+                            "name": "Shape2"
+                        },
+                        "mappings": {
+                            "fill": {
+                                "type": "value",
+                                "value": {
+                                    "r": 250,
+                                    "g": 233,
+                                    "b": 159
+                                }
+                            },
+                            "strokeWidth": {
+                                "type": "value",
+                                "value": 1
+                            },
+                            "opacity": {
+                                "type": "value",
+                                "value": 1
+                            },
+                            "visible": {
+                                "type": "value",
+                                "value": true
+                            },
+                            "y1": {
+                                "type": "parent",
+                                "parentAttribute": "iy1"
+                            },
+                            "y2": {
+                                "type": "parent",
+                                "parentAttribute": "iy2"
+                            }
+                        }
+                    },
+                    {
+                        "_id": "z8iiointfa",
+                        "classID": "mark.rect",
+                        "properties": {
+                            "visible": true,
+                            "strokeStyle": "solid",
+                            "shape": "rectangle",
+                            "allowFlipping": true,
+                            "name": "Shape3"
+                        },
+                        "mappings": {
+                            "fill": {
+                                "type": "value",
+                                "value": {
+                                    "r": 153,
+                                    "g": 227,
+                                    "b": 221
+                                }
+                            },
+                            "strokeWidth": {
+                                "type": "value",
+                                "value": 1
+                            },
+                            "opacity": {
+                                "type": "value",
+                                "value": 1
+                            },
+                            "visible": {
+                                "type": "value",
+                                "value": true
+                            },
+                            "y1": {
+                                "type": "parent",
+                                "parentAttribute": "iy1"
+                            },
+                            "x2": {
+                                "type": "parent",
+                                "parentAttribute": "ix2"
+                            },
+                            "y2": {
+                                "type": "parent",
+                                "parentAttribute": "iy2"
+                            }
+                        }
+                    },
+                    {
+                        "_id": "p1g137q4m6",
+                        "classID": "mark.rect",
+                        "properties": {
+                            "visible": true,
+                            "strokeStyle": "solid",
+                            "shape": "rectangle",
+                            "allowFlipping": true,
+                            "name": "Shape4"
+                        },
+                        "mappings": {
+                            "fill": {
+                                "type": "value",
+                                "value": {
+                                    "r": 150,
+                                    "g": 150,
+                                    "b": 150
+                                }
+                            },
+                            "strokeWidth": {
+                                "type": "value",
+                                "value": 1
+                            },
+                            "opacity": {
+                                "type": "value",
+                                "value": 1
+                            },
+                            "visible": {
+                                "type": "value",
+                                "value": true
+                            },
+                            "x1": {
+                                "type": "parent",
+                                "parentAttribute": "ix1"
+                            }
+                        }
+                    },
+                    {
+                        "_id": "bqvr4mcmrxm",
+                        "classID": "mark.line",
+                        "properties": {
+                            "strokeStyle": "solid",
+                            "visible": true,
+                            "name": "Line1"
+                        },
+                        "mappings": {
+                            "stroke": {
+                                "type": "value",
+                                "value": {
+                                    "r": 82,
+                                    "g": 82,
+                                    "b": 82
+                                }
+                            },
+                            "strokeWidth": {
+                                "type": "value",
+                                "value": 3
+                            },
+                            "opacity": {
+                                "type": "value",
+                                "value": 1
+                            },
+                            "visible": {
+                                "type": "value",
+                                "value": true
+                            }
+                        }
+                    },
+                    {
+                        "_id": "3mqpawk7zlz",
+                        "classID": "mark.text",
+                        "properties": {
+                            "alignment": {
+                                "x": "right",
+                                "y": "middle",
+                                "xMargin": 5.53107522533006,
+                                "yMargin": 5
+                            },
+                            "rotation": 0,
+                            "visible": true,
+                            "name": "Text1"
+                        },
+                        "mappings": {
+                            "text": {
+                                "type": "text",
+                                "table": "main",
+                                "textExpression": "${avg(`Value Comparison`)}{.1f}"
+                            },
+                            "fontFamily": {
+                                "type": "value",
+                                "value": "Arial"
+                            },
+                            "fontSize": {
+                                "type": "value",
+                                "value": 14
+                            },
+                            "color": {
+                                "type": "value",
+                                "value": {
+                                    "r": 0,
+                                    "g": 0,
+                                    "b": 0
+                                }
+                            },
+                            "opacity": {
+                                "type": "value",
+                                "value": 1
+                            },
+                            "visible": {
+                                "type": "value",
+                                "value": true
+                            }
+                        }
+                    },
+                    {
+                        "_id": "9o6hj4yw74",
+                        "classID": "mark.text",
+                        "properties": {
+                            "alignment": {
+                                "x": "left",
+                                "y": "middle",
+                                "xMargin": 3.9726824303312753,
+                                "yMargin": 5
+                            },
+                            "rotation": 0,
+                            "visible": true,
+                            "name": "Text2"
+                        },
+                        "mappings": {
+                            "text": {
+                                "type": "text",
+                                "table": "main",
+                                "textExpression": "${avg(Value)}{.1f}"
+                            },
+                            "fontFamily": {
+                                "type": "value",
+                                "value": "Arial"
+                            },
+                            "fontSize": {
+                                "type": "value",
+                                "value": 14
+                            },
+                            "color": {
+                                "type": "value",
+                                "value": {
+                                    "r": 0,
+                                    "g": 0,
+                                    "b": 0
+                                }
+                            },
+                            "opacity": {
+                                "type": "value",
+                                "value": 1
+                            },
+                            "visible": {
+                                "type": "value",
+                                "value": true
+                            },
+                            "y": {
+                                "type": "parent",
+                                "parentAttribute": "icy"
+                            }
+                        }
+                    },
+                    {
+                        "_id": "xfw6pcs2gml",
+                        "classID": "mark.text",
+                        "properties": {
+                            "alignment": {
+                                "x": "middle",
+                                "y": "bottom",
+                                "xMargin": 5,
+                                "yMargin": 0
+                            },
+                            "rotation": 0,
+                            "visible": true,
+                            "name": "Text3"
+                        },
+                        "mappings": {
+                            "text": {
+                                "type": "text",
+                                "table": "main",
+                                "textExpression": "${avg(`Goal 1`)}{.1f}"
+                            },
+                            "fontFamily": {
+                                "type": "value",
+                                "value": "Arial"
+                            },
+                            "fontSize": {
+                                "type": "value",
+                                "value": 14
+                            },
+                            "color": {
+                                "type": "value",
+                                "value": {
+                                    "r": 0,
+                                    "g": 0,
+                                    "b": 0
+                                }
+                            },
+                            "opacity": {
+                                "type": "value",
+                                "value": 1
+                            },
+                            "visible": {
+                                "type": "value",
+                                "value": true
+                            },
+                            "y": {
+                                "type": "parent",
+                                "parentAttribute": "iy2"
+                            }
+                        }
+                    },
+                    {
+                        "_id": "zdvhq1owiuj",
+                        "classID": "mark.text",
+                        "properties": {
+                            "alignment": {
+                                "x": "middle",
+                                "y": "bottom",
+                                "xMargin": 5,
+                                "yMargin": 0
+                            },
+                            "rotation": 0,
+                            "visible": true,
+                            "name": "Text4"
+                        },
+                        "mappings": {
+                            "text": {
+                                "type": "text",
+                                "table": "main",
+                                "textExpression": "${avg(`Goal 2`)}{.1f}"
+                            },
+                            "fontFamily": {
+                                "type": "value",
+                                "value": "Arial"
+                            },
+                            "fontSize": {
+                                "type": "value",
+                                "value": 14
+                            },
+                            "color": {
+                                "type": "value",
+                                "value": {
+                                    "r": 0,
+                                    "g": 0,
+                                    "b": 0
+                                }
+                            },
+                            "opacity": {
+                                "type": "value",
+                                "value": 1
+                            },
+                            "visible": {
+                                "type": "value",
+                                "value": true
+                            },
+                            "y": {
+                                "type": "parent",
+                                "parentAttribute": "iy2"
+                            }
+                        }
+                    },
+                    {
+                        "_id": "puq4e7515qn",
+                        "classID": "mark.text",
+                        "properties": {
+                            "alignment": {
+                                "x": "middle",
+                                "y": "bottom",
+                                "xMargin": 5,
+                                "yMargin": 0
+                            },
+                            "rotation": 0,
+                            "visible": true,
+                            "name": "Text5"
+                        },
+                        "mappings": {
+                            "text": {
+                                "type": "text",
+                                "table": "main",
+                                "textExpression": "${avg(Max)}{.1f}"
+                            },
+                            "fontFamily": {
+                                "type": "value",
+                                "value": "Arial"
+                            },
+                            "fontSize": {
+                                "type": "value",
+                                "value": 14
+                            },
+                            "color": {
+                                "type": "value",
+                                "value": {
+                                    "r": 0,
+                                    "g": 0,
+                                    "b": 0
+                                }
+                            },
+                            "opacity": {
+                                "type": "value",
+                                "value": 1
+                            },
+                            "visible": {
+                                "type": "value",
+                                "value": true
+                            },
+                            "x": {
+                                "type": "parent",
+                                "parentAttribute": "ix2"
+                            },
+                            "y": {
+                                "type": "parent",
+                                "parentAttribute": "iy2"
+                            }
+                        }
+                    }
+                ],
+                "mappings": {},
+                "constraints": [
+                    {
+                        "type": "snap",
+                        "attributes": {
+                            "element": "wr8om74dd2i",
+                            "attribute": "x2",
+                            "targetElement": "46uenk7u4p5",
+                            "targetAttribute": "anchorXgwbox1k4tbf",
+                            "gap": 0
+                        }
+                    },
+                    {
+                        "type": "snap",
+                        "attributes": {
+                            "element": "cx45puhyki8",
+                            "attribute": "x1",
+                            "targetElement": "46uenk7u4p5",
+                            "targetAttribute": "anchorXgwbox1k4tbf",
+                            "gap": 0
+                        }
+                    },
+                    {
+                        "type": "snap",
+                        "attributes": {
+                            "element": "cx45puhyki8",
+                            "attribute": "x2",
+                            "targetElement": "46uenk7u4p5",
+                            "targetAttribute": "anchorXtzbk7nf1ggd",
+                            "gap": 0
+                        }
+                    },
+                    {
+                        "type": "snap",
+                        "attributes": {
+                            "element": "z8iiointfa",
+                            "attribute": "x1",
+                            "targetElement": "46uenk7u4p5",
+                            "targetAttribute": "anchorXtzbk7nf1ggd",
+                            "gap": 0
+                        }
+                    },
+                    {
+                        "type": "snap",
+                        "attributes": {
+                            "element": "bqvr4mcmrxm",
+                            "attribute": "x1",
+                            "targetElement": "46uenk7u4p5",
+                            "targetAttribute": "anchorX2728n2qwwi1",
+                            "gap": 0
+                        }
+                    },
+                    {
+                        "type": "snap",
+                        "attributes": {
+                            "element": "bqvr4mcmrxm",
+                            "attribute": "y1",
+                            "targetElement": "j9vogvk31qr",
+                            "targetAttribute": "value0",
+                            "gap": 0
+                        }
+                    },
+                    {
+                        "type": "snap",
+                        "attributes": {
+                            "element": "bqvr4mcmrxm",
+                            "attribute": "x2",
+                            "targetElement": "46uenk7u4p5",
+                            "targetAttribute": "anchorX2728n2qwwi1",
+                            "gap": 0
+                        }
+                    },
+                    {
+                        "type": "snap",
+                        "attributes": {
+                            "element": "bqvr4mcmrxm",
+                            "attribute": "y2",
+                            "targetElement": "j9vogvk31qr",
+                            "targetAttribute": "value3",
+                            "gap": 0
+                        }
+                    },
+                    {
+                        "type": "snap",
+                        "attributes": {
+                            "element": "p1g137q4m6",
+                            "attribute": "y1",
+                            "targetElement": "j9vogvk31qr",
+                            "targetAttribute": "value2",
+                            "gap": 0
+                        }
+                    },
+                    {
+                        "type": "snap",
+                        "attributes": {
+                            "element": "p1g137q4m6",
+                            "attribute": "x2",
+                            "targetElement": "46uenk7u4p5",
+                            "targetAttribute": "anchorXi2paure237g",
+                            "gap": 0
+                        }
+                    },
+                    {
+                        "type": "snap",
+                        "attributes": {
+                            "element": "p1g137q4m6",
+                            "attribute": "y2",
+                            "targetElement": "j9vogvk31qr",
+                            "targetAttribute": "value1",
+                            "gap": 0
+                        }
+                    },
+                    {
+                        "type": "snap",
+                        "attributes": {
+                            "element": "3mqpawk7zlz",
+                            "attribute": "x",
+                            "targetElement": "46uenk7u4p5",
+                            "targetAttribute": "anchorX2728n2qwwi1",
+                            "gap": 0
+                        }
+                    },
+                    {
+                        "type": "snap",
+                        "attributes": {
+                            "element": "3mqpawk7zlz",
+                            "attribute": "y",
+                            "targetElement": "j9vogvk31qr",
+                            "targetAttribute": "value3",
+                            "gap": 0
+                        }
+                    },
+                    {
+                        "type": "snap",
+                        "attributes": {
+                            "element": "9o6hj4yw74",
+                            "attribute": "x",
+                            "targetElement": "46uenk7u4p5",
+                            "targetAttribute": "anchorXi2paure237g",
+                            "gap": 0
+                        }
+                    },
+                    {
+                        "type": "snap",
+                        "attributes": {
+                            "element": "xfw6pcs2gml",
+                            "attribute": "x",
+                            "targetElement": "46uenk7u4p5",
+                            "targetAttribute": "anchorXgwbox1k4tbf",
+                            "gap": 0
+                        }
+                    },
+                    {
+                        "type": "snap",
+                        "attributes": {
+                            "element": "zdvhq1owiuj",
+                            "attribute": "x",
+                            "targetElement": "46uenk7u4p5",
+                            "targetAttribute": "anchorXtzbk7nf1ggd",
+                            "gap": 0
+                        }
+                    }
+                ]
+            }
+        ],
+        "elements": [
+            {
+                "_id": "76u4pgj7u3d",
+                "classID": "plot-segment.cartesian",
+                "glyph": "fee6vbiiztn",
+                "table": "main",
+                "filter": null,
+                "mappings": {
+                    "x1": {
+                        "type": "parent",
+                        "parentAttribute": "x1"
+                    },
+                    "y1": {
+                        "type": "parent",
+                        "parentAttribute": "y1"
+                    },
+                    "x2": {
+                        "type": "parent",
+                        "parentAttribute": "x2"
+                    },
+                    "y2": {
+                        "type": "parent",
+                        "parentAttribute": "y2"
+                    }
+                },
+                "properties": {
+                    "name": "PlotSegment1",
+                    "visible": true,
+                    "marginX1": 0,
+                    "marginY1": 0,
+                    "marginX2": 0,
+                    "marginY2": 0,
+                    "sublayout": {
+                        "type": "dodge-y",
+                        "order": null,
+                        "ratioX": 0.1,
+                        "ratioY": 0.1,
+                        "align": {
+                            "x": "start",
+                            "y": "start"
+                        },
+                        "grid": {
+                            "direction": "x",
+                            "xCount": null,
+                            "yCount": null
+                        },
+                        "packing": {
+                            "gravityX": 0.1,
+                            "gravityY": 0.1
+                        }
+                    },
+                    "yData": {
+                        "side": "default",
+                        "type": "categorical",
+                        "visible": true,
+                        "autoDomainMax": true,
+                        "autoDomainMin": true,
+                        "orderMode": "alphabetically",
+                        "style": {
+                            "tickColor": {
+                                "r": 0,
+                                "g": 0,
+                                "b": 0
+                            },
+                            "lineColor": {
+                                "r": 0,
+                                "g": 0,
+                                "b": 0
+                            },
+                            "fontFamily": "Arial",
+                            "fontSize": 12,
+                            "tickSize": 5,
+                            "wordWrap": false,
+                            "gridlineStyle": "none",
+                            "gridlineColor": {
+                                "r": 234,
+                                "g": 234,
+                                "b": 234
+                            },
+                            "gridlineWidth": 1
+                        },
+                        "categories": [
+                            "Avg Order Size",
+                            "New Customers",
+                            "Profit",
+                            "Revenue",
+                            "Satisfaction Score"
+                        ],
+                        "dataKind": "categorical",
+                        "domainMax": null,
+                        "domainMin": null,
+                        "enablePrePostGap": null,
+                        "expression": "first(Category)",
+                        "gapRatio": 0.4011764705882353,
+                        "numericalMode": null,
+                        "order": null,
+                        "rawExpression": null,
+                        "tickDataExpression": null,
+                        "tickFormat": null,
+                        "valueType": "string"
+                    }
+                }
+            }
+        ],
+        "scales": [],
+        "scaleMappings": [],
+        "constraints": [],
+        "resources": [],
+        "exposed": true
+    },
+    "defaultAttributes": {
+        "juo4rf6c13": {
+            "x": 0,
+            "y": 0
+        },
+        "46uenk7u4p5": {
+            "x1": -14.873022720344665,
+            "y1": -2.188976773951355,
+            "x2": 14.873022720344661,
+            "y2": -2.188976773951355,
+            "anchorXgwbox1k4tbf": 3.0340966349503096,
+            "anchorYgwbox1k4tbf": -2.188976773951355,
+            "anchorXtzbk7nf1ggd": 9.61788802582288,
+            "anchorYtzbk7nf1ggd": -2.188976773951355,
+            "anchorXtecai61yqhn": 14.873022720344661,
+            "anchorYtecai61yqhn": -2.188976773951355,
+            "anchorXi2paure237g": 8.239654587070943,
+            "anchorYi2paure237g": -2.188976773951355,
+            "anchorX2728n2qwwi1": 5.928386856329382,
+            "anchorY2728n2qwwi1": -2.188976773951355
+        },
+        "wr8om74dd2i": {
+            "x1": -20.822231808482528,
+            "y1": -3.0645674835318966,
+            "x2": 4.247735288930434,
+            "y2": 3.0645674835318966,
+            "cx": -8.287248259776048,
+            "cy": 0,
+            "width": 25.06996709741296,
+            "height": 6.129134967063793,
+            "strokeWidth": 0.1,
+            "opacity": 0.1
+        },
+        "cx45puhyki8": {
+            "x1": 4.247735288930434,
+            "y1": -3.0645674835318966,
+            "x2": 13.465043236152033,
+            "y2": 3.0645674835318966,
+            "cx": 8.856389262541235,
+            "cy": 0,
+            "width": 9.2173079472216,
+            "height": 6.129134967063793,
+            "strokeWidth": 0.1,
+            "opacity": 0.1
+        },
+        "z8iiointfa": {
+            "x1": 13.465043236152033,
+            "y1": -3.0645674835318966,
+            "x2": 20.822231808482524,
+            "y2": 3.0645674835318966,
+            "cx": 17.143637522317277,
+            "cy": 0,
+            "width": 7.3571885723304895,
+            "height": 6.129134967063793,
+            "strokeWidth": 0.1,
+            "opacity": 0.1
+        },
+        "p1g137q4m6": {
+            "x1": -20.822231808482528,
+            "y1": -0.6129134967063792,
+            "x2": 11.53551642189932,
+            "y2": 0.6129134967063792,
+            "cx": -4.6433576932916045,
+            "cy": 0,
+            "width": 32.35774823038185,
+            "height": 1.2258269934127584,
+            "strokeWidth": 0.1,
+            "opacity": 0.1
+        },
+        "bqvr4mcmrxm": {
+            "x1": 8.299741598861136,
+            "y1": 1.8387404901191382,
+            "x2": 8.299741598861136,
+            "y2": -1.8387404901191382,
+            "cx": 8.299741598861136,
+            "cy": 0,
+            "dx": 0,
+            "dy": -3.6774809802382764,
+            "strokeWidth": 0.3,
+            "opacity": 0.1
+        },
+        "3mqpawk7zlz": {
+            "x": 20.749353997152838,
+            "y": -4.596851225297845,
+            "fontSize": 3.5,
+            "opacity": 0.25
+        },
+        "9o6hj4yw74": {
+            "x": 28.8387910547483,
+            "y": 0,
+            "fontSize": 3.5,
+            "opacity": 0.25
+        },
+        "xfw6pcs2gml": {
+            "x": 10.619338222326084,
+            "y": 7.661418708829741,
+            "fontSize": 3.5,
+            "opacity": 0.25
+        },
+        "zdvhq1owiuj": {
+            "x": 33.66260809038008,
+            "y": 7.661418708829741,
+            "fontSize": 3.5,
+            "opacity": 0.25
+        },
+        "puq4e7515qn": {
+            "x": 52.05557952120631,
+            "y": 7.661418708829741,
+            "fontSize": 3.5,
+            "opacity": 0.25
+        }
+    },
+    "tables": [
+        {
+            "name": "main",
+            "columns": [
+                {
+                    "displayName": "Category",
+                    "name": "Category",
+                    "type": "string",
+                    "metadata": {
+                        "kind": "categorical",
+                        "orderMode": "alphabetically"
+                    }
+                },
+                {
+                    "displayName": "Goal 1",
+                    "name": "Goal 1",
+                    "type": "number",
+                    "metadata": {
+                        "kind": "numerical"
+                    }
+                },
+                {
+                    "displayName": "Goal 2",
+                    "name": "Goal 2",
+                    "type": "number",
+                    "metadata": {
+                        "kind": "numerical"
+                    }
+                },
+                {
+                    "displayName": "Max",
+                    "name": "Max",
+                    "type": "number",
+                    "metadata": {
+                        "kind": "numerical"
+                    }
+                },
+                {
+                    "displayName": "Value",
+                    "name": "Value",
+                    "type": "number",
+                    "metadata": {
+                        "kind": "numerical"
+                    }
+                },
+                {
+                    "displayName": "Value Comparison",
+                    "name": "Value Comparison",
+                    "type": "number",
+                    "metadata": {
+                        "kind": "numerical"
+                    }
+                },
+                {
+                    "displayName": "Goal 1 % of Total",
+                    "name": "Goal 1 % of Total",
+                    "type": "number",
+                    "metadata": {
+                        "kind": "numerical"
+                    }
+                },
+                {
+                    "displayName": "Goal 2 % of Total",
+                    "name": "Goal 2 % of Total",
+                    "type": "number",
+                    "metadata": {
+                        "kind": "numerical"
+                    }
+                },
+                {
+                    "displayName": "Max %",
+                    "name": "Max %",
+                    "type": "number",
+                    "metadata": {
+                        "kind": "numerical"
+                    }
+                },
+                {
+                    "displayName": "Value % of Total",
+                    "name": "Value % of Total",
+                    "type": "number",
+                    "metadata": {
+                        "kind": "numerical"
+                    }
+                },
+                {
+                    "displayName": "Value Comparison %",
+                    "name": "Value Comparison %",
+                    "type": "number",
+                    "metadata": {
+                        "kind": "numerical"
+                    }
+                }
+            ]
+        }
+    ],
+    "inference": [
+        {
+            "objectID": "76u4pgj7u3d",
+            "dataSource": {
+                "table": "main"
+            },
+            "axis": {
+                "expression": "first(Category)",
+                "type": "categorical",
+                "style": {
+                    "tickColor": {
+                        "r": 0,
+                        "g": 0,
+                        "b": 0
+                    },
+                    "lineColor": {
+                        "r": 0,
+                        "g": 0,
+                        "b": 0
+                    },
+                    "fontFamily": "Arial",
+                    "fontSize": 12,
+                    "tickSize": 5,
+                    "wordWrap": false,
+                    "gridlineStyle": "none",
+                    "gridlineColor": {
+                        "r": 234,
+                        "g": 234,
+                        "b": 234
+                    },
+                    "gridlineWidth": 1
+                },
+                "order": null,
+                "orderMode": "alphabetically",
+                "rawExpression": null,
+                "property": "yData",
+                "defineCategories": true
+            },
+            "autoDomainMin": true,
+            "autoDomainMax": true
+        },
+        {
+            "objectID": "46uenk7u4p5",
+            "dataSource": {
+                "table": "main",
+                "groupBy": null
+            },
+            "axis": {
+                "expression": "avg(`Goal 1 % of Total`)",
+                "additionalExpressions": [
+                    "avg(`Goal 1 % of Total`)",
+                    "avg(`Goal 2 % of Total`)",
+                    "avg(`Max %`)",
+                    "avg(`Value % of Total`)",
+                    "avg(`Value Comparison %`)"
+                ],
+                "type": "numerical",
+                "property": "axis",
+                "defineCategories": false
+            },
+            "autoDomainMin": false,
+            "autoDomainMax": true
+        },
+        {
+            "objectID": "46uenk7u4p5",
+            "dataSource": {
+                "table": "main",
+                "groupBy": null
+            },
+            "expression": {
+                "expression": "avg(`Goal 1 % of Total`)",
+                "property": {
+                    "property": "dataExpressions",
+                    "field": [
+                        0,
+                        "expression"
+                    ]
+                }
+            }
+        },
+        {
+            "objectID": "46uenk7u4p5",
+            "dataSource": {
+                "table": "main",
+                "groupBy": null
+            },
+            "expression": {
+                "expression": "avg(`Goal 2 % of Total`)",
+                "property": {
+                    "property": "dataExpressions",
+                    "field": [
+                        1,
+                        "expression"
+                    ]
+                }
+            }
+        },
+        {
+            "objectID": "46uenk7u4p5",
+            "dataSource": {
+                "table": "main",
+                "groupBy": null
+            },
+            "expression": {
+                "expression": "avg(`Max %`)",
+                "property": {
+                    "property": "dataExpressions",
+                    "field": [
+                        2,
+                        "expression"
+                    ]
+                }
+            }
+        },
+        {
+            "objectID": "46uenk7u4p5",
+            "dataSource": {
+                "table": "main",
+                "groupBy": null
+            },
+            "expression": {
+                "expression": "avg(`Value % of Total`)",
+                "property": {
+                    "property": "dataExpressions",
+                    "field": [
+                        3,
+                        "expression"
+                    ]
+                }
+            }
+        },
+        {
+            "objectID": "46uenk7u4p5",
+            "dataSource": {
+                "table": "main",
+                "groupBy": null
+            },
+            "expression": {
+                "expression": "avg(`Value Comparison %`)",
+                "property": {
+                    "property": "dataExpressions",
+                    "field": [
+                        4,
+                        "expression"
+                    ]
+                }
+            }
+        }
+    ],
+    "properties": [
+        {
+            "objectID": "76u4pgj7u3d",
+            "target": {
+                "property": {
+                    "property": "yData",
+                    "field": "style",
+                    "subfield": "tickSize"
+                }
+            },
+            "type": "number",
+            "default": 5,
+            "displayName": "PlotSegment1/yData.style.tickSize"
+        },
+        {
+            "objectID": "76u4pgj7u3d",
+            "target": {
+                "property": {
+                    "property": "yData",
+                    "field": "style",
+                    "subfield": "fontSize"
+                }
+            },
+            "type": "number",
+            "default": 12,
+            "displayName": "PlotSegment1/yData.style.fontSize"
+        },
+        {
+            "objectID": "76u4pgj7u3d",
+            "target": {
+                "property": {
+                    "property": "yData",
+                    "field": "style",
+                    "subfield": "fontFamily"
+                }
+            },
+            "type": "font-family",
+            "default": "Arial",
+            "displayName": "PlotSegment1/yData.style.fontFamily"
+        },
+        {
+            "objectID": "76u4pgj7u3d",
+            "target": {
+                "property": {
+                    "property": "yData",
+                    "field": "style",
+                    "subfield": "lineColor"
+                }
+            },
+            "type": "color",
+            "default": "#000000",
+            "displayName": "PlotSegment1/yData.style.lineColor"
+        },
+        {
+            "objectID": "76u4pgj7u3d",
+            "target": {
+                "property": {
+                    "property": "yData",
+                    "field": "style",
+                    "subfield": "tickColor"
+                }
+            },
+            "type": "color",
+            "default": "#000000",
+            "displayName": "PlotSegment1/yData.style.tickColor"
+        },
+        {
+            "objectID": "76u4pgj7u3d",
+            "target": {
+                "property": {
+                    "property": "yData",
+                    "field": "tickFormat"
+                }
+            },
+            "type": "text",
+            "default": null,
+            "displayName": "PlotSegment1/yData.tickFormat"
+        },
+        {
+            "objectID": "76u4pgj7u3d",
+            "target": {
+                "property": {
+                    "property": "yData",
+                    "field": "tickDataExpression"
+                }
+            },
+            "type": "text",
+            "default": null,
+            "displayName": "PlotSegment1/yData.tickDataExpression"
+        },
+        {
+            "objectID": "76u4pgj7u3d",
+            "target": {
+                "property": {
+                    "property": "yData",
+                    "field": "categories"
+                }
+            },
+            "type": "enum",
+            "default": "ascending",
+            "displayName": "PlotSegment1/yData.categories"
+        },
+        {
+            "objectID": "46uenk7u4p5",
+            "target": {
+                "property": {
+                    "property": "axis",
+                    "field": "style",
+                    "subfield": "tickSize"
+                }
+            },
+            "type": "number",
+            "default": 5,
+            "displayName": "DataAxis1/axis.style.tickSize"
+        },
+        {
+            "objectID": "46uenk7u4p5",
+            "target": {
+                "property": {
+                    "property": "axis",
+                    "field": "style",
+                    "subfield": "fontSize"
+                }
+            },
+            "type": "number",
+            "default": 12,
+            "displayName": "DataAxis1/axis.style.fontSize"
+        },
+        {
+            "objectID": "46uenk7u4p5",
+            "target": {
+                "property": {
+                    "property": "axis",
+                    "field": "style",
+                    "subfield": "fontFamily"
+                }
+            },
+            "type": "font-family",
+            "default": "Arial",
+            "displayName": "DataAxis1/axis.style.fontFamily"
+        },
+        {
+            "objectID": "46uenk7u4p5",
+            "target": {
+                "property": {
+                    "property": "axis",
+                    "field": "style",
+                    "subfield": "lineColor"
+                }
+            },
+            "type": "color",
+            "default": "#000000",
+            "displayName": "DataAxis1/axis.style.lineColor"
+        },
+        {
+            "objectID": "46uenk7u4p5",
+            "target": {
+                "property": {
+                    "property": "axis",
+                    "field": "style",
+                    "subfield": "tickColor"
+                }
+            },
+            "type": "color",
+            "default": "#000000",
+            "displayName": "DataAxis1/axis.style.tickColor"
+        },
+        {
+            "objectID": "46uenk7u4p5",
+            "target": {
+                "property": {
+                    "property": "axis",
+                    "field": "tickFormat"
+                }
+            },
+            "type": "text",
+            "default": null,
+            "displayName": "DataAxis1/axis.tickFormat"
+        },
+        {
+            "objectID": "46uenk7u4p5",
+            "target": {
+                "property": {
+                    "property": "axis",
+                    "field": "tickDataExpression"
+                }
+            },
+            "type": "text",
+            "default": null,
+            "displayName": "DataAxis1/axis.tickDataExpression"
+        },
+        {
+            "objectID": "46uenk7u4p5",
+            "target": {
+                "property": {
+                    "property": "axis",
+                    "field": "categories"
+                }
+            },
+            "type": "enum",
+            "default": "ascending",
+            "displayName": "DataAxis1/axis.categories"
+        },
+        {
+            "objectID": "wr8om74dd2i",
+            "target": {
+                "attribute": "fill"
+            },
+            "type": "color",
+            "default": "#fec0bf",
+            "displayName": "Shape1/fill"
+        },
+        {
+            "objectID": "wr8om74dd2i",
+            "target": {
+                "attribute": "visible"
+            },
+            "type": "boolean",
+            "default": true,
+            "displayName": "Shape1/visible"
+        },
+        {
+            "objectID": "wr8om74dd2i",
+            "target": {
+                "attribute": "strokeWidth"
+            },
+            "type": "number",
+            "default": 1,
+            "displayName": "Shape1/strokeWidth"
+        },
+        {
+            "objectID": "wr8om74dd2i",
+            "target": {
+                "property": "strokeStyle"
+            },
+            "type": "enum",
+            "default": "solid",
+            "displayName": "Shape1/strokeStyle"
+        },
+        {
+            "objectID": "wr8om74dd2i",
+            "target": {
+                "attribute": "opacity"
+            },
+            "type": "number",
+            "default": 1,
+            "displayName": "Shape1/opacity"
+        },
+        {
+            "objectID": "cx45puhyki8",
+            "target": {
+                "attribute": "fill"
+            },
+            "type": "color",
+            "default": "#fae99f",
+            "displayName": "Shape2/fill"
+        },
+        {
+            "objectID": "cx45puhyki8",
+            "target": {
+                "attribute": "visible"
+            },
+            "type": "boolean",
+            "default": true,
+            "displayName": "Shape2/visible"
+        },
+        {
+            "objectID": "cx45puhyki8",
+            "target": {
+                "attribute": "strokeWidth"
+            },
+            "type": "number",
+            "default": 1,
+            "displayName": "Shape2/strokeWidth"
+        },
+        {
+            "objectID": "cx45puhyki8",
+            "target": {
+                "property": "strokeStyle"
+            },
+            "type": "enum",
+            "default": "solid",
+            "displayName": "Shape2/strokeStyle"
+        },
+        {
+            "objectID": "cx45puhyki8",
+            "target": {
+                "attribute": "opacity"
+            },
+            "type": "number",
+            "default": 1,
+            "displayName": "Shape2/opacity"
+        },
+        {
+            "objectID": "z8iiointfa",
+            "target": {
+                "attribute": "fill"
+            },
+            "type": "color",
+            "default": "#99e3dd",
+            "displayName": "Shape3/fill"
+        },
+        {
+            "objectID": "z8iiointfa",
+            "target": {
+                "attribute": "visible"
+            },
+            "type": "boolean",
+            "default": true,
+            "displayName": "Shape3/visible"
+        },
+        {
+            "objectID": "z8iiointfa",
+            "target": {
+                "attribute": "strokeWidth"
+            },
+            "type": "number",
+            "default": 1,
+            "displayName": "Shape3/strokeWidth"
+        },
+        {
+            "objectID": "z8iiointfa",
+            "target": {
+                "property": "strokeStyle"
+            },
+            "type": "enum",
+            "default": "solid",
+            "displayName": "Shape3/strokeStyle"
+        },
+        {
+            "objectID": "z8iiointfa",
+            "target": {
+                "attribute": "opacity"
+            },
+            "type": "number",
+            "default": 1,
+            "displayName": "Shape3/opacity"
+        },
+        {
+            "objectID": "p1g137q4m6",
+            "target": {
+                "attribute": "fill"
+            },
+            "type": "color",
+            "default": "#969696",
+            "displayName": "Shape4/fill"
+        },
+        {
+            "objectID": "p1g137q4m6",
+            "target": {
+                "attribute": "visible"
+            },
+            "type": "boolean",
+            "default": true,
+            "displayName": "Shape4/visible"
+        },
+        {
+            "objectID": "p1g137q4m6",
+            "target": {
+                "attribute": "strokeWidth"
+            },
+            "type": "number",
+            "default": 1,
+            "displayName": "Shape4/strokeWidth"
+        },
+        {
+            "objectID": "p1g137q4m6",
+            "target": {
+                "property": "strokeStyle"
+            },
+            "type": "enum",
+            "default": "solid",
+            "displayName": "Shape4/strokeStyle"
+        },
+        {
+            "objectID": "p1g137q4m6",
+            "target": {
+                "attribute": "opacity"
+            },
+            "type": "number",
+            "default": 1,
+            "displayName": "Shape4/opacity"
+        },
+        {
+            "objectID": "bqvr4mcmrxm",
+            "target": {
+                "attribute": "visible"
+            },
+            "type": "boolean",
+            "default": true,
+            "displayName": "Line1/visible"
+        },
+        {
+            "objectID": "bqvr4mcmrxm",
+            "target": {
+                "attribute": "stroke"
+            },
+            "type": "color",
+            "default": "#525252",
+            "displayName": "Line1/stroke"
+        },
+        {
+            "objectID": "bqvr4mcmrxm",
+            "target": {
+                "attribute": "strokeWidth"
+            },
+            "type": "number",
+            "default": 3,
+            "displayName": "Line1/strokeWidth"
+        },
+        {
+            "objectID": "bqvr4mcmrxm",
+            "target": {
+                "property": "strokeStyle"
+            },
+            "type": "enum",
+            "default": "solid",
+            "displayName": "Line1/strokeStyle"
+        },
+        {
+            "objectID": "bqvr4mcmrxm",
+            "target": {
+                "attribute": "opacity"
+            },
+            "type": "number",
+            "default": 1,
+            "displayName": "Line1/opacity"
+        },
+        {
+            "objectID": "3mqpawk7zlz",
+            "target": {
+                "attribute": "fontFamily"
+            },
+            "type": "font-family",
+            "default": "Arial",
+            "displayName": "Text1/fontFamily"
+        },
+        {
+            "objectID": "3mqpawk7zlz",
+            "target": {
+                "attribute": "fontSize"
+            },
+            "type": "number",
+            "default": 14,
+            "displayName": "Text1/fontSize"
+        },
+        {
+            "objectID": "3mqpawk7zlz",
+            "target": {
+                "attribute": "color"
+            },
+            "type": "color",
+            "default": "#000000",
+            "displayName": "Text1/color"
+        },
+        {
+            "objectID": "3mqpawk7zlz",
+            "target": {
+                "attribute": "visible"
+            },
+            "type": "boolean",
+            "default": true,
+            "displayName": "Text1/visible"
+        },
+        {
+            "objectID": "3mqpawk7zlz",
+            "target": {
+                "attribute": "opacity"
+            },
+            "type": "number",
+            "default": 1,
+            "displayName": "Text1/opacity"
+        },
+        {
+            "objectID": "9o6hj4yw74",
+            "target": {
+                "attribute": "fontFamily"
+            },
+            "type": "font-family",
+            "default": "Arial",
+            "displayName": "Text2/fontFamily"
+        },
+        {
+            "objectID": "9o6hj4yw74",
+            "target": {
+                "attribute": "fontSize"
+            },
+            "type": "number",
+            "default": 14,
+            "displayName": "Text2/fontSize"
+        },
+        {
+            "objectID": "9o6hj4yw74",
+            "target": {
+                "attribute": "color"
+            },
+            "type": "color",
+            "default": "#000000",
+            "displayName": "Text2/color"
+        },
+        {
+            "objectID": "9o6hj4yw74",
+            "target": {
+                "attribute": "visible"
+            },
+            "type": "boolean",
+            "default": true,
+            "displayName": "Text2/visible"
+        },
+        {
+            "objectID": "9o6hj4yw74",
+            "target": {
+                "attribute": "opacity"
+            },
+            "type": "number",
+            "default": 1,
+            "displayName": "Text2/opacity"
+        },
+        {
+            "objectID": "xfw6pcs2gml",
+            "target": {
+                "attribute": "fontFamily"
+            },
+            "type": "font-family",
+            "default": "Arial",
+            "displayName": "Text3/fontFamily"
+        },
+        {
+            "objectID": "xfw6pcs2gml",
+            "target": {
+                "attribute": "fontSize"
+            },
+            "type": "number",
+            "default": 14,
+            "displayName": "Text3/fontSize"
+        },
+        {
+            "objectID": "xfw6pcs2gml",
+            "target": {
+                "attribute": "color"
+            },
+            "type": "color",
+            "default": "#000000",
+            "displayName": "Text3/color"
+        },
+        {
+            "objectID": "xfw6pcs2gml",
+            "target": {
+                "attribute": "visible"
+            },
+            "type": "boolean",
+            "default": true,
+            "displayName": "Text3/visible"
+        },
+        {
+            "objectID": "xfw6pcs2gml",
+            "target": {
+                "attribute": "opacity"
+            },
+            "type": "number",
+            "default": 1,
+            "displayName": "Text3/opacity"
+        },
+        {
+            "objectID": "zdvhq1owiuj",
+            "target": {
+                "attribute": "fontFamily"
+            },
+            "type": "font-family",
+            "default": "Arial",
+            "displayName": "Text4/fontFamily"
+        },
+        {
+            "objectID": "zdvhq1owiuj",
+            "target": {
+                "attribute": "fontSize"
+            },
+            "type": "number",
+            "default": 14,
+            "displayName": "Text4/fontSize"
+        },
+        {
+            "objectID": "zdvhq1owiuj",
+            "target": {
+                "attribute": "color"
+            },
+            "type": "color",
+            "default": "#000000",
+            "displayName": "Text4/color"
+        },
+        {
+            "objectID": "zdvhq1owiuj",
+            "target": {
+                "attribute": "visible"
+            },
+            "type": "boolean",
+            "default": true,
+            "displayName": "Text4/visible"
+        },
+        {
+            "objectID": "zdvhq1owiuj",
+            "target": {
+                "attribute": "opacity"
+            },
+            "type": "number",
+            "default": 1,
+            "displayName": "Text4/opacity"
+        },
+        {
+            "objectID": "puq4e7515qn",
+            "target": {
+                "attribute": "fontFamily"
+            },
+            "type": "font-family",
+            "default": "Arial",
+            "displayName": "Text5/fontFamily"
+        },
+        {
+            "objectID": "puq4e7515qn",
+            "target": {
+                "attribute": "fontSize"
+            },
+            "type": "number",
+            "default": 14,
+            "displayName": "Text5/fontSize"
+        },
+        {
+            "objectID": "puq4e7515qn",
+            "target": {
+                "attribute": "color"
+            },
+            "type": "color",
+            "default": "#000000",
+            "displayName": "Text5/color"
+        },
+        {
+            "objectID": "puq4e7515qn",
+            "target": {
+                "attribute": "visible"
+            },
+            "type": "boolean",
+            "default": true,
+            "displayName": "Text5/visible"
+        },
+        {
+            "objectID": "puq4e7515qn",
+            "target": {
+                "attribute": "opacity"
+            },
+            "type": "number",
+            "default": 1,
+            "displayName": "Text5/opacity"
+        },
+        {
+            "objectID": "gbc1n178t1a",
+            "target": {
+                "attribute": "marginLeft"
+            },
+            "type": "number",
+            "default": 127.64705882352943,
+            "displayName": "Chart/marginLeft"
+        },
+        {
+            "objectID": "gbc1n178t1a",
+            "target": {
+                "attribute": "marginRight"
+            },
+            "type": "number",
+            "default": 50,
+            "displayName": "Chart/marginRight"
+        },
+        {
+            "objectID": "gbc1n178t1a",
+            "target": {
+                "attribute": "marginTop"
+            },
+            "type": "number",
+            "default": 50,
+            "displayName": "Chart/marginTop"
+        },
+        {
+            "objectID": "gbc1n178t1a",
+            "target": {
+                "attribute": "marginBottom"
+            },
+            "type": "number",
+            "default": 50,
+            "displayName": "Chart/marginBottom"
+        }
+    ],
+    "version": "2.1.0"
+}

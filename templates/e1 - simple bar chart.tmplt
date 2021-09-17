@@ -1,0 +1,559 @@
+{
+    "specification": {
+        "_id": "gbc1n178t1a",
+        "classID": "chart.rectangle",
+        "properties": {
+            "name": "Chart",
+            "backgroundColor": null,
+            "backgroundOpacity": 1,
+            "exposed": true
+        },
+        "mappings": {
+            "marginTop": {
+                "type": "value",
+                "value": 0
+            },
+            "width": {
+                "type": "value",
+                "value": 900
+            },
+            "height": {
+                "type": "value",
+                "value": 600
+            },
+            "marginLeft": {
+                "type": "value",
+                "value": 0
+            },
+            "marginRight": {
+                "type": "value",
+                "value": 0
+            },
+            "marginBottom": {
+                "type": "value",
+                "value": 0
+            }
+        },
+        "glyphs": [
+            {
+                "_id": "fee6vbiiztn",
+                "classID": "glyph.rectangle",
+                "properties": {
+                    "name": "Glyph"
+                },
+                "table": "main",
+                "marks": [
+                    {
+                        "_id": "juo4rf6c13",
+                        "classID": "mark.anchor",
+                        "properties": {
+                            "name": "Anchor"
+                        },
+                        "mappings": {
+                            "x": {
+                                "type": "parent",
+                                "parentAttribute": "icx"
+                            },
+                            "y": {
+                                "type": "parent",
+                                "parentAttribute": "icy"
+                            }
+                        }
+                    },
+                    {
+                        "_id": "uhtv06n04b",
+                        "classID": "mark.rect",
+                        "properties": {
+                            "visible": true,
+                            "strokeStyle": "solid",
+                            "shape": "rectangle",
+                            "allowFlipping": true,
+                            "name": "Shape1",
+                            "enableSelection": true,
+                            "enableTooltips": true
+                        },
+                        "mappings": {
+                            "fill": {
+                                "type": "scale",
+                                "table": "main",
+                                "expression": "first(Product)",
+                                "valueType": "string",
+                                "scale": "v6m42b7dehj",
+                                "attribute": "fill"
+                            },
+                            "strokeWidth": {
+                                "type": "value",
+                                "value": 1
+                            },
+                            "opacity": {
+                                "type": "value",
+                                "value": 1
+                            },
+                            "visible": {
+                                "type": "value",
+                                "value": true
+                            },
+                            "x1": {
+                                "type": "parent",
+                                "parentAttribute": "ix1"
+                            },
+                            "y1": {
+                                "type": "parent",
+                                "parentAttribute": "iy1"
+                            },
+                            "x2": {
+                                "type": "parent",
+                                "parentAttribute": "ix2"
+                            },
+                            "y2": {
+                                "type": "parent",
+                                "parentAttribute": "iy2"
+                            },
+                            "height": {
+                                "type": "scale",
+                                "table": "main",
+                                "expression": "avg(Profit)",
+                                "valueType": "number",
+                                "scale": "caxsshv4cb",
+                                "attribute": "height"
+                            }
+                        }
+                    },
+                    {
+                        "_id": "3dvp27566nj",
+                        "classID": "mark.text",
+                        "properties": {
+                            "alignment": {
+                                "x": "left",
+                                "y": "top",
+                                "xMargin": 24.147711988137154,
+                                "yMargin": 16.733375592062778
+                            },
+                            "rotation": 90,
+                            "visible": true,
+                            "name": "Text1"
+                        },
+                        "mappings": {
+                            "text": {
+                                "type": "text",
+                                "table": "main",
+                                "textExpression": "${first(Product)}"
+                            },
+                            "fontFamily": {
+                                "type": "value",
+                                "value": "Tahoma"
+                            },
+                            "fontSize": {
+                                "type": "value",
+                                "value": 20
+                            },
+                            "color": {
+                                "type": "value",
+                                "value": {
+                                    "r": 255,
+                                    "g": 255,
+                                    "b": 255
+                                }
+                            },
+                            "opacity": {
+                                "type": "value",
+                                "value": 1
+                            },
+                            "visible": {
+                                "type": "value",
+                                "value": true
+                            },
+                            "x": {
+                                "type": "parent",
+                                "parentAttribute": "ix1"
+                            },
+                            "y": {
+                                "type": "parent",
+                                "parentAttribute": "iy1"
+                            }
+                        }
+                    }
+                ],
+                "mappings": {},
+                "constraints": []
+            }
+        ],
+        "elements": [
+            {
+                "_id": "76u4pgj7u3d",
+                "classID": "plot-segment.cartesian",
+                "glyph": "fee6vbiiztn",
+                "table": "main",
+                "filter": null,
+                "mappings": {
+                    "x1": {
+                        "type": "parent",
+                        "parentAttribute": "x1"
+                    },
+                    "y1": {
+                        "type": "parent",
+                        "parentAttribute": "y1"
+                    },
+                    "x2": {
+                        "type": "parent",
+                        "parentAttribute": "x2"
+                    },
+                    "y2": {
+                        "type": "parent",
+                        "parentAttribute": "y2"
+                    }
+                },
+                "properties": {
+                    "name": "PlotSegment1",
+                    "visible": true,
+                    "marginX1": 0,
+                    "marginY1": 0,
+                    "marginX2": 0,
+                    "marginY2": 0,
+                    "sublayout": {
+                        "type": "dodge-x",
+                        "order": null,
+                        "ratioX": 0.1,
+                        "ratioY": 0.1,
+                        "align": {
+                            "x": "start",
+                            "y": "start"
+                        },
+                        "grid": {
+                            "direction": "x",
+                            "xCount": null,
+                            "yCount": null
+                        },
+                        "packing": {
+                            "gravityX": 0.1,
+                            "gravityY": 0.1
+                        }
+                    }
+                }
+            }
+        ],
+        "scales": [
+            {
+                "_id": "caxsshv4cb",
+                "classID": "scale.linear<number,number>",
+                "properties": {
+                    "autoDomainMin": true,
+                    "autoDomainMax": true,
+                    "name": "Scale1",
+                    "domainMin": 0,
+                    "domainMax": 5000000
+                },
+                "mappings": {
+                    "rangeMin": {
+                        "type": "value",
+                        "value": 0
+                    }
+                },
+                "inputType": "number",
+                "outputType": "number"
+            },
+            {
+                "_id": "v6m42b7dehj",
+                "classID": "scale.categorical<string,color>",
+                "properties": {
+                    "enableTooltips": true,
+                    "enableContextMenu": true,
+                    "enableSelection": true,
+                    "name": "Scale2",
+                    "mapping": {
+                        "Amarilla": {
+                            "r": 17,
+                            "g": 141,
+                            "b": 255
+                        },
+                        "Carretera": {
+                            "r": 18,
+                            "g": 35,
+                            "b": 158
+                        },
+                        "Montana": {
+                            "r": 230,
+                            "g": 108,
+                            "b": 55
+                        },
+                        "Paseo": {
+                            "r": 107,
+                            "g": 0,
+                            "b": 123
+                        },
+                        "Velo": {
+                            "r": 224,
+                            "g": 68,
+                            "b": 167
+                        },
+                        "VTT": {
+                            "r": 116,
+                            "g": 78,
+                            "b": 194
+                        }
+                    }
+                },
+                "mappings": {},
+                "inputType": "string",
+                "outputType": "color"
+            }
+        ],
+        "scaleMappings": [
+            {
+                "type": "scale",
+                "table": "main",
+                "expression": "avg(Profit)",
+                "valueType": "number",
+                "scale": "caxsshv4cb",
+                "attribute": "height"
+            },
+            {
+                "type": "scale",
+                "table": "main",
+                "expression": "first(Product)",
+                "valueType": "string",
+                "scale": "v6m42b7dehj",
+                "attribute": "fill"
+            }
+        ],
+        "constraints": [],
+        "resources": [],
+        "exposed": true
+    },
+    "defaultAttributes": {
+        "juo4rf6c13": {
+            "x": 0,
+            "y": 0
+        },
+        "uhtv06n04b": {
+            "x1": -6.749989583362266,
+            "y1": -17.60700455114507,
+            "x2": 6.749989583362266,
+            "y2": 17.60700455114507,
+            "cx": 0,
+            "cy": 0,
+            "width": 13.499979166724533,
+            "height": 35.21400910229014,
+            "strokeWidth": 0.1,
+            "opacity": 0.1
+        },
+        "3dvp27566nj": {
+            "x": -16.874973958405665,
+            "y": -44.01751137786268,
+            "fontSize": 5,
+            "opacity": 0.25
+        }
+    },
+    "tables": [
+        {
+            "name": "main",
+            "columns": [
+                {
+                    "displayName": "Product",
+                    "name": "Product",
+                    "type": "string",
+                    "metadata": {
+                        "kind": "categorical",
+                        "orderMode": "alphabetically"
+                    }
+                },
+                {
+                    "displayName": "Profit",
+                    "name": "Profit",
+                    "type": "number",
+                    "metadata": {
+                        "kind": "numerical"
+                    }
+                }
+            ]
+        }
+    ],
+    "inference": [
+        {
+            "objectID": "caxsshv4cb",
+            "autoDomainMax": true,
+            "autoDomainMin": true,
+            "scale": {
+                "classID": "scale.linear<number,number>",
+                "expressions": [
+                    "avg(Profit)"
+                ],
+                "properties": {
+                    "mapping": "mapping"
+                }
+            },
+            "dataSource": {
+                "table": "main"
+            }
+        },
+        {
+            "objectID": "v6m42b7dehj",
+            "scale": {
+                "classID": "scale.categorical<string,color>",
+                "expressions": [
+                    "first(Product)"
+                ],
+                "properties": {
+                    "mapping": "mapping"
+                }
+            },
+            "dataSource": {
+                "table": "main"
+            }
+        }
+    ],
+    "properties": [
+        {
+            "objectID": "uhtv06n04b",
+            "target": {
+                "attribute": "visible"
+            },
+            "type": "boolean",
+            "default": true,
+            "displayName": "Shape1/visible"
+        },
+        {
+            "objectID": "uhtv06n04b",
+            "target": {
+                "attribute": "strokeWidth"
+            },
+            "type": "number",
+            "default": 1,
+            "displayName": "Shape1/strokeWidth"
+        },
+        {
+            "objectID": "uhtv06n04b",
+            "target": {
+                "property": "strokeStyle"
+            },
+            "type": "enum",
+            "default": "solid",
+            "displayName": "Shape1/strokeStyle"
+        },
+        {
+            "objectID": "uhtv06n04b",
+            "target": {
+                "attribute": "opacity"
+            },
+            "type": "number",
+            "default": 1,
+            "displayName": "Shape1/opacity"
+        },
+        {
+            "objectID": "3dvp27566nj",
+            "target": {
+                "attribute": "fontFamily"
+            },
+            "type": "font-family",
+            "default": "Tahoma",
+            "displayName": "Text1/fontFamily"
+        },
+        {
+            "objectID": "3dvp27566nj",
+            "target": {
+                "attribute": "fontSize"
+            },
+            "type": "number",
+            "default": 20,
+            "displayName": "Text1/fontSize"
+        },
+        {
+            "objectID": "3dvp27566nj",
+            "target": {
+                "attribute": "color"
+            },
+            "type": "color",
+            "default": "#ffffff",
+            "displayName": "Text1/color"
+        },
+        {
+            "objectID": "3dvp27566nj",
+            "target": {
+                "attribute": "visible"
+            },
+            "type": "boolean",
+            "default": true,
+            "displayName": "Text1/visible"
+        },
+        {
+            "objectID": "3dvp27566nj",
+            "target": {
+                "attribute": "opacity"
+            },
+            "type": "number",
+            "default": 1,
+            "displayName": "Text1/opacity"
+        },
+        {
+            "objectID": "caxsshv4cb",
+            "target": {
+                "property": "domainMin"
+            },
+            "type": "number",
+            "displayName": "Scale1/domainMin"
+        },
+        {
+            "objectID": "caxsshv4cb",
+            "target": {
+                "property": "domainMax"
+            },
+            "type": "number",
+            "displayName": "Scale1/domainMax"
+        },
+        {
+            "objectID": "caxsshv4cb",
+            "target": {
+                "attribute": "rangeMin"
+            },
+            "type": "number",
+            "default": null,
+            "displayName": "Scale1/rangeMin"
+        },
+        {
+            "objectID": "caxsshv4cb",
+            "target": {
+                "attribute": "rangeMax"
+            },
+            "type": "number",
+            "default": null,
+            "displayName": "Scale1/rangeMax"
+        },
+        {
+            "objectID": "gbc1n178t1a",
+            "target": {
+                "attribute": "marginLeft"
+            },
+            "type": "number",
+            "default": 0,
+            "displayName": "Chart/marginLeft"
+        },
+        {
+            "objectID": "gbc1n178t1a",
+            "target": {
+                "attribute": "marginRight"
+            },
+            "type": "number",
+            "default": 0,
+            "displayName": "Chart/marginRight"
+        },
+        {
+            "objectID": "gbc1n178t1a",
+            "target": {
+                "attribute": "marginTop"
+            },
+            "type": "number",
+            "default": 0,
+            "displayName": "Chart/marginTop"
+        },
+        {
+            "objectID": "gbc1n178t1a",
+            "target": {
+                "attribute": "marginBottom"
+            },
+            "type": "number",
+            "default": 0,
+            "displayName": "Chart/marginBottom"
+        }
+    ],
+    "version": "2.1.0"
+}

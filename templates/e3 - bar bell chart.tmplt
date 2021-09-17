@@ -1,0 +1,1307 @@
+{
+    "specification": {
+        "_id": "gbc1n178t1a",
+        "classID": "chart.rectangle",
+        "properties": {
+            "name": "Chart",
+            "backgroundColor": null,
+            "backgroundOpacity": 1,
+            "exposed": true
+        },
+        "mappings": {
+            "marginTop": {
+                "type": "value",
+                "value": 0
+            },
+            "width": {
+                "type": "value",
+                "value": 600
+            },
+            "height": {
+                "type": "value",
+                "value": 600
+            },
+            "marginLeft": {
+                "type": "value",
+                "value": 75
+            },
+            "marginRight": {
+                "type": "value",
+                "value": 15
+            }
+        },
+        "glyphs": [
+            {
+                "_id": "fee6vbiiztn",
+                "classID": "glyph.rectangle",
+                "properties": {
+                    "name": "Glyph"
+                },
+                "table": "main",
+                "marks": [
+                    {
+                        "_id": "juo4rf6c13",
+                        "classID": "mark.anchor",
+                        "properties": {
+                            "name": "Anchor"
+                        },
+                        "mappings": {
+                            "x": {
+                                "type": "parent",
+                                "parentAttribute": "icx"
+                            },
+                            "y": {
+                                "type": "parent",
+                                "parentAttribute": "icy"
+                            }
+                        }
+                    },
+                    {
+                        "_id": "ob4m6jv8cv",
+                        "classID": "mark.data-axis",
+                        "properties": {
+                            "dataExpressions": [
+                                {
+                                    "name": "exlgz1hiutm",
+                                    "expression": "avg(`Min of Sale Price`)"
+                                },
+                                {
+                                    "name": "o6219s250la",
+                                    "expression": "avg(`Max of Sale Price`)"
+                                },
+                                {
+                                    "name": "qhuskpxpkk",
+                                    "expression": "avg(`Average of Sale Price`)"
+                                }
+                            ],
+                            "axis": {
+                                "side": "opposite",
+                                "type": "numerical",
+                                "visible": true,
+                                "autoDomainMax": true,
+                                "autoDomainMin": true,
+                                "orderMode": null,
+                                "style": {
+                                    "tickColor": {
+                                        "r": 0,
+                                        "g": 0,
+                                        "b": 0
+                                    },
+                                    "lineColor": {
+                                        "r": 0,
+                                        "g": 0,
+                                        "b": 0
+                                    },
+                                    "fontFamily": "Arial",
+                                    "fontSize": 12,
+                                    "tickSize": 5,
+                                    "wordWrap": false,
+                                    "gridlineStyle": "none",
+                                    "gridlineColor": {
+                                        "r": 234,
+                                        "g": 234,
+                                        "b": 234
+                                    },
+                                    "gridlineWidth": 1
+                                },
+                                "categories": null,
+                                "dataKind": "numerical",
+                                "domainMax": 350,
+                                "domainMin": 0,
+                                "enablePrePostGap": null,
+                                "expression": "avg(`Min of Sale Price`)",
+                                "gapRatio": 0.1,
+                                "numericalMode": "linear",
+                                "order": null,
+                                "rawExpression": "first(`Min of Sale Price`)",
+                                "tickDataExpression": null,
+                                "tickFormat": null,
+                                "valueType": "number"
+                            },
+                            "visible": true,
+                            "visibleOn": "last",
+                            "name": "DataAxis1"
+                        },
+                        "mappings": {
+                            "x1": {
+                                "type": "parent",
+                                "parentAttribute": "ix1"
+                            },
+                            "y1": {
+                                "type": "parent",
+                                "parentAttribute": "iy1"
+                            },
+                            "x2": {
+                                "type": "parent",
+                                "parentAttribute": "ix2"
+                            },
+                            "y2": {
+                                "type": "parent",
+                                "parentAttribute": "iy1"
+                            }
+                        }
+                    },
+                    {
+                        "_id": "1xjtvv1tf8a",
+                        "classID": "mark.line",
+                        "properties": {
+                            "strokeStyle": "solid",
+                            "visible": true,
+                            "name": "Line1"
+                        },
+                        "mappings": {
+                            "stroke": {
+                                "type": "value",
+                                "value": {
+                                    "r": 189,
+                                    "g": 189,
+                                    "b": 189
+                                }
+                            },
+                            "strokeWidth": {
+                                "type": "value",
+                                "value": 4.89
+                            },
+                            "opacity": {
+                                "type": "value",
+                                "value": 1
+                            },
+                            "visible": {
+                                "type": "value",
+                                "value": true
+                            },
+                            "y1": {
+                                "type": "parent",
+                                "parentAttribute": "icy"
+                            },
+                            "x2": {
+                                "type": "parent",
+                                "parentAttribute": "ix2"
+                            },
+                            "y2": {
+                                "type": "parent",
+                                "parentAttribute": "icy"
+                            }
+                        }
+                    },
+                    {
+                        "_id": "haiwxz0t0pt",
+                        "classID": "mark.symbol",
+                        "properties": {
+                            "visible": true,
+                            "name": "Symbol1"
+                        },
+                        "mappings": {
+                            "fill": {
+                                "type": "value",
+                                "value": {
+                                    "r": 158,
+                                    "g": 202,
+                                    "b": 225
+                                }
+                            },
+                            "strokeWidth": {
+                                "type": "value",
+                                "value": 1
+                            },
+                            "opacity": {
+                                "type": "value",
+                                "value": 1
+                            },
+                            "size": {
+                                "type": "value",
+                                "value": 100
+                            },
+                            "visible": {
+                                "type": "value",
+                                "value": true
+                            },
+                            "y": {
+                                "type": "parent",
+                                "parentAttribute": "icy"
+                            }
+                        }
+                    },
+                    {
+                        "_id": "h6jipwh4oek",
+                        "classID": "mark.symbol",
+                        "properties": {
+                            "visible": true,
+                            "name": "Symbol2"
+                        },
+                        "mappings": {
+                            "fill": {
+                                "type": "value",
+                                "value": {
+                                    "r": 8,
+                                    "g": 48,
+                                    "b": 107
+                                }
+                            },
+                            "strokeWidth": {
+                                "type": "value",
+                                "value": 1
+                            },
+                            "opacity": {
+                                "type": "value",
+                                "value": 1
+                            },
+                            "size": {
+                                "type": "value",
+                                "value": 100
+                            },
+                            "visible": {
+                                "type": "value",
+                                "value": true
+                            },
+                            "x": {
+                                "type": "parent",
+                                "parentAttribute": "ix2"
+                            },
+                            "y": {
+                                "type": "parent",
+                                "parentAttribute": "icy"
+                            }
+                        }
+                    },
+                    {
+                        "_id": "rasgbp39pof",
+                        "classID": "mark.symbol",
+                        "properties": {
+                            "visible": true,
+                            "name": "Symbol3"
+                        },
+                        "mappings": {
+                            "fill": {
+                                "type": "value",
+                                "value": {
+                                    "r": 239,
+                                    "g": 59,
+                                    "b": 44
+                                }
+                            },
+                            "strokeWidth": {
+                                "type": "value",
+                                "value": 1
+                            },
+                            "opacity": {
+                                "type": "value",
+                                "value": 1
+                            },
+                            "size": {
+                                "type": "scale",
+                                "table": "main",
+                                "expression": "avg(`Row Count`)",
+                                "valueType": "number",
+                                "scale": "u36v7spmc5e",
+                                "attribute": "size"
+                            },
+                            "visible": {
+                                "type": "value",
+                                "value": true
+                            },
+                            "y": {
+                                "type": "parent",
+                                "parentAttribute": "icy"
+                            }
+                        }
+                    },
+                    {
+                        "_id": "v9gei1bj8a",
+                        "classID": "mark.text",
+                        "properties": {
+                            "alignment": {
+                                "x": "left",
+                                "y": "bottom",
+                                "xMargin": 17.726995183059035,
+                                "yMargin": 14.218973528824717
+                            },
+                            "rotation": 0,
+                            "visible": true,
+                            "name": "Text1"
+                        },
+                        "mappings": {
+                            "text": {
+                                "type": "text",
+                                "table": "main",
+                                "textExpression": "${avg(`Average of Sale Price`)}{.0f}"
+                            },
+                            "fontFamily": {
+                                "type": "value",
+                                "value": "Arial"
+                            },
+                            "fontSize": {
+                                "type": "value",
+                                "value": 14
+                            },
+                            "color": {
+                                "type": "value",
+                                "value": {
+                                    "r": 0,
+                                    "g": 0,
+                                    "b": 0
+                                }
+                            },
+                            "opacity": {
+                                "type": "value",
+                                "value": 1
+                            },
+                            "visible": {
+                                "type": "value",
+                                "value": true
+                            },
+                            "y": {
+                                "type": "parent",
+                                "parentAttribute": "icy"
+                            }
+                        }
+                    }
+                ],
+                "mappings": {},
+                "constraints": [
+                    {
+                        "type": "snap",
+                        "attributes": {
+                            "element": "haiwxz0t0pt",
+                            "attribute": "x",
+                            "targetElement": "ob4m6jv8cv",
+                            "targetAttribute": "anchorXexlgz1hiutm",
+                            "gap": 0
+                        }
+                    },
+                    {
+                        "type": "snap",
+                        "attributes": {
+                            "element": "rasgbp39pof",
+                            "attribute": "x",
+                            "targetElement": "ob4m6jv8cv",
+                            "targetAttribute": "anchorXqhuskpxpkk",
+                            "gap": 0
+                        }
+                    },
+                    {
+                        "type": "snap",
+                        "attributes": {
+                            "element": "1xjtvv1tf8a",
+                            "attribute": "x1",
+                            "targetElement": "ob4m6jv8cv",
+                            "targetAttribute": "anchorXexlgz1hiutm",
+                            "gap": 0
+                        }
+                    },
+                    {
+                        "type": "snap",
+                        "attributes": {
+                            "element": "v9gei1bj8a",
+                            "attribute": "x",
+                            "targetElement": "ob4m6jv8cv",
+                            "targetAttribute": "anchorXqhuskpxpkk",
+                            "gap": 0
+                        }
+                    }
+                ]
+            }
+        ],
+        "elements": [
+            {
+                "_id": "76u4pgj7u3d",
+                "classID": "plot-segment.cartesian",
+                "glyph": "fee6vbiiztn",
+                "table": "main",
+                "filter": null,
+                "mappings": {
+                    "x1": {
+                        "type": "parent",
+                        "parentAttribute": "x1"
+                    },
+                    "y1": {
+                        "type": "parent",
+                        "parentAttribute": "y1"
+                    },
+                    "x2": {
+                        "type": "parent",
+                        "parentAttribute": "x2"
+                    },
+                    "y2": {
+                        "type": "parent",
+                        "parentAttribute": "y2"
+                    }
+                },
+                "properties": {
+                    "name": "PlotSegment1",
+                    "visible": true,
+                    "marginX1": 0,
+                    "marginY1": 0,
+                    "marginX2": 0,
+                    "marginY2": 0,
+                    "sublayout": {
+                        "type": "dodge-y",
+                        "order": {
+                            "expression": "first(Product)"
+                        },
+                        "ratioX": 0.1,
+                        "ratioY": 0.1,
+                        "align": {
+                            "x": "start",
+                            "y": "start"
+                        },
+                        "grid": {
+                            "direction": "x",
+                            "xCount": null,
+                            "yCount": null
+                        },
+                        "packing": {
+                            "gravityX": 0.1,
+                            "gravityY": 0.1
+                        }
+                    },
+                    "yData": {
+                        "side": "default",
+                        "type": "categorical",
+                        "visible": true,
+                        "autoDomainMax": true,
+                        "autoDomainMin": true,
+                        "orderMode": "alphabetically",
+                        "style": {
+                            "tickColor": {
+                                "r": 0,
+                                "g": 0,
+                                "b": 0
+                            },
+                            "lineColor": {
+                                "r": 0,
+                                "g": 0,
+                                "b": 0
+                            },
+                            "fontFamily": "Arial",
+                            "fontSize": 12,
+                            "tickSize": 5,
+                            "wordWrap": false,
+                            "gridlineStyle": "none",
+                            "gridlineColor": {
+                                "r": 234,
+                                "g": 234,
+                                "b": 234
+                            },
+                            "gridlineWidth": 1
+                        },
+                        "categories": [
+                            "Amarilla",
+                            "Carretera",
+                            "Montana",
+                            "Paseo",
+                            "VTT",
+                            "Velo"
+                        ],
+                        "dataKind": "categorical",
+                        "domainMax": null,
+                        "domainMin": null,
+                        "enablePrePostGap": null,
+                        "expression": "first(Product)",
+                        "gapRatio": 0.1,
+                        "numericalMode": null,
+                        "order": null,
+                        "rawExpression": null,
+                        "tickDataExpression": null,
+                        "tickFormat": null,
+                        "valueType": "string"
+                    }
+                }
+            }
+        ],
+        "scales": [
+            {
+                "_id": "u36v7spmc5e",
+                "classID": "scale.linear<number,number>",
+                "properties": {
+                    "autoDomainMin": true,
+                    "autoDomainMax": true,
+                    "name": "Scale1",
+                    "domainMin": 0,
+                    "domainMax": 220
+                },
+                "mappings": {
+                    "rangeMin": {
+                        "type": "value",
+                        "value": 0
+                    },
+                    "rangeMax": {
+                        "type": "value",
+                        "value": 628.3185307179587
+                    }
+                },
+                "inputType": "number",
+                "outputType": "number"
+            }
+        ],
+        "scaleMappings": [
+            {
+                "type": "scale",
+                "table": "main",
+                "expression": "avg(`Row Count`)",
+                "valueType": "number",
+                "scale": "u36v7spmc5e",
+                "attribute": "size"
+            }
+        ],
+        "constraints": [],
+        "resources": [],
+        "exposed": true
+    },
+    "defaultAttributes": {
+        "juo4rf6c13": {
+            "x": 0,
+            "y": 0
+        },
+        "ob4m6jv8cv": {
+            "x1": -25.499062510938455,
+            "y1": -4.125000000243047,
+            "x2": 25.499062510938455,
+            "y2": -4.125000000243047,
+            "anchorXexlgz1hiutm": -24.479100010500915,
+            "anchorYexlgz1hiutm": -4.125000000243047,
+            "anchorXo6219s250la": 25.499062510938455,
+            "anchorYo6219s250la": -4.125000000243047,
+            "anchorXqhuskpxpkk": -8.02478022117375,
+            "anchorYqhuskpxpkk": -4.125000000243047
+        },
+        "1xjtvv1tf8a": {
+            "x1": -24.479100010500915,
+            "y1": 0,
+            "x2": 25.499062510938455,
+            "y2": 0,
+            "cx": 0.5099812502187695,
+            "cy": 0,
+            "dx": 49.97816252143937,
+            "dy": 0,
+            "strokeWidth": 0.489,
+            "opacity": 0.1
+        },
+        "haiwxz0t0pt": {
+            "x": -48.95820002100183,
+            "y": 0,
+            "size": 20,
+            "strokeWidth": 0.2,
+            "opacity": 0.2
+        },
+        "h6jipwh4oek": {
+            "x": 50.99812502187691,
+            "y": 0,
+            "size": 20,
+            "strokeWidth": 0.2,
+            "opacity": 0.2
+        },
+        "rasgbp39pof": {
+            "x": -16.0495604423475,
+            "y": 0,
+            "size": 66.63984416705622,
+            "strokeWidth": 0.2,
+            "opacity": 0.2
+        },
+        "v9gei1bj8a": {
+            "x": -20.061950552934373,
+            "y": 0,
+            "fontSize": 3.5,
+            "opacity": 0.25
+        }
+    },
+    "tables": [
+        {
+            "name": "main",
+            "columns": [
+                {
+                    "displayName": "Product",
+                    "name": "Product",
+                    "type": "string",
+                    "metadata": {
+                        "kind": "categorical",
+                        "orderMode": "alphabetically"
+                    }
+                },
+                {
+                    "displayName": "Min of Sale Price",
+                    "name": "Min of Sale Price",
+                    "type": "number",
+                    "metadata": {
+                        "kind": "numerical"
+                    }
+                },
+                {
+                    "displayName": "Max of Sale Price",
+                    "name": "Max of Sale Price",
+                    "type": "number",
+                    "metadata": {
+                        "kind": "numerical"
+                    }
+                },
+                {
+                    "displayName": "Average of Sale Price",
+                    "name": "Average of Sale Price",
+                    "type": "number",
+                    "metadata": {
+                        "kind": "numerical"
+                    }
+                },
+                {
+                    "displayName": "Row Count",
+                    "name": "Row Count",
+                    "type": "number",
+                    "metadata": {
+                        "kind": "numerical"
+                    }
+                }
+            ]
+        }
+    ],
+    "inference": [
+        {
+            "objectID": "76u4pgj7u3d",
+            "dataSource": {
+                "table": "main"
+            },
+            "axis": {
+                "expression": "first(Product)",
+                "type": "categorical",
+                "style": {
+                    "tickColor": {
+                        "r": 0,
+                        "g": 0,
+                        "b": 0
+                    },
+                    "lineColor": {
+                        "r": 0,
+                        "g": 0,
+                        "b": 0
+                    },
+                    "fontFamily": "Arial",
+                    "fontSize": 12,
+                    "tickSize": 5,
+                    "wordWrap": false,
+                    "gridlineStyle": "none",
+                    "gridlineColor": {
+                        "r": 234,
+                        "g": 234,
+                        "b": 234
+                    },
+                    "gridlineWidth": 1
+                },
+                "order": null,
+                "orderMode": "alphabetically",
+                "rawExpression": null,
+                "property": "yData",
+                "defineCategories": true
+            },
+            "autoDomainMin": true,
+            "autoDomainMax": true
+        },
+        {
+            "objectID": "76u4pgj7u3d",
+            "dataSource": {
+                "table": "main"
+            },
+            "expression": {
+                "expression": "first(Product)",
+                "property": {
+                    "property": "sublayout",
+                    "field": [
+                        "order",
+                        "expression"
+                    ]
+                }
+            }
+        },
+        {
+            "objectID": "ob4m6jv8cv",
+            "dataSource": {
+                "table": "main",
+                "groupBy": null
+            },
+            "axis": {
+                "expression": "avg(`Min of Sale Price`)",
+                "additionalExpressions": [
+                    "avg(`Min of Sale Price`)",
+                    "avg(`Max of Sale Price`)",
+                    "avg(`Average of Sale Price`)"
+                ],
+                "type": "numerical",
+                "property": "axis",
+                "defineCategories": false
+            },
+            "autoDomainMin": true,
+            "autoDomainMax": true
+        },
+        {
+            "objectID": "ob4m6jv8cv",
+            "dataSource": {
+                "table": "main",
+                "groupBy": null
+            },
+            "expression": {
+                "expression": "avg(`Min of Sale Price`)",
+                "property": {
+                    "property": "dataExpressions",
+                    "field": [
+                        0,
+                        "expression"
+                    ]
+                }
+            }
+        },
+        {
+            "objectID": "ob4m6jv8cv",
+            "dataSource": {
+                "table": "main",
+                "groupBy": null
+            },
+            "expression": {
+                "expression": "avg(`Max of Sale Price`)",
+                "property": {
+                    "property": "dataExpressions",
+                    "field": [
+                        1,
+                        "expression"
+                    ]
+                }
+            }
+        },
+        {
+            "objectID": "ob4m6jv8cv",
+            "dataSource": {
+                "table": "main",
+                "groupBy": null
+            },
+            "expression": {
+                "expression": "avg(`Average of Sale Price`)",
+                "property": {
+                    "property": "dataExpressions",
+                    "field": [
+                        2,
+                        "expression"
+                    ]
+                }
+            }
+        },
+        {
+            "objectID": "u36v7spmc5e",
+            "autoDomainMax": true,
+            "autoDomainMin": true,
+            "scale": {
+                "classID": "scale.linear<number,number>",
+                "expressions": [
+                    "avg(`Row Count`)"
+                ],
+                "properties": {
+                    "mapping": "mapping"
+                }
+            },
+            "dataSource": {
+                "table": "main"
+            }
+        }
+    ],
+    "properties": [
+        {
+            "objectID": "76u4pgj7u3d",
+            "target": {
+                "property": {
+                    "property": "yData",
+                    "field": "style",
+                    "subfield": "tickSize"
+                }
+            },
+            "type": "number",
+            "default": 5,
+            "displayName": "PlotSegment1/yData.style.tickSize"
+        },
+        {
+            "objectID": "76u4pgj7u3d",
+            "target": {
+                "property": {
+                    "property": "yData",
+                    "field": "style",
+                    "subfield": "fontSize"
+                }
+            },
+            "type": "number",
+            "default": 12,
+            "displayName": "PlotSegment1/yData.style.fontSize"
+        },
+        {
+            "objectID": "76u4pgj7u3d",
+            "target": {
+                "property": {
+                    "property": "yData",
+                    "field": "style",
+                    "subfield": "fontFamily"
+                }
+            },
+            "type": "font-family",
+            "default": "Arial",
+            "displayName": "PlotSegment1/yData.style.fontFamily"
+        },
+        {
+            "objectID": "76u4pgj7u3d",
+            "target": {
+                "property": {
+                    "property": "yData",
+                    "field": "style",
+                    "subfield": "lineColor"
+                }
+            },
+            "type": "color",
+            "default": "#000000",
+            "displayName": "PlotSegment1/yData.style.lineColor"
+        },
+        {
+            "objectID": "76u4pgj7u3d",
+            "target": {
+                "property": {
+                    "property": "yData",
+                    "field": "style",
+                    "subfield": "tickColor"
+                }
+            },
+            "type": "color",
+            "default": "#000000",
+            "displayName": "PlotSegment1/yData.style.tickColor"
+        },
+        {
+            "objectID": "76u4pgj7u3d",
+            "target": {
+                "property": {
+                    "property": "yData",
+                    "field": "tickFormat"
+                }
+            },
+            "type": "text",
+            "default": null,
+            "displayName": "PlotSegment1/yData.tickFormat"
+        },
+        {
+            "objectID": "76u4pgj7u3d",
+            "target": {
+                "property": {
+                    "property": "yData",
+                    "field": "tickDataExpression"
+                }
+            },
+            "type": "text",
+            "default": null,
+            "displayName": "PlotSegment1/yData.tickDataExpression"
+        },
+        {
+            "objectID": "76u4pgj7u3d",
+            "target": {
+                "property": {
+                    "property": "sublayout",
+                    "field": "order"
+                }
+            },
+            "type": "object",
+            "default": {
+                "expression": "first(Product)"
+            },
+            "displayName": "PlotSegment1/sublayout.order"
+        },
+        {
+            "objectID": "76u4pgj7u3d",
+            "target": {
+                "property": {
+                    "property": "yData",
+                    "field": "categories"
+                }
+            },
+            "type": "enum",
+            "default": "ascending",
+            "displayName": "PlotSegment1/yData.categories"
+        },
+        {
+            "objectID": "ob4m6jv8cv",
+            "target": {
+                "property": {
+                    "property": "axis",
+                    "field": "style",
+                    "subfield": "tickSize"
+                }
+            },
+            "type": "number",
+            "default": 5,
+            "displayName": "DataAxis1/axis.style.tickSize"
+        },
+        {
+            "objectID": "ob4m6jv8cv",
+            "target": {
+                "property": {
+                    "property": "axis",
+                    "field": "style",
+                    "subfield": "fontSize"
+                }
+            },
+            "type": "number",
+            "default": 12,
+            "displayName": "DataAxis1/axis.style.fontSize"
+        },
+        {
+            "objectID": "ob4m6jv8cv",
+            "target": {
+                "property": {
+                    "property": "axis",
+                    "field": "style",
+                    "subfield": "fontFamily"
+                }
+            },
+            "type": "font-family",
+            "default": "Arial",
+            "displayName": "DataAxis1/axis.style.fontFamily"
+        },
+        {
+            "objectID": "ob4m6jv8cv",
+            "target": {
+                "property": {
+                    "property": "axis",
+                    "field": "style",
+                    "subfield": "lineColor"
+                }
+            },
+            "type": "color",
+            "default": "#000000",
+            "displayName": "DataAxis1/axis.style.lineColor"
+        },
+        {
+            "objectID": "ob4m6jv8cv",
+            "target": {
+                "property": {
+                    "property": "axis",
+                    "field": "style",
+                    "subfield": "tickColor"
+                }
+            },
+            "type": "color",
+            "default": "#000000",
+            "displayName": "DataAxis1/axis.style.tickColor"
+        },
+        {
+            "objectID": "ob4m6jv8cv",
+            "target": {
+                "property": {
+                    "property": "axis",
+                    "field": "tickFormat"
+                }
+            },
+            "type": "text",
+            "default": null,
+            "displayName": "DataAxis1/axis.tickFormat"
+        },
+        {
+            "objectID": "ob4m6jv8cv",
+            "target": {
+                "property": {
+                    "property": "axis",
+                    "field": "tickDataExpression"
+                }
+            },
+            "type": "text",
+            "default": null,
+            "displayName": "DataAxis1/axis.tickDataExpression"
+        },
+        {
+            "objectID": "ob4m6jv8cv",
+            "target": {
+                "property": {
+                    "property": "axis",
+                    "field": "categories"
+                }
+            },
+            "type": "enum",
+            "default": "ascending",
+            "displayName": "DataAxis1/axis.categories"
+        },
+        {
+            "objectID": "1xjtvv1tf8a",
+            "target": {
+                "attribute": "visible"
+            },
+            "type": "boolean",
+            "default": true,
+            "displayName": "Line1/visible"
+        },
+        {
+            "objectID": "1xjtvv1tf8a",
+            "target": {
+                "attribute": "stroke"
+            },
+            "type": "color",
+            "default": "#bdbdbd",
+            "displayName": "Line1/stroke"
+        },
+        {
+            "objectID": "1xjtvv1tf8a",
+            "target": {
+                "attribute": "strokeWidth"
+            },
+            "type": "number",
+            "default": 4.89,
+            "displayName": "Line1/strokeWidth"
+        },
+        {
+            "objectID": "1xjtvv1tf8a",
+            "target": {
+                "property": "strokeStyle"
+            },
+            "type": "enum",
+            "default": "solid",
+            "displayName": "Line1/strokeStyle"
+        },
+        {
+            "objectID": "1xjtvv1tf8a",
+            "target": {
+                "attribute": "opacity"
+            },
+            "type": "number",
+            "default": 1,
+            "displayName": "Line1/opacity"
+        },
+        {
+            "objectID": "haiwxz0t0pt",
+            "target": {
+                "attribute": "visible"
+            },
+            "type": "boolean",
+            "default": true,
+            "displayName": "Symbol1/visible"
+        },
+        {
+            "objectID": "haiwxz0t0pt",
+            "target": {
+                "attribute": "fill"
+            },
+            "type": "color",
+            "default": "#9ecae1",
+            "displayName": "Symbol1/fill"
+        },
+        {
+            "objectID": "haiwxz0t0pt",
+            "target": {
+                "attribute": "strokeWidth"
+            },
+            "type": "number",
+            "default": 1,
+            "displayName": "Symbol1/strokeWidth"
+        },
+        {
+            "objectID": "haiwxz0t0pt",
+            "target": {
+                "attribute": "size"
+            },
+            "type": "number",
+            "default": 100,
+            "displayName": "Symbol1/size"
+        },
+        {
+            "objectID": "haiwxz0t0pt",
+            "target": {
+                "attribute": "opacity"
+            },
+            "type": "number",
+            "default": 1,
+            "displayName": "Symbol1/opacity"
+        },
+        {
+            "objectID": "h6jipwh4oek",
+            "target": {
+                "attribute": "visible"
+            },
+            "type": "boolean",
+            "default": true,
+            "displayName": "Symbol2/visible"
+        },
+        {
+            "objectID": "h6jipwh4oek",
+            "target": {
+                "attribute": "fill"
+            },
+            "type": "color",
+            "default": "#08306b",
+            "displayName": "Symbol2/fill"
+        },
+        {
+            "objectID": "h6jipwh4oek",
+            "target": {
+                "attribute": "strokeWidth"
+            },
+            "type": "number",
+            "default": 1,
+            "displayName": "Symbol2/strokeWidth"
+        },
+        {
+            "objectID": "h6jipwh4oek",
+            "target": {
+                "attribute": "size"
+            },
+            "type": "number",
+            "default": 100,
+            "displayName": "Symbol2/size"
+        },
+        {
+            "objectID": "h6jipwh4oek",
+            "target": {
+                "attribute": "opacity"
+            },
+            "type": "number",
+            "default": 1,
+            "displayName": "Symbol2/opacity"
+        },
+        {
+            "objectID": "rasgbp39pof",
+            "target": {
+                "attribute": "visible"
+            },
+            "type": "boolean",
+            "default": true,
+            "displayName": "Symbol3/visible"
+        },
+        {
+            "objectID": "rasgbp39pof",
+            "target": {
+                "attribute": "fill"
+            },
+            "type": "color",
+            "default": "#ef3b2c",
+            "displayName": "Symbol3/fill"
+        },
+        {
+            "objectID": "rasgbp39pof",
+            "target": {
+                "attribute": "strokeWidth"
+            },
+            "type": "number",
+            "default": 1,
+            "displayName": "Symbol3/strokeWidth"
+        },
+        {
+            "objectID": "rasgbp39pof",
+            "target": {
+                "attribute": "opacity"
+            },
+            "type": "number",
+            "default": 1,
+            "displayName": "Symbol3/opacity"
+        },
+        {
+            "objectID": "v9gei1bj8a",
+            "target": {
+                "attribute": "fontFamily"
+            },
+            "type": "font-family",
+            "default": "Arial",
+            "displayName": "Text1/fontFamily"
+        },
+        {
+            "objectID": "v9gei1bj8a",
+            "target": {
+                "attribute": "fontSize"
+            },
+            "type": "number",
+            "default": 14,
+            "displayName": "Text1/fontSize"
+        },
+        {
+            "objectID": "v9gei1bj8a",
+            "target": {
+                "attribute": "color"
+            },
+            "type": "color",
+            "default": "#000000",
+            "displayName": "Text1/color"
+        },
+        {
+            "objectID": "v9gei1bj8a",
+            "target": {
+                "attribute": "visible"
+            },
+            "type": "boolean",
+            "default": true,
+            "displayName": "Text1/visible"
+        },
+        {
+            "objectID": "v9gei1bj8a",
+            "target": {
+                "attribute": "opacity"
+            },
+            "type": "number",
+            "default": 1,
+            "displayName": "Text1/opacity"
+        },
+        {
+            "objectID": "u36v7spmc5e",
+            "target": {
+                "property": "domainMin"
+            },
+            "type": "number",
+            "displayName": "Scale1/domainMin"
+        },
+        {
+            "objectID": "u36v7spmc5e",
+            "target": {
+                "property": "domainMax"
+            },
+            "type": "number",
+            "displayName": "Scale1/domainMax"
+        },
+        {
+            "objectID": "u36v7spmc5e",
+            "target": {
+                "attribute": "rangeMin"
+            },
+            "type": "number",
+            "default": null,
+            "displayName": "Scale1/rangeMin"
+        },
+        {
+            "objectID": "u36v7spmc5e",
+            "target": {
+                "attribute": "rangeMax"
+            },
+            "type": "number",
+            "default": null,
+            "displayName": "Scale1/rangeMax"
+        },
+        {
+            "objectID": "gbc1n178t1a",
+            "target": {
+                "attribute": "marginLeft"
+            },
+            "type": "number",
+            "default": 75,
+            "displayName": "Chart/marginLeft"
+        },
+        {
+            "objectID": "gbc1n178t1a",
+            "target": {
+                "attribute": "marginRight"
+            },
+            "type": "number",
+            "default": 15,
+            "displayName": "Chart/marginRight"
+        },
+        {
+            "objectID": "gbc1n178t1a",
+            "target": {
+                "attribute": "marginTop"
+            },
+            "type": "number",
+            "default": 0,
+            "displayName": "Chart/marginTop"
+        },
+        {
+            "objectID": "gbc1n178t1a",
+            "target": {
+                "attribute": "marginBottom"
+            },
+            "type": "number",
+            "default": 50,
+            "displayName": "Chart/marginBottom"
+        }
+    ],
+    "version": "2.1.0"
+}

@@ -1,0 +1,1188 @@
+{
+    "specification": {
+        "_id": "gbc1n178t1a",
+        "classID": "chart.rectangle",
+        "properties": {
+            "name": "Chart",
+            "backgroundColor": null,
+            "backgroundOpacity": 1,
+            "exposed": true
+        },
+        "mappings": {
+            "marginTop": {
+                "type": "value",
+                "value": 30
+            },
+            "width": {
+                "type": "value",
+                "value": 900
+            },
+            "height": {
+                "type": "value",
+                "value": 600
+            },
+            "marginRight": {
+                "type": "value",
+                "value": 30
+            },
+            "marginLeft": {
+                "type": "value",
+                "value": 30
+            },
+            "marginBottom": {
+                "type": "value",
+                "value": 30
+            }
+        },
+        "glyphs": [
+            {
+                "_id": "fee6vbiiztn",
+                "classID": "glyph.rectangle",
+                "properties": {
+                    "name": "Glyph"
+                },
+                "table": "main",
+                "marks": [
+                    {
+                        "_id": "juo4rf6c13",
+                        "classID": "mark.anchor",
+                        "properties": {
+                            "name": "Anchor"
+                        },
+                        "mappings": {
+                            "x": {
+                                "type": "parent",
+                                "parentAttribute": "icx"
+                            },
+                            "y": {
+                                "type": "parent",
+                                "parentAttribute": "icy"
+                            }
+                        }
+                    },
+                    {
+                        "_id": "r47qi0ndjnp",
+                        "classID": "mark.data-axis",
+                        "properties": {
+                            "dataExpressions": [
+                                {
+                                    "name": "ay00fy6kmej",
+                                    "expression": "min(V1)"
+                                },
+                                {
+                                    "name": "rrqee87od4",
+                                    "expression": "avg(V1)"
+                                },
+                                {
+                                    "name": "wgaumisy78r",
+                                    "expression": "max(V1)"
+                                }
+                            ],
+                            "axis": {
+                                "side": "opposite",
+                                "type": "numerical",
+                                "visible": true,
+                                "autoDomainMax": true,
+                                "autoDomainMin": true,
+                                "orderMode": null,
+                                "style": {
+                                    "tickColor": {
+                                        "r": 0,
+                                        "g": 0,
+                                        "b": 0
+                                    },
+                                    "lineColor": {
+                                        "r": 0,
+                                        "g": 0,
+                                        "b": 0
+                                    },
+                                    "fontFamily": "Arial",
+                                    "fontSize": 12,
+                                    "tickSize": 5,
+                                    "wordWrap": false,
+                                    "gridlineStyle": "none",
+                                    "gridlineColor": {
+                                        "r": 234,
+                                        "g": 234,
+                                        "b": 234
+                                    },
+                                    "gridlineWidth": 1
+                                },
+                                "categories": null,
+                                "dataKind": "numerical",
+                                "domainMax": 100,
+                                "domainMin": 10,
+                                "enablePrePostGap": null,
+                                "expression": "min(V1)",
+                                "gapRatio": 0.1,
+                                "numericalMode": "linear",
+                                "order": null,
+                                "rawExpression": "first(V1)",
+                                "tickDataExpression": null,
+                                "tickFormat": null,
+                                "valueType": "number"
+                            },
+                            "visible": true,
+                            "visibleOn": "first",
+                            "name": "DataAxis1"
+                        },
+                        "mappings": {
+                            "x1": {
+                                "type": "parent",
+                                "parentAttribute": "ix1"
+                            },
+                            "y1": {
+                                "type": "parent",
+                                "parentAttribute": "iy1"
+                            },
+                            "x2": {
+                                "type": "parent",
+                                "parentAttribute": "ix2"
+                            },
+                            "y2": {
+                                "type": "parent",
+                                "parentAttribute": "iy1"
+                            }
+                        }
+                    },
+                    {
+                        "_id": "vi8mwizrhzp",
+                        "classID": "mark.line",
+                        "properties": {
+                            "strokeStyle": "solid",
+                            "visible": true,
+                            "name": "Line1"
+                        },
+                        "mappings": {
+                            "stroke": {
+                                "type": "scale",
+                                "table": "main",
+                                "expression": "first(Gender)",
+                                "valueType": "string",
+                                "scale": "6zo5aot33lo",
+                                "attribute": "stroke"
+                            },
+                            "strokeWidth": {
+                                "type": "value",
+                                "value": 5
+                            },
+                            "opacity": {
+                                "type": "value",
+                                "value": 1
+                            },
+                            "visible": {
+                                "type": "value",
+                                "value": true
+                            },
+                            "y1": {
+                                "type": "parent",
+                                "parentAttribute": "iy1"
+                            },
+                            "y2": {
+                                "type": "parent",
+                                "parentAttribute": "iy2"
+                            }
+                        }
+                    },
+                    {
+                        "_id": "cm3xnq4xfon",
+                        "classID": "mark.line",
+                        "properties": {
+                            "strokeStyle": "solid",
+                            "visible": true,
+                            "name": "Line2"
+                        },
+                        "mappings": {
+                            "stroke": {
+                                "type": "scale",
+                                "table": "main",
+                                "expression": "first(Gender)",
+                                "valueType": "string",
+                                "scale": "6zo5aot33lo",
+                                "attribute": "stroke"
+                            },
+                            "strokeWidth": {
+                                "type": "value",
+                                "value": 5
+                            },
+                            "opacity": {
+                                "type": "value",
+                                "value": 1
+                            },
+                            "visible": {
+                                "type": "value",
+                                "value": true
+                            },
+                            "y1": {
+                                "type": "parent",
+                                "parentAttribute": "iy1"
+                            },
+                            "y2": {
+                                "type": "parent",
+                                "parentAttribute": "iy2"
+                            }
+                        }
+                    },
+                    {
+                        "_id": "oedo62bd1en",
+                        "classID": "mark.line",
+                        "properties": {
+                            "strokeStyle": "solid",
+                            "visible": true,
+                            "name": "Line3"
+                        },
+                        "mappings": {
+                            "stroke": {
+                                "type": "scale",
+                                "table": "main",
+                                "expression": "first(Gender)",
+                                "valueType": "string",
+                                "scale": "6zo5aot33lo",
+                                "attribute": "stroke"
+                            },
+                            "strokeWidth": {
+                                "type": "value",
+                                "value": 5
+                            },
+                            "opacity": {
+                                "type": "value",
+                                "value": 0.3
+                            },
+                            "visible": {
+                                "type": "value",
+                                "value": true
+                            },
+                            "y1": {
+                                "type": "parent",
+                                "parentAttribute": "icy"
+                            },
+                            "y2": {
+                                "type": "parent",
+                                "parentAttribute": "icy"
+                            }
+                        }
+                    },
+                    {
+                        "_id": "ncyy4v1y0qn",
+                        "classID": "mark.symbol",
+                        "properties": {
+                            "visible": true,
+                            "name": "Symbol1"
+                        },
+                        "mappings": {
+                            "fill": {
+                                "type": "scale",
+                                "table": "main",
+                                "expression": "first(Gender)",
+                                "valueType": "string",
+                                "scale": "6zo5aot33lo",
+                                "attribute": "fill"
+                            },
+                            "strokeWidth": {
+                                "type": "value",
+                                "value": 1
+                            },
+                            "opacity": {
+                                "type": "value",
+                                "value": 1
+                            },
+                            "size": {
+                                "type": "scale",
+                                "table": "main",
+                                "expression": "avg(V1)",
+                                "valueType": "number",
+                                "scale": "6k2rpyajfnt",
+                                "attribute": "size"
+                            },
+                            "visible": {
+                                "type": "value",
+                                "value": true
+                            },
+                            "y": {
+                                "type": "parent",
+                                "parentAttribute": "icy"
+                            }
+                        }
+                    }
+                ],
+                "mappings": {},
+                "constraints": [
+                    {
+                        "type": "snap",
+                        "attributes": {
+                            "element": "vi8mwizrhzp",
+                            "attribute": "x1",
+                            "targetElement": "r47qi0ndjnp",
+                            "targetAttribute": "anchorXay00fy6kmej",
+                            "gap": 0
+                        }
+                    },
+                    {
+                        "type": "snap",
+                        "attributes": {
+                            "element": "vi8mwizrhzp",
+                            "attribute": "x2",
+                            "targetElement": "r47qi0ndjnp",
+                            "targetAttribute": "anchorXay00fy6kmej",
+                            "gap": 0
+                        }
+                    },
+                    {
+                        "type": "snap",
+                        "attributes": {
+                            "element": "cm3xnq4xfon",
+                            "attribute": "x1",
+                            "targetElement": "r47qi0ndjnp",
+                            "targetAttribute": "anchorXwgaumisy78r",
+                            "gap": 0
+                        }
+                    },
+                    {
+                        "type": "snap",
+                        "attributes": {
+                            "element": "cm3xnq4xfon",
+                            "attribute": "x2",
+                            "targetElement": "r47qi0ndjnp",
+                            "targetAttribute": "anchorXwgaumisy78r",
+                            "gap": 0
+                        }
+                    },
+                    {
+                        "type": "snap",
+                        "attributes": {
+                            "element": "oedo62bd1en",
+                            "attribute": "x1",
+                            "targetElement": "r47qi0ndjnp",
+                            "targetAttribute": "anchorXay00fy6kmej",
+                            "gap": 0
+                        }
+                    },
+                    {
+                        "type": "snap",
+                        "attributes": {
+                            "element": "oedo62bd1en",
+                            "attribute": "x2",
+                            "targetElement": "r47qi0ndjnp",
+                            "targetAttribute": "anchorXwgaumisy78r",
+                            "gap": 0
+                        }
+                    },
+                    {
+                        "type": "snap",
+                        "attributes": {
+                            "element": "ncyy4v1y0qn",
+                            "attribute": "x",
+                            "targetElement": "r47qi0ndjnp",
+                            "targetAttribute": "anchorXrrqee87od4",
+                            "gap": 0
+                        }
+                    }
+                ]
+            }
+        ],
+        "elements": [
+            {
+                "_id": "76u4pgj7u3d",
+                "classID": "plot-segment.cartesian",
+                "glyph": "fee6vbiiztn",
+                "table": "main",
+                "filter": null,
+                "mappings": {
+                    "y1": {
+                        "type": "parent",
+                        "parentAttribute": "y1"
+                    },
+                    "x2": {
+                        "type": "parent",
+                        "parentAttribute": "x2"
+                    },
+                    "x1": {
+                        "type": "parent",
+                        "parentAttribute": "x1"
+                    },
+                    "y2": {
+                        "type": "parent",
+                        "parentAttribute": "y2"
+                    }
+                },
+                "properties": {
+                    "name": "PlotSegment1",
+                    "visible": true,
+                    "marginX1": 0,
+                    "marginY1": 0,
+                    "marginX2": 0,
+                    "marginY2": 0,
+                    "sublayout": {
+                        "type": "dodge-y",
+                        "order": null,
+                        "ratioX": 0.1,
+                        "ratioY": 0.1,
+                        "align": {
+                            "x": "start",
+                            "y": "start"
+                        },
+                        "grid": {
+                            "direction": "x",
+                            "xCount": null,
+                            "yCount": null
+                        },
+                        "packing": {
+                            "gravityX": 0.1,
+                            "gravityY": 0.1
+                        }
+                    }
+                },
+                "groupBy": {
+                    "expression": "Gender"
+                }
+            },
+            {
+                "_id": "eryvopcy05",
+                "classID": "legend.categorical",
+                "properties": {
+                    "scale": "6zo5aot33lo",
+                    "visible": true,
+                    "alignX": "start",
+                    "alignY": "end",
+                    "fontFamily": "Segoe UI",
+                    "fontSize": 20,
+                    "textColor": {
+                        "r": 0,
+                        "g": 0,
+                        "b": 0
+                    },
+                    "dataSource": "columnValues",
+                    "dataExpressions": [],
+                    "markerShape": "circle",
+                    "orientation": "vertical",
+                    "name": "Legend1"
+                },
+                "mappings": {
+                    "mappingOptions": {
+                        "type": "scale",
+                        "table": "main",
+                        "expression": "first(Gender)",
+                        "valueType": "string",
+                        "scale": "6zo5aot33lo"
+                    }
+                }
+            },
+            {
+                "_id": "3o9fs77p33",
+                "classID": "guide.guide-coordinator",
+                "properties": {
+                    "enableTooltips": true,
+                    "enableContextMenu": true,
+                    "enableSelection": true,
+                    "name": "GuideCoordinator1",
+                    "axis": "x",
+                    "count": 8
+                },
+                "mappings": {
+                    "x1": {
+                        "type": "parent",
+                        "parentAttribute": "x1"
+                    },
+                    "y1": {
+                        "type": "parent",
+                        "parentAttribute": "cy"
+                    },
+                    "x2": {
+                        "type": "parent",
+                        "parentAttribute": "cx"
+                    },
+                    "y2": {
+                        "type": "parent",
+                        "parentAttribute": "cy"
+                    }
+                }
+            },
+            {
+                "_id": "6m27uq2p52",
+                "classID": "guide.guide-coordinator",
+                "properties": {
+                    "enableTooltips": true,
+                    "enableContextMenu": true,
+                    "enableSelection": true,
+                    "name": "GuideCoordinator2",
+                    "axis": "y",
+                    "count": 7
+                },
+                "mappings": {
+                    "x1": {
+                        "type": "parent",
+                        "parentAttribute": "x1"
+                    },
+                    "y1": {
+                        "type": "parent",
+                        "parentAttribute": "y2"
+                    },
+                    "x2": {
+                        "type": "parent",
+                        "parentAttribute": "x1"
+                    },
+                    "y2": {
+                        "type": "parent",
+                        "parentAttribute": "cy"
+                    }
+                }
+            }
+        ],
+        "scales": [
+            {
+                "_id": "6k2rpyajfnt",
+                "classID": "scale.linear<number,number>",
+                "properties": {
+                    "autoDomainMin": true,
+                    "autoDomainMax": true,
+                    "name": "Scale1",
+                    "domainMin": 0,
+                    "domainMax": 60
+                },
+                "mappings": {
+                    "rangeMin": {
+                        "type": "value",
+                        "value": 0
+                    },
+                    "rangeMax": {
+                        "type": "value",
+                        "value": 628.3185307179587
+                    }
+                },
+                "inputType": "number",
+                "outputType": "number"
+            },
+            {
+                "_id": "6zo5aot33lo",
+                "classID": "scale.categorical<string,color>",
+                "properties": {
+                    "enableTooltips": true,
+                    "enableContextMenu": true,
+                    "enableSelection": true,
+                    "name": "Scale2",
+                    "mapping": {
+                        "Female": {
+                            "r": 73,
+                            "g": 145,
+                            "b": 149
+                        },
+                        "Male": {
+                            "r": 0,
+                            "g": 172,
+                            "b": 252
+                        },
+                        "Other": {
+                            "r": 196,
+                            "g": 176,
+                            "b": 123
+                        }
+                    }
+                },
+                "mappings": {},
+                "inputType": "string",
+                "outputType": "color"
+            }
+        ],
+        "scaleMappings": [
+            {
+                "type": "scale",
+                "table": "main",
+                "expression": "avg(V1)",
+                "valueType": "number",
+                "scale": "6k2rpyajfnt",
+                "attribute": "size"
+            },
+            {
+                "type": "scale",
+                "table": "main",
+                "expression": "first(Gender)",
+                "valueType": "string",
+                "scale": "6zo5aot33lo",
+                "attribute": "fill"
+            }
+        ],
+        "constraints": [
+            {
+                "type": "snap",
+                "attributes": {
+                    "element": "eryvopcy05",
+                    "attribute": "x",
+                    "targetElement": "3o9fs77p33",
+                    "targetAttribute": "value0",
+                    "gap": 0
+                }
+            },
+            {
+                "type": "snap",
+                "attributes": {
+                    "element": "eryvopcy05",
+                    "attribute": "y",
+                    "targetElement": "6m27uq2p52",
+                    "targetAttribute": "value0",
+                    "gap": 0
+                }
+            }
+        ],
+        "resources": [],
+        "exposed": true
+    },
+    "defaultAttributes": {
+        "juo4rf6c13": {
+            "x": 0,
+            "y": 0
+        },
+        "r47qi0ndjnp": {
+            "x1": -41.99767503312923,
+            "y1": -8.099939715644483,
+            "x2": 41.99767503312923,
+            "y2": -8.099939715644483,
+            "anchorXay00fy6kmej": -21.915575126947978,
+            "anchorYay00fy6kmej": -8.099939715644483,
+            "anchorXrrqee87od4": -0.5688513532498553,
+            "anchorYrrqee87od4": -8.099939715644483,
+            "anchorXwgaumisy78r": 20.66362467686362,
+            "anchorYwgaumisy78r": -8.099939715644483
+        },
+        "vi8mwizrhzp": {
+            "x1": -21.915575126947978,
+            "y1": -8.099939715644483,
+            "x2": -21.915575126947978,
+            "y2": 8.099939715644483,
+            "cx": -21.915575126947978,
+            "cy": 0,
+            "dx": 0,
+            "dy": 16.199879431288966,
+            "strokeWidth": 0.5,
+            "opacity": 0.1
+        },
+        "cm3xnq4xfon": {
+            "x1": 20.66362467686362,
+            "y1": -8.099939715644483,
+            "x2": 20.66362467686362,
+            "y2": 8.099939715644483,
+            "cx": 20.66362467686362,
+            "cy": 0,
+            "dx": 0,
+            "dy": 16.199879431288966,
+            "strokeWidth": 0.5,
+            "opacity": 0.1
+        },
+        "oedo62bd1en": {
+            "x1": -21.915575126947978,
+            "y1": 0,
+            "x2": 20.66362467686362,
+            "y2": 0,
+            "cx": -0.6259752250421761,
+            "cy": 0,
+            "dx": 42.5791998038116,
+            "dy": 0,
+            "strokeWidth": 0.5,
+            "opacity": 0.029999999999999995
+        },
+        "ncyy4v1y0qn": {
+            "x": -1.1377027064997105,
+            "y": 0,
+            "size": 113.91516051367662,
+            "strokeWidth": 0.2,
+            "opacity": 0.2
+        }
+    },
+    "tables": [
+        {
+            "name": "main",
+            "columns": [
+                {
+                    "displayName": "Gender",
+                    "name": "Gender",
+                    "type": "string",
+                    "metadata": {
+                        "kind": "categorical",
+                        "orderMode": "alphabetically"
+                    }
+                },
+                {
+                    "displayName": "V1",
+                    "name": "V1",
+                    "type": "number",
+                    "metadata": {
+                        "kind": "numerical"
+                    }
+                }
+            ]
+        }
+    ],
+    "inference": [
+        {
+            "objectID": "r47qi0ndjnp",
+            "dataSource": {
+                "table": "main",
+                "groupBy": null
+            },
+            "axis": {
+                "expression": "min(V1)",
+                "additionalExpressions": [
+                    "min(V1)",
+                    "avg(V1)",
+                    "max(V1)"
+                ],
+                "type": "numerical",
+                "property": "axis",
+                "defineCategories": false
+            },
+            "autoDomainMin": true,
+            "autoDomainMax": true
+        },
+        {
+            "objectID": "r47qi0ndjnp",
+            "dataSource": {
+                "table": "main",
+                "groupBy": null
+            },
+            "expression": {
+                "expression": "min(V1)",
+                "property": {
+                    "property": "dataExpressions",
+                    "field": [
+                        0,
+                        "expression"
+                    ]
+                }
+            }
+        },
+        {
+            "objectID": "r47qi0ndjnp",
+            "dataSource": {
+                "table": "main",
+                "groupBy": null
+            },
+            "expression": {
+                "expression": "avg(V1)",
+                "property": {
+                    "property": "dataExpressions",
+                    "field": [
+                        1,
+                        "expression"
+                    ]
+                }
+            }
+        },
+        {
+            "objectID": "r47qi0ndjnp",
+            "dataSource": {
+                "table": "main",
+                "groupBy": null
+            },
+            "expression": {
+                "expression": "max(V1)",
+                "property": {
+                    "property": "dataExpressions",
+                    "field": [
+                        2,
+                        "expression"
+                    ]
+                }
+            }
+        },
+        {
+            "objectID": "6k2rpyajfnt",
+            "autoDomainMax": true,
+            "autoDomainMin": true,
+            "scale": {
+                "classID": "scale.linear<number,number>",
+                "expressions": [
+                    "avg(V1)"
+                ],
+                "properties": {
+                    "mapping": "mapping"
+                }
+            },
+            "dataSource": {
+                "table": "main",
+                "groupBy": {
+                    "expression": "Gender"
+                }
+            }
+        },
+        {
+            "objectID": "6zo5aot33lo",
+            "scale": {
+                "classID": "scale.categorical<string,color>",
+                "expressions": [
+                    "first(Gender)"
+                ],
+                "properties": {
+                    "mapping": "mapping"
+                }
+            },
+            "dataSource": {
+                "table": "main",
+                "groupBy": {
+                    "expression": "Gender"
+                }
+            }
+        }
+    ],
+    "properties": [
+        {
+            "objectID": "r47qi0ndjnp",
+            "target": {
+                "property": {
+                    "property": "axis",
+                    "field": "style",
+                    "subfield": "tickSize"
+                }
+            },
+            "type": "number",
+            "default": 5,
+            "displayName": "DataAxis1/axis.style.tickSize"
+        },
+        {
+            "objectID": "r47qi0ndjnp",
+            "target": {
+                "property": {
+                    "property": "axis",
+                    "field": "style",
+                    "subfield": "fontSize"
+                }
+            },
+            "type": "number",
+            "default": 12,
+            "displayName": "DataAxis1/axis.style.fontSize"
+        },
+        {
+            "objectID": "r47qi0ndjnp",
+            "target": {
+                "property": {
+                    "property": "axis",
+                    "field": "style",
+                    "subfield": "fontFamily"
+                }
+            },
+            "type": "font-family",
+            "default": "Arial",
+            "displayName": "DataAxis1/axis.style.fontFamily"
+        },
+        {
+            "objectID": "r47qi0ndjnp",
+            "target": {
+                "property": {
+                    "property": "axis",
+                    "field": "style",
+                    "subfield": "lineColor"
+                }
+            },
+            "type": "color",
+            "default": "#000000",
+            "displayName": "DataAxis1/axis.style.lineColor"
+        },
+        {
+            "objectID": "r47qi0ndjnp",
+            "target": {
+                "property": {
+                    "property": "axis",
+                    "field": "style",
+                    "subfield": "tickColor"
+                }
+            },
+            "type": "color",
+            "default": "#000000",
+            "displayName": "DataAxis1/axis.style.tickColor"
+        },
+        {
+            "objectID": "r47qi0ndjnp",
+            "target": {
+                "property": {
+                    "property": "axis",
+                    "field": "tickFormat"
+                }
+            },
+            "type": "text",
+            "default": null,
+            "displayName": "DataAxis1/axis.tickFormat"
+        },
+        {
+            "objectID": "r47qi0ndjnp",
+            "target": {
+                "property": {
+                    "property": "axis",
+                    "field": "tickDataExpression"
+                }
+            },
+            "type": "text",
+            "default": null,
+            "displayName": "DataAxis1/axis.tickDataExpression"
+        },
+        {
+            "objectID": "r47qi0ndjnp",
+            "target": {
+                "property": {
+                    "property": "axis",
+                    "field": "categories"
+                }
+            },
+            "type": "enum",
+            "default": "ascending",
+            "displayName": "DataAxis1/axis.categories"
+        },
+        {
+            "objectID": "vi8mwizrhzp",
+            "target": {
+                "attribute": "visible"
+            },
+            "type": "boolean",
+            "default": true,
+            "displayName": "Line1/visible"
+        },
+        {
+            "objectID": "vi8mwizrhzp",
+            "target": {
+                "attribute": "strokeWidth"
+            },
+            "type": "number",
+            "default": 5,
+            "displayName": "Line1/strokeWidth"
+        },
+        {
+            "objectID": "vi8mwizrhzp",
+            "target": {
+                "property": "strokeStyle"
+            },
+            "type": "enum",
+            "default": "solid",
+            "displayName": "Line1/strokeStyle"
+        },
+        {
+            "objectID": "vi8mwizrhzp",
+            "target": {
+                "attribute": "opacity"
+            },
+            "type": "number",
+            "default": 1,
+            "displayName": "Line1/opacity"
+        },
+        {
+            "objectID": "cm3xnq4xfon",
+            "target": {
+                "attribute": "visible"
+            },
+            "type": "boolean",
+            "default": true,
+            "displayName": "Line2/visible"
+        },
+        {
+            "objectID": "cm3xnq4xfon",
+            "target": {
+                "attribute": "strokeWidth"
+            },
+            "type": "number",
+            "default": 5,
+            "displayName": "Line2/strokeWidth"
+        },
+        {
+            "objectID": "cm3xnq4xfon",
+            "target": {
+                "property": "strokeStyle"
+            },
+            "type": "enum",
+            "default": "solid",
+            "displayName": "Line2/strokeStyle"
+        },
+        {
+            "objectID": "cm3xnq4xfon",
+            "target": {
+                "attribute": "opacity"
+            },
+            "type": "number",
+            "default": 1,
+            "displayName": "Line2/opacity"
+        },
+        {
+            "objectID": "oedo62bd1en",
+            "target": {
+                "attribute": "visible"
+            },
+            "type": "boolean",
+            "default": true,
+            "displayName": "Line3/visible"
+        },
+        {
+            "objectID": "oedo62bd1en",
+            "target": {
+                "attribute": "strokeWidth"
+            },
+            "type": "number",
+            "default": 5,
+            "displayName": "Line3/strokeWidth"
+        },
+        {
+            "objectID": "oedo62bd1en",
+            "target": {
+                "property": "strokeStyle"
+            },
+            "type": "enum",
+            "default": "solid",
+            "displayName": "Line3/strokeStyle"
+        },
+        {
+            "objectID": "oedo62bd1en",
+            "target": {
+                "attribute": "opacity"
+            },
+            "type": "number",
+            "default": 0.3,
+            "displayName": "Line3/opacity"
+        },
+        {
+            "objectID": "ncyy4v1y0qn",
+            "target": {
+                "attribute": "visible"
+            },
+            "type": "boolean",
+            "default": true,
+            "displayName": "Symbol1/visible"
+        },
+        {
+            "objectID": "ncyy4v1y0qn",
+            "target": {
+                "attribute": "strokeWidth"
+            },
+            "type": "number",
+            "default": 1,
+            "displayName": "Symbol1/strokeWidth"
+        },
+        {
+            "objectID": "ncyy4v1y0qn",
+            "target": {
+                "attribute": "opacity"
+            },
+            "type": "number",
+            "default": 1,
+            "displayName": "Symbol1/opacity"
+        },
+        {
+            "objectID": "eryvopcy05",
+            "target": {
+                "property": "fontFamily"
+            },
+            "type": "font-family",
+            "default": "Segoe UI",
+            "displayName": "Legend1/fontFamily"
+        },
+        {
+            "objectID": "eryvopcy05",
+            "target": {
+                "property": "fontSize"
+            },
+            "type": "number",
+            "default": 20,
+            "displayName": "Legend1/fontSize"
+        },
+        {
+            "objectID": "eryvopcy05",
+            "target": {
+                "property": "textColor"
+            },
+            "type": "color",
+            "default": "#000000",
+            "displayName": "Legend1/textColor"
+        },
+        {
+            "objectID": "eryvopcy05",
+            "target": {
+                "property": "markerShape"
+            },
+            "type": "enum",
+            "default": "circle",
+            "displayName": "Legend1/markerShape"
+        },
+        {
+            "objectID": "eryvopcy05",
+            "target": {
+                "property": "alignY"
+            },
+            "type": "enum",
+            "default": "end",
+            "displayName": "Legend1/alignY"
+        },
+        {
+            "objectID": "eryvopcy05",
+            "target": {
+                "property": "alignX"
+            },
+            "type": "enum",
+            "default": "start",
+            "displayName": "Legend1/alignX"
+        },
+        {
+            "objectID": "6k2rpyajfnt",
+            "target": {
+                "property": "domainMin"
+            },
+            "type": "number",
+            "displayName": "Scale1/domainMin"
+        },
+        {
+            "objectID": "6k2rpyajfnt",
+            "target": {
+                "property": "domainMax"
+            },
+            "type": "number",
+            "displayName": "Scale1/domainMax"
+        },
+        {
+            "objectID": "6k2rpyajfnt",
+            "target": {
+                "attribute": "rangeMin"
+            },
+            "type": "number",
+            "default": null,
+            "displayName": "Scale1/rangeMin"
+        },
+        {
+            "objectID": "6k2rpyajfnt",
+            "target": {
+                "attribute": "rangeMax"
+            },
+            "type": "number",
+            "default": null,
+            "displayName": "Scale1/rangeMax"
+        },
+        {
+            "objectID": "gbc1n178t1a",
+            "target": {
+                "attribute": "marginLeft"
+            },
+            "type": "number",
+            "default": 30,
+            "displayName": "Chart/marginLeft"
+        },
+        {
+            "objectID": "gbc1n178t1a",
+            "target": {
+                "attribute": "marginRight"
+            },
+            "type": "number",
+            "default": 30,
+            "displayName": "Chart/marginRight"
+        },
+        {
+            "objectID": "gbc1n178t1a",
+            "target": {
+                "attribute": "marginTop"
+            },
+            "type": "number",
+            "default": 30,
+            "displayName": "Chart/marginTop"
+        },
+        {
+            "objectID": "gbc1n178t1a",
+            "target": {
+                "attribute": "marginBottom"
+            },
+            "type": "number",
+            "default": 30,
+            "displayName": "Chart/marginBottom"
+        }
+    ],
+    "version": "2.1.0"
+}
