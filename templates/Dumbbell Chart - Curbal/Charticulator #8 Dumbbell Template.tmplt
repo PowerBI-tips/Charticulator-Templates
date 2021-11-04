@@ -1,0 +1,1548 @@
+{
+  "specification": {
+    "_id": "gi3k9y2nf6o",
+    "classID": "chart.rectangle",
+    "properties": {
+      "name": "Chart",
+      "backgroundColor": {
+        "r": 247,
+        "g": 251,
+        "b": 255
+      },
+      "backgroundOpacity": 1,
+      "enableContextMenu": true,
+      "exposed": true
+    },
+    "mappings": {
+      "marginTop": {
+        "type": "value",
+        "value": 80
+      },
+      "marginRight": {
+        "type": "value",
+        "value": 100
+      },
+      "marginLeft": {
+        "type": "value",
+        "value": 141.89027431421445
+      }
+    },
+    "glyphs": [
+      {
+        "_id": "aqcv0wd21ne",
+        "classID": "glyph.rectangle",
+        "properties": {
+          "name": "Glyph"
+        },
+        "table": "data",
+        "marks": [
+          {
+            "_id": "exghv4gked",
+            "classID": "mark.anchor",
+            "properties": {
+              "name": "Anchor"
+            },
+            "mappings": {
+              "x": {
+                "type": "parent",
+                "parentAttribute": "icx"
+              },
+              "y": {
+                "type": "parent",
+                "parentAttribute": "icy"
+              }
+            }
+          },
+          {
+            "_id": "sello47zz4g",
+            "classID": "mark.data-axis",
+            "properties": {
+              "dataExpressions": [
+                {
+                  "name": "y5bbperzhdp",
+                  "expression": "avg(`2017 sales`)"
+                },
+                {
+                  "name": "odpghj6m61",
+                  "expression": "avg(`2018 sales`)"
+                }
+              ],
+              "axis": {
+                "type": "numerical",
+                "expression": "avg(`2017 sales`)",
+                "rawExpression": "first(`2017 sales`)",
+                "valueType": "number",
+                "gapRatio": 0.1,
+                "visible": true,
+                "side": "opposite",
+                "style": {
+                  "tickColor": {
+                    "r": 150,
+                    "g": 150,
+                    "b": 150
+                  },
+                  "lineColor": {
+                    "r": 189,
+                    "g": 189,
+                    "b": 189
+                  },
+                  "fontFamily": "Segoe UI",
+                  "fontSize": 12,
+                  "tickSize": 5,
+                  "wordWrap": false,
+                  "gridlineStyle": "none",
+                  "gridlineColor": {
+                    "r": 234,
+                    "g": 234,
+                    "b": 234
+                  },
+                  "gridlineWidth": 1
+                },
+                "numericalMode": "linear",
+                "dataKind": "numerical",
+                "order": null,
+                "orderMode": null,
+                "autoDomainMax": true,
+                "autoDomainMin": true,
+                "tickFormat": null,
+                "tickDataExpression": null,
+                "domainMin": 30000,
+                "domainMax": 130000
+              },
+              "visible": true,
+              "visibleOn": "first",
+              "name": "DataAxis1",
+              "exposed": true
+            },
+            "mappings": {
+              "x1": {
+                "type": "parent",
+                "parentAttribute": "ix1"
+              },
+              "y1": {
+                "type": "parent",
+                "parentAttribute": "iy1"
+              },
+              "x2": {
+                "type": "parent",
+                "parentAttribute": "ix2"
+              },
+              "y2": {
+                "type": "parent",
+                "parentAttribute": "iy1"
+              }
+            }
+          },
+          {
+            "_id": "u1c3izmp1ja",
+            "classID": "mark.line",
+            "properties": {
+              "enableTooltips": true,
+              "enableContextMenu": true,
+              "enableSelection": true,
+              "strokeStyle": "solid",
+              "visible": true,
+              "name": "Line1",
+              "exposed": true
+            },
+            "mappings": {
+              "stroke": {
+                "type": "value",
+                "value": {
+                  "r": 189,
+                  "g": 189,
+                  "b": 189
+                }
+              },
+              "strokeWidth": {
+                "type": "value",
+                "value": 1
+              },
+              "opacity": {
+                "type": "value",
+                "value": 1
+              },
+              "visible": {
+                "type": "value",
+                "value": true
+              },
+              "y1": {
+                "type": "parent",
+                "parentAttribute": "icy"
+              },
+              "y2": {
+                "type": "parent",
+                "parentAttribute": "icy"
+              }
+            }
+          },
+          {
+            "_id": "zbrw3bpd8qi",
+            "classID": "mark.symbol",
+            "properties": {
+              "enableTooltips": true,
+              "enableContextMenu": true,
+              "enableSelection": true,
+              "visible": true,
+              "name": "Symbol1",
+              "exposed": true
+            },
+            "mappings": {
+              "fill": {
+                "type": "scale",
+                "table": "data",
+                "expression": "get(list(get(get(data.columns, 2), \"displayName\"), get(get(data.columns, 3), \"displayName\")), 0)",
+                "valueType": "string",
+                "scale": "kkke3u3fz5i",
+                "attribute": "fill",
+                "valueIndex": 0
+              },
+              "strokeWidth": {
+                "type": "value",
+                "value": 1
+              },
+              "opacity": {
+                "type": "value",
+                "value": 1
+              },
+              "size": {
+                "type": "value",
+                "value": 60
+              },
+              "visible": {
+                "type": "value",
+                "value": true
+              },
+              "y": {
+                "type": "parent",
+                "parentAttribute": "icy"
+              }
+            }
+          },
+          {
+            "_id": "tz550d3y76d",
+            "classID": "mark.symbol",
+            "properties": {
+              "enableTooltips": true,
+              "enableContextMenu": true,
+              "enableSelection": true,
+              "visible": true,
+              "name": "Symbol2",
+              "exposed": true
+            },
+            "mappings": {
+              "fill": {
+                "type": "scale",
+                "table": "data",
+                "expression": "get(list(get(get(data.columns, 2), \"displayName\"), get(get(data.columns, 3), \"displayName\")), 1)",
+                "valueType": "string",
+                "scale": "kkke3u3fz5i",
+                "attribute": "fill",
+                "valueIndex": 0
+              },
+              "strokeWidth": {
+                "type": "value",
+                "value": 1
+              },
+              "opacity": {
+                "type": "value",
+                "value": 1
+              },
+              "size": {
+                "type": "value",
+                "value": 60
+              },
+              "visible": {
+                "type": "value",
+                "value": true
+              },
+              "y": {
+                "type": "parent",
+                "parentAttribute": "icy"
+              }
+            }
+          },
+          {
+            "_id": "rikbpzuzcgs",
+            "classID": "mark.text",
+            "properties": {
+              "enableTooltips": true,
+              "enableContextMenu": true,
+              "enableSelection": true,
+              "alignment": {
+                "x": "right",
+                "y": "middle",
+                "xMargin": 359.02644171834197,
+                "yMargin": 5
+              },
+              "rotation": 0,
+              "visible": true,
+              "name": "Text1",
+              "exposed": true
+            },
+            "mappings": {
+              "text": {
+                "type": "text",
+                "table": "data",
+                "textExpression": "${first(CategoryName)}"
+              },
+              "fontFamily": {
+                "type": "value",
+                "value": "Segoe UI"
+              },
+              "fontSize": {
+                "type": "value",
+                "value": 12
+              },
+              "color": {
+                "type": "value",
+                "value": {
+                  "r": 0,
+                  "g": 0,
+                  "b": 0
+                }
+              },
+              "opacity": {
+                "type": "value",
+                "value": 1
+              },
+              "visible": {
+                "type": "value",
+                "value": true
+              },
+              "x": {
+                "type": "parent",
+                "parentAttribute": "icx"
+              },
+              "y": {
+                "type": "parent",
+                "parentAttribute": "icy"
+              }
+            }
+          },
+          {
+            "_id": "19wfbhgvw45",
+            "classID": "mark.text",
+            "properties": {
+              "enableTooltips": true,
+              "enableContextMenu": true,
+              "enableSelection": true,
+              "alignment": {
+                "x": "middle",
+                "y": "bottom",
+                "xMargin": 5,
+                "yMargin": 11.979330790639867
+              },
+              "rotation": 0,
+              "visible": false,
+              "name": "Text2",
+              "exposed": true
+            },
+            "mappings": {
+              "text": {
+                "type": "text",
+                "table": "data",
+                "textExpression": "\\$${avg(`2018 sales`) / 1000}{.0f}k"
+              },
+              "fontFamily": {
+                "type": "value",
+                "value": "Segoe UI"
+              },
+              "fontSize": {
+                "type": "value",
+                "value": 12
+              },
+              "color": {
+                "type": "value",
+                "value": {
+                  "r": 217,
+                  "g": 72,
+                  "b": 1
+                }
+              },
+              "opacity": {
+                "type": "value",
+                "value": 1
+              },
+              "visible": {
+                "type": "value",
+                "value": true
+              },
+              "y": {
+                "type": "parent",
+                "parentAttribute": "icy"
+              }
+            }
+          },
+          {
+            "_id": "yucdran06c",
+            "classID": "mark.text",
+            "properties": {
+              "enableTooltips": true,
+              "enableContextMenu": true,
+              "enableSelection": true,
+              "alignment": {
+                "x": "middle",
+                "y": "bottom",
+                "xMargin": 5,
+                "yMargin": 7.6626576164191045
+              },
+              "rotation": 0,
+              "visible": false,
+              "name": "Text3",
+              "exposed": true
+            },
+            "mappings": {
+              "text": {
+                "type": "text",
+                "table": "data",
+                "textExpression": "\\$${avg(`2017 sales`) / 1000}{.0f}k"
+              },
+              "fontFamily": {
+                "type": "value",
+                "value": "Segoe UI"
+              },
+              "fontSize": {
+                "type": "value",
+                "value": 12
+              },
+              "color": {
+                "type": "value",
+                "value": {
+                  "r": 33,
+                  "g": 113,
+                  "b": 181
+                }
+              },
+              "opacity": {
+                "type": "value",
+                "value": 1
+              },
+              "visible": {
+                "type": "value",
+                "value": true
+              },
+              "y": {
+                "type": "parent",
+                "parentAttribute": "icy"
+              }
+            }
+          },
+          {
+            "_id": "aep08r0gmyw",
+            "classID": "mark.text",
+            "properties": {
+              "enableTooltips": true,
+              "enableContextMenu": true,
+              "enableSelection": true,
+              "alignment": {
+                "x": "middle",
+                "y": "bottom",
+                "xMargin": 5,
+                "yMargin": 7.542438051601821
+              },
+              "rotation": 0,
+              "visible": true,
+              "name": "Text4",
+              "exposed": true
+            },
+            "mappings": {
+              "text": {
+                "type": "text",
+                "table": "data",
+                "textExpression": "\\$${avg(`Sales Var`) / 1000}{.0f}k"
+              },
+              "fontFamily": {
+                "type": "value",
+                "value": "Segoe UI"
+              },
+              "fontSize": {
+                "type": "value",
+                "value": 12
+              },
+              "color": {
+                "type": "scale",
+                "table": "data",
+                "expression": "first(`Color var`)",
+                "valueType": "string",
+                "scale": "3dz3f94gujz",
+                "attribute": "color"
+              },
+              "opacity": {
+                "type": "value",
+                "value": 1
+              },
+              "visible": {
+                "type": "value",
+                "value": true
+              },
+              "y": {
+                "type": "parent",
+                "parentAttribute": "icy"
+              }
+            }
+          }
+        ],
+        "mappings": {},
+        "constraints": [
+          {
+            "type": "snap",
+            "attributes": {
+              "element": "u1c3izmp1ja",
+              "attribute": "x1",
+              "targetElement": "sello47zz4g",
+              "targetAttribute": "anchorXy5bbperzhdp",
+              "gap": 0
+            }
+          },
+          {
+            "type": "snap",
+            "attributes": {
+              "element": "u1c3izmp1ja",
+              "attribute": "x2",
+              "targetElement": "sello47zz4g",
+              "targetAttribute": "anchorXodpghj6m61",
+              "gap": 0
+            }
+          },
+          {
+            "type": "snap",
+            "attributes": {
+              "element": "zbrw3bpd8qi",
+              "attribute": "x",
+              "targetElement": "sello47zz4g",
+              "targetAttribute": "anchorXy5bbperzhdp",
+              "gap": 0
+            }
+          },
+          {
+            "type": "snap",
+            "attributes": {
+              "element": "tz550d3y76d",
+              "attribute": "x",
+              "targetElement": "sello47zz4g",
+              "targetAttribute": "anchorXodpghj6m61",
+              "gap": 0
+            }
+          },
+          {
+            "type": "snap",
+            "attributes": {
+              "element": "19wfbhgvw45",
+              "attribute": "x",
+              "targetElement": "sello47zz4g",
+              "targetAttribute": "anchorXodpghj6m61",
+              "gap": 0
+            }
+          },
+          {
+            "type": "snap",
+            "attributes": {
+              "element": "yucdran06c",
+              "attribute": "x",
+              "targetElement": "sello47zz4g",
+              "targetAttribute": "anchorXy5bbperzhdp",
+              "gap": 0
+            }
+          },
+          {
+            "type": "snap",
+            "attributes": {
+              "element": "aep08r0gmyw",
+              "attribute": "x",
+              "targetElement": "u1c3izmp1ja",
+              "targetAttribute": "cx",
+              "gap": 0
+            }
+          }
+        ]
+      }
+    ],
+    "elements": [
+      {
+        "_id": "0zp8sytjjrsc",
+        "classID": "plot-segment.cartesian",
+        "glyph": "aqcv0wd21ne",
+        "table": "data",
+        "filter": null,
+        "mappings": {
+          "x1": {
+            "type": "parent",
+            "parentAttribute": "x1"
+          },
+          "y1": {
+            "type": "parent",
+            "parentAttribute": "y1"
+          },
+          "x2": {
+            "type": "parent",
+            "parentAttribute": "x2"
+          },
+          "y2": {
+            "type": "parent",
+            "parentAttribute": "y2"
+          }
+        },
+        "properties": {
+          "name": "PlotSegment1",
+          "visible": true,
+          "marginX1": 0,
+          "marginY1": 0,
+          "marginX2": 0,
+          "marginY2": 0,
+          "sublayout": {
+            "type": "dodge-y",
+            "order": {
+              "expression": "avg(`2018 sales`)"
+            },
+            "ratioX": 0.1,
+            "ratioY": 0.1,
+            "align": {
+              "x": "start",
+              "y": "start"
+            },
+            "grid": {
+              "direction": "x",
+              "xCount": null,
+              "yCount": null
+            },
+            "packing": {
+              "gravityX": 0.1,
+              "gravityY": 0.1
+            },
+            "jitter": {
+              "vertical": true,
+              "horizontal": true
+            }
+          },
+          "exposed": true
+        }
+      },
+      {
+        "_id": "exopyydvp4t",
+        "classID": "mark.text",
+        "properties": {
+          "name": "Title",
+          "visible": true,
+          "alignment": {
+            "x": "middle",
+            "y": "top",
+            "xMargin": 0,
+            "yMargin": 30
+          },
+          "rotation": 0,
+          "exposed": true
+        },
+        "mappings": {
+          "x": {
+            "type": "parent",
+            "parentAttribute": "cx"
+          },
+          "y": {
+            "type": "parent",
+            "parentAttribute": "oy2"
+          },
+          "text": {
+            "type": "value",
+            "value": "Sales 17 vs 18"
+          },
+          "fontSize": {
+            "type": "value",
+            "value": 24
+          },
+          "color": {
+            "type": "value",
+            "value": {
+              "r": 0,
+              "g": 0,
+              "b": 0
+            }
+          }
+        }
+      },
+      {
+        "_id": "tr9sqr9jsoh",
+        "classID": "legend.custom",
+        "properties": {
+          "scale": "kkke3u3fz5i",
+          "visible": true,
+          "alignX": "start",
+          "alignY": "end",
+          "fontFamily": "Segoe UI",
+          "fontSize": 10,
+          "textColor": {
+            "r": 0,
+            "g": 0,
+            "b": 0
+          },
+          "dataSource": "columnValues",
+          "dataExpressions": [],
+          "markerShape": "circle",
+          "orientation": "vertical",
+          "name": "Legend1",
+          "exposed": true
+        },
+        "mappings": {
+          "x": {
+            "type": "parent",
+            "parentAttribute": "x2"
+          },
+          "y": {
+            "type": "parent",
+            "parentAttribute": "y2"
+          },
+          "mappingOptions": {
+            "type": "scale",
+            "table": "data",
+            "expression": "list(get(get(data.columns, 2), \"displayName\"), get(get(data.columns, 3), \"displayName\"))",
+            "valueType": "string",
+            "scale": "kkke3u3fz5i",
+            "allowSelectValue": true
+          }
+        }
+      }
+    ],
+    "scales": [
+      {
+        "_id": "kkke3u3fz5i",
+        "classID": "scale.categorical<string,color>",
+        "properties": {
+          "enableTooltips": true,
+          "enableContextMenu": true,
+          "enableSelection": true,
+          "name": "Scale1",
+          "mapping": {
+            "2017 sales": {
+              "r": 33,
+              "g": 113,
+              "b": 181
+            },
+            "2018 sales": {
+              "r": 217,
+              "g": 72,
+              "b": 1
+            }
+          },
+          "autoDomainMax": true,
+          "autoDomainMin": true
+        },
+        "mappings": {},
+        "inputType": "string",
+        "outputType": "color"
+      },
+      {
+        "_id": "3dz3f94gujz",
+        "classID": "scale.categorical<string,color>",
+        "properties": {
+          "enableTooltips": true,
+          "enableContextMenu": true,
+          "enableSelection": true,
+          "name": "Scale2",
+          "mapping": {
+            "Negative": {
+              "r": 217,
+              "g": 72,
+              "b": 1
+            },
+            "Positive": {
+              "r": 116,
+              "g": 196,
+              "b": 118
+            }
+          },
+          "autoDomainMax": true,
+          "autoDomainMin": true
+        },
+        "mappings": {},
+        "inputType": "string",
+        "outputType": "color"
+      }
+    ],
+    "scaleMappings": [
+      {
+        "type": "scale",
+        "table": "data",
+        "expression": "get(list(get(get(data.columns, 2), \"displayName\"),get(get(data.columns, 3), \"displayName\")), 0)",
+        "valueType": "string",
+        "scale": "kkke3u3fz5i",
+        "attribute": "fill",
+        "valueIndex": 0
+      },
+      {
+        "type": "scale",
+        "table": "data",
+        "expression": "first(`Color var`)",
+        "valueType": "string",
+        "scale": "3dz3f94gujz",
+        "attribute": "color"
+      }
+    ],
+    "constraints": [],
+    "resources": []
+  },
+  "defaultAttributes": {
+    "exghv4gked": {
+      "x": 0,
+      "y": 0
+    },
+    "sello47zz4g": {
+      "x1": -41.13185785915951,
+      "y1": -3.3046874999999996,
+      "x2": 41.13185785915951,
+      "y2": -3.3046874999999996,
+      "anchorXy5bbperzhdp": 1.8844560678173918,
+      "anchorYy5bbperzhdp": -3.3046874999999996,
+      "anchorXodpghj6m61": -17.508289445974484,
+      "anchorYodpghj6m61": -3.3046874999999996
+    },
+    "u1c3izmp1ja": {
+      "x1": 1.5075648542539135,
+      "y1": 0,
+      "x2": -14.006631556779586,
+      "y2": 0,
+      "cx": -6.249533351262838,
+      "cy": 0,
+      "dx": -15.5141964110335,
+      "dy": 0,
+      "strokeWidth": 0.1,
+      "opacity": 0.1
+    },
+    "zbrw3bpd8qi": {
+      "x": 3.015129708507827,
+      "y": 0,
+      "size": 12,
+      "strokeWidth": 0.2,
+      "opacity": 0.2
+    },
+    "tz550d3y76d": {
+      "x": -28.013263113559173,
+      "y": 0,
+      "size": 12,
+      "strokeWidth": 0.2,
+      "opacity": 0.2
+    },
+    "rikbpzuzcgs": {
+      "x": 0,
+      "y": 0,
+      "fontSize": 3,
+      "opacity": 0.25
+    },
+    "19wfbhgvw45": {
+      "x": -35.01657889194897,
+      "y": 0,
+      "fontSize": 3,
+      "opacity": 0.25
+    },
+    "yucdran06c": {
+      "x": 3.7689121356347837,
+      "y": 0,
+      "fontSize": 3,
+      "opacity": 0.25
+    },
+    "aep08r0gmyw": {
+      "x": -15.623833378157094,
+      "y": 0,
+      "fontSize": 3,
+      "opacity": 0.25
+    },
+    "exopyydvp4t": {
+      "x": 5.23628428927681,
+      "y": 75,
+      "fontSize": 6,
+      "opacity": 0.25
+    }
+  },
+  "tables": [
+    {
+      "name": "data",
+      "columns": [
+        {
+          "displayName": "CategoryName",
+          "name": "CategoryName",
+          "type": "string",
+          "metadata": {
+            "kind": "categorical",
+            "orderMode": "alphabetically",
+            "examples": "Beverages, Condiments, Confections"
+          }
+        },
+        {
+          "displayName": "Sales Var",
+          "name": "Sales Var",
+          "type": "number",
+          "metadata": {
+            "kind": "numerical",
+            "examples": "-11800.6000000052, 25118.56999994367, 28862.759999933587"
+          }
+        },
+        {
+          "displayName": "2017 sales",
+          "name": "2017 sales",
+          "type": "number",
+          "metadata": {
+            "kind": "numerical",
+            "unit": null,
+            "order": null,
+            "orderMode": null,
+            "rawColumnName": null,
+            "isRaw": null,
+            "format": null,
+            "examples": "57715, 59673, 60482"
+          }
+        },
+        {
+          "displayName": "2018 sales",
+          "name": "2018 sales",
+          "type": "number",
+          "metadata": {
+            "kind": "numerical",
+            "unit": null,
+            "order": null,
+            "orderMode": null,
+            "rawColumnName": null,
+            "isRaw": null,
+            "format": null,
+            "examples": "30420, 32414, 34554"
+          }
+        },
+        {
+          "displayName": "Color var",
+          "name": "Color var",
+          "type": "string",
+          "metadata": {
+            "kind": "categorical",
+            "orderMode": "alphabetically",
+            "examples": "Negative, Positive"
+          }
+        }
+      ]
+    }
+  ],
+  "inference": [
+    {
+      "objectID": "0zp8sytjjrsc",
+      "dataSource": {
+        "table": "data"
+      },
+      "expression": {
+        "expression": "avg(`2018 sales`)",
+        "property": {
+          "property": "sublayout",
+          "field": [
+            "order",
+            "expression"
+          ]
+        }
+      }
+    },
+    {
+      "objectID": "sello47zz4g",
+      "dataSource": {
+        "table": "data",
+        "groupBy": null
+      },
+      "axis": {
+        "expression": "avg(`2017 sales`)",
+        "additionalExpressions": [
+          "avg(`2017 sales`)",
+          "avg(`2018 sales`)"
+        ],
+        "type": "numerical",
+        "property": "axis"
+      },
+      "autoDomainMin": true,
+      "autoDomainMax": true
+    },
+    {
+      "objectID": "sello47zz4g",
+      "dataSource": {
+        "table": "data",
+        "groupBy": null
+      },
+      "expression": {
+        "expression": "avg(`2017 sales`)",
+        "property": {
+          "property": "dataExpressions",
+          "field": [
+            0,
+            "expression"
+          ]
+        }
+      }
+    },
+    {
+      "objectID": "sello47zz4g",
+      "dataSource": {
+        "table": "data",
+        "groupBy": null
+      },
+      "expression": {
+        "expression": "avg(`2018 sales`)",
+        "property": {
+          "property": "dataExpressions",
+          "field": [
+            1,
+            "expression"
+          ]
+        }
+      }
+    },
+    {
+      "objectID": "kkke3u3fz5i",
+      "autoDomainMax": true,
+      "autoDomainMin": true,
+      "scale": {
+        "classID": "scale.categorical<string,color>",
+        "expressions": [
+          "get(list(get(get(data.columns, 2), \"displayName\"), get(get(data.columns, 3), \"displayName\")), 0)",
+          "get(list(get(get(data.columns, 2), \"displayName\"), get(get(data.columns, 3), \"displayName\")), 1)"
+        ],
+        "properties": {
+          "mapping": "mapping"
+        }
+      },
+      "dataSource": {
+        "table": "data"
+      }
+    },
+    {
+      "objectID": "3dz3f94gujz",
+      "autoDomainMax": true,
+      "autoDomainMin": true,
+      "scale": {
+        "classID": "scale.categorical<string,color>",
+        "expressions": [
+          "first(`Color var`)"
+        ],
+        "properties": {
+          "mapping": "mapping"
+        }
+      },
+      "dataSource": {
+        "table": "data"
+      }
+    }
+  ],
+  "properties": [
+    {
+      "objectID": "0zp8sytjjrsc",
+      "target": {
+        "property": {
+          "property": "sublayout",
+          "field": "order"
+        }
+      },
+      "type": "object",
+      "default": {
+        "expression": "avg(`2018 sales`)"
+      },
+      "displayName": "PlotSegment1/sublayout.order"
+    },
+    {
+      "objectID": "sello47zz4g",
+      "target": {
+        "property": {
+          "property": "axis",
+          "field": "style",
+          "subfield": "tickSize"
+        }
+      },
+      "type": "number",
+      "default": 5,
+      "displayName": "DataAxis1/axis.style.tickSize"
+    },
+    {
+      "objectID": "sello47zz4g",
+      "target": {
+        "property": {
+          "property": "axis",
+          "field": "style",
+          "subfield": "fontSize"
+        }
+      },
+      "type": "number",
+      "default": 12,
+      "displayName": "DataAxis1/axis.style.fontSize"
+    },
+    {
+      "objectID": "sello47zz4g",
+      "target": {
+        "property": {
+          "property": "axis",
+          "field": "style",
+          "subfield": "fontFamily"
+        }
+      },
+      "type": "font-family",
+      "default": "Segoe UI",
+      "displayName": "DataAxis1/axis.style.fontFamily"
+    },
+    {
+      "objectID": "sello47zz4g",
+      "target": {
+        "property": {
+          "property": "axis",
+          "field": "style",
+          "subfield": "lineColor"
+        }
+      },
+      "type": "color",
+      "default": "#bdbdbd",
+      "displayName": "DataAxis1/axis.style.lineColor"
+    },
+    {
+      "objectID": "sello47zz4g",
+      "target": {
+        "property": {
+          "property": "axis",
+          "field": "style",
+          "subfield": "tickColor"
+        }
+      },
+      "type": "color",
+      "default": "#969696",
+      "displayName": "DataAxis1/axis.style.tickColor"
+    },
+    {
+      "objectID": "sello47zz4g",
+      "target": {
+        "property": {
+          "property": "axis",
+          "field": "tickFormat"
+        }
+      },
+      "type": "text",
+      "default": null,
+      "displayName": "DataAxis1/axis.tickFormat"
+    },
+    {
+      "objectID": "sello47zz4g",
+      "target": {
+        "property": {
+          "property": "axis",
+          "field": "tickDataExpression"
+        }
+      },
+      "type": "text",
+      "default": null,
+      "displayName": "DataAxis1/axis.tickDataExpression"
+    },
+    {
+      "objectID": "sello47zz4g",
+      "target": {
+        "property": {
+          "property": "axis",
+          "field": "categories"
+        }
+      },
+      "type": "enum",
+      "default": "ascending",
+      "displayName": "DataAxis1/axis.categories"
+    },
+    {
+      "objectID": "u1c3izmp1ja",
+      "target": {
+        "attribute": "visible"
+      },
+      "type": "boolean",
+      "default": true,
+      "displayName": "Line1/visible"
+    },
+    {
+      "objectID": "u1c3izmp1ja",
+      "target": {
+        "attribute": "stroke"
+      },
+      "type": "color",
+      "default": "#bdbdbd",
+      "displayName": "Line1/stroke"
+    },
+    {
+      "objectID": "u1c3izmp1ja",
+      "target": {
+        "attribute": "strokeWidth"
+      },
+      "type": "number",
+      "default": 1,
+      "displayName": "Line1/strokeWidth"
+    },
+    {
+      "objectID": "u1c3izmp1ja",
+      "target": {
+        "property": "strokeStyle"
+      },
+      "type": "enum",
+      "default": "solid",
+      "displayName": "Line1/strokeStyle"
+    },
+    {
+      "objectID": "u1c3izmp1ja",
+      "target": {
+        "attribute": "opacity"
+      },
+      "type": "number",
+      "default": 1,
+      "displayName": "Line1/opacity"
+    },
+    {
+      "objectID": "zbrw3bpd8qi",
+      "target": {
+        "attribute": "visible"
+      },
+      "type": "boolean",
+      "default": true,
+      "displayName": "Symbol1/visible"
+    },
+    {
+      "objectID": "zbrw3bpd8qi",
+      "target": {
+        "attribute": "strokeWidth"
+      },
+      "type": "number",
+      "default": 1,
+      "displayName": "Symbol1/strokeWidth"
+    },
+    {
+      "objectID": "zbrw3bpd8qi",
+      "target": {
+        "attribute": "size"
+      },
+      "type": "number",
+      "default": 60,
+      "displayName": "Symbol1/size"
+    },
+    {
+      "objectID": "zbrw3bpd8qi",
+      "target": {
+        "attribute": "opacity"
+      },
+      "type": "number",
+      "default": 1,
+      "displayName": "Symbol1/opacity"
+    },
+    {
+      "objectID": "tz550d3y76d",
+      "target": {
+        "attribute": "visible"
+      },
+      "type": "boolean",
+      "default": true,
+      "displayName": "Symbol2/visible"
+    },
+    {
+      "objectID": "tz550d3y76d",
+      "target": {
+        "attribute": "strokeWidth"
+      },
+      "type": "number",
+      "default": 1,
+      "displayName": "Symbol2/strokeWidth"
+    },
+    {
+      "objectID": "tz550d3y76d",
+      "target": {
+        "attribute": "size"
+      },
+      "type": "number",
+      "default": 60,
+      "displayName": "Symbol2/size"
+    },
+    {
+      "objectID": "tz550d3y76d",
+      "target": {
+        "attribute": "opacity"
+      },
+      "type": "number",
+      "default": 1,
+      "displayName": "Symbol2/opacity"
+    },
+    {
+      "objectID": "rikbpzuzcgs",
+      "target": {
+        "attribute": "fontFamily"
+      },
+      "type": "font-family",
+      "default": "Segoe UI",
+      "displayName": "Text1/fontFamily"
+    },
+    {
+      "objectID": "rikbpzuzcgs",
+      "target": {
+        "attribute": "fontSize"
+      },
+      "type": "number",
+      "default": 12,
+      "displayName": "Text1/fontSize"
+    },
+    {
+      "objectID": "rikbpzuzcgs",
+      "target": {
+        "attribute": "color"
+      },
+      "type": "color",
+      "default": "#000000",
+      "displayName": "Text1/color"
+    },
+    {
+      "objectID": "rikbpzuzcgs",
+      "target": {
+        "attribute": "visible"
+      },
+      "type": "boolean",
+      "default": true,
+      "displayName": "Text1/visible"
+    },
+    {
+      "objectID": "rikbpzuzcgs",
+      "target": {
+        "attribute": "opacity"
+      },
+      "type": "number",
+      "default": 1,
+      "displayName": "Text1/opacity"
+    },
+    {
+      "objectID": "19wfbhgvw45",
+      "target": {
+        "attribute": "fontFamily"
+      },
+      "type": "font-family",
+      "default": "Segoe UI",
+      "displayName": "Text2/fontFamily"
+    },
+    {
+      "objectID": "19wfbhgvw45",
+      "target": {
+        "attribute": "fontSize"
+      },
+      "type": "number",
+      "default": 12,
+      "displayName": "Text2/fontSize"
+    },
+    {
+      "objectID": "19wfbhgvw45",
+      "target": {
+        "attribute": "color"
+      },
+      "type": "color",
+      "default": "#d94801",
+      "displayName": "Text2/color"
+    },
+    {
+      "objectID": "19wfbhgvw45",
+      "target": {
+        "attribute": "visible"
+      },
+      "type": "boolean",
+      "default": true,
+      "displayName": "Text2/visible"
+    },
+    {
+      "objectID": "19wfbhgvw45",
+      "target": {
+        "attribute": "opacity"
+      },
+      "type": "number",
+      "default": 1,
+      "displayName": "Text2/opacity"
+    },
+    {
+      "objectID": "yucdran06c",
+      "target": {
+        "attribute": "fontFamily"
+      },
+      "type": "font-family",
+      "default": "Segoe UI",
+      "displayName": "Text3/fontFamily"
+    },
+    {
+      "objectID": "yucdran06c",
+      "target": {
+        "attribute": "fontSize"
+      },
+      "type": "number",
+      "default": 12,
+      "displayName": "Text3/fontSize"
+    },
+    {
+      "objectID": "yucdran06c",
+      "target": {
+        "attribute": "color"
+      },
+      "type": "color",
+      "default": "#2171b5",
+      "displayName": "Text3/color"
+    },
+    {
+      "objectID": "yucdran06c",
+      "target": {
+        "attribute": "visible"
+      },
+      "type": "boolean",
+      "default": true,
+      "displayName": "Text3/visible"
+    },
+    {
+      "objectID": "yucdran06c",
+      "target": {
+        "attribute": "opacity"
+      },
+      "type": "number",
+      "default": 1,
+      "displayName": "Text3/opacity"
+    },
+    {
+      "objectID": "aep08r0gmyw",
+      "target": {
+        "attribute": "fontFamily"
+      },
+      "type": "font-family",
+      "default": "Segoe UI",
+      "displayName": "Text4/fontFamily"
+    },
+    {
+      "objectID": "aep08r0gmyw",
+      "target": {
+        "attribute": "fontSize"
+      },
+      "type": "number",
+      "default": 12,
+      "displayName": "Text4/fontSize"
+    },
+    {
+      "objectID": "aep08r0gmyw",
+      "target": {
+        "attribute": "visible"
+      },
+      "type": "boolean",
+      "default": true,
+      "displayName": "Text4/visible"
+    },
+    {
+      "objectID": "aep08r0gmyw",
+      "target": {
+        "attribute": "opacity"
+      },
+      "type": "number",
+      "default": 1,
+      "displayName": "Text4/opacity"
+    },
+    {
+      "objectID": "exopyydvp4t",
+      "target": {
+        "attribute": "fontSize"
+      },
+      "type": "number",
+      "default": 24,
+      "displayName": "Title/fontSize"
+    },
+    {
+      "objectID": "exopyydvp4t",
+      "target": {
+        "attribute": "color"
+      },
+      "type": "color",
+      "default": "#000000",
+      "displayName": "Title/color"
+    },
+    {
+      "objectID": "exopyydvp4t",
+      "target": {
+        "attribute": "text"
+      },
+      "type": "text",
+      "default": "Sales 17 vs 18",
+      "displayName": "Title/text"
+    },
+    {
+      "objectID": "tr9sqr9jsoh",
+      "target": {
+        "property": "fontFamily"
+      },
+      "type": "font-family",
+      "default": "Segoe UI",
+      "displayName": "Legend1/fontFamily"
+    },
+    {
+      "objectID": "tr9sqr9jsoh",
+      "target": {
+        "property": "fontSize"
+      },
+      "type": "number",
+      "default": 10,
+      "displayName": "Legend1/fontSize"
+    },
+    {
+      "objectID": "tr9sqr9jsoh",
+      "target": {
+        "property": "textColor"
+      },
+      "type": "color",
+      "default": "#000000",
+      "displayName": "Legend1/textColor"
+    },
+    {
+      "objectID": "tr9sqr9jsoh",
+      "target": {
+        "property": "markerShape"
+      },
+      "type": "enum",
+      "default": "circle",
+      "displayName": "Legend1/markerShape"
+    },
+    {
+      "objectID": "tr9sqr9jsoh",
+      "target": {
+        "property": "alignY"
+      },
+      "type": "enum",
+      "default": "end",
+      "displayName": "Legend1/alignY"
+    },
+    {
+      "objectID": "tr9sqr9jsoh",
+      "target": {
+        "property": "alignX"
+      },
+      "type": "enum",
+      "default": "start",
+      "displayName": "Legend1/alignX"
+    },
+    {
+      "objectID": "gi3k9y2nf6o",
+      "target": {
+        "attribute": "marginLeft"
+      },
+      "type": "number",
+      "default": 141.89027431421445,
+      "displayName": "Chart/marginLeft"
+    },
+    {
+      "objectID": "gi3k9y2nf6o",
+      "target": {
+        "attribute": "marginRight"
+      },
+      "type": "number",
+      "default": 100,
+      "displayName": "Chart/marginRight"
+    },
+    {
+      "objectID": "gi3k9y2nf6o",
+      "target": {
+        "attribute": "marginTop"
+      },
+      "type": "number",
+      "default": 80,
+      "displayName": "Chart/marginTop"
+    },
+    {
+      "objectID": "gi3k9y2nf6o",
+      "target": {
+        "attribute": "marginBottom"
+      },
+      "type": "number",
+      "default": 50,
+      "displayName": "Chart/marginBottom"
+    }
+  ]
+}

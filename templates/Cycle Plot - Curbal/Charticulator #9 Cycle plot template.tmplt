@@ -1,0 +1,2193 @@
+{
+  "specification": {
+    "_id": "hmn585okl2t",
+    "classID": "chart.rectangle",
+    "properties": {
+      "name": "Chart",
+      "backgroundColor": {
+        "r": 252,
+        "g": 251,
+        "b": 253
+      },
+      "backgroundOpacity": 1,
+      "enableContextMenu": true,
+      "exposed": true
+    },
+    "mappings": {
+      "marginTop": {
+        "type": "value",
+        "value": 80
+      }
+    },
+    "glyphs": [
+      {
+        "_id": "17dmhi7o4m3",
+        "classID": "glyph.rectangle",
+        "properties": {
+          "name": "Glyph"
+        },
+        "table": "cycle_plot",
+        "marks": [
+          {
+            "_id": "pedg8b0m67e",
+            "classID": "mark.anchor",
+            "properties": {
+              "name": "Anchor"
+            },
+            "mappings": {
+              "x": {
+                "type": "parent",
+                "parentAttribute": "icx"
+              },
+              "y": {
+                "type": "parent",
+                "parentAttribute": "icy"
+              }
+            }
+          },
+          {
+            "_id": "t4amib8posn",
+            "classID": "mark.rect",
+            "properties": {
+              "enableTooltips": true,
+              "enableContextMenu": true,
+              "enableSelection": true,
+              "visible": true,
+              "strokeStyle": "solid",
+              "shape": "rectangle",
+              "allowFlipping": true,
+              "name": "Shape1",
+              "exposed": true
+            },
+            "mappings": {
+              "fill": {
+                "type": "value",
+                "value": {
+                  "r": 217,
+                  "g": 217,
+                  "b": 217
+                }
+              },
+              "strokeWidth": {
+                "type": "value",
+                "value": 1
+              },
+              "opacity": {
+                "type": "value",
+                "value": 0.59
+              },
+              "visible": {
+                "type": "value",
+                "value": true
+              },
+              "x1": {
+                "type": "parent",
+                "parentAttribute": "ix1"
+              },
+              "y1": {
+                "type": "parent",
+                "parentAttribute": "iy1"
+              },
+              "x2": {
+                "type": "parent",
+                "parentAttribute": "ix2"
+              },
+              "y2": {
+                "type": "parent",
+                "parentAttribute": "iy2"
+              }
+            }
+          }
+        ],
+        "mappings": {},
+        "constraints": []
+      },
+      {
+        "_id": "3zdm92avi2o",
+        "classID": "glyph.rectangle",
+        "properties": {
+          "name": "Glyph1"
+        },
+        "table": "cycle_plot",
+        "marks": [
+          {
+            "_id": "v4agkknu31",
+            "classID": "mark.anchor",
+            "properties": {
+              "name": "Anchor"
+            },
+            "mappings": {
+              "x": {
+                "type": "parent",
+                "parentAttribute": "icx"
+              },
+              "y": {
+                "type": "parent",
+                "parentAttribute": "icy"
+              }
+            }
+          },
+          {
+            "_id": "r39eu5u5qvl",
+            "classID": "mark.symbol",
+            "properties": {
+              "enableTooltips": true,
+              "enableContextMenu": true,
+              "enableSelection": true,
+              "visible": true,
+              "name": "Symbol1",
+              "exposed": true
+            },
+            "mappings": {
+              "fill": {
+                "type": "scale",
+                "table": "cycle_plot",
+                "expression": "first(`Day Name`)",
+                "valueType": "string",
+                "scale": "fqg0e66bnfg",
+                "attribute": "fill"
+              },
+              "strokeWidth": {
+                "type": "value",
+                "value": 1
+              },
+              "opacity": {
+                "type": "value",
+                "value": 1
+              },
+              "size": {
+                "type": "value",
+                "value": 60
+              },
+              "visible": {
+                "type": "value",
+                "value": true
+              },
+              "x": {
+                "type": "parent",
+                "parentAttribute": "icx"
+              },
+              "y": {
+                "type": "parent",
+                "parentAttribute": "icy"
+              }
+            }
+          },
+          {
+            "_id": "2pwnfwj8nay",
+            "classID": "mark.text",
+            "properties": {
+              "enableTooltips": true,
+              "enableContextMenu": true,
+              "enableSelection": true,
+              "alignment": {
+                "x": "middle",
+                "y": "top",
+                "xMargin": 5,
+                "yMargin": 5
+              },
+              "rotation": 0,
+              "visible": true,
+              "name": "Text1",
+              "exposed": true
+            },
+            "mappings": {
+              "text": {
+                "type": "text",
+                "table": "cycle_plot",
+                "textExpression": "${avg(WeekNo)}{.0f}"
+              },
+              "fontFamily": {
+                "type": "value",
+                "value": "Segoe UI"
+              },
+              "fontSize": {
+                "type": "value",
+                "value": 12
+              },
+              "color": {
+                "type": "value",
+                "value": {
+                  "r": 82,
+                  "g": 82,
+                  "b": 82
+                }
+              },
+              "opacity": {
+                "type": "value",
+                "value": 1
+              },
+              "visible": {
+                "type": "value",
+                "value": true
+              },
+              "x": {
+                "type": "parent",
+                "parentAttribute": "icx"
+              },
+              "y": {
+                "type": "parent",
+                "parentAttribute": "icy"
+              }
+            }
+          }
+        ],
+        "mappings": {},
+        "constraints": []
+      },
+      {
+        "_id": "74hnimn59x",
+        "classID": "glyph.rectangle",
+        "properties": {
+          "name": "Glyph2"
+        },
+        "table": "cycle_plot",
+        "marks": [
+          {
+            "_id": "q9zha3glgmc",
+            "classID": "mark.anchor",
+            "properties": {
+              "name": "Anchor"
+            },
+            "mappings": {
+              "x": {
+                "type": "parent",
+                "parentAttribute": "icx"
+              },
+              "y": {
+                "type": "parent",
+                "parentAttribute": "icy"
+              }
+            }
+          },
+          {
+            "_id": "6jiscxa4qna",
+            "classID": "mark.symbol",
+            "properties": {
+              "enableTooltips": true,
+              "enableContextMenu": true,
+              "enableSelection": true,
+              "visible": true,
+              "name": "Symbol2",
+              "exposed": true
+            },
+            "mappings": {
+              "fill": {
+                "type": "value",
+                "value": {
+                  "r": 115,
+                  "g": 115,
+                  "b": 115
+                }
+              },
+              "strokeWidth": {
+                "type": "value",
+                "value": 1
+              },
+              "opacity": {
+                "type": "value",
+                "value": 1
+              },
+              "size": {
+                "type": "value",
+                "value": 0
+              },
+              "visible": {
+                "type": "value",
+                "value": true
+              },
+              "x": {
+                "type": "parent",
+                "parentAttribute": "icx"
+              },
+              "y": {
+                "type": "parent",
+                "parentAttribute": "icy"
+              }
+            }
+          }
+        ],
+        "mappings": {},
+        "constraints": []
+      }
+    ],
+    "elements": [
+      {
+        "_id": "6bc6gjaiiap",
+        "classID": "links.through",
+        "mappings": {
+          "color": {
+            "type": "value",
+            "value": {
+              "r": 37,
+              "g": 37,
+              "b": 37
+            }
+          },
+          "opacity": {
+            "type": "value",
+            "value": 1
+          }
+        },
+        "properties": {
+          "name": "Link2",
+          "linkMarkType": "",
+          "visible": true,
+          "linkType": "line",
+          "interpolationType": "line",
+          "anchor1": [
+            {
+              "x": {
+                "element": "6jiscxa4qna",
+                "attribute": "x"
+              },
+              "y": {
+                "element": "6jiscxa4qna",
+                "attribute": "y"
+              },
+              "direction": {
+                "x": 1,
+                "y": 0
+              }
+            }
+          ],
+          "anchor2": [
+            {
+              "x": {
+                "element": "6jiscxa4qna",
+                "attribute": "x"
+              },
+              "y": {
+                "element": "6jiscxa4qna",
+                "attribute": "y"
+              },
+              "direction": {
+                "x": -1,
+                "y": 0
+              }
+            }
+          ],
+          "linkThrough": {
+            "plotSegment": "4rtueuv9rbn",
+            "facetExpressions": [
+              "`Day Name`"
+            ]
+          },
+          "curveness": 30,
+          "exposed": true
+        }
+      },
+      {
+        "_id": "3oxqlk5phur",
+        "classID": "links.through",
+        "mappings": {
+          "color": {
+            "type": "scale",
+            "table": "cycle_plot",
+            "expression": "first(`Day Name`)",
+            "valueType": "string",
+            "scale": "fqg0e66bnfg"
+          },
+          "opacity": {
+            "type": "value",
+            "value": 1
+          },
+          "strokeWidth": {
+            "type": "value",
+            "value": 1.48
+          }
+        },
+        "properties": {
+          "name": "Link1",
+          "linkMarkType": "",
+          "visible": true,
+          "linkType": "line",
+          "interpolationType": "line",
+          "anchor1": [
+            {
+              "x": {
+                "element": "r39eu5u5qvl",
+                "attribute": "x"
+              },
+              "y": {
+                "element": "r39eu5u5qvl",
+                "attribute": "y"
+              },
+              "direction": {
+                "x": 1,
+                "y": 0
+              }
+            }
+          ],
+          "anchor2": [
+            {
+              "x": {
+                "element": "r39eu5u5qvl",
+                "attribute": "x"
+              },
+              "y": {
+                "element": "r39eu5u5qvl",
+                "attribute": "y"
+              },
+              "direction": {
+                "x": -1,
+                "y": 0
+              }
+            }
+          ],
+          "linkThrough": {
+            "plotSegment": "a3ogwmja84",
+            "facetExpressions": [
+              "`Day Name`"
+            ]
+          },
+          "curveness": 30,
+          "exposed": true
+        }
+      },
+      {
+        "_id": "nx825iuguot",
+        "classID": "plot-segment.cartesian",
+        "glyph": "17dmhi7o4m3",
+        "table": "cycle_plot",
+        "filter": null,
+        "mappings": {
+          "x1": {
+            "type": "parent",
+            "parentAttribute": "x1"
+          },
+          "y1": {
+            "type": "parent",
+            "parentAttribute": "y1"
+          },
+          "x2": {
+            "type": "parent",
+            "parentAttribute": "x2"
+          },
+          "y2": {
+            "type": "parent",
+            "parentAttribute": "y2"
+          }
+        },
+        "properties": {
+          "name": "PlotSegment1",
+          "visible": true,
+          "marginX1": 0,
+          "marginY1": 0,
+          "marginX2": 0,
+          "marginY2": 0,
+          "sublayout": {
+            "type": "dodge-x",
+            "order": null,
+            "ratioX": 0.1,
+            "ratioY": 0.1,
+            "align": {
+              "x": "start",
+              "y": "start"
+            },
+            "grid": {
+              "direction": "x",
+              "xCount": null,
+              "yCount": null
+            },
+            "packing": {
+              "gravityX": 0.1,
+              "gravityY": 0.1
+            },
+            "jitter": {
+              "vertical": true,
+              "horizontal": true
+            }
+          },
+          "xData": {
+            "type": "categorical",
+            "expression": "first(`Axis X2`)",
+            "rawExpression": null,
+            "valueType": "string",
+            "gapRatio": 0.08984254202467416,
+            "visible": true,
+            "side": "default",
+            "style": {
+              "tickColor": {
+                "r": 150,
+                "g": 150,
+                "b": 150
+              },
+              "lineColor": {
+                "r": 150,
+                "g": 150,
+                "b": 150
+              },
+              "fontFamily": "Segoe UI",
+              "fontSize": 12,
+              "tickSize": 5,
+              "wordWrap": false,
+              "gridlineStyle": "none",
+              "gridlineColor": {
+                "r": 234,
+                "g": 234,
+                "b": 234
+              },
+              "gridlineWidth": 1
+            },
+            "numericalMode": null,
+            "dataKind": "categorical",
+            "order": null,
+            "orderMode": "alphabetically",
+            "autoDomainMax": true,
+            "autoDomainMin": true,
+            "tickFormat": null,
+            "tickDataExpression": null,
+            "categories": [
+              "0 Mon",
+              "1 Tue",
+              "2 Wed",
+              "3 Thu",
+              "4 Fri",
+              "5 Sat",
+              "6 Sun"
+            ]
+          },
+          "exposed": true
+        }
+      },
+      {
+        "_id": "j9irm4ibpq",
+        "classID": "mark.text",
+        "properties": {
+          "name": "Title",
+          "visible": true,
+          "alignment": {
+            "x": "middle",
+            "y": "top",
+            "xMargin": 0,
+            "yMargin": 30
+          },
+          "rotation": 0,
+          "exposed": true
+        },
+        "mappings": {
+          "x": {
+            "type": "parent",
+            "parentAttribute": "cx"
+          },
+          "y": {
+            "type": "parent",
+            "parentAttribute": "oy2"
+          },
+          "text": {
+            "type": "value",
+            "value": "Cycle Plot"
+          },
+          "fontSize": {
+            "type": "value",
+            "value": 24
+          },
+          "color": {
+            "type": "value",
+            "value": {
+              "r": 82,
+              "g": 82,
+              "b": 82
+            }
+          },
+          "fontFamily": {
+            "type": "value",
+            "value": "Impact"
+          }
+        }
+      },
+      {
+        "_id": "a3ogwmja84",
+        "classID": "plot-segment.cartesian",
+        "properties": {
+          "marginX1": 0,
+          "marginY1": 0,
+          "marginX2": 0,
+          "marginY2": 0,
+          "visible": true,
+          "sublayout": {
+            "type": "overlap",
+            "order": null,
+            "ratioX": 0.1,
+            "ratioY": 0.1,
+            "align": {
+              "x": "start",
+              "y": "start"
+            },
+            "grid": {
+              "direction": "x",
+              "xCount": null,
+              "yCount": null
+            },
+            "jitter": {
+              "horizontal": true,
+              "vertical": true
+            },
+            "packing": {
+              "gravityX": 0.1,
+              "gravityY": 0.1
+            },
+            "orderReversed": null
+          },
+          "name": "PlotSegment2",
+          "xData": {
+            "type": "categorical",
+            "expression": "first(`Axis X`)",
+            "rawExpression": null,
+            "valueType": "string",
+            "gapRatio": 0.1,
+            "visible": false,
+            "side": "default",
+            "style": {
+              "tickColor": {
+                "r": 0,
+                "g": 0,
+                "b": 0
+              },
+              "lineColor": {
+                "r": 0,
+                "g": 0,
+                "b": 0
+              },
+              "fontFamily": "Segoe UI",
+              "fontSize": 12,
+              "tickSize": 5,
+              "wordWrap": false,
+              "gridlineStyle": "none",
+              "gridlineColor": {
+                "r": 234,
+                "g": 234,
+                "b": 234
+              },
+              "gridlineWidth": 1
+            },
+            "numericalMode": null,
+            "dataKind": "categorical",
+            "order": null,
+            "orderMode": "alphabetically",
+            "autoDomainMax": true,
+            "autoDomainMin": true,
+            "tickFormat": null,
+            "tickDataExpression": null,
+            "categories": [
+              "0 Mon - 2",
+              "0 Mon - 3",
+              "0 Mon - 4",
+              "0 Mon - 5",
+              "0 Mon - 6",
+              "0 Mon - 7",
+              "0 Mon - 8",
+              "0 Mon - 9",
+              "1 Tue - 2",
+              "1 Tue - 3",
+              "1 Tue - 4",
+              "1 Tue - 5",
+              "1 Tue - 6",
+              "1 Tue - 7",
+              "1 Tue - 8",
+              "1 Tue - 9",
+              "2 Wed - 2",
+              "2 Wed - 3",
+              "2 Wed - 4",
+              "2 Wed - 5",
+              "2 Wed - 6",
+              "2 Wed - 7",
+              "2 Wed - 8",
+              "2 Wed - 9",
+              "3 Thu - 2",
+              "3 Thu - 3",
+              "3 Thu - 4",
+              "3 Thu - 5",
+              "3 Thu - 6",
+              "3 Thu - 7",
+              "3 Thu - 8",
+              "3 Thu - 9",
+              "4 Fri - 2",
+              "4 Fri - 3",
+              "4 Fri - 4",
+              "4 Fri - 5",
+              "4 Fri - 6",
+              "4 Fri - 7",
+              "4 Fri - 8",
+              "4 Fri - 9",
+              "5 Sat - 2",
+              "5 Sat - 3",
+              "5 Sat - 4",
+              "5 Sat - 5",
+              "5 Sat - 6",
+              "5 Sat - 7",
+              "5 Sat - 8",
+              "5 Sat - 9",
+              "6 Sun - 1",
+              "6 Sun - 2",
+              "6 Sun - 3",
+              "6 Sun - 4",
+              "6 Sun - 5",
+              "6 Sun - 6",
+              "6 Sun - 7",
+              "6 Sun - 8"
+            ]
+          },
+          "yData": {
+            "type": "numerical",
+            "expression": "avg(VisitorCount)",
+            "rawExpression": null,
+            "valueType": "number",
+            "gapRatio": 0.1,
+            "visible": true,
+            "side": "default",
+            "style": {
+              "tickColor": {
+                "r": 150,
+                "g": 150,
+                "b": 150
+              },
+              "lineColor": {
+                "r": 150,
+                "g": 150,
+                "b": 150
+              },
+              "fontFamily": "Segoe UI",
+              "fontSize": 12,
+              "tickSize": 5,
+              "wordWrap": false,
+              "gridlineStyle": "none",
+              "gridlineColor": {
+                "r": 234,
+                "g": 234,
+                "b": 234
+              },
+              "gridlineWidth": 1
+            },
+            "numericalMode": "linear",
+            "dataKind": "numerical",
+            "order": null,
+            "orderMode": null,
+            "autoDomainMax": true,
+            "autoDomainMin": true,
+            "tickFormat": null,
+            "tickDataExpression": null,
+            "domainMin": 0,
+            "domainMax": 110
+          },
+          "exposed": true
+        },
+        "mappings": {
+          "x1": {
+            "type": "parent",
+            "parentAttribute": "x1"
+          },
+          "y1": {
+            "type": "parent",
+            "parentAttribute": "y1"
+          },
+          "x2": {
+            "type": "parent",
+            "parentAttribute": "x2"
+          },
+          "y2": {
+            "type": "parent",
+            "parentAttribute": "y2"
+          }
+        },
+        "glyph": "3zdm92avi2o",
+        "table": "cycle_plot",
+        "filter": null,
+        "order": null
+      },
+      {
+        "_id": "4rtueuv9rbn",
+        "classID": "plot-segment.cartesian",
+        "properties": {
+          "marginX1": 0,
+          "marginY1": 0,
+          "marginX2": 0,
+          "marginY2": 0,
+          "visible": true,
+          "sublayout": {
+            "type": "overlap",
+            "order": null,
+            "ratioX": 0.1,
+            "ratioY": 0.1,
+            "align": {
+              "x": "start",
+              "y": "start"
+            },
+            "grid": {
+              "direction": "x",
+              "xCount": null,
+              "yCount": null
+            },
+            "jitter": {
+              "horizontal": true,
+              "vertical": true
+            },
+            "packing": {
+              "gravityX": 0.1,
+              "gravityY": 0.1
+            },
+            "orderReversed": null
+          },
+          "name": "PlotSegment3",
+          "yData": {
+            "type": "numerical",
+            "expression": "avg(AvgVisitorsAllWeeks)",
+            "rawExpression": "first(AvgVisitorsAllWeeks)",
+            "valueType": "number",
+            "gapRatio": 0.1,
+            "visible": false,
+            "side": "default",
+            "style": {
+              "tickColor": {
+                "r": 0,
+                "g": 0,
+                "b": 0
+              },
+              "lineColor": {
+                "r": 0,
+                "g": 0,
+                "b": 0
+              },
+              "fontFamily": "Segoe UI",
+              "fontSize": 12,
+              "tickSize": 5,
+              "wordWrap": false,
+              "gridlineStyle": "none",
+              "gridlineColor": {
+                "r": 234,
+                "g": 234,
+                "b": 234
+              },
+              "gridlineWidth": 1
+            },
+            "numericalMode": "linear",
+            "dataKind": "numerical",
+            "order": null,
+            "orderMode": null,
+            "autoDomainMax": true,
+            "autoDomainMin": true,
+            "tickFormat": null,
+            "tickDataExpression": null,
+            "domainMin": 0,
+            "domainMax": 110
+          },
+          "xData": {
+            "type": "categorical",
+            "expression": "first(`Axis X`)",
+            "rawExpression": "first(`Axis X`)",
+            "valueType": "string",
+            "gapRatio": 0.1,
+            "visible": false,
+            "side": "default",
+            "style": {
+              "tickColor": {
+                "r": 0,
+                "g": 0,
+                "b": 0
+              },
+              "lineColor": {
+                "r": 0,
+                "g": 0,
+                "b": 0
+              },
+              "fontFamily": "Segoe UI",
+              "fontSize": 12,
+              "tickSize": 5,
+              "wordWrap": false,
+              "gridlineStyle": "none",
+              "gridlineColor": {
+                "r": 234,
+                "g": 234,
+                "b": 234
+              },
+              "gridlineWidth": 1
+            },
+            "numericalMode": null,
+            "dataKind": "categorical",
+            "order": null,
+            "orderMode": "alphabetically",
+            "autoDomainMax": true,
+            "autoDomainMin": true,
+            "tickFormat": null,
+            "tickDataExpression": null,
+            "categories": [
+              "0 Mon - 2",
+              "0 Mon - 3",
+              "0 Mon - 4",
+              "0 Mon - 5",
+              "0 Mon - 6",
+              "0 Mon - 7",
+              "0 Mon - 8",
+              "0 Mon - 9",
+              "1 Tue - 2",
+              "1 Tue - 3",
+              "1 Tue - 4",
+              "1 Tue - 5",
+              "1 Tue - 6",
+              "1 Tue - 7",
+              "1 Tue - 8",
+              "1 Tue - 9",
+              "2 Wed - 2",
+              "2 Wed - 3",
+              "2 Wed - 4",
+              "2 Wed - 5",
+              "2 Wed - 6",
+              "2 Wed - 7",
+              "2 Wed - 8",
+              "2 Wed - 9",
+              "3 Thu - 2",
+              "3 Thu - 3",
+              "3 Thu - 4",
+              "3 Thu - 5",
+              "3 Thu - 6",
+              "3 Thu - 7",
+              "3 Thu - 8",
+              "3 Thu - 9",
+              "4 Fri - 2",
+              "4 Fri - 3",
+              "4 Fri - 4",
+              "4 Fri - 5",
+              "4 Fri - 6",
+              "4 Fri - 7",
+              "4 Fri - 8",
+              "4 Fri - 9",
+              "5 Sat - 2",
+              "5 Sat - 3",
+              "5 Sat - 4",
+              "5 Sat - 5",
+              "5 Sat - 6",
+              "5 Sat - 7",
+              "5 Sat - 8",
+              "5 Sat - 9",
+              "6 Sun - 1",
+              "6 Sun - 2",
+              "6 Sun - 3",
+              "6 Sun - 4",
+              "6 Sun - 5",
+              "6 Sun - 6",
+              "6 Sun - 7",
+              "6 Sun - 8"
+            ]
+          },
+          "exposed": true
+        },
+        "mappings": {
+          "x1": {
+            "type": "parent",
+            "parentAttribute": "x1"
+          },
+          "y1": {
+            "type": "parent",
+            "parentAttribute": "y1"
+          },
+          "x2": {
+            "type": "parent",
+            "parentAttribute": "x2"
+          },
+          "y2": {
+            "type": "parent",
+            "parentAttribute": "y2"
+          }
+        },
+        "glyph": "74hnimn59x",
+        "table": "cycle_plot",
+        "filter": null,
+        "order": null
+      }
+    ],
+    "scales": [
+      {
+        "_id": "fqg0e66bnfg",
+        "classID": "scale.categorical<string,color>",
+        "properties": {
+          "enableTooltips": true,
+          "enableContextMenu": true,
+          "enableSelection": true,
+          "name": "Scale1",
+          "mapping": {
+            "Fri": {
+              "r": 166,
+              "g": 206,
+              "b": 227
+            },
+            "Mon": {
+              "r": 31,
+              "g": 120,
+              "b": 180
+            },
+            "Sat": {
+              "r": 178,
+              "g": 223,
+              "b": 138
+            },
+            "Sun": {
+              "r": 51,
+              "g": 160,
+              "b": 44
+            },
+            "Thu": {
+              "r": 251,
+              "g": 154,
+              "b": 153
+            },
+            "Tue": {
+              "r": 227,
+              "g": 26,
+              "b": 28
+            },
+            "Wed": {
+              "r": 253,
+              "g": 191,
+              "b": 111
+            }
+          },
+          "autoDomainMax": true,
+          "autoDomainMin": true
+        },
+        "mappings": {},
+        "inputType": "string",
+        "outputType": "color"
+      }
+    ],
+    "scaleMappings": [
+      {
+        "type": "scale",
+        "table": "cycle_plot",
+        "expression": "first(`Day Name`)",
+        "valueType": "string",
+        "scale": "fqg0e66bnfg",
+        "attribute": "fill"
+      }
+    ],
+    "constraints": [],
+    "resources": []
+  },
+  "defaultAttributes": {
+    "pedg8b0m67e": {
+      "x": 0,
+      "y": 0
+    },
+    "t4amib8posn": {
+      "x1": -0.5851012229841387,
+      "y1": -23.499999999999996,
+      "x2": 0.5851012229841387,
+      "y2": 23.499999999999996,
+      "cx": 0,
+      "cy": 0,
+      "width": 1.1702024459682774,
+      "height": 46.99999999999999,
+      "strokeWidth": 0.1,
+      "opacity": 0.059
+    },
+    "j9irm4ibpq": {
+      "x": 0,
+      "y": 75,
+      "fontSize": 6,
+      "opacity": 0.25
+    },
+    "v4agkknu31": {
+      "x": 0,
+      "y": 0
+    },
+    "r39eu5u5qvl": {
+      "x": 0,
+      "y": 0,
+      "size": 12,
+      "strokeWidth": 0.2,
+      "opacity": 0.2
+    },
+    "2pwnfwj8nay": {
+      "x": 0,
+      "y": 0,
+      "fontSize": 3,
+      "opacity": 0.25
+    },
+    "q9zha3glgmc": {
+      "x": 0,
+      "y": 0
+    },
+    "6jiscxa4qna": {
+      "x": 0,
+      "y": 0,
+      "size": 0,
+      "strokeWidth": 0.2,
+      "opacity": 0.2
+    }
+  },
+  "tables": [
+    {
+      "name": "cycle_plot",
+      "columns": [
+        {
+          "displayName": "Axis X",
+          "name": "Axis X",
+          "type": "string",
+          "metadata": {
+            "kind": "categorical",
+            "unit": null,
+            "orderMode": "alphabetically",
+            "order": null,
+            "rawColumnName": null,
+            "isRaw": null,
+            "format": null,
+            "examples": "0 Mon - 2, 0 Mon - 3, 0 Mon - 4"
+          }
+        },
+        {
+          "displayName": "Axis X2",
+          "name": "Axis X2",
+          "type": "string",
+          "metadata": {
+            "kind": "categorical",
+            "orderMode": "alphabetically",
+            "examples": "0 Mon, 1 Tue, 2 Wed"
+          }
+        },
+        {
+          "displayName": "Day Name",
+          "name": "Day Name",
+          "type": "string",
+          "metadata": {
+            "kind": "categorical",
+            "orderMode": "alphabetically",
+            "examples": "Mon, Tue, Wed"
+          }
+        },
+        {
+          "displayName": "WeekNo",
+          "name": "WeekNo",
+          "type": "number",
+          "metadata": {
+            "kind": "numerical",
+            "examples": "1, 2, 3"
+          }
+        },
+        {
+          "displayName": "VisitorCount",
+          "name": "VisitorCount",
+          "type": "number",
+          "metadata": {
+            "kind": "numerical",
+            "examples": "45, 60, 68"
+          }
+        },
+        {
+          "displayName": "AvgVisitorsAllWeeks",
+          "name": "AvgVisitorsAllWeeks",
+          "type": "number",
+          "metadata": {
+            "kind": "numerical",
+            "unit": null,
+            "order": null,
+            "orderMode": null,
+            "rawColumnName": null,
+            "isRaw": null,
+            "format": null,
+            "examples": "41.94, 37.375, 63.42"
+          }
+        }
+      ]
+    }
+  ],
+  "inference": [
+    {
+      "objectID": "nx825iuguot",
+      "dataSource": {
+        "table": "cycle_plot"
+      },
+      "axis": {
+        "expression": "first(`Axis X2`)",
+        "type": "categorical",
+        "style": {
+          "tickColor": {
+            "r": 150,
+            "g": 150,
+            "b": 150
+          },
+          "lineColor": {
+            "r": 150,
+            "g": 150,
+            "b": 150
+          },
+          "fontFamily": "Segoe UI",
+          "fontSize": 12,
+          "tickSize": 5,
+          "wordWrap": false,
+          "gridlineStyle": "none",
+          "gridlineColor": {
+            "r": 234,
+            "g": 234,
+            "b": 234
+          },
+          "gridlineWidth": 1
+        },
+        "order": null,
+        "orderMode": "alphabetically",
+        "rawExpression": null,
+        "property": "xData"
+      },
+      "autoDomainMin": true,
+      "autoDomainMax": true
+    },
+    {
+      "objectID": "a3ogwmja84",
+      "dataSource": {
+        "table": "cycle_plot"
+      },
+      "axis": {
+        "expression": "first(`Axis X`)",
+        "type": "categorical",
+        "style": {
+          "tickColor": {
+            "r": 0,
+            "g": 0,
+            "b": 0
+          },
+          "lineColor": {
+            "r": 0,
+            "g": 0,
+            "b": 0
+          },
+          "fontFamily": "Segoe UI",
+          "fontSize": 12,
+          "tickSize": 5,
+          "wordWrap": false,
+          "gridlineStyle": "none",
+          "gridlineColor": {
+            "r": 234,
+            "g": 234,
+            "b": 234
+          },
+          "gridlineWidth": 1
+        },
+        "order": null,
+        "orderMode": "alphabetically",
+        "rawExpression": null,
+        "property": "xData"
+      },
+      "autoDomainMin": true,
+      "autoDomainMax": true
+    },
+    {
+      "objectID": "a3ogwmja84",
+      "dataSource": {
+        "table": "cycle_plot"
+      },
+      "axis": {
+        "expression": "avg(VisitorCount)",
+        "type": "numerical",
+        "style": {
+          "tickColor": {
+            "r": 150,
+            "g": 150,
+            "b": 150
+          },
+          "lineColor": {
+            "r": 150,
+            "g": 150,
+            "b": 150
+          },
+          "fontFamily": "Segoe UI",
+          "fontSize": 12,
+          "tickSize": 5,
+          "wordWrap": false,
+          "gridlineStyle": "none",
+          "gridlineColor": {
+            "r": 234,
+            "g": 234,
+            "b": 234
+          },
+          "gridlineWidth": 1
+        },
+        "order": null,
+        "orderMode": null,
+        "rawExpression": null,
+        "property": "yData"
+      },
+      "autoDomainMin": true,
+      "autoDomainMax": true
+    },
+    {
+      "objectID": "4rtueuv9rbn",
+      "dataSource": {
+        "table": "cycle_plot"
+      },
+      "axis": {
+        "expression": "first(`Axis X`)",
+        "type": "categorical",
+        "style": {
+          "tickColor": {
+            "r": 0,
+            "g": 0,
+            "b": 0
+          },
+          "lineColor": {
+            "r": 0,
+            "g": 0,
+            "b": 0
+          },
+          "fontFamily": "Segoe UI",
+          "fontSize": 12,
+          "tickSize": 5,
+          "wordWrap": false,
+          "gridlineStyle": "none",
+          "gridlineColor": {
+            "r": 234,
+            "g": 234,
+            "b": 234
+          },
+          "gridlineWidth": 1
+        },
+        "order": null,
+        "orderMode": "alphabetically",
+        "rawExpression": "first(`Axis X`)",
+        "property": "xData"
+      },
+      "autoDomainMin": true,
+      "autoDomainMax": true
+    },
+    {
+      "objectID": "4rtueuv9rbn",
+      "dataSource": {
+        "table": "cycle_plot"
+      },
+      "axis": {
+        "expression": "avg(AvgVisitorsAllWeeks)",
+        "type": "numerical",
+        "style": {
+          "tickColor": {
+            "r": 0,
+            "g": 0,
+            "b": 0
+          },
+          "lineColor": {
+            "r": 0,
+            "g": 0,
+            "b": 0
+          },
+          "fontFamily": "Segoe UI",
+          "fontSize": 12,
+          "tickSize": 5,
+          "wordWrap": false,
+          "gridlineStyle": "none",
+          "gridlineColor": {
+            "r": 234,
+            "g": 234,
+            "b": 234
+          },
+          "gridlineWidth": 1
+        },
+        "order": null,
+        "orderMode": null,
+        "rawExpression": "first(AvgVisitorsAllWeeks)",
+        "property": "yData"
+      },
+      "autoDomainMin": true,
+      "autoDomainMax": true
+    },
+    {
+      "objectID": "fqg0e66bnfg",
+      "autoDomainMax": true,
+      "autoDomainMin": true,
+      "scale": {
+        "classID": "scale.categorical<string,color>",
+        "expressions": [
+          "first(`Day Name`)"
+        ],
+        "properties": {
+          "mapping": "mapping"
+        }
+      },
+      "dataSource": {
+        "table": "cycle_plot"
+      }
+    }
+  ],
+  "properties": [
+    {
+      "objectID": "6bc6gjaiiap",
+      "target": {
+        "attribute": "color"
+      },
+      "type": "color",
+      "default": "#252525",
+      "displayName": "Link2/color"
+    },
+    {
+      "objectID": "6bc6gjaiiap",
+      "target": {
+        "attribute": "opacity"
+      },
+      "type": "number",
+      "default": 1,
+      "displayName": "Link2/opacity"
+    },
+    {
+      "objectID": "3oxqlk5phur",
+      "target": {
+        "attribute": "strokeWidth"
+      },
+      "type": "number",
+      "default": 1.48,
+      "displayName": "Link1/strokeWidth"
+    },
+    {
+      "objectID": "3oxqlk5phur",
+      "target": {
+        "attribute": "opacity"
+      },
+      "type": "number",
+      "default": 1,
+      "displayName": "Link1/opacity"
+    },
+    {
+      "objectID": "nx825iuguot",
+      "target": {
+        "property": {
+          "property": "xData",
+          "field": "style",
+          "subfield": "tickSize"
+        }
+      },
+      "type": "number",
+      "default": 5,
+      "displayName": "PlotSegment1/xData.style.tickSize"
+    },
+    {
+      "objectID": "nx825iuguot",
+      "target": {
+        "property": {
+          "property": "xData",
+          "field": "style",
+          "subfield": "fontSize"
+        }
+      },
+      "type": "number",
+      "default": 12,
+      "displayName": "PlotSegment1/xData.style.fontSize"
+    },
+    {
+      "objectID": "nx825iuguot",
+      "target": {
+        "property": {
+          "property": "xData",
+          "field": "style",
+          "subfield": "fontFamily"
+        }
+      },
+      "type": "font-family",
+      "default": "Segoe UI",
+      "displayName": "PlotSegment1/xData.style.fontFamily"
+    },
+    {
+      "objectID": "nx825iuguot",
+      "target": {
+        "property": {
+          "property": "xData",
+          "field": "style",
+          "subfield": "lineColor"
+        }
+      },
+      "type": "color",
+      "default": "#969696",
+      "displayName": "PlotSegment1/xData.style.lineColor"
+    },
+    {
+      "objectID": "nx825iuguot",
+      "target": {
+        "property": {
+          "property": "xData",
+          "field": "style",
+          "subfield": "tickColor"
+        }
+      },
+      "type": "color",
+      "default": "#969696",
+      "displayName": "PlotSegment1/xData.style.tickColor"
+    },
+    {
+      "objectID": "nx825iuguot",
+      "target": {
+        "property": {
+          "property": "xData",
+          "field": "tickFormat"
+        }
+      },
+      "type": "text",
+      "default": null,
+      "displayName": "PlotSegment1/xData.tickFormat"
+    },
+    {
+      "objectID": "nx825iuguot",
+      "target": {
+        "property": {
+          "property": "xData",
+          "field": "tickDataExpression"
+        }
+      },
+      "type": "text",
+      "default": null,
+      "displayName": "PlotSegment1/xData.tickDataExpression"
+    },
+    {
+      "objectID": "nx825iuguot",
+      "target": {
+        "property": {
+          "property": "xData",
+          "field": "categories"
+        }
+      },
+      "type": "enum",
+      "default": "ascending",
+      "displayName": "PlotSegment1/xData.categories"
+    },
+    {
+      "objectID": "t4amib8posn",
+      "target": {
+        "attribute": "fill"
+      },
+      "type": "color",
+      "default": "#d9d9d9",
+      "displayName": "Shape1/fill"
+    },
+    {
+      "objectID": "t4amib8posn",
+      "target": {
+        "attribute": "visible"
+      },
+      "type": "boolean",
+      "default": true,
+      "displayName": "Shape1/visible"
+    },
+    {
+      "objectID": "t4amib8posn",
+      "target": {
+        "attribute": "strokeWidth"
+      },
+      "type": "number",
+      "default": 1,
+      "displayName": "Shape1/strokeWidth"
+    },
+    {
+      "objectID": "t4amib8posn",
+      "target": {
+        "property": "strokeStyle"
+      },
+      "type": "enum",
+      "default": "solid",
+      "displayName": "Shape1/strokeStyle"
+    },
+    {
+      "objectID": "t4amib8posn",
+      "target": {
+        "attribute": "opacity"
+      },
+      "type": "number",
+      "default": 0.59,
+      "displayName": "Shape1/opacity"
+    },
+    {
+      "objectID": "j9irm4ibpq",
+      "target": {
+        "attribute": "fontFamily"
+      },
+      "type": "font-family",
+      "default": "Impact",
+      "displayName": "Title/fontFamily"
+    },
+    {
+      "objectID": "j9irm4ibpq",
+      "target": {
+        "attribute": "fontSize"
+      },
+      "type": "number",
+      "default": 24,
+      "displayName": "Title/fontSize"
+    },
+    {
+      "objectID": "j9irm4ibpq",
+      "target": {
+        "attribute": "color"
+      },
+      "type": "color",
+      "default": "#525252",
+      "displayName": "Title/color"
+    },
+    {
+      "objectID": "j9irm4ibpq",
+      "target": {
+        "attribute": "text"
+      },
+      "type": "text",
+      "default": "Cycle Plot",
+      "displayName": "Title/text"
+    },
+    {
+      "objectID": "a3ogwmja84",
+      "target": {
+        "property": {
+          "property": "xData",
+          "field": "style",
+          "subfield": "tickSize"
+        }
+      },
+      "type": "number",
+      "default": 5,
+      "displayName": "PlotSegment2/xData.style.tickSize"
+    },
+    {
+      "objectID": "a3ogwmja84",
+      "target": {
+        "property": {
+          "property": "xData",
+          "field": "style",
+          "subfield": "fontSize"
+        }
+      },
+      "type": "number",
+      "default": 12,
+      "displayName": "PlotSegment2/xData.style.fontSize"
+    },
+    {
+      "objectID": "a3ogwmja84",
+      "target": {
+        "property": {
+          "property": "xData",
+          "field": "style",
+          "subfield": "fontFamily"
+        }
+      },
+      "type": "font-family",
+      "default": "Segoe UI",
+      "displayName": "PlotSegment2/xData.style.fontFamily"
+    },
+    {
+      "objectID": "a3ogwmja84",
+      "target": {
+        "property": {
+          "property": "xData",
+          "field": "style",
+          "subfield": "lineColor"
+        }
+      },
+      "type": "color",
+      "default": "#000000",
+      "displayName": "PlotSegment2/xData.style.lineColor"
+    },
+    {
+      "objectID": "a3ogwmja84",
+      "target": {
+        "property": {
+          "property": "xData",
+          "field": "style",
+          "subfield": "tickColor"
+        }
+      },
+      "type": "color",
+      "default": "#000000",
+      "displayName": "PlotSegment2/xData.style.tickColor"
+    },
+    {
+      "objectID": "a3ogwmja84",
+      "target": {
+        "property": {
+          "property": "xData",
+          "field": "tickFormat"
+        }
+      },
+      "type": "text",
+      "default": null,
+      "displayName": "PlotSegment2/xData.tickFormat"
+    },
+    {
+      "objectID": "a3ogwmja84",
+      "target": {
+        "property": {
+          "property": "xData",
+          "field": "tickDataExpression"
+        }
+      },
+      "type": "text",
+      "default": null,
+      "displayName": "PlotSegment2/xData.tickDataExpression"
+    },
+    {
+      "objectID": "a3ogwmja84",
+      "target": {
+        "property": {
+          "property": "yData",
+          "field": "style",
+          "subfield": "tickSize"
+        }
+      },
+      "type": "number",
+      "default": 5,
+      "displayName": "PlotSegment2/yData.style.tickSize"
+    },
+    {
+      "objectID": "a3ogwmja84",
+      "target": {
+        "property": {
+          "property": "yData",
+          "field": "style",
+          "subfield": "fontSize"
+        }
+      },
+      "type": "number",
+      "default": 12,
+      "displayName": "PlotSegment2/yData.style.fontSize"
+    },
+    {
+      "objectID": "a3ogwmja84",
+      "target": {
+        "property": {
+          "property": "yData",
+          "field": "style",
+          "subfield": "fontFamily"
+        }
+      },
+      "type": "font-family",
+      "default": "Segoe UI",
+      "displayName": "PlotSegment2/yData.style.fontFamily"
+    },
+    {
+      "objectID": "a3ogwmja84",
+      "target": {
+        "property": {
+          "property": "yData",
+          "field": "style",
+          "subfield": "lineColor"
+        }
+      },
+      "type": "color",
+      "default": "#969696",
+      "displayName": "PlotSegment2/yData.style.lineColor"
+    },
+    {
+      "objectID": "a3ogwmja84",
+      "target": {
+        "property": {
+          "property": "yData",
+          "field": "style",
+          "subfield": "tickColor"
+        }
+      },
+      "type": "color",
+      "default": "#969696",
+      "displayName": "PlotSegment2/yData.style.tickColor"
+    },
+    {
+      "objectID": "a3ogwmja84",
+      "target": {
+        "property": {
+          "property": "yData",
+          "field": "tickFormat"
+        }
+      },
+      "type": "text",
+      "default": null,
+      "displayName": "PlotSegment2/yData.tickFormat"
+    },
+    {
+      "objectID": "a3ogwmja84",
+      "target": {
+        "property": {
+          "property": "yData",
+          "field": "tickDataExpression"
+        }
+      },
+      "type": "text",
+      "default": null,
+      "displayName": "PlotSegment2/yData.tickDataExpression"
+    },
+    {
+      "objectID": "a3ogwmja84",
+      "target": {
+        "property": {
+          "property": "xData",
+          "field": "categories"
+        }
+      },
+      "type": "enum",
+      "default": "ascending",
+      "displayName": "PlotSegment2/xData.categories"
+    },
+    {
+      "objectID": "a3ogwmja84",
+      "target": {
+        "property": {
+          "property": "yData",
+          "field": "categories"
+        }
+      },
+      "type": "enum",
+      "default": "ascending",
+      "displayName": "PlotSegment2/yData.categories"
+    },
+    {
+      "objectID": "r39eu5u5qvl",
+      "target": {
+        "attribute": "visible"
+      },
+      "type": "boolean",
+      "default": true,
+      "displayName": "Symbol1/visible"
+    },
+    {
+      "objectID": "r39eu5u5qvl",
+      "target": {
+        "attribute": "strokeWidth"
+      },
+      "type": "number",
+      "default": 1,
+      "displayName": "Symbol1/strokeWidth"
+    },
+    {
+      "objectID": "r39eu5u5qvl",
+      "target": {
+        "attribute": "size"
+      },
+      "type": "number",
+      "default": 60,
+      "displayName": "Symbol1/size"
+    },
+    {
+      "objectID": "r39eu5u5qvl",
+      "target": {
+        "attribute": "opacity"
+      },
+      "type": "number",
+      "default": 1,
+      "displayName": "Symbol1/opacity"
+    },
+    {
+      "objectID": "2pwnfwj8nay",
+      "target": {
+        "attribute": "fontFamily"
+      },
+      "type": "font-family",
+      "default": "Segoe UI",
+      "displayName": "Text1/fontFamily"
+    },
+    {
+      "objectID": "2pwnfwj8nay",
+      "target": {
+        "attribute": "fontSize"
+      },
+      "type": "number",
+      "default": 12,
+      "displayName": "Text1/fontSize"
+    },
+    {
+      "objectID": "2pwnfwj8nay",
+      "target": {
+        "attribute": "color"
+      },
+      "type": "color",
+      "default": "#525252",
+      "displayName": "Text1/color"
+    },
+    {
+      "objectID": "2pwnfwj8nay",
+      "target": {
+        "attribute": "visible"
+      },
+      "type": "boolean",
+      "default": true,
+      "displayName": "Text1/visible"
+    },
+    {
+      "objectID": "2pwnfwj8nay",
+      "target": {
+        "attribute": "opacity"
+      },
+      "type": "number",
+      "default": 1,
+      "displayName": "Text1/opacity"
+    },
+    {
+      "objectID": "4rtueuv9rbn",
+      "target": {
+        "property": {
+          "property": "xData",
+          "field": "style",
+          "subfield": "tickSize"
+        }
+      },
+      "type": "number",
+      "default": 5,
+      "displayName": "PlotSegment3/xData.style.tickSize"
+    },
+    {
+      "objectID": "4rtueuv9rbn",
+      "target": {
+        "property": {
+          "property": "xData",
+          "field": "style",
+          "subfield": "fontSize"
+        }
+      },
+      "type": "number",
+      "default": 12,
+      "displayName": "PlotSegment3/xData.style.fontSize"
+    },
+    {
+      "objectID": "4rtueuv9rbn",
+      "target": {
+        "property": {
+          "property": "xData",
+          "field": "style",
+          "subfield": "fontFamily"
+        }
+      },
+      "type": "font-family",
+      "default": "Segoe UI",
+      "displayName": "PlotSegment3/xData.style.fontFamily"
+    },
+    {
+      "objectID": "4rtueuv9rbn",
+      "target": {
+        "property": {
+          "property": "xData",
+          "field": "style",
+          "subfield": "lineColor"
+        }
+      },
+      "type": "color",
+      "default": "#000000",
+      "displayName": "PlotSegment3/xData.style.lineColor"
+    },
+    {
+      "objectID": "4rtueuv9rbn",
+      "target": {
+        "property": {
+          "property": "xData",
+          "field": "style",
+          "subfield": "tickColor"
+        }
+      },
+      "type": "color",
+      "default": "#000000",
+      "displayName": "PlotSegment3/xData.style.tickColor"
+    },
+    {
+      "objectID": "4rtueuv9rbn",
+      "target": {
+        "property": {
+          "property": "xData",
+          "field": "tickFormat"
+        }
+      },
+      "type": "text",
+      "default": null,
+      "displayName": "PlotSegment3/xData.tickFormat"
+    },
+    {
+      "objectID": "4rtueuv9rbn",
+      "target": {
+        "property": {
+          "property": "xData",
+          "field": "tickDataExpression"
+        }
+      },
+      "type": "text",
+      "default": null,
+      "displayName": "PlotSegment3/xData.tickDataExpression"
+    },
+    {
+      "objectID": "4rtueuv9rbn",
+      "target": {
+        "property": {
+          "property": "yData",
+          "field": "style",
+          "subfield": "tickSize"
+        }
+      },
+      "type": "number",
+      "default": 5,
+      "displayName": "PlotSegment3/yData.style.tickSize"
+    },
+    {
+      "objectID": "4rtueuv9rbn",
+      "target": {
+        "property": {
+          "property": "yData",
+          "field": "style",
+          "subfield": "fontSize"
+        }
+      },
+      "type": "number",
+      "default": 12,
+      "displayName": "PlotSegment3/yData.style.fontSize"
+    },
+    {
+      "objectID": "4rtueuv9rbn",
+      "target": {
+        "property": {
+          "property": "yData",
+          "field": "style",
+          "subfield": "fontFamily"
+        }
+      },
+      "type": "font-family",
+      "default": "Segoe UI",
+      "displayName": "PlotSegment3/yData.style.fontFamily"
+    },
+    {
+      "objectID": "4rtueuv9rbn",
+      "target": {
+        "property": {
+          "property": "yData",
+          "field": "style",
+          "subfield": "lineColor"
+        }
+      },
+      "type": "color",
+      "default": "#000000",
+      "displayName": "PlotSegment3/yData.style.lineColor"
+    },
+    {
+      "objectID": "4rtueuv9rbn",
+      "target": {
+        "property": {
+          "property": "yData",
+          "field": "style",
+          "subfield": "tickColor"
+        }
+      },
+      "type": "color",
+      "default": "#000000",
+      "displayName": "PlotSegment3/yData.style.tickColor"
+    },
+    {
+      "objectID": "4rtueuv9rbn",
+      "target": {
+        "property": {
+          "property": "yData",
+          "field": "tickFormat"
+        }
+      },
+      "type": "text",
+      "default": null,
+      "displayName": "PlotSegment3/yData.tickFormat"
+    },
+    {
+      "objectID": "4rtueuv9rbn",
+      "target": {
+        "property": {
+          "property": "yData",
+          "field": "tickDataExpression"
+        }
+      },
+      "type": "text",
+      "default": null,
+      "displayName": "PlotSegment3/yData.tickDataExpression"
+    },
+    {
+      "objectID": "4rtueuv9rbn",
+      "target": {
+        "property": {
+          "property": "xData",
+          "field": "categories"
+        }
+      },
+      "type": "enum",
+      "default": "ascending",
+      "displayName": "PlotSegment3/xData.categories"
+    },
+    {
+      "objectID": "4rtueuv9rbn",
+      "target": {
+        "property": {
+          "property": "yData",
+          "field": "categories"
+        }
+      },
+      "type": "enum",
+      "default": "ascending",
+      "displayName": "PlotSegment3/yData.categories"
+    },
+    {
+      "objectID": "6jiscxa4qna",
+      "target": {
+        "attribute": "visible"
+      },
+      "type": "boolean",
+      "default": true,
+      "displayName": "Symbol2/visible"
+    },
+    {
+      "objectID": "6jiscxa4qna",
+      "target": {
+        "attribute": "fill"
+      },
+      "type": "color",
+      "default": "#737373",
+      "displayName": "Symbol2/fill"
+    },
+    {
+      "objectID": "6jiscxa4qna",
+      "target": {
+        "attribute": "strokeWidth"
+      },
+      "type": "number",
+      "default": 1,
+      "displayName": "Symbol2/strokeWidth"
+    },
+    {
+      "objectID": "6jiscxa4qna",
+      "target": {
+        "attribute": "size"
+      },
+      "type": "number",
+      "default": 0,
+      "displayName": "Symbol2/size"
+    },
+    {
+      "objectID": "6jiscxa4qna",
+      "target": {
+        "attribute": "opacity"
+      },
+      "type": "number",
+      "default": 1,
+      "displayName": "Symbol2/opacity"
+    },
+    {
+      "objectID": "hmn585okl2t",
+      "target": {
+        "attribute": "marginLeft"
+      },
+      "type": "number",
+      "default": 50,
+      "displayName": "Chart/marginLeft"
+    },
+    {
+      "objectID": "hmn585okl2t",
+      "target": {
+        "attribute": "marginRight"
+      },
+      "type": "number",
+      "default": 50,
+      "displayName": "Chart/marginRight"
+    },
+    {
+      "objectID": "hmn585okl2t",
+      "target": {
+        "attribute": "marginTop"
+      },
+      "type": "number",
+      "default": 80,
+      "displayName": "Chart/marginTop"
+    },
+    {
+      "objectID": "hmn585okl2t",
+      "target": {
+        "attribute": "marginBottom"
+      },
+      "type": "number",
+      "default": 50,
+      "displayName": "Chart/marginBottom"
+    }
+  ]
+}

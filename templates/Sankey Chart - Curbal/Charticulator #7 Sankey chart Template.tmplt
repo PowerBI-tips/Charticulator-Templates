@@ -1,0 +1,1128 @@
+{
+  "specification": {
+    "_id": "upwsd2kjamg",
+    "classID": "chart.rectangle",
+    "properties": {
+      "name": "Chart",
+      "backgroundColor": {
+        "r": 222,
+        "g": 235,
+        "b": 247
+      },
+      "backgroundOpacity": 1,
+      "enableContextMenu": true,
+      "exposed": true
+    },
+    "mappings": {
+      "marginTop": {
+        "type": "value",
+        "value": 80
+      },
+      "marginLeft": {
+        "type": "value",
+        "value": 165.1036792783181
+      }
+    },
+    "glyphs": [
+      {
+        "_id": "az2fg3erwl8",
+        "classID": "glyph.rectangle",
+        "properties": {
+          "name": "Glyph"
+        },
+        "table": "Tesla_revenue",
+        "marks": [
+          {
+            "_id": "j6upo0uuyz",
+            "classID": "mark.anchor",
+            "properties": {
+              "name": "Anchor"
+            },
+            "mappings": {
+              "x": {
+                "type": "parent",
+                "parentAttribute": "icx"
+              },
+              "y": {
+                "type": "parent",
+                "parentAttribute": "icy"
+              }
+            }
+          },
+          {
+            "_id": "6at1p4jd4oq",
+            "classID": "mark.rect",
+            "properties": {
+              "enableTooltips": true,
+              "enableContextMenu": true,
+              "enableSelection": true,
+              "visible": true,
+              "strokeStyle": "solid",
+              "shape": "rectangle",
+              "allowFlipping": true,
+              "name": "Shape1",
+              "exposed": true
+            },
+            "mappings": {
+              "fill": {
+                "type": "scale",
+                "table": "Tesla_revenue",
+                "expression": "first(Color)",
+                "valueType": "string",
+                "scale": "2mhhmz80zo8",
+                "attribute": "fill"
+              },
+              "strokeWidth": {
+                "type": "value",
+                "value": 1
+              },
+              "opacity": {
+                "type": "value",
+                "value": 1
+              },
+              "visible": {
+                "type": "value",
+                "value": true
+              },
+              "x1": {
+                "type": "parent",
+                "parentAttribute": "ix1"
+              },
+              "y1": {
+                "type": "parent",
+                "parentAttribute": "iy1"
+              },
+              "x2": {
+                "type": "parent",
+                "parentAttribute": "ix2"
+              },
+              "y2": {
+                "type": "parent",
+                "parentAttribute": "iy2"
+              },
+              "height": {
+                "type": "scale",
+                "table": "Tesla_revenue",
+                "expression": "avg(Amount)",
+                "valueType": "number",
+                "scale": "mbn8c8kakyr",
+                "attribute": "height"
+              }
+            }
+          },
+          {
+            "_id": "90opvyz0wxj",
+            "classID": "mark.text",
+            "properties": {
+              "enableTooltips": true,
+              "enableContextMenu": true,
+              "enableSelection": true,
+              "alignment": {
+                "x": "right",
+                "y": "middle",
+                "xMargin": 40.12610737073115,
+                "yMargin": -4.894844220328988
+              },
+              "rotation": 0,
+              "visible": true,
+              "name": "Text1",
+              "exposed": true
+            },
+            "mappings": {
+              "text": {
+                "type": "text",
+                "table": "Tesla_revenue",
+                "textExpression": "${first(Type)}"
+              },
+              "fontFamily": {
+                "type": "value",
+                "value": "Segoe UI"
+              },
+              "fontSize": {
+                "type": "value",
+                "value": 14
+              },
+              "color": {
+                "type": "value",
+                "value": {
+                  "r": 0,
+                  "g": 0,
+                  "b": 0
+                }
+              },
+              "opacity": {
+                "type": "value",
+                "value": 1
+              },
+              "visible": {
+                "type": "value",
+                "value": true
+              },
+              "x": {
+                "type": "parent",
+                "parentAttribute": "icx"
+              },
+              "y": {
+                "type": "parent",
+                "parentAttribute": "icy"
+              }
+            }
+          },
+          {
+            "_id": "kykmgmxl1m7",
+            "classID": "mark.text",
+            "properties": {
+              "enableTooltips": true,
+              "enableContextMenu": true,
+              "enableSelection": true,
+              "alignment": {
+                "x": "right",
+                "y": "top",
+                "xMargin": 60.015441539925376,
+                "yMargin": 10.517224093341987
+              },
+              "rotation": 0,
+              "visible": true,
+              "name": "Text2",
+              "exposed": true
+            },
+            "mappings": {
+              "text": {
+                "type": "text",
+                "table": "Tesla_revenue",
+                "textExpression": "\\$${avg(Amount) / 1000000000}{.3f}b"
+              },
+              "fontFamily": {
+                "type": "value",
+                "value": "Segoe UI"
+              },
+              "fontSize": {
+                "type": "value",
+                "value": 12
+              },
+              "color": {
+                "type": "value",
+                "value": {
+                  "r": 0,
+                  "g": 0,
+                  "b": 0
+                }
+              },
+              "opacity": {
+                "type": "value",
+                "value": 1
+              },
+              "visible": {
+                "type": "value",
+                "value": true
+              },
+              "x": {
+                "type": "parent",
+                "parentAttribute": "icx"
+              },
+              "y": {
+                "type": "parent",
+                "parentAttribute": "icy"
+              }
+            }
+          }
+        ],
+        "mappings": {},
+        "constraints": []
+      }
+    ],
+    "elements": [
+      {
+        "_id": "aovgj4bkrpf",
+        "classID": "links.table",
+        "mappings": {
+          "color": {
+            "type": "value",
+            "value": {
+              "r": 189,
+              "g": 189,
+              "b": 189
+            }
+          },
+          "opacity": {
+            "type": "value",
+            "value": 0.5
+          }
+        },
+        "properties": {
+          "name": "Link1",
+          "linkMarkType": "",
+          "visible": true,
+          "linkType": "band",
+          "interpolationType": "bezier",
+          "anchor1": [
+            {
+              "x": {
+                "element": "6at1p4jd4oq",
+                "attribute": "x2"
+              },
+              "y": {
+                "element": "6at1p4jd4oq",
+                "attribute": "y1"
+              },
+              "direction": {
+                "x": 1,
+                "y": 0
+              }
+            },
+            {
+              "x": {
+                "element": "6at1p4jd4oq",
+                "attribute": "x2"
+              },
+              "y": {
+                "element": "6at1p4jd4oq",
+                "attribute": "y2"
+              },
+              "direction": {
+                "x": 1,
+                "y": 0
+              }
+            }
+          ],
+          "anchor2": [
+            {
+              "x": {
+                "element": "6at1p4jd4oq",
+                "attribute": "x1"
+              },
+              "y": {
+                "element": "6at1p4jd4oq",
+                "attribute": "y1"
+              },
+              "direction": {
+                "x": -1,
+                "y": 0
+              }
+            },
+            {
+              "x": {
+                "element": "6at1p4jd4oq",
+                "attribute": "x1"
+              },
+              "y": {
+                "element": "6at1p4jd4oq",
+                "attribute": "y2"
+              },
+              "direction": {
+                "x": -1,
+                "y": 0
+              }
+            }
+          ],
+          "linkTable": {
+            "table": "Tesla_revenue_links",
+            "plotSegments": [
+              "f9w7g1dnxed",
+              "f9w7g1dnxed"
+            ]
+          },
+          "curveness": 170.45,
+          "exposed": true
+        }
+      },
+      {
+        "_id": "f9w7g1dnxed",
+        "classID": "plot-segment.cartesian",
+        "glyph": "az2fg3erwl8",
+        "table": "Tesla_revenue",
+        "filter": null,
+        "mappings": {
+          "x1": {
+            "type": "parent",
+            "parentAttribute": "x1"
+          },
+          "y1": {
+            "type": "parent",
+            "parentAttribute": "y1"
+          },
+          "x2": {
+            "type": "parent",
+            "parentAttribute": "x2"
+          },
+          "y2": {
+            "type": "parent",
+            "parentAttribute": "y2"
+          }
+        },
+        "properties": {
+          "name": "PlotSegment1",
+          "visible": true,
+          "marginX1": 0,
+          "marginY1": 0,
+          "marginX2": 0,
+          "marginY2": 0,
+          "sublayout": {
+            "type": "dodge-y",
+            "order": {
+              "expression": "avg(oder)"
+            },
+            "ratioX": 0.1,
+            "ratioY": 0.2198539594611608,
+            "align": {
+              "x": "start",
+              "y": "middle"
+            },
+            "grid": {
+              "direction": "x",
+              "xCount": null,
+              "yCount": null
+            },
+            "packing": {
+              "gravityX": 0.1,
+              "gravityY": 0.1
+            },
+            "jitter": {
+              "vertical": true,
+              "horizontal": true
+            },
+            "orderReversed": false
+          },
+          "xData": {
+            "type": "categorical",
+            "expression": "first(Kind)",
+            "rawExpression": null,
+            "valueType": "string",
+            "gapRatio": 0.7461538461538461,
+            "visible": true,
+            "side": "default",
+            "style": {
+              "tickColor": {
+                "r": 0,
+                "g": 0,
+                "b": 0
+              },
+              "lineColor": {
+                "r": 0,
+                "g": 0,
+                "b": 0
+              },
+              "fontFamily": "Segoe UI",
+              "fontSize": 12,
+              "tickSize": 5,
+              "wordWrap": false,
+              "gridlineStyle": "none",
+              "gridlineColor": {
+                "r": 234,
+                "g": 234,
+                "b": 234
+              },
+              "gridlineWidth": 1
+            },
+            "numericalMode": null,
+            "dataKind": "categorical",
+            "order": null,
+            "orderMode": "alphabetically",
+            "autoDomainMax": true,
+            "autoDomainMin": true,
+            "tickFormat": null,
+            "tickDataExpression": null,
+            "categories": [
+              "A Revenue Type",
+              "B Total Revenue",
+              "C Cost &Profit",
+              "D Gross Profit"
+            ]
+          },
+          "exposed": true
+        }
+      },
+      {
+        "_id": "l756j8l6lm",
+        "classID": "mark.text",
+        "properties": {
+          "name": "Title",
+          "visible": true,
+          "alignment": {
+            "x": "right",
+            "y": "top",
+            "xMargin": 20.72578295131885,
+            "yMargin": 20.98520314927047
+          },
+          "rotation": 0,
+          "exposed": true
+        },
+        "mappings": {
+          "x": {
+            "type": "parent",
+            "parentAttribute": "cx"
+          },
+          "y": {
+            "type": "parent",
+            "parentAttribute": "oy2"
+          },
+          "text": {
+            "type": "value",
+            "value": "Tesla Revenue"
+          },
+          "fontSize": {
+            "type": "value",
+            "value": 24
+          },
+          "color": {
+            "type": "value",
+            "value": {
+              "r": 0,
+              "g": 0,
+              "b": 0
+            }
+          }
+        }
+      }
+    ],
+    "scales": [
+      {
+        "_id": "mbn8c8kakyr",
+        "classID": "scale.linear<number,number>",
+        "properties": {
+          "autoDomainMin": true,
+          "autoDomainMax": true,
+          "name": "Scale1",
+          "domainMin": 0,
+          "domainMax": 11000000000,
+          "exposed": true
+        },
+        "mappings": {
+          "rangeMin": {
+            "type": "value",
+            "value": 0
+          }
+        },
+        "inputType": "number",
+        "outputType": "number"
+      },
+      {
+        "_id": "2mhhmz80zo8",
+        "classID": "scale.categorical<string,color>",
+        "properties": {
+          "enableTooltips": true,
+          "enableContextMenu": true,
+          "enableSelection": true,
+          "name": "Scale2",
+          "mapping": {
+            "Profit": {
+              "r": 116,
+              "g": 196,
+              "b": 118
+            },
+            "Revenue": {
+              "r": 107,
+              "g": 174,
+              "b": 214
+            },
+            "Cost": {
+              "r": 251,
+              "g": 106,
+              "b": 74
+            }
+          },
+          "autoDomainMax": true,
+          "autoDomainMin": true
+        },
+        "mappings": {},
+        "inputType": "string",
+        "outputType": "color"
+      }
+    ],
+    "scaleMappings": [
+      {
+        "type": "scale",
+        "table": "Tesla_revenue",
+        "expression": "avg(Amount)",
+        "valueType": "number",
+        "scale": "mbn8c8kakyr",
+        "attribute": "height"
+      },
+      {
+        "type": "scale",
+        "table": "Tesla_revenue",
+        "expression": "first(Color)",
+        "valueType": "string",
+        "scale": "2mhhmz80zo8",
+        "attribute": "fill"
+      }
+    ],
+    "constraints": [],
+    "resources": []
+  },
+  "defaultAttributes": {
+    "j6upo0uuyz": {
+      "x": 0,
+      "y": 0
+    },
+    "6at1p4jd4oq": {
+      "x1": -2.1732287099882517,
+      "y1": -5.38308028007696,
+      "x2": 2.1732287099882517,
+      "y2": 5.38308028007696,
+      "cx": 0,
+      "cy": 0,
+      "width": 4.346457419976503,
+      "height": 10.76616056015392,
+      "strokeWidth": 0.1,
+      "opacity": 0.1
+    },
+    "90opvyz0wxj": {
+      "x": 0,
+      "y": 0,
+      "fontSize": 3.5,
+      "opacity": 0.25
+    },
+    "kykmgmxl1m7": {
+      "x": 0,
+      "y": 0,
+      "fontSize": 3,
+      "opacity": 0.25
+    },
+    "l756j8l6lm": {
+      "x": 14.387959909789764,
+      "y": 75,
+      "fontSize": 6,
+      "opacity": 0.25
+    }
+  },
+  "tables": [
+    {
+      "name": "Tesla_revenue",
+      "columns": [
+        {
+          "displayName": "oder",
+          "name": "oder",
+          "type": "number",
+          "metadata": {
+            "kind": "numerical",
+            "examples": "1, 2, 3"
+          }
+        },
+        {
+          "displayName": "id",
+          "name": "id",
+          "type": "string",
+          "metadata": {
+            "kind": "categorical",
+            "orderMode": "alphabetically",
+            "examples": "Bitcoin profit, Energy Gen & Storage, Regulatory Credits"
+          }
+        },
+        {
+          "displayName": "Amount",
+          "name": "Amount",
+          "type": "number",
+          "metadata": {
+            "kind": "numerical",
+            "examples": "101000000, 494000000, 518000000"
+          }
+        },
+        {
+          "displayName": "Kind",
+          "name": "Kind",
+          "type": "string",
+          "metadata": {
+            "kind": "categorical",
+            "orderMode": "alphabetically",
+            "examples": "C Cost &Profit, A Revenue Type, D Gross Profit"
+          }
+        },
+        {
+          "displayName": "Type",
+          "name": "Type",
+          "type": "string",
+          "metadata": {
+            "kind": "categorical",
+            "orderMode": "alphabetically",
+            "examples": "Bitcoin profit, Energy Gen & Storage, Regulatory Credits"
+          }
+        },
+        {
+          "displayName": "Color",
+          "name": "Color",
+          "type": "string",
+          "metadata": {
+            "kind": "categorical",
+            "orderMode": "alphabetically",
+            "examples": "Profit, Revenue, Cost"
+          }
+        }
+      ]
+    },
+    {
+      "name": "Tesla_revenue_links",
+      "columns": [
+        {
+          "displayName": "source_id",
+          "name": "source_id",
+          "type": "string",
+          "metadata": {
+            "kind": "categorical",
+            "orderMode": "alphabetically",
+            "examples": "Automotive Revenue, Bitcoin profit, Cost of revenue"
+          }
+        },
+        {
+          "displayName": "target_id",
+          "name": "target_id",
+          "type": "string",
+          "metadata": {
+            "kind": "categorical",
+            "orderMode": "alphabetically",
+            "examples": "Total Revenue, Operating profit, "
+          }
+        }
+      ]
+    }
+  ],
+  "inference": [
+    {
+      "objectID": "f9w7g1dnxed",
+      "dataSource": {
+        "table": "Tesla_revenue"
+      },
+      "axis": {
+        "expression": "first(Kind)",
+        "type": "categorical",
+        "style": {
+          "tickColor": {
+            "r": 0,
+            "g": 0,
+            "b": 0
+          },
+          "lineColor": {
+            "r": 0,
+            "g": 0,
+            "b": 0
+          },
+          "fontFamily": "Segoe UI",
+          "fontSize": 12,
+          "tickSize": 5,
+          "wordWrap": false,
+          "gridlineStyle": "none",
+          "gridlineColor": {
+            "r": 234,
+            "g": 234,
+            "b": 234
+          },
+          "gridlineWidth": 1
+        },
+        "order": null,
+        "orderMode": "alphabetically",
+        "rawExpression": null,
+        "property": "xData"
+      },
+      "autoDomainMin": true,
+      "autoDomainMax": true
+    },
+    {
+      "objectID": "f9w7g1dnxed",
+      "dataSource": {
+        "table": "Tesla_revenue"
+      },
+      "expression": {
+        "expression": "avg(oder)",
+        "property": {
+          "property": "sublayout",
+          "field": [
+            "order",
+            "expression"
+          ]
+        }
+      }
+    },
+    {
+      "objectID": "mbn8c8kakyr",
+      "autoDomainMax": true,
+      "autoDomainMin": true,
+      "scale": {
+        "classID": "scale.linear<number,number>",
+        "expressions": [
+          "avg(Amount)"
+        ],
+        "properties": {
+          "mapping": "mapping"
+        }
+      },
+      "dataSource": {
+        "table": "Tesla_revenue"
+      }
+    },
+    {
+      "objectID": "2mhhmz80zo8",
+      "autoDomainMax": true,
+      "autoDomainMin": true,
+      "scale": {
+        "classID": "scale.categorical<string,color>",
+        "expressions": [
+          "first(Color)"
+        ],
+        "properties": {
+          "mapping": "mapping"
+        }
+      },
+      "dataSource": {
+        "table": "Tesla_revenue"
+      }
+    }
+  ],
+  "properties": [
+    {
+      "objectID": "aovgj4bkrpf",
+      "target": {
+        "attribute": "color"
+      },
+      "type": "color",
+      "default": "#bdbdbd",
+      "displayName": "Link1/color"
+    },
+    {
+      "objectID": "aovgj4bkrpf",
+      "target": {
+        "attribute": "opacity"
+      },
+      "type": "number",
+      "default": 0.5,
+      "displayName": "Link1/opacity"
+    },
+    {
+      "objectID": "f9w7g1dnxed",
+      "target": {
+        "property": {
+          "property": "xData",
+          "field": "style",
+          "subfield": "tickSize"
+        }
+      },
+      "type": "number",
+      "default": 5,
+      "displayName": "PlotSegment1/xData.style.tickSize"
+    },
+    {
+      "objectID": "f9w7g1dnxed",
+      "target": {
+        "property": {
+          "property": "xData",
+          "field": "style",
+          "subfield": "fontSize"
+        }
+      },
+      "type": "number",
+      "default": 12,
+      "displayName": "PlotSegment1/xData.style.fontSize"
+    },
+    {
+      "objectID": "f9w7g1dnxed",
+      "target": {
+        "property": {
+          "property": "xData",
+          "field": "style",
+          "subfield": "fontFamily"
+        }
+      },
+      "type": "font-family",
+      "default": "Segoe UI",
+      "displayName": "PlotSegment1/xData.style.fontFamily"
+    },
+    {
+      "objectID": "f9w7g1dnxed",
+      "target": {
+        "property": {
+          "property": "xData",
+          "field": "style",
+          "subfield": "lineColor"
+        }
+      },
+      "type": "color",
+      "default": "#000000",
+      "displayName": "PlotSegment1/xData.style.lineColor"
+    },
+    {
+      "objectID": "f9w7g1dnxed",
+      "target": {
+        "property": {
+          "property": "xData",
+          "field": "style",
+          "subfield": "tickColor"
+        }
+      },
+      "type": "color",
+      "default": "#000000",
+      "displayName": "PlotSegment1/xData.style.tickColor"
+    },
+    {
+      "objectID": "f9w7g1dnxed",
+      "target": {
+        "property": {
+          "property": "xData",
+          "field": "tickFormat"
+        }
+      },
+      "type": "text",
+      "default": null,
+      "displayName": "PlotSegment1/xData.tickFormat"
+    },
+    {
+      "objectID": "f9w7g1dnxed",
+      "target": {
+        "property": {
+          "property": "xData",
+          "field": "tickDataExpression"
+        }
+      },
+      "type": "text",
+      "default": null,
+      "displayName": "PlotSegment1/xData.tickDataExpression"
+    },
+    {
+      "objectID": "f9w7g1dnxed",
+      "target": {
+        "property": {
+          "property": "sublayout",
+          "field": "order"
+        }
+      },
+      "type": "object",
+      "default": {
+        "expression": "avg(oder)"
+      },
+      "displayName": "PlotSegment1/sublayout.order"
+    },
+    {
+      "objectID": "f9w7g1dnxed",
+      "target": {
+        "property": {
+          "property": "xData",
+          "field": "categories"
+        }
+      },
+      "type": "enum",
+      "default": "ascending",
+      "displayName": "PlotSegment1/xData.categories"
+    },
+    {
+      "objectID": "6at1p4jd4oq",
+      "target": {
+        "attribute": "visible"
+      },
+      "type": "boolean",
+      "default": true,
+      "displayName": "Shape1/visible"
+    },
+    {
+      "objectID": "6at1p4jd4oq",
+      "target": {
+        "attribute": "strokeWidth"
+      },
+      "type": "number",
+      "default": 1,
+      "displayName": "Shape1/strokeWidth"
+    },
+    {
+      "objectID": "6at1p4jd4oq",
+      "target": {
+        "property": "strokeStyle"
+      },
+      "type": "enum",
+      "default": "solid",
+      "displayName": "Shape1/strokeStyle"
+    },
+    {
+      "objectID": "6at1p4jd4oq",
+      "target": {
+        "attribute": "opacity"
+      },
+      "type": "number",
+      "default": 1,
+      "displayName": "Shape1/opacity"
+    },
+    {
+      "objectID": "90opvyz0wxj",
+      "target": {
+        "attribute": "fontFamily"
+      },
+      "type": "font-family",
+      "default": "Segoe UI",
+      "displayName": "Text1/fontFamily"
+    },
+    {
+      "objectID": "90opvyz0wxj",
+      "target": {
+        "attribute": "fontSize"
+      },
+      "type": "number",
+      "default": 14,
+      "displayName": "Text1/fontSize"
+    },
+    {
+      "objectID": "90opvyz0wxj",
+      "target": {
+        "attribute": "color"
+      },
+      "type": "color",
+      "default": "#000000",
+      "displayName": "Text1/color"
+    },
+    {
+      "objectID": "90opvyz0wxj",
+      "target": {
+        "attribute": "visible"
+      },
+      "type": "boolean",
+      "default": true,
+      "displayName": "Text1/visible"
+    },
+    {
+      "objectID": "90opvyz0wxj",
+      "target": {
+        "attribute": "opacity"
+      },
+      "type": "number",
+      "default": 1,
+      "displayName": "Text1/opacity"
+    },
+    {
+      "objectID": "kykmgmxl1m7",
+      "target": {
+        "attribute": "fontFamily"
+      },
+      "type": "font-family",
+      "default": "Segoe UI",
+      "displayName": "Text2/fontFamily"
+    },
+    {
+      "objectID": "kykmgmxl1m7",
+      "target": {
+        "attribute": "fontSize"
+      },
+      "type": "number",
+      "default": 12,
+      "displayName": "Text2/fontSize"
+    },
+    {
+      "objectID": "kykmgmxl1m7",
+      "target": {
+        "attribute": "color"
+      },
+      "type": "color",
+      "default": "#000000",
+      "displayName": "Text2/color"
+    },
+    {
+      "objectID": "kykmgmxl1m7",
+      "target": {
+        "attribute": "visible"
+      },
+      "type": "boolean",
+      "default": true,
+      "displayName": "Text2/visible"
+    },
+    {
+      "objectID": "kykmgmxl1m7",
+      "target": {
+        "attribute": "opacity"
+      },
+      "type": "number",
+      "default": 1,
+      "displayName": "Text2/opacity"
+    },
+    {
+      "objectID": "l756j8l6lm",
+      "target": {
+        "attribute": "fontSize"
+      },
+      "type": "number",
+      "default": 24,
+      "displayName": "Title/fontSize"
+    },
+    {
+      "objectID": "l756j8l6lm",
+      "target": {
+        "attribute": "color"
+      },
+      "type": "color",
+      "default": "#000000",
+      "displayName": "Title/color"
+    },
+    {
+      "objectID": "l756j8l6lm",
+      "target": {
+        "attribute": "text"
+      },
+      "type": "text",
+      "default": "Tesla Revenue",
+      "displayName": "Title/text"
+    },
+    {
+      "objectID": "mbn8c8kakyr",
+      "target": {
+        "property": "domainMin"
+      },
+      "type": "number",
+      "displayName": "Scale1/domainMin"
+    },
+    {
+      "objectID": "mbn8c8kakyr",
+      "target": {
+        "property": "domainMax"
+      },
+      "type": "number",
+      "displayName": "Scale1/domainMax"
+    },
+    {
+      "objectID": "mbn8c8kakyr",
+      "target": {
+        "attribute": "rangeMin"
+      },
+      "type": "number",
+      "default": null,
+      "displayName": "Scale1/rangeMin"
+    },
+    {
+      "objectID": "mbn8c8kakyr",
+      "target": {
+        "attribute": "rangeMax"
+      },
+      "type": "number",
+      "default": null,
+      "displayName": "Scale1/rangeMax"
+    },
+    {
+      "objectID": "upwsd2kjamg",
+      "target": {
+        "attribute": "marginLeft"
+      },
+      "type": "number",
+      "default": 165.1036792783181,
+      "displayName": "Chart/marginLeft"
+    },
+    {
+      "objectID": "upwsd2kjamg",
+      "target": {
+        "attribute": "marginRight"
+      },
+      "type": "number",
+      "default": 50,
+      "displayName": "Chart/marginRight"
+    },
+    {
+      "objectID": "upwsd2kjamg",
+      "target": {
+        "attribute": "marginTop"
+      },
+      "type": "number",
+      "default": 80,
+      "displayName": "Chart/marginTop"
+    },
+    {
+      "objectID": "upwsd2kjamg",
+      "target": {
+        "attribute": "marginBottom"
+      },
+      "type": "number",
+      "default": 50,
+      "displayName": "Chart/marginBottom"
+    }
+  ]
+}

@@ -1,0 +1,768 @@
+{
+  "specification": {
+    "_id": "j1moaw94s0k",
+    "classID": "chart.rectangle",
+    "properties": {
+      "name": "Chart",
+      "backgroundColor": null,
+      "backgroundOpacity": 1,
+      "exposed": true
+    },
+    "mappings": {
+      "marginTop": {
+        "type": "value",
+        "value": 80
+      },
+      "marginBottom": {
+        "type": "value",
+        "value": 106.5137614678899
+      },
+      "height": {
+        "type": "value",
+        "value": 550
+      }
+    },
+    "glyphs": [
+      {
+        "_id": "eag57qaushv",
+        "classID": "glyph.rectangle",
+        "properties": {
+          "name": "Glyph"
+        },
+        "table": "les_miserables_nodes",
+        "marks": [
+          {
+            "_id": "mfn3re9pxv",
+            "classID": "mark.anchor",
+            "properties": {
+              "name": "Anchor"
+            },
+            "mappings": {
+              "x": {
+                "type": "parent",
+                "parentAttribute": "icx"
+              },
+              "y": {
+                "type": "parent",
+                "parentAttribute": "icy"
+              }
+            }
+          },
+          {
+            "_id": "5folrpnt6uk",
+            "classID": "mark.rect",
+            "properties": {
+              "visible": true,
+              "strokeStyle": "solid",
+              "shape": "rectangle",
+              "name": "Shape1",
+              "exposed": true
+            },
+            "mappings": {
+              "fill": {
+                "type": "scale",
+                "table": "les_miserables_nodes",
+                "expression": "first(group)",
+                "valueType": "string",
+                "scale": "bbphc4y01sf",
+                "attribute": "fill"
+              },
+              "strokeWidth": {
+                "type": "value",
+                "value": 1
+              },
+              "opacity": {
+                "type": "value",
+                "value": 1
+              },
+              "visible": {
+                "type": "value",
+                "value": true
+              },
+              "x1": {
+                "type": "parent",
+                "parentAttribute": "ix1"
+              },
+              "y1": {
+                "type": "parent",
+                "parentAttribute": "iy1"
+              },
+              "x2": {
+                "type": "parent",
+                "parentAttribute": "ix2"
+              },
+              "y2": {
+                "type": "parent",
+                "parentAttribute": "iy2"
+              },
+              "height": {
+                "type": "value",
+                "value": 15
+              }
+            }
+          },
+          {
+            "_id": "efj2mhcrzmd",
+            "classID": "mark.text",
+            "properties": {
+              "alignment": {
+                "x": "right",
+                "y": "middle",
+                "xMargin": 6.367191183926238,
+                "yMargin": -7.583261502620851
+              },
+              "rotation": 90,
+              "visible": true,
+              "name": "Text1",
+              "exposed": true
+            },
+            "mappings": {
+              "text": {
+                "type": "text",
+                "table": "les_miserables_nodes",
+                "textExpression": "${first(name)}"
+              },
+              "fontFamily": {
+                "type": "value",
+                "value": "Arial"
+              },
+              "fontSize": {
+                "type": "value",
+                "value": 10
+              },
+              "color": {
+                "type": "scale",
+                "table": "les_miserables_nodes",
+                "expression": "first(group)",
+                "valueType": "string",
+                "scale": "bbphc4y01sf",
+                "attribute": "color"
+              },
+              "opacity": {
+                "type": "value",
+                "value": 1
+              },
+              "visible": {
+                "type": "value",
+                "value": true
+              },
+              "x": {
+                "type": "parent",
+                "parentAttribute": "icx"
+              },
+              "y": {
+                "type": "parent",
+                "parentAttribute": "iy1"
+              }
+            }
+          }
+        ],
+        "mappings": {},
+        "constraints": []
+      }
+    ],
+    "elements": [
+      {
+        "_id": "3rqjugzsm18",
+        "classID": "links.table",
+        "mappings": {
+          "color": {
+            "type": "value",
+            "value": {
+              "r": 0,
+              "g": 0,
+              "b": 0
+            }
+          },
+          "opacity": {
+            "type": "value",
+            "value": 0.4
+          },
+          "strokeWidth": {
+            "type": "scale",
+            "table": "les_miserables_links",
+            "expression": "avg(value)",
+            "valueType": "number",
+            "scale": "1qtl3t8b1fw"
+          }
+        },
+        "properties": {
+          "name": "Link1",
+          "linkMarkType": "",
+          "visible": true,
+          "linkType": "line",
+          "interpolationType": "circle",
+          "anchor1": [
+            {
+              "x": {
+                "element": "5folrpnt6uk",
+                "attribute": "cx"
+              },
+              "y": {
+                "element": "5folrpnt6uk",
+                "attribute": "y2"
+              },
+              "direction": {
+                "x": 0,
+                "y": 1
+              }
+            }
+          ],
+          "anchor2": [
+            {
+              "x": {
+                "element": "5folrpnt6uk",
+                "attribute": "cx"
+              },
+              "y": {
+                "element": "5folrpnt6uk",
+                "attribute": "y2"
+              },
+              "direction": {
+                "x": 0,
+                "y": 1
+              }
+            }
+          ],
+          "linkTable": {
+            "table": "les_miserables_links",
+            "plotSegments": [
+              "4anrocgowi6",
+              "4anrocgowi6"
+            ]
+          },
+          "curveness": 30,
+          "exposed": true
+        }
+      },
+      {
+        "_id": "4anrocgowi6",
+        "classID": "plot-segment.cartesian",
+        "glyph": "eag57qaushv",
+        "table": "les_miserables_nodes",
+        "filter": null,
+        "mappings": {
+          "x1": {
+            "type": "parent",
+            "parentAttribute": "x1"
+          },
+          "y1": {
+            "type": "parent",
+            "parentAttribute": "y1"
+          },
+          "x2": {
+            "type": "parent",
+            "parentAttribute": "x2"
+          },
+          "y2": {
+            "type": "parent",
+            "parentAttribute": "y2"
+          }
+        },
+        "properties": {
+          "name": "PlotSegment1",
+          "visible": true,
+          "marginX1": 0,
+          "marginY1": 0,
+          "marginX2": 0,
+          "marginY2": 0,
+          "sublayout": {
+            "type": "dodge-x",
+            "order": null,
+            "ratioX": 0.1,
+            "ratioY": 0.1,
+            "align": {
+              "x": "start",
+              "y": "start"
+            },
+            "grid": {
+              "direction": "x",
+              "xCount": null,
+              "yCount": null
+            },
+            "packing": {
+              "gravityX": 0.1,
+              "gravityY": 0.1
+            }
+          }
+        }
+      },
+      {
+        "_id": "ko7rne71dij",
+        "classID": "mark.text",
+        "properties": {
+          "name": "Title",
+          "visible": true,
+          "alignment": {
+            "x": "middle",
+            "y": "top",
+            "xMargin": 0,
+            "yMargin": 30
+          },
+          "rotation": 0,
+          "exposed": true
+        },
+        "mappings": {
+          "x": {
+            "type": "parent",
+            "parentAttribute": "cx"
+          },
+          "y": {
+            "type": "parent",
+            "parentAttribute": "oy2"
+          },
+          "text": {
+            "type": "value",
+            "value": "Character Co-occurrence in Les Miserables"
+          },
+          "fontSize": {
+            "type": "value",
+            "value": 24
+          },
+          "color": {
+            "type": "value",
+            "value": {
+              "r": 0,
+              "g": 0,
+              "b": 0
+            }
+          }
+        }
+      }
+    ],
+    "scales": [
+      {
+        "_id": "bbphc4y01sf",
+        "classID": "scale.categorical<string,color>",
+        "properties": {
+          "name": "Scale1",
+          "mapping": {
+            "G1": {
+              "r": 166,
+              "g": 206,
+              "b": 227
+            },
+            "G2": {
+              "r": 31,
+              "g": 120,
+              "b": 180
+            },
+            "G3": {
+              "r": 178,
+              "g": 223,
+              "b": 138
+            },
+            "G4": {
+              "r": 51,
+              "g": 160,
+              "b": 44
+            },
+            "G5": {
+              "r": 251,
+              "g": 154,
+              "b": 153
+            },
+            "G0": {
+              "r": 227,
+              "g": 26,
+              "b": 28
+            },
+            "G6": {
+              "r": 253,
+              "g": 191,
+              "b": 111
+            },
+            "G7": {
+              "r": 255,
+              "g": 127,
+              "b": 0
+            },
+            "G8": {
+              "r": 202,
+              "g": 178,
+              "b": 214
+            },
+            "G9": {
+              "r": 106,
+              "g": 61,
+              "b": 154
+            },
+            "G10": {
+              "r": 255,
+              "g": 255,
+              "b": 153
+            }
+          },
+          "autoDomainMax": true,
+          "autoDomainMin": true
+        },
+        "mappings": {},
+        "inputType": "string",
+        "outputType": "color"
+      },
+      {
+        "_id": "1qtl3t8b1fw",
+        "classID": "scale.linear<number,number>",
+        "properties": {
+          "autoDomainMin": true,
+          "autoDomainMax": true,
+          "name": "Scale3",
+          "domainMin": 0,
+          "domainMax": 35,
+          "exposed": true
+        },
+        "mappings": {
+          "rangeMin": {
+            "type": "value",
+            "value": 0
+          },
+          "rangeMax": {
+            "type": "value",
+            "value": 5
+          }
+        },
+        "inputType": "number",
+        "outputType": "number"
+      }
+    ],
+    "scaleMappings": [
+      {
+        "type": "scale",
+        "table": "les_miserables_nodes",
+        "expression": "first(group)",
+        "valueType": "string",
+        "scale": "bbphc4y01sf",
+        "attribute": "fill"
+      }
+    ],
+    "constraints": [],
+    "resources": []
+  },
+  "defaultAttributes": {
+    "mfn3re9pxv": {
+      "x": 0,
+      "y": 0
+    },
+    "5folrpnt6uk": {
+      "x1": -0.46753246753246974,
+      "y1": -0.75,
+      "x2": 0.46753246753246974,
+      "y2": 0.75,
+      "cx": 0,
+      "cy": 0,
+      "width": 0.9350649350649395,
+      "height": 1.5,
+      "strokeWidth": 0.1,
+      "opacity": 0.1
+    },
+    "efj2mhcrzmd": {
+      "x": 0,
+      "y": -1.875,
+      "fontSize": 2.5,
+      "opacity": 0.25
+    },
+    "ko7rne71dij": {
+      "x": 0,
+      "y": 68.75,
+      "fontSize": 6,
+      "opacity": 0.25
+    }
+  },
+  "tables": [
+    {
+      "name": "les_miserables_nodes",
+      "columns": [
+        {
+          "displayName": "id",
+          "name": "id",
+          "type": "string",
+          "metadata": {
+            "kind": "categorical",
+            "orderMode": "alphabetically",
+            "examples": "Myriel, Napoleon, Mlle.Baptistine"
+          }
+        },
+        {
+          "displayName": "name",
+          "name": "name",
+          "type": "string",
+          "metadata": {
+            "kind": "categorical",
+            "orderMode": "alphabetically",
+            "examples": "Myriel, Napoleon, Mlle.Baptistine"
+          }
+        },
+        {
+          "displayName": "group",
+          "name": "group",
+          "type": "string",
+          "metadata": {
+            "kind": "categorical",
+            "orderMode": "alphabetically",
+            "examples": "G1, G2, G3"
+          }
+        }
+      ]
+    },
+    {
+      "name": "les_miserables_links",
+      "columns": [
+        {
+          "displayName": "source_id",
+          "name": "source_id",
+          "type": "string",
+          "metadata": {
+            "kind": "categorical",
+            "orderMode": "alphabetically",
+            "examples": "Napoleon, Mlle.Baptistine, Mme.Magloire"
+          }
+        },
+        {
+          "displayName": "target_id",
+          "name": "target_id",
+          "type": "string",
+          "metadata": {
+            "kind": "categorical",
+            "orderMode": "alphabetically",
+            "examples": "Myriel, Mlle.Baptistine, Labarre"
+          }
+        },
+        {
+          "displayName": "value",
+          "name": "value",
+          "type": "number",
+          "metadata": {
+            "kind": "numerical",
+            "examples": "1, 2, 3"
+          }
+        }
+      ]
+    }
+  ],
+  "inference": [
+    {
+      "objectID": "bbphc4y01sf",
+      "scale": {
+        "classID": "scale.categorical<string,color>",
+        "expressions": [
+          "first(group)"
+        ],
+        "properties": {
+          "mapping": "mapping"
+        }
+      },
+      "dataSource": {
+        "table": "les_miserables_nodes"
+      },
+      "autoDomainMax": true,
+      "autoDomainMin": true
+    },
+    {
+      "objectID": "1qtl3t8b1fw",
+      "scale": {
+        "classID": "scale.linear<number,number>",
+        "expressions": [
+          "avg(value)"
+        ],
+        "properties": {
+          "mapping": "mapping"
+        }
+      },
+      "dataSource": {
+        "table": "les_miserables_links",
+        "groupBy": null
+      },
+      "autoDomainMax": true,
+      "autoDomainMin": true
+    }
+  ],
+  "properties": [
+    {
+      "objectID": "3rqjugzsm18",
+      "target": {
+        "attribute": "color"
+      },
+      "type": "color",
+      "default": "#000000",
+      "displayName": "Link1/color"
+    },
+    {
+      "objectID": "3rqjugzsm18",
+      "target": {
+        "attribute": "opacity"
+      },
+      "type": "number",
+      "default": 0.4,
+      "displayName": "Link1/opacity"
+    },
+    {
+      "objectID": "5folrpnt6uk",
+      "target": {
+        "attribute": "visible"
+      },
+      "type": "boolean",
+      "default": true,
+      "displayName": "Shape1/visible"
+    },
+    {
+      "objectID": "5folrpnt6uk",
+      "target": {
+        "attribute": "strokeWidth"
+      },
+      "type": "number",
+      "default": 1,
+      "displayName": "Shape1/strokeWidth"
+    },
+    {
+      "objectID": "5folrpnt6uk",
+      "target": {
+        "property": "strokeStyle"
+      },
+      "type": "enum",
+      "default": "solid",
+      "displayName": "Shape1/strokeStyle"
+    },
+    {
+      "objectID": "5folrpnt6uk",
+      "target": {
+        "attribute": "opacity"
+      },
+      "type": "number",
+      "default": 1,
+      "displayName": "Shape1/opacity"
+    },
+    {
+      "objectID": "efj2mhcrzmd",
+      "target": {
+        "attribute": "fontFamily"
+      },
+      "type": "font-family",
+      "default": "Arial",
+      "displayName": "Text1/fontFamily"
+    },
+    {
+      "objectID": "efj2mhcrzmd",
+      "target": {
+        "attribute": "fontSize"
+      },
+      "type": "number",
+      "default": 10,
+      "displayName": "Text1/fontSize"
+    },
+    {
+      "objectID": "efj2mhcrzmd",
+      "target": {
+        "attribute": "visible"
+      },
+      "type": "boolean",
+      "default": true,
+      "displayName": "Text1/visible"
+    },
+    {
+      "objectID": "efj2mhcrzmd",
+      "target": {
+        "attribute": "opacity"
+      },
+      "type": "number",
+      "default": 1,
+      "displayName": "Text1/opacity"
+    },
+    {
+      "objectID": "ko7rne71dij",
+      "target": {
+        "attribute": "fontSize"
+      },
+      "type": "number",
+      "default": 24,
+      "displayName": "Title/fontSize"
+    },
+    {
+      "objectID": "ko7rne71dij",
+      "target": {
+        "attribute": "color"
+      },
+      "type": "color",
+      "default": "#000000",
+      "displayName": "Title/color"
+    },
+    {
+      "objectID": "ko7rne71dij",
+      "target": {
+        "attribute": "text"
+      },
+      "type": "text",
+      "default": "Character Co-occurrence in Les Miserables",
+      "displayName": "Title/text"
+    },
+    {
+      "objectID": "1qtl3t8b1fw",
+      "target": {
+        "property": "domainMin"
+      },
+      "type": "number",
+      "displayName": "Scale3/domainMin"
+    },
+    {
+      "objectID": "1qtl3t8b1fw",
+      "target": {
+        "property": "domainMax"
+      },
+      "type": "number",
+      "displayName": "Scale3/domainMax"
+    },
+    {
+      "objectID": "1qtl3t8b1fw",
+      "target": {
+        "attribute": "rangeMin"
+      },
+      "type": "number",
+      "default": null,
+      "displayName": "Scale3/rangeMin"
+    },
+    {
+      "objectID": "1qtl3t8b1fw",
+      "target": {
+        "attribute": "rangeMax"
+      },
+      "type": "number",
+      "default": null,
+      "displayName": "Scale3/rangeMax"
+    },
+    {
+      "objectID": "j1moaw94s0k",
+      "target": {
+        "attribute": "marginLeft"
+      },
+      "type": "number",
+      "default": 50,
+      "displayName": "Chart/marginLeft"
+    },
+    {
+      "objectID": "j1moaw94s0k",
+      "target": {
+        "attribute": "marginRight"
+      },
+      "type": "number",
+      "default": 50,
+      "displayName": "Chart/marginRight"
+    },
+    {
+      "objectID": "j1moaw94s0k",
+      "target": {
+        "attribute": "marginTop"
+      },
+      "type": "number",
+      "default": 80,
+      "displayName": "Chart/marginTop"
+    },
+    {
+      "objectID": "j1moaw94s0k",
+      "target": {
+        "attribute": "marginBottom"
+      },
+      "type": "number",
+      "default": 106.5137614678899,
+      "displayName": "Chart/marginBottom"
+    }
+  ]
+}

@@ -1,0 +1,671 @@
+{
+  "specification": {
+    "_id": "cltdzyp4y2l",
+    "classID": "chart.rectangle",
+    "properties": {
+      "name": "Chart",
+      "backgroundColor": {
+        "r": 247,
+        "g": 251,
+        "b": 255
+      },
+      "backgroundOpacity": 1,
+      "enableContextMenu": true,
+      "exposed": true
+    },
+    "mappings": {
+      "marginTop": {
+        "type": "value",
+        "value": 80
+      },
+      "marginRight": {
+        "type": "value",
+        "value": 30
+      },
+      "marginLeft": {
+        "type": "value",
+        "value": 130
+      },
+      "width": {
+        "type": "value",
+        "value": 800
+      },
+      "height": {
+        "type": "value",
+        "value": 400
+      },
+      "marginBottom": {
+        "type": "value",
+        "value": 30
+      }
+    },
+    "glyphs": [
+      {
+        "_id": "gfo31gd08a8",
+        "classID": "glyph.rectangle",
+        "properties": {
+          "name": "Glyph"
+        },
+        "table": "fake_weather",
+        "marks": [
+          {
+            "_id": "3wrydrv969d",
+            "classID": "mark.anchor",
+            "properties": {
+              "name": "Anchor"
+            },
+            "mappings": {
+              "x": {
+                "type": "parent",
+                "parentAttribute": "icx"
+              },
+              "y": {
+                "type": "parent",
+                "parentAttribute": "icy"
+              }
+            }
+          },
+          {
+            "_id": "bklytza5jic",
+            "classID": "mark.image",
+            "properties": {
+              "enableTooltips": true,
+              "enableContextMenu": true,
+              "enableSelection": true,
+              "exposed": true,
+              "visible": true,
+              "imageMode": "letterbox",
+              "paddingX": 0,
+              "paddingY": 0,
+              "alignX": "middle",
+              "alignY": "middle",
+              "name": "Image1"
+            },
+            "mappings": {
+              "strokeWidth": {
+                "type": "value",
+                "value": 1
+              },
+              "opacity": {
+                "type": "value",
+                "value": 1
+              },
+              "visible": {
+                "type": "value",
+                "value": true
+              },
+              "x1": {
+                "type": "parent",
+                "parentAttribute": "ix1"
+              },
+              "y1": {
+                "type": "parent",
+                "parentAttribute": "iy1"
+              },
+              "x2": {
+                "type": "parent",
+                "parentAttribute": "ix2"
+              },
+              "y2": {
+                "type": "parent",
+                "parentAttribute": "iy2"
+              },
+              "image": {
+                "type": "scale",
+                "table": "fake_weather",
+                "expression": "first(Weather)",
+                "valueType": "string",
+                "scale": "mzjmn1x41rj",
+                "attribute": "image",
+                "valueIndex": null
+              }
+            }
+          }
+        ],
+        "mappings": {},
+        "constraints": []
+      }
+    ],
+    "elements": [
+      {
+        "_id": "2u1e0q3ih2e",
+        "classID": "plot-segment.cartesian",
+        "glyph": "gfo31gd08a8",
+        "table": "fake_weather",
+        "filter": null,
+        "mappings": {
+          "x1": {
+            "type": "parent",
+            "parentAttribute": "x1"
+          },
+          "y1": {
+            "type": "parent",
+            "parentAttribute": "y1"
+          },
+          "x2": {
+            "type": "parent",
+            "parentAttribute": "x2"
+          },
+          "y2": {
+            "type": "parent",
+            "parentAttribute": "y2"
+          }
+        },
+        "properties": {
+          "name": "PlotSegment1",
+          "visible": true,
+          "marginX1": 0,
+          "marginY1": 0,
+          "marginX2": 0,
+          "marginY2": 0,
+          "sublayout": {
+            "type": "dodge-x",
+            "order": null,
+            "ratioX": 0.1,
+            "ratioY": 0.1,
+            "align": {
+              "x": "start",
+              "y": "start"
+            },
+            "grid": {
+              "direction": "x",
+              "xCount": null,
+              "yCount": null,
+              "gridStartPosition": "LT"
+            },
+            "packing": {
+              "gravityX": 0.1,
+              "gravityY": 0.1
+            },
+            "jitter": {
+              "vertical": true,
+              "horizontal": true
+            }
+          },
+          "xData": null,
+          "yData": {
+            "type": "categorical",
+            "expression": "first(Weather)",
+            "rawExpression": "first(Weather)",
+            "valueType": "string",
+            "gapRatio": 0.1,
+            "visible": true,
+            "side": "default",
+            "style": {
+              "tickColor": {
+                "r": 0,
+                "g": 0,
+                "b": 0
+              },
+              "lineColor": null,
+              "fontFamily": "Segoe UI",
+              "fontSize": 16,
+              "tickSize": 5,
+              "wordWrap": false,
+              "verticalText": false,
+              "gridlineStyle": "none",
+              "gridlineColor": {
+                "r": 234,
+                "g": 234,
+                "b": 234
+              },
+              "gridlineWidth": 1
+            },
+            "numericalMode": null,
+            "dataKind": "categorical",
+            "order": null,
+            "orderMode": "alphabetically",
+            "autoDomainMax": true,
+            "autoDomainMin": true,
+            "tickFormat": null,
+            "tickDataExpression": null,
+            "tickFormatType": "none",
+            "domainMin": null,
+            "domainMax": null,
+            "dataDomainMin": null,
+            "dataDomainMax": null,
+            "enablePrePostGap": null,
+            "categories": [
+              "Cloudy",
+              "Partly Cloudy",
+              "Rain",
+              "Sunny"
+            ],
+            "allCategories": [
+              "Cloudy",
+              "Partly Cloudy",
+              "Rain",
+              "Sunny"
+            ],
+            "scrollPosition": 0,
+            "allowScrolling": false,
+            "windowSize": 10,
+            "barOffset": 0,
+            "offset": 0
+          },
+          "exposed": true
+        }
+      },
+      {
+        "_id": "1bshb7qpmek",
+        "classID": "mark.text",
+        "properties": {
+          "name": "Title",
+          "visible": true,
+          "alignment": {
+            "x": "middle",
+            "y": "top",
+            "xMargin": 0,
+            "yMargin": 30
+          },
+          "rotation": 0,
+          "exposed": true
+        },
+        "mappings": {
+          "x": {
+            "type": "parent",
+            "parentAttribute": "cx"
+          },
+          "y": {
+            "type": "parent",
+            "parentAttribute": "oy2"
+          },
+          "text": {
+            "type": "value",
+            "value": "September Weather"
+          },
+          "fontSize": {
+            "type": "value",
+            "value": 24
+          },
+          "color": {
+            "type": "value",
+            "value": {
+              "r": 0,
+              "g": 0,
+              "b": 0
+            }
+          }
+        }
+      }
+    ],
+    "scales": [
+      {
+        "_id": "mzjmn1x41rj",
+        "classID": "scale.categorical<string,image>",
+        "properties": {
+          "enableTooltips": true,
+          "enableContextMenu": true,
+          "enableSelection": true,
+          "exposed": true,
+          "name": "Scale1",
+          "mapping": {
+            "Sunny": {
+              "src": "data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iVVRGLTgiPz4KPHN2ZyAgIHZpZXdCb3g9IjAgMCAyNCAyNCIgdmVyc2lvbj0iMS4xIiB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHhtbG5zOnhsaW5rPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5L3hsaW5rIj4KICAgIDwhLS0gR2VuZXJhdG9yOiBTa2V0Y2ggNTkuMSAoODYxNDQpIC0gaHR0cHM6Ly9za2V0Y2guY29tIC0tPgogICAgPHRpdGxlPmljX2ZsdWVudF93ZWF0aGVyX3N1bm55XzI0X3JlZ3VsYXI8L3RpdGxlPgogICAgPGRlc2M+Q3JlYXRlZCB3aXRoIFNrZXRjaC48L2Rlc2M+CiAgICA8ZyBpZD0i8J+UjS1Qcm9kdWN0LUljb25zIiBzdHJva2U9Im5vbmUiIHN0cm9rZS13aWR0aD0iMSIgZmlsbD0ibm9uZSIgZmlsbC1ydWxlPSJldmVub2RkIj4KICAgICAgICA8ZyBpZD0iaWNfZmx1ZW50X3dlYXRoZXJfc3VubnlfMjRfcmVndWxhciIgZmlsbD0iIzIxMjEyMSIgZmlsbC1ydWxlPSJub256ZXJvIj4KICAgICAgICAgICAgPHBhdGggZD0iTTExLjk5NjE4NjksMTkuMDEwNTA5NCBDMTIuMzc1ODgyNiwxOS4wMTA1MDk0IDEyLjY4OTY3NzgsMTkuMjkyNjYzMyAxMi43MzkzNDAyLDE5LjY1ODczODggTDEyLjc0NjE4NjksMTkuNzYwNTA5NCBMMTIuNzQ2MTg2OSwyMS4yNjA1MDk0IEMxMi43NDYxODY5LDIxLjY3NDcyMjkgMTIuNDEwNDAwNCwyMi4wMTA1MDk0IDExLjk5NjE4NjksMjIuMDEwNTA5NCBDMTEuNjE2NDkxMSwyMi4wMTA1MDk0IDExLjMwMjY5NTksMjEuNzI4MzU1NSAxMS4yNTMwMzM1LDIxLjM2MjI3OTkgTDExLjI0NjE4NjksMjEuMjYwNTA5NCBMMTEuMjQ2MTg2OSwxOS43NjA1MDk0IEMxMS4yNDYxODY5LDE5LjM0NjI5NTggMTEuNTgxOTczMywxOS4wMTA1MDk0IDExLjk5NjE4NjksMTkuMDEwNTA5NCBaIE0xOC4wMTc4ODU1LDE2LjkzNzY5MjkgTDE5LjA3ODU0NTcsMTcuOTk4MzUzMSBDMTkuMzcxNDM4OSwxOC4yOTEyNDYzIDE5LjM3MTQzODksMTguNzY2MTIgMTkuMDc4NTQ1NywxOS4wNTkwMTMyIEMxOC43ODU2NTI1LDE5LjM1MTkwNjUgMTguMzEwNzc4NywxOS4zNTE5MDY1IDE4LjAxNzg4NTUsMTkuMDU5MDEzMiBMMTYuOTU3MjI1MywxNy45OTgzNTMxIEMxNi42NjQzMzIxLDE3LjcwNTQ1OTkgMTYuNjY0MzMyMSwxNy4yMzA1ODYxIDE2Ljk1NzIyNTMsMTYuOTM3NjkyOSBDMTcuMjUwMTE4NSwxNi42NDQ3OTk3IDE3LjcyNDk5MjMsMTYuNjQ0Nzk5NyAxOC4wMTc4ODU1LDE2LjkzNzY5MjkgWiBNNy4wMzQ2NTU3NywxNi45Mzc2OTI5IEM3LjMyNzU0ODk5LDE3LjIzMDU4NjEgNy4zMjc1NDg5OSwxNy43MDU0NTk5IDcuMDM0NjU1NzcsMTcuOTk4MzUzMSBMNS45NzM5OTU1OSwxOS4wNTkwMTMyIEM1LjY4MTEwMjM4LDE5LjM1MTkwNjUgNS4yMDYyMjg2NCwxOS4zNTE5MDY1IDQuOTEzMzM1NDIsMTkuMDU5MDEzMiBDNC42MjA0NDIyLDE4Ljc2NjEyIDQuNjIwNDQyMiwxOC4yOTEyNDYzIDQuOTEzMzM1NDIsMTcuOTk4MzUzMSBMNS45NzM5OTU1OSwxNi45Mzc2OTI5IEM2LjI2Njg4ODgxLDE2LjY0NDc5OTcgNi43NDE3NjI1NSwxNi42NDQ3OTk3IDcuMDM0NjU1NzcsMTYuOTM3NjkyOSBaIE0xMiw2LjQ3NSBDMTUuMDUxMzczMiw2LjQ3NSAxNy41MjUsOC45NDg2MjY3NiAxNy41MjUsMTIgQzE3LjUyNSwxNS4wNTEzNzMyIDE1LjA1MTM3MzIsMTcuNTI1IDEyLDE3LjUyNSBDOC45NDg2MjY3NiwxNy41MjUgNi40NzUsMTUuMDUxMzczMiA2LjQ3NSwxMiBDNi40NzUsOC45NDg2MjY3NiA4Ljk0ODYyNjc2LDYuNDc1IDEyLDYuNDc1IFogTTEyLDcuOTc1IEM5Ljc3NzA1Mzg4LDcuOTc1IDcuOTc1LDkuNzc3MDUzODggNy45NzUsMTIgQzcuOTc1LDE0LjIyMjk0NjEgOS43NzcwNTM4OCwxNi4wMjUgMTIsMTYuMDI1IEMxNC4yMjI5NDYxLDE2LjAyNSAxNi4wMjUsMTQuMjIyOTQ2MSAxNi4wMjUsMTIgQzE2LjAyNSw5Ljc3NzA1Mzg4IDE0LjIyMjk0NjEsNy45NzUgMTIsNy45NzUgWiBNMjEuMjQ5NzUzNywxMS4yNjgyOTc2IEMyMS42NjM5NjczLDExLjI2ODI5NzYgMjEuOTk5NzUzNywxMS42MDQwODQgMjEuOTk5NzUzNywxMi4wMTgyOTc2IEMyMS45OTk3NTM3LDEyLjM5Nzk5MzMgMjEuNzE3NTk5OCwxMi43MTE3ODg1IDIxLjM1MTUyNDIsMTIuNzYxNDUwOSBMMjEuMjQ5NzUzNywxMi43NjgyOTc2IEwxOS43NDk3NTM3LDEyLjc2ODI5NzYgQzE5LjMzNTU0MDEsMTIuNzY4Mjk3NiAxOC45OTk3NTM3LDEyLjQzMjUxMTEgMTguOTk5NzUzNywxMi4wMTgyOTc2IEMxOC45OTk3NTM3LDExLjYzODYwMTggMTkuMjgxOTA3NiwxMS4zMjQ4MDY2IDE5LjY0Nzk4MzEsMTEuMjc1MTQ0MiBMMTkuNzQ5NzUzNywxMS4yNjgyOTc2IEwyMS4yNDk3NTM3LDExLjI2ODI5NzYgWiBNNC4yNTAyNDYzMSwxMS4yMzk0OTA2IEM0LjY2NDQ1OTg3LDExLjIzOTQ5MDYgNS4wMDAyNDYzMSwxMS41NzUyNzcxIDUuMDAwMjQ2MzEsMTEuOTg5NDkwNiBDNS4wMDAyNDYzMSwxMi4zNjkxODY0IDQuNzE4MDkyNDMsMTIuNjgyOTgxNiA0LjM1MjAxNjg3LDEyLjczMjY0NCBMNC4yNTAyNDYzMSwxMi43Mzk0OTA2IEwyLjc1MDI0NjMxLDEyLjczOTQ5MDYgQzIuMzM2MDMyNzUsMTIuNzM5NDkwNiAyLjAwMDI0NjMxLDEyLjQwMzcwNDIgMi4wMDAyNDYzMSwxMS45ODk0OTA2IEMyLjAwMDI0NjMxLDExLjYwOTc5NDkgMi4yODI0MDAxOSwxMS4yOTU5OTk3IDIuNjQ4NDc1NzUsMTEuMjQ2MzM3MiBMMi43NTAyNDYzMSwxMS4yMzk0OTA2IEw0LjI1MDI0NjMxLDExLjIzOTQ5MDYgWiBNNS44ODk4NzcxNiw0Ljg2ODM2ODYxIEw1Ljk3Mzk5NTU5LDQuOTQwOTg2NzYgTDcuMDM0NjU1NzcsNi4wMDE2NDY5MyBDNy4zMjc1NDg5OSw2LjI5NDU0MDE1IDcuMzI3NTQ4OTksNi43Njk0MTM4OCA3LjAzNDY1NTc3LDcuMDYyMzA3MSBDNi43NjgzODkyLDcuMzI4NTczNjcgNi4zNTE3MjU1Miw3LjM1Mjc3OTcyIDYuMDU4MTE0MDMsNy4xMzQ5MjUyNiBMNS45NzM5OTU1OSw3LjA2MjMwNzEgTDQuOTEzMzM1NDIsNi4wMDE2NDY5MyBDNC42MjA0NDIyLDUuNzA4NzUzNzEgNC42MjA0NDIyLDUuMjMzODc5OTggNC45MTMzMzU0Miw0Ljk0MDk4Njc2IEM1LjE3OTYwMTk5LDQuNjc0NzIwMiA1LjU5NjI2NTY3LDQuNjUwNTE0MTUgNS44ODk4NzcxNiw0Ljg2ODM2ODYxIFogTTE5LjA3ODU0NTcsNC45NDA5ODY3NiBDMTkuMzQ0ODEyMiw1LjIwNzI1MzMyIDE5LjM2OTAxODMsNS42MjM5MTcgMTkuMTUxMTYzOCw1LjkxNzUyODUgTDE5LjA3ODU0NTcsNi4wMDE2NDY5MyBMMTguMDE3ODg1NSw3LjA2MjMwNzEgQzE3LjcyNDk5MjMsNy4zNTUyMDAzMiAxNy4yNTAxMTg1LDcuMzU1MjAwMzIgMTYuOTU3MjI1Myw3LjA2MjMwNzEgQzE2LjY5MDk1ODgsNi43OTYwNDA1NCAxNi42NjY3NTI3LDYuMzc5Mzc2ODYgMTYuODg0NjA3Miw2LjA4NTc2NTM2IEwxNi45NTcyMjUzLDYuMDAxNjQ2OTMgTDE4LjAxNzg4NTUsNC45NDA5ODY3NiBDMTguMzEwNzc4Nyw0LjY0ODA5MzU0IDE4Ljc4NTY1MjUsNC42NDgwOTM1NCAxOS4wNzg1NDU3LDQuOTQwOTg2NzYgWiBNMTIuMDAwMjQ2MywxLjk4OTQ5MDYyIEMxMi4zNzk5NDIxLDEuOTg5NDkwNjIgMTIuNjkzNzM3MywyLjI3MTY0NDUxIDEyLjc0MzM5OTcsMi42Mzc3MjAwNyBMMTIuNzUwMjQ2MywyLjczOTQ5MDYyIEwxMi43NTAyNDYzLDQuMjM5NDkwNjIgQzEyLjc1MDI0NjMsNC42NTM3MDQxOSAxMi40MTQ0NTk5LDQuOTg5NDkwNjIgMTIuMDAwMjQ2Myw0Ljk4OTQ5MDYyIEMxMS42MjA1NTA1LDQuOTg5NDkwNjIgMTEuMzA2NzU1Myw0LjcwNzMzNjc0IDExLjI1NzA5MjksNC4zNDEyNjExOCBMMTEuMjUwMjQ2Myw0LjIzOTQ5MDYyIEwxMS4yNTAyNDYzLDIuNzM5NDkwNjIgQzExLjI1MDI0NjMsMi4zMjUyNzcwNiAxMS41ODYwMzI3LDEuOTg5NDkwNjIgMTIuMDAwMjQ2MywxLjk4OTQ5MDYyIFoiIGlkPSLwn46oQ29sb3IiPjwvcGF0aD4KICAgICAgICA8L2c+CiAgICA8L2c+Cjwvc3ZnPg==",
+              "width": 150,
+              "height": 150,
+              "name": "weather_sunny.svg"
+            },
+            "Partly Cloudy": {
+              "src": "data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iVVRGLTgiPz4KPHN2ZyAgIHZpZXdCb3g9IjAgMCAyNCAyNCIgdmVyc2lvbj0iMS4xIiB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHhtbG5zOnhsaW5rPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5L3hsaW5rIj4KICAgIDwhLS0gR2VuZXJhdG9yOiBTa2V0Y2ggNTkuMSAoODYxNDQpIC0gaHR0cHM6Ly9za2V0Y2guY29tIC0tPgogICAgPHRpdGxlPmljX2ZsdWVudF93ZWF0aGVyX3BhcnRseV9jbG91ZHlfZGF5XzI0X3JlZ3VsYXI8L3RpdGxlPgogICAgPGRlc2M+Q3JlYXRlZCB3aXRoIFNrZXRjaC48L2Rlc2M+CiAgICA8ZyBpZD0i8J+UjS1Qcm9kdWN0LUljb25zIiBzdHJva2U9Im5vbmUiIHN0cm9rZS13aWR0aD0iMSIgZmlsbD0ibm9uZSIgZmlsbC1ydWxlPSJldmVub2RkIj4KICAgICAgICA8ZyBpZD0iaWNfZmx1ZW50X3dlYXRoZXJfcGFydGx5X2Nsb3VkeV9kYXlfMjRfcmVndWxhciIgZmlsbD0iIzIxMjEyMSIgZmlsbC1ydWxlPSJub256ZXJvIj4KICAgICAgICAgICAgPHBhdGggZD0iTTEzLjAwMjE1MDYsOC4wMDY4NjI4MyBDMTYuMTcwNjgxNiw4LjAwNjg2MjgzIDE3Ljk2ODEzNTQsMTAuMTA0MTUzMiAxOC4yMjk1NDk5LDEyLjYzNjk4OTIgTDE4LjMwOTUxNjEsMTIuNjM2OTg2NiBDMjAuMzQ4NTk1OCwxMi42MzY5ODY2IDIyLjAwMTU5NjUsMTQuMjg1NzEwNSAyMi4wMDE1OTY1LDE2LjMxOTUxNDQgQzIyLjAwMTU5NjUsMTguMzUzMzE4NCAyMC4zNDg1OTU4LDIwLjAwMjA0MjIgMTguMzA5NTE2MSwyMC4wMDIwNDIyIEw3LjY5NDc4NTAxLDIwLjAwMjA0MjIgQzUuNjU1NzA1MzMsMjAuMDAyMDQyMiA0LjAwMjcwNDY0LDE4LjM1MzMxODQgNC4wMDI3MDQ2NCwxNi4zMTk1MTQ0IEM0LjAwMjcwNDY0LDE0LjI4NTcxMDUgNS42NTU3MDUzMywxMi42MzY5ODY2IDcuNjk0ODA3NTIsMTIuNjM2OTg2NiBMNy43NzQ3NTEyNSwxMi42MzY5ODkyIEM4LjAzNzY4NjQyLDEwLjA4NzUwNTYgOS44MzM2MTk0Nyw4LjAwNjg2MjgzIDEzLjAwMjE1MDYsOC4wMDY4NjI4MyBaIE0xMy4wMDIxNTA2LDkuNTA0NDUyNTMgQzEwLjkzMDgyNzMsOS41MDQ0NTI1MyA5LjEyNTQ0MDMsMTEuMTM3NjkzMiA5LjEyNTQ0MDMsMTMuMzkzNjcwNCBDOS4xMjU0NDAzLDEzLjc1MTEyNTkgOC44MDY0OTA0OCwxNC4wMzE2MTc5IDguNDQxMjc4MTIsMTQuMDMxNjA2MiBMNy43NTA3MjQwNywxNC4wMzE1ODQyIEM2LjQ4OTczMTU2LDE0LjAzMTU4NDIgNS40Njc0OTUxNiwxNS4wMzI4Njk5IDUuNDY3NDk1MTYsMTYuMjY4MDE4NCBDNS40Njc0OTUxNiwxNy41MDMxNjY5IDYuNDg5NzMxNTYsMTguNTA0NDUyNSA3Ljc1MDcyNDA3LDE4LjUwNDQ1MjUgTDE4LjI1MzU3NywxOC41MDQ0NTI1IEMxOS41MTQ1Njk1LDE4LjUwNDQ1MjUgMjAuNTM2ODA1OSwxNy41MDMxNjY5IDIwLjUzNjgwNTksMTYuMjY4MDE4NCBDMjAuNTM2ODA1OSwxNS4wMzI4Njk5IDE5LjUxNDU2OTUsMTQuMDMxNTg0MiAxOC4yNTM1OTkzLDE0LjAzMTU4NDIgTDE3LjU2MzAyMywxNC4wMzE2MDYyIEMxNy4xOTc4MTA2LDE0LjAzMTYxNzkgMTYuODc4ODYwOCwxMy43NTExMjU5IDE2Ljg3ODg2MDgsMTMuMzkzNjcwNCBDMTYuODc4ODYwOCwxMS4xMDg3NTM3IDE1LjA3MzQ3MzgsOS41MDQ0NTI1MyAxMy4wMDIxNTA2LDkuNTA0NDUyNTMgWiBNNC4zNjc3NzUxNywxMi4xNjIyOTkxIEM0LjUxMzA3ODQ1LDEyLjUxMzA5MjMgNC4zNzI0ODY0OCwxMi45MTA5NzY4IDQuMDUzMjgxNzUsMTMuMDk2OTUgTDMuOTYxODc4MSwxMy4xNDIyMjEzIEwzLjAzNTYxMjM4LDEzLjUyNTg5MzIgQzIuNjUyOTI4OTUsMTMuNjg0NDA1OCAyLjIxNDIwMjgzLDEzLjUwMjY3OTUgMi4wNTU2OTAxNiwxMy4xMTk5OTYxIEMxLjkxMDM4Njg4LDEyLjc2OTIwMjkgMi4wNTA5Nzg4NSwxMi4zNzEzMTg0IDIuMzcwMTgzNTgsMTIuMTg1MzQ1MiBMMi40NjE1ODcyMywxMi4xNDAwNzM5IEwzLjM4Nzg1Mjk1LDExLjc1NjQwMiBDMy43NzA1MzYzOCwxMS41OTc4ODk0IDQuMjA5MjYyNTEsMTEuNzc5NjE1NyA0LjM2Nzc3NTE3LDEyLjE2MjI5OTEgWiBNMTAuODU0NzY1MSw3LjMyOTA4OTA1IEwxMC42ODMxODY2LDcuMzg2NjcyNTEgQzEwLjE0OTEwMDksNy41NzUzNTAwOSA5LjY2MDM3OTIsNy44MzA3NDMyNyA5LjIyMjg5Njk4LDguMTQ0NzQ2ODEgQzguNjg5NDczMzMsNy45NzA4NzQ3IDguMDkzMTg0ODIsNy45NzkyMjIyNCA3LjUzMzY5Mzk5LDguMjEwOTcwOTMgQzYuMjg3OTAzNjgsOC43MjY5OTQxNyA1LjY5NjMxMDU5LDEwLjE1NTIyNjIgNi4yMTIzMzM4MywxMS40MDEwMTY1IEM2LjI3Mjk0MTYzLDExLjU0NzMzNjcgNi4zNDYxMzMyNiwxMS42ODQ2MzIzIDYuNDMwMTM1MTMsMTEuODEyMTY4NyBDNS45Mzc5MTU1NywxMS45NDk1NzU0IDUuNDc2OTU3MDUsMTIuMTY4MDI1MiA1LjA2MzU5NzEsMTIuNDUxNDU1IEM0Ljk3NDc3NzE4LDEyLjMwMTI3OTEgNC44OTU1ODQxMywxMi4xNDE3OTA1IDQuODI2NTE0NTMsMTEuOTc1MDQxNyBDMy45OTM0NjU5Niw5Ljk2Mzg4NDUyIDQuOTQ4NTExNjcsNy42NTgyMDAyMSA2Ljk1OTY2ODg0LDYuODI1MTUxNjMgQzguMzAxOTY2NDEsNi4yNjkxNTM3NyA5Ljc3NTQ2MzEsNi41MDk2NzQ2NiAxMC44NTQ3NjUxLDcuMzI5MDg5MDUgWiBNMi45NDEwMjY3Niw3LjM2MDE3MzczIEwzLjA0NjUzMTgzLDcuMzk1MDczNDMgTDMuOTcyNzk3NTQsNy43Nzg3NDUyNSBDNC4zNTU0ODA5OCw3LjkzNzI1NzkyIDQuNTM3MjA3MjksOC4zNzU5ODQwNCA0LjM3ODY5NDYyLDguNzU4NjY3NDcgQzQuMjM0NTkyMTksOS4xMDY1NjE1IDMuODU4OTA4NCw5LjI4ODM3NTI3IDMuNTA0Mjc3NDYsOS4xOTk0NjQyNCBMMy4zOTg3NzI0LDkuMTY0NTY0NTUgTDIuNDcyNTA2NjgsOC43ODA4OTI3MyBDMi4wODk4MjMyNSw4LjYyMjM4MDA2IDEuOTA4MDk2OTQsOC4xODM2NTM5MyAyLjA2NjYwOTYsNy44MDA5NzA1IEMyLjIxMDcxMjAzLDcuNDUzMDc2NDcgMi41ODYzOTU4Miw3LjI3MTI2MjcxIDIuOTQxMDI2NzYsNy4zNjAxNzM3MyBaIE02Ljc1NjI1MTQyLDQuMzczNzQ5NjYgTDYuODAxNTIyNzgsNC40NjUxNTMzMSBMNy4xODUxOTQ2LDUuMzkxNDE5MDMgQzcuMzQzNzA3MjcsNS43NzQxMDI0NiA3LjE2MTk4MDk2LDYuMjEyODI4NTggNi43NzkyOTc1Miw2LjM3MTM0MTI1IEM2LjQyODUwNDM4LDYuNTE2NjQ0NTMgNi4wMzA2MTk4LDYuMzc2MDUyNTYgNS44NDQ2NDY2NSw2LjA1Njg0NzgzIEw1Ljc5OTM3NTMsNS45NjU0NDQxOCBMNS40MTU3MDM0OCw1LjAzOTE3ODQ2IEM1LjI1NzE5MDgxLDQuNjU2NDk1MDMgNS40Mzg5MTcxMiw0LjIxNzc2ODkgNS44MjE2MDA1NSw0LjA1OTI1NjI0IEM2LjE3MjM5MzcsMy45MTM5NTI5NiA2LjU3MDI3ODI3LDQuMDU0NTQ0OTMgNi43NTYyNTE0Miw0LjM3Mzc0OTY2IFogTTExLjEwOTU5MjMsNC4wNTUyNDQ0MSBDMTEuNDU3NDg2NCw0LjE5OTM0NjgzIDExLjYzOTMwMDEsNC41NzUwMzA2MiAxMS41NTAzODkxLDQuOTI5NjYxNTcgTDExLjUxNTQ4OTQsNS4wMzUxNjY2MyBMMTEuMTMxODE3Niw1Ljk2MTQzMjM1IEMxMC45NzMzMDQ5LDYuMzQ0MTE1NzggMTAuNTM0NTc4OCw2LjUyNTg0MjA5IDEwLjE1MTg5NTQsNi4zNjczMjk0MiBDOS44MDQwMDEzNSw2LjIyMzIyNyA5LjYyMjE4NzU4LDUuODQ3NTQzMiA5LjcxMTA5ODYxLDUuNDkyOTEyMjYgTDkuNzQ1OTk4Myw1LjM4NzQwNzIgTDEwLjEyOTY3MDEsNC40NjExNDE0OCBDMTAuMjg4MTgyOCw0LjA3ODQ1ODA1IDEwLjcyNjkwODksMy44OTY3MzE3NCAxMS4xMDk1OTIzLDQuMDU1MjQ0NDEgWiIgaWQ9IvCfjqhDb2xvciI+PC9wYXRoPgogICAgICAgIDwvZz4KICAgIDwvZz4KPC9zdmc+",
+              "width": 150,
+              "height": 150,
+              "name": "weather_partly_cloudy.svg"
+            },
+            "Cloudy": {
+              "src": "data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iVVRGLTgiPz4KPHN2ZyAgIHZpZXdCb3g9IjAgMCAyNCAyNCIgdmVyc2lvbj0iMS4xIiB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHhtbG5zOnhsaW5rPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5L3hsaW5rIj4KICAgIDwhLS0gR2VuZXJhdG9yOiBTa2V0Y2ggNTkuMSAoODYxNDQpIC0gaHR0cHM6Ly9za2V0Y2guY29tIC0tPgogICAgPHRpdGxlPmljX2ZsdWVudF93ZWF0aGVyX2Nsb3VkeV8yNF9yZWd1bGFyPC90aXRsZT4KICAgIDxkZXNjPkNyZWF0ZWQgd2l0aCBTa2V0Y2guPC9kZXNjPgogICAgPGcgaWQ9IvCflI0tUHJvZHVjdC1JY29ucyIgc3Ryb2tlPSJub25lIiBzdHJva2Utd2lkdGg9IjEiIGZpbGw9Im5vbmUiIGZpbGwtcnVsZT0iZXZlbm9kZCI+CiAgICAgICAgPGcgaWQ9ImljX2ZsdWVudF93ZWF0aGVyX2Nsb3VkeV8yNF9yZWd1bGFyIiBmaWxsPSIjMjEyMTIxIiBmaWxsLXJ1bGU9Im5vbnplcm8iPgogICAgICAgICAgICA8cGF0aCBkPSJNMTMuMDAxNjg5Myw3LjAwODkwNTA1IEMxNi4xNzAyMjA0LDcuMDA4OTA1MDUgMTcuOTY3Njc0MSw5LjEwNjE5NTQzIDE4LjIyOTA4ODYsMTEuNjM5MDMxNCBMMTguMzA5MDU0OCwxMS42MzkwMjg4IEMyMC4zNDgxMzQ1LDExLjYzOTAyODggMjIuMDAxMTM1MiwxMy4yODc3NTI3IDIyLjAwMTEzNTIsMTUuMzIxNTU2NiBDMjIuMDAxMTM1MiwxNy4zNTUzNjA2IDIwLjM0ODEzNDUsMTkuMDA0MDg0NSAxOC4zMDkwNTQ4LDE5LjAwNDA4NDUgTDcuNjk0MzIzNzUsMTkuMDA0MDg0NSBDNS42NTUyNDQwNywxOS4wMDQwODQ1IDQuMDAyMjQzMzgsMTcuMzU1MzYwNiA0LjAwMjI0MzM4LDE1LjMyMTU1NjYgQzQuMDAyMjQzMzgsMTMuMjg3NzUyNyA1LjY1NTI0NDA3LDExLjYzOTAyODggNy42OTQzNDYyNiwxMS42MzkwMjg4IEw3Ljc3NDI4OTk5LDExLjYzOTAzMTQgQzguMDM3MjI1MTYsOS4wODk1NDc3OSA5LjgzMzE1ODIyLDcuMDA4OTA1MDUgMTMuMDAxNjg5Myw3LjAwODkwNTA1IFogTTEzLjAwMTY4OTMsOC41MDY0OTQ3NSBDMTAuOTMwMzY2LDguNTA2NDk0NzUgOS4xMjQ5NzkwNCwxMC4xMzk3MzU1IDkuMTI0OTc5MDQsMTIuMzk1NzEyNyBDOS4xMjQ5NzkwNCwxMi43NTMxNjgyIDguODA2MDI5MjIsMTMuMDMzNjYwMSA4LjQ0MDgxNjg2LDEzLjAzMzY0ODUgTDcuNzUwMjYyODEsMTMuMDMzNjI2NSBDNi40ODkyNzAzMSwxMy4wMzM2MjY1IDUuNDY3MDMzOSwxNC4wMzQ5MTIxIDUuNDY3MDMzOSwxNS4yNzAwNjA2IEM1LjQ2NzAzMzksMTYuNTA1MjA5MSA2LjQ4OTI3MDMxLDE3LjUwNjQ5NDggNy43NTAyNjI4MSwxNy41MDY0OTQ4IEwxOC4yNTMxMTU4LDE3LjUwNjQ5NDggQzE5LjUxNDEwODMsMTcuNTA2NDk0OCAyMC41MzYzNDQ3LDE2LjUwNTIwOTEgMjAuNTM2MzQ0NywxNS4yNzAwNjA2IEMyMC41MzYzNDQ3LDE0LjAzNDkxMjEgMTkuNTE0MTA4MywxMy4wMzM2MjY1IDE4LjI1MzEzOCwxMy4wMzM2MjY1IEwxNy41NjI1NjE3LDEzLjAzMzY0ODUgQzE3LjE5NzM0OTQsMTMuMDMzNjYwMSAxNi44NzgzOTk2LDEyLjc1MzE2ODIgMTYuODc4Mzk5NiwxMi4zOTU3MTI3IEMxNi44NzgzOTk2LDEwLjExMDc5NiAxNS4wNzMwMTI2LDguNTA2NDk0NzUgMTMuMDAxNjg5Myw4LjUwNjQ5NDc1IFogTTEwLDQgQzExLjYxNjcxMjMsNCAxMy4wNDkxNDYzLDQuODE1MTM1NTMgMTMuOTAwMDY2OCw2LjA2MTg2NjE5IEMxMy42MDk5MjIxLDYuMDI2ODQxMjkgMTMuMzEwMTEwOSw2LjAwODkwNTA1IDEzLjAwMTY4OTMsNi4wMDg5MDUwNSBDMTIuNjA3NTE2Miw2LjAwODkwNTA1IDEyLjIyNzUwNTUsNi4wMzc5ODAyNCAxMS44NjMwMTE5LDYuMDk0MjYyMDMgQzExLjMzNDc1OTcsNS43MTkwMTk1NyAxMC42ODk4MzM4LDUuNSAxMCw1LjUgQzguNDMzMjA2MDQsNS41IDcuMDk4MDc1OCw2LjYyOTg0MjA0IDYuODMwNjMwNzgsOC4xNTYzMDM4IEw2Ljc1ODE0MzcyLDguNTcwMDI4OTIgQzYuNjc0MzIwMiw5LjA0ODQ1Nzc0IDYuMjU4ODMxNjksOS4zOTc0Njc2NSA1Ljc3MzExNTIsOS4zOTc0NTE4NiBMNS4yODIwNzEyOSw5LjM5NzQzNTkgQzQuMjk3ODUzMjIsOS4zOTc0MzU5IDMuNSwxMC4xOTUyODU4IDMuNSwxMS4xNzk0ODcyIEMzLjUsMTEuNjcwMTEwOCAzLjY5ODI2NzksMTIuMTE0NDI2NCA0LjAxOTA1MTY3LDEyLjQzNjY4MiBDMy43MDQxNTQ2MywxMi44Mzc0Njk4IDMuNDU0MzQ5OTIsMTMuMjkxODU4NSAzLjI4Mzk5OTI0LDEzLjc4Mzg0NDggQzIuNTAzNjMxNTcsMTMuMTg0MjI4NSAyLDEyLjI0MDY3MjYgMiwxMS4xNzk0ODcyIEMyLDkuNDI5MzY0NjggMy4zNjk4MzIwMyw3Ljk5OTE4MzYgNS4wOTU4MjY2MSw3LjkwMjYzMTQyIEw1LjM1MzEzNjc1LDcuODk3NDM4MjEgQzUuNzQyMzI2NjQsNS42NzYxMDg4MyA3LjY4MTcwMzcsNCAxMCw0IFoiIGlkPSLwn46oQ29sb3IiPjwvcGF0aD4KICAgICAgICA8L2c+CiAgICA8L2c+Cjwvc3ZnPg==",
+              "width": 150,
+              "height": 150,
+              "name": "weather_cloudy.svg"
+            },
+            "Rain": {
+              "src": "data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iVVRGLTgiPz4KPHN2ZyAgIHZpZXdCb3g9IjAgMCAyNCAyNCIgdmVyc2lvbj0iMS4xIiB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHhtbG5zOnhsaW5rPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5L3hsaW5rIj4KICAgIDwhLS0gR2VuZXJhdG9yOiBTa2V0Y2ggNTkuMSAoODYxNDQpIC0gaHR0cHM6Ly9za2V0Y2guY29tIC0tPgogICAgPHRpdGxlPmljX2ZsdWVudF93ZWF0aGVyX3JhaW5fMjRfcmVndWxhcjwvdGl0bGU+CiAgICA8ZGVzYz5DcmVhdGVkIHdpdGggU2tldGNoLjwvZGVzYz4KICAgIDxnIGlkPSLwn5SNLVByb2R1Y3QtSWNvbnMiIHN0cm9rZT0ibm9uZSIgc3Ryb2tlLXdpZHRoPSIxIiBmaWxsPSJub25lIiBmaWxsLXJ1bGU9ImV2ZW5vZGQiPgogICAgICAgIDxnIGlkPSJpY19mbHVlbnRfd2VhdGhlcl9yYWluXzI0X3JlZ3VsYXIiIGZpbGw9IiMyMTIxMjEiIGZpbGwtcnVsZT0ibm9uemVybyI+CiAgICAgICAgICAgIDxwYXRoIGQ9Ik0xMiw0LjAwMDY5NDczIEMxNS4xNjg1MzExLDQuMDAwNjk0NzMgMTYuOTY1OTg0OSw2LjA5Nzk4NTExIDE3LjIyNzM5OTMsOC42MzA4MjExMSBMMTcuMzA3MzY1NSw4LjYzMDgxODUxIEMxOS4zNDY0NDUyLDguNjMwODE4NTEgMjAuOTk5NDQ1OSwxMC4yNzk1NDI0IDIwLjk5OTQ0NTksMTIuMzEzMzQ2MyBDMjAuOTk5NDQ1OSwxNC4zNDcxNTAzIDE5LjM0NjQ0NTIsMTUuOTk1ODc0MSAxNy4zMDczNjU1LDE1Ljk5NTg3NDEgTDE2LjcyNDU1NDEsMTUuOTk1Njk0NyBMMTUuMTQyODQ4NSwxOC42MzAxNzQyIEMxNC45MzU3NDE3LDE4Ljk4ODg5MzcgMTQuNDc3MDQ4OSwxOS4xMTE4IDE0LjExODMyOTQsMTguOTA0NjkzMiBDMTMuNzg5NTAzMiwxOC43MTQ4NDU0IDEzLjY1ODgyNTYsMTguMzEzNTk1MyAxMy43OTg4NTQ0LDE3Ljk3MTczMzQgTDEzLjg0MzgxMDQsMTcuODgwMTc0MiBMMTQuOTkyNTU0MSwxNS45OTU2OTQ3IEwxMi44NTY1NTQxLDE1Ljk5NTY5NDcgTDExLjI3NDY0MjMsMTguNjMwMTc0MiBDMTEuMDY3NTM1NSwxOC45ODg4OTM3IDEwLjYwODg0MjcsMTkuMTExOCAxMC4yNTAxMjMyLDE4LjkwNDY5MzIgQzkuOTIxMjk3MDIsMTguNzE0ODQ1NCA5Ljc5MDYxOTM1LDE4LjMxMzU5NTMgOS45MzA2NDgyMSwxNy45NzE3MzM0IEw5Ljk3NTYwNDE1LDE3Ljg4MDE3NDIgTDExLjEyNDU1NDEsMTUuOTk1Njk0NyBMOC45ODc1NTQwOCwxNS45OTU2OTQ3IEw3LjQwNjQzNjAzLDE4LjYzMDE3NDIgQzcuMTk5MzI5MjUsMTguOTg4ODkzNyA2Ljc0MDYzNjQ1LDE5LjExMTggNi4zODE5MTY5OCwxOC45MDQ2OTMyIEM2LjA1MzA5MDgsMTguNzE0ODQ1NCA1LjkyMjQxMzEzLDE4LjMxMzU5NTMgNi4wNjI0NDE5OSwxNy45NzE3MzM0IEw2LjEwNzM5NzkzLDE3Ljg4MDE3NDIgTDcuMjU1NTU0MDgsMTUuOTk1Njk0NyBMNi42OTI2MzQ0NiwxNS45OTU4NzQxIEM0LjY1MzU1NDc3LDE1Ljk5NTg3NDEgMy4wMDA1NTQwOCwxNC4zNDcxNTAzIDMuMDAwNTU0MDgsMTIuMzEzMzQ2MyBDMy4wMDA1NTQwOCwxMC4yNzk1NDI0IDQuNjUzNTU0NzcsOC42MzA4MTg1MSA2LjY5MjY1Njk2LDguNjMwODE4NTEgTDYuNzcyNjAwNjksOC42MzA4MjExMSBDNy4wMzU1MzU4Nyw2LjA4MTMzNzQ2IDguODMxNDY4OTIsNC4wMDA2OTQ3MyAxMiw0LjAwMDY5NDczIFogTTEyLDUuNDk4Mjg0NDMgQzkuOTI4Njc2NzMsNS40OTgyODQ0MyA4LjEyMzI4OTc0LDcuMTMxNTI1MTQgOC4xMjMyODk3NCw5LjM4NzUwMjM1IEM4LjEyMzI4OTc0LDkuNzQ0OTU3ODMgNy44MDQzMzk5MiwxMC4wMjU0NDk4IDcuNDM5MTI3NTcsMTAuMDI1NDM4MSBMNi43NDg1NzM1MSwxMC4wMjU0MTYxIEM1LjQ4NzU4MTAxLDEwLjAyNTQxNjEgNC40NjUzNDQ2MSwxMS4wMjY3MDE4IDQuNDY1MzQ0NjEsMTIuMjYxODUwMyBDNC40NjUzNDQ2MSwxMy40OTY5OTg4IDUuNDg3NTgxMDEsMTQuNDk4Mjg0NCA2Ljc0ODU3MzUxLDE0LjQ5ODI4NDQgTDE3LjI1MTQyNjUsMTQuNDk4Mjg0NCBDMTguNTEyNDE5LDE0LjQ5ODI4NDQgMTkuNTM0NjU1NCwxMy40OTY5OTg4IDE5LjUzNDY1NTQsMTIuMjYxODUwMyBDMTkuNTM0NjU1NCwxMS4wMjY3MDE4IDE4LjUxMjQxOSwxMC4wMjU0MTYxIDE3LjI1MTQ0ODgsMTAuMDI1NDE2MSBMMTYuNTYwODcyNCwxMC4wMjU0MzgxIEMxNi4xOTU2NjAxLDEwLjAyNTQ0OTggMTUuODc2NzEwMyw5Ljc0NDk1NzgzIDE1Ljg3NjcxMDMsOS4zODc1MDIzNSBDMTUuODc2NzEwMyw3LjEwMjU4NTY0IDE0LjA3MTMyMzMsNS40OTgyODQ0MyAxMiw1LjQ5ODI4NDQzIFoiIGlkPSLwn46oQ29sb3IiPjwvcGF0aD4KICAgICAgICA8L2c+CiAgICA8L2c+Cjwvc3ZnPg==",
+              "width": 150,
+              "height": 150,
+              "name": "weather_rain.svg"
+            }
+          },
+          "autoDomainMax": true,
+          "autoDomainMin": true
+        },
+        "mappings": {},
+        "inputType": "string",
+        "outputType": "image"
+      }
+    ],
+    "scaleMappings": [
+      {
+        "type": "scale",
+        "table": "fake_weather",
+        "expression": "first(Weather)",
+        "valueType": "string",
+        "scale": "mzjmn1x41rj",
+        "attribute": "image",
+        "valueIndex": null
+      }
+    ],
+    "constraints": [],
+    "resources": []
+  },
+  "defaultAttributes": {
+    "3wrydrv969d": {
+      "x": 0,
+      "y": 0
+    },
+    "bklytza5jic": {
+      "x1": -2.8800001608840495,
+      "y1": -3.2625,
+      "x2": 2.8800001608840495,
+      "y2": 3.2625,
+      "cx": 0,
+      "cy": 0,
+      "width": 5.760000321768099,
+      "height": 6.525,
+      "strokeWidth": 0.1,
+      "opacity": 0.1
+    },
+    "1bshb7qpmek": {
+      "x": 12.5,
+      "y": 50,
+      "fontSize": 6,
+      "opacity": 0.25
+    }
+  },
+  "tables": [
+    {
+      "name": "fake_weather",
+      "type": "Main",
+      "columns": [
+        {
+          "displayName": "Weather",
+          "name": "Weather",
+          "type": "string",
+          "metadata": {
+            "kind": "categorical",
+            "unit": null,
+            "orderMode": "alphabetically",
+            "order": null,
+            "rawColumnName": null,
+            "isRaw": null,
+            "format": null,
+            "examples": "Sunny, Partly Cloudy, Cloudy"
+          }
+        }
+      ]
+    }
+  ],
+  "inference": [
+    {
+      "objectID": "2u1e0q3ih2e",
+      "dataSource": {
+        "table": "fake_weather"
+      },
+      "axis": {
+        "expression": "first(Weather)",
+        "type": "categorical",
+        "style": {
+          "tickColor": {
+            "r": 0,
+            "g": 0,
+            "b": 0
+          },
+          "lineColor": null,
+          "fontFamily": "Segoe UI",
+          "fontSize": 16,
+          "tickSize": 5,
+          "wordWrap": false,
+          "verticalText": false,
+          "gridlineStyle": "none",
+          "gridlineColor": {
+            "r": 234,
+            "g": 234,
+            "b": 234
+          },
+          "gridlineWidth": 1
+        },
+        "order": null,
+        "orderMode": "alphabetically",
+        "rawExpression": "first(Weather)",
+        "property": "yData",
+        "defineCategories": true
+      },
+      "autoDomainMin": true,
+      "autoDomainMax": true
+    },
+    {
+      "objectID": "mzjmn1x41rj",
+      "autoDomainMax": true,
+      "autoDomainMin": true,
+      "scale": {
+        "classID": "scale.categorical<string,image>",
+        "expressions": [
+          "first(Weather)"
+        ],
+        "properties": {
+          "mapping": "mapping"
+        }
+      },
+      "dataSource": {
+        "table": "fake_weather"
+      }
+    }
+  ],
+  "properties": [
+    {
+      "objectID": "2u1e0q3ih2e",
+      "target": {
+        "property": {
+          "property": "yData",
+          "field": "style",
+          "subfield": "tickSize"
+        }
+      },
+      "type": "number",
+      "default": 5,
+      "displayName": "PlotSegment1/yData.style.tickSize"
+    },
+    {
+      "objectID": "2u1e0q3ih2e",
+      "target": {
+        "property": {
+          "property": "yData",
+          "field": "style",
+          "subfield": "fontSize"
+        }
+      },
+      "type": "number",
+      "default": 16,
+      "displayName": "PlotSegment1/yData.style.fontSize"
+    },
+    {
+      "objectID": "2u1e0q3ih2e",
+      "target": {
+        "property": {
+          "property": "yData",
+          "field": "style",
+          "subfield": "fontFamily"
+        }
+      },
+      "type": "font-family",
+      "default": "Segoe UI",
+      "displayName": "PlotSegment1/yData.style.fontFamily"
+    },
+    {
+      "objectID": "2u1e0q3ih2e",
+      "target": {
+        "property": {
+          "property": "yData",
+          "field": "style",
+          "subfield": "lineColor"
+        }
+      },
+      "type": "color",
+      "default": null,
+      "displayName": "PlotSegment1/yData.style.lineColor"
+    },
+    {
+      "objectID": "2u1e0q3ih2e",
+      "target": {
+        "property": {
+          "property": "yData",
+          "field": "style",
+          "subfield": "tickColor"
+        }
+      },
+      "type": "color",
+      "default": "#000000",
+      "displayName": "PlotSegment1/yData.style.tickColor"
+    },
+    {
+      "objectID": "2u1e0q3ih2e",
+      "target": {
+        "property": {
+          "property": "yData",
+          "field": "tickFormat"
+        }
+      },
+      "type": "text",
+      "default": null,
+      "displayName": "PlotSegment1/yData.tickFormat"
+    },
+    {
+      "objectID": "2u1e0q3ih2e",
+      "target": {
+        "property": {
+          "property": "yData",
+          "field": "tickFormatType"
+        }
+      },
+      "type": "enum",
+      "default": "none",
+      "displayName": "PlotSegment1/yData.tickFormatType"
+    },
+    {
+      "objectID": "2u1e0q3ih2e",
+      "target": {
+        "property": {
+          "property": "yData",
+          "field": "tickDataExpression"
+        }
+      },
+      "type": "text",
+      "default": null,
+      "displayName": "PlotSegment1/yData.tickDataExpression"
+    },
+    {
+      "objectID": "2u1e0q3ih2e",
+      "target": {
+        "property": {
+          "property": "yData",
+          "field": "offset"
+        }
+      },
+      "type": "number",
+      "default": 0,
+      "displayName": "PlotSegment1/yData.offset"
+    },
+    {
+      "objectID": "2u1e0q3ih2e",
+      "target": {
+        "property": {
+          "property": "yData",
+          "field": "categories"
+        }
+      },
+      "type": "enum",
+      "default": "ascending",
+      "displayName": "PlotSegment1/yData.categories"
+    },
+    {
+      "objectID": "bklytza5jic",
+      "target": {
+        "attribute": "strokeWidth"
+      },
+      "type": "number",
+      "default": 1,
+      "displayName": "Image1/strokeWidth"
+    },
+    {
+      "objectID": "bklytza5jic",
+      "target": {
+        "attribute": "opacity"
+      },
+      "type": "number",
+      "default": 1,
+      "displayName": "Image1/opacity"
+    },
+    {
+      "objectID": "bklytza5jic",
+      "target": {
+        "attribute": "visible"
+      },
+      "type": "number",
+      "default": true,
+      "displayName": "Image1/visible"
+    },
+    {
+      "objectID": "1bshb7qpmek",
+      "target": {
+        "attribute": "fontSize"
+      },
+      "type": "number",
+      "default": 24,
+      "displayName": "Title/fontSize"
+    },
+    {
+      "objectID": "1bshb7qpmek",
+      "target": {
+        "attribute": "color"
+      },
+      "type": "color",
+      "default": "#000000",
+      "displayName": "Title/color"
+    },
+    {
+      "objectID": "1bshb7qpmek",
+      "target": {
+        "attribute": "text"
+      },
+      "type": "text",
+      "default": "September Weather",
+      "displayName": "Title/text"
+    },
+    {
+      "objectID": "cltdzyp4y2l",
+      "target": {
+        "attribute": "marginLeft"
+      },
+      "type": "number",
+      "default": 130,
+      "displayName": "Chart/marginLeft"
+    },
+    {
+      "objectID": "cltdzyp4y2l",
+      "target": {
+        "attribute": "marginRight"
+      },
+      "type": "number",
+      "default": 30,
+      "displayName": "Chart/marginRight"
+    },
+    {
+      "objectID": "cltdzyp4y2l",
+      "target": {
+        "attribute": "marginTop"
+      },
+      "type": "number",
+      "default": 80,
+      "displayName": "Chart/marginTop"
+    },
+    {
+      "objectID": "cltdzyp4y2l",
+      "target": {
+        "attribute": "marginBottom"
+      },
+      "type": "number",
+      "default": 30,
+      "displayName": "Chart/marginBottom"
+    }
+  ],
+  "version": "2.1.0"
+}

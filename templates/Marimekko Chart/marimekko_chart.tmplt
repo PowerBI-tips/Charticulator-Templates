@@ -1,0 +1,2294 @@
+{
+  "specification": {
+    "_id": "39r3o3hj13v",
+    "classID": "chart.rectangle",
+    "properties": {
+      "name": "Chart",
+      "backgroundColor": null,
+      "backgroundOpacity": 1,
+      "exposed": true
+    },
+    "mappings": {
+      "marginTop": {
+        "type": "value",
+        "value": 80
+      },
+      "width": {
+        "type": "value",
+        "value": 1014.4954128440368
+      },
+      "height": {
+        "type": "value",
+        "value": 600
+      },
+      "marginLeft": {
+        "type": "value",
+        "value": 100
+      },
+      "marginRight": {
+        "type": "value",
+        "value": 40
+      }
+    },
+    "glyphs": [
+      {
+        "_id": "gqsnmcwfqxv",
+        "classID": "glyph.rectangle",
+        "properties": {
+          "name": "Glyph"
+        },
+        "table": "food_supply_per_capita",
+        "marks": [
+          {
+            "_id": "uvnshgnoxn",
+            "classID": "mark.anchor",
+            "properties": {
+              "name": "Anchor"
+            },
+            "mappings": {
+              "x": {
+                "type": "parent",
+                "parentAttribute": "icx"
+              },
+              "y": {
+                "type": "parent",
+                "parentAttribute": "icy"
+              }
+            }
+          },
+          {
+            "_id": "jpbb55fwdcj",
+            "classID": "mark.rect",
+            "properties": {
+              "visible": true,
+              "strokeStyle": "solid",
+              "shape": "rectangle",
+              "allowFlipping": true,
+              "name": "Shape1",
+              "exposed": true
+            },
+            "mappings": {
+              "fill": {
+                "type": "value",
+                "value": {
+                  "r": 249,
+                  "g": 241,
+                  "b": 165
+                }
+              },
+              "strokeWidth": {
+                "type": "value",
+                "value": 1
+              },
+              "opacity": {
+                "type": "value",
+                "value": 1
+              },
+              "visible": {
+                "type": "value",
+                "value": true
+              },
+              "x1": {
+                "type": "parent",
+                "parentAttribute": "ix1"
+              },
+              "y1": {
+                "type": "parent",
+                "parentAttribute": "iy1"
+              },
+              "x2": {
+                "type": "parent",
+                "parentAttribute": "ix2"
+              },
+              "height": {
+                "type": "scale",
+                "table": "food_supply_per_capita",
+                "expression": "avg(Grain)",
+                "valueType": "number",
+                "scale": "ujj7fx5usbq",
+                "attribute": "height"
+              },
+              "width": {
+                "type": "scale",
+                "table": "food_supply_per_capita",
+                "expression": "avg(Total)",
+                "valueType": "number",
+                "scale": "lr811czhldc",
+                "attribute": "width"
+              },
+              "stroke": {
+                "type": "value",
+                "value": {
+                  "r": 255,
+                  "g": 255,
+                  "b": 255
+                }
+              }
+            }
+          },
+          {
+            "_id": "xod9hyn6z8",
+            "classID": "mark.rect",
+            "properties": {
+              "visible": true,
+              "strokeStyle": "solid",
+              "shape": "rectangle",
+              "allowFlipping": true,
+              "name": "Shape2",
+              "exposed": true
+            },
+            "mappings": {
+              "fill": {
+                "type": "value",
+                "value": {
+                  "r": 121,
+                  "g": 219,
+                  "b": 117
+                }
+              },
+              "strokeWidth": {
+                "type": "value",
+                "value": 1
+              },
+              "opacity": {
+                "type": "value",
+                "value": 1
+              },
+              "visible": {
+                "type": "value",
+                "value": true
+              },
+              "x1": {
+                "type": "parent",
+                "parentAttribute": "ix1"
+              },
+              "x2": {
+                "type": "parent",
+                "parentAttribute": "ix2"
+              },
+              "height": {
+                "type": "scale",
+                "table": "food_supply_per_capita",
+                "expression": "avg(Produce)",
+                "valueType": "number",
+                "scale": "ujj7fx5usbq",
+                "attribute": "height"
+              },
+              "stroke": {
+                "type": "value",
+                "value": {
+                  "r": 255,
+                  "g": 255,
+                  "b": 255
+                }
+              }
+            }
+          },
+          {
+            "_id": "jxqujydttc",
+            "classID": "mark.rect",
+            "properties": {
+              "visible": true,
+              "strokeStyle": "solid",
+              "shape": "rectangle",
+              "allowFlipping": true,
+              "name": "Shape3",
+              "exposed": true
+            },
+            "mappings": {
+              "fill": {
+                "type": "value",
+                "value": {
+                  "r": 222,
+                  "g": 148,
+                  "b": 224
+                }
+              },
+              "strokeWidth": {
+                "type": "value",
+                "value": 1
+              },
+              "opacity": {
+                "type": "value",
+                "value": 1
+              },
+              "visible": {
+                "type": "value",
+                "value": true
+              },
+              "x1": {
+                "type": "parent",
+                "parentAttribute": "ix1"
+              },
+              "x2": {
+                "type": "parent",
+                "parentAttribute": "ix2"
+              },
+              "height": {
+                "type": "scale",
+                "table": "food_supply_per_capita",
+                "expression": "avg(`Sugar & Fat`)",
+                "valueType": "number",
+                "scale": "ujj7fx5usbq",
+                "attribute": "height"
+              },
+              "stroke": {
+                "type": "value",
+                "value": {
+                  "r": 255,
+                  "g": 255,
+                  "b": 255
+                }
+              }
+            }
+          },
+          {
+            "_id": "t2bnxq91fqr",
+            "classID": "mark.rect",
+            "properties": {
+              "visible": true,
+              "strokeStyle": "solid",
+              "shape": "rectangle",
+              "allowFlipping": true,
+              "name": "Shape4",
+              "exposed": true
+            },
+            "mappings": {
+              "fill": {
+                "type": "value",
+                "value": {
+                  "r": 255,
+                  "g": 185,
+                  "b": 0
+                }
+              },
+              "strokeWidth": {
+                "type": "value",
+                "value": 1
+              },
+              "opacity": {
+                "type": "value",
+                "value": 1
+              },
+              "visible": {
+                "type": "value",
+                "value": true
+              },
+              "x1": {
+                "type": "parent",
+                "parentAttribute": "ix1"
+              },
+              "x2": {
+                "type": "parent",
+                "parentAttribute": "ix2"
+              },
+              "height": {
+                "type": "scale",
+                "table": "food_supply_per_capita",
+                "expression": "avg(`Milk & Eggs`)",
+                "valueType": "number",
+                "scale": "ujj7fx5usbq",
+                "attribute": "height"
+              },
+              "stroke": {
+                "type": "value",
+                "value": {
+                  "r": 255,
+                  "g": 255,
+                  "b": 255
+                }
+              }
+            }
+          },
+          {
+            "_id": "28ljvfl1ayk",
+            "classID": "mark.rect",
+            "properties": {
+              "visible": true,
+              "strokeStyle": "solid",
+              "shape": "rectangle",
+              "allowFlipping": true,
+              "name": "Shape5",
+              "exposed": true
+            },
+            "mappings": {
+              "fill": {
+                "type": "value",
+                "value": {
+                  "r": 232,
+                  "g": 17,
+                  "b": 35
+                }
+              },
+              "strokeWidth": {
+                "type": "value",
+                "value": 1
+              },
+              "opacity": {
+                "type": "value",
+                "value": 1
+              },
+              "visible": {
+                "type": "value",
+                "value": true
+              },
+              "x1": {
+                "type": "parent",
+                "parentAttribute": "ix1"
+              },
+              "x2": {
+                "type": "parent",
+                "parentAttribute": "ix2"
+              },
+              "height": {
+                "type": "scale",
+                "table": "food_supply_per_capita",
+                "expression": "avg(Meat)",
+                "valueType": "number",
+                "scale": "ujj7fx5usbq",
+                "attribute": "height"
+              },
+              "stroke": {
+                "type": "value",
+                "value": {
+                  "r": 255,
+                  "g": 255,
+                  "b": 255
+                }
+              }
+            }
+          },
+          {
+            "_id": "fx1ts60kln",
+            "classID": "mark.rect",
+            "properties": {
+              "visible": true,
+              "strokeStyle": "solid",
+              "shape": "rectangle",
+              "allowFlipping": true,
+              "name": "Shape6",
+              "exposed": true
+            },
+            "mappings": {
+              "strokeWidth": {
+                "type": "value",
+                "value": 1
+              },
+              "opacity": {
+                "type": "value",
+                "value": 1
+              },
+              "visible": {
+                "type": "value",
+                "value": true
+              },
+              "x1": {
+                "type": "parent",
+                "parentAttribute": "ix1"
+              },
+              "x2": {
+                "type": "parent",
+                "parentAttribute": "ix2"
+              },
+              "y2": {
+                "type": "parent",
+                "parentAttribute": "iy2"
+              },
+              "height": {
+                "type": "scale",
+                "table": "food_supply_per_capita",
+                "expression": "avg(Other)",
+                "valueType": "number",
+                "scale": "ujj7fx5usbq",
+                "attribute": "height"
+              },
+              "fill": {
+                "type": "value",
+                "value": {
+                  "r": 217,
+                  "g": 217,
+                  "b": 217
+                }
+              },
+              "stroke": {
+                "type": "value",
+                "value": {
+                  "r": 255,
+                  "g": 255,
+                  "b": 255
+                }
+              }
+            }
+          },
+          {
+            "_id": "p8qtt2gvd1i",
+            "classID": "mark.text",
+            "properties": {
+              "alignment": {
+                "x": "middle",
+                "y": "top",
+                "xMargin": 5,
+                "yMargin": 6
+              },
+              "rotation": 0,
+              "visible": true,
+              "name": "Text1",
+              "exposed": true
+            },
+            "mappings": {
+              "text": {
+                "type": "text",
+                "table": "food_supply_per_capita",
+                "textExpression": "${avg(Total)}"
+              },
+              "fontFamily": {
+                "type": "value",
+                "value": "Arial"
+              },
+              "fontSize": {
+                "type": "value",
+                "value": 14
+              },
+              "color": {
+                "type": "value",
+                "value": {
+                  "r": 0,
+                  "g": 0,
+                  "b": 0
+                }
+              },
+              "opacity": {
+                "type": "value",
+                "value": 1
+              },
+              "visible": {
+                "type": "value",
+                "value": true
+              },
+              "x": {
+                "type": "parent",
+                "parentAttribute": "icx"
+              },
+              "y": {
+                "type": "parent",
+                "parentAttribute": "iy1"
+              }
+            }
+          },
+          {
+            "_id": "7q0zfb972un",
+            "classID": "mark.text",
+            "properties": {
+              "alignment": {
+                "x": "middle",
+                "y": "top",
+                "xMargin": 5,
+                "yMargin": 25
+              },
+              "rotation": 0,
+              "visible": true,
+              "name": "Text2",
+              "exposed": true
+            },
+            "mappings": {
+              "text": {
+                "type": "text",
+                "table": "food_supply_per_capita",
+                "textExpression": "${first(Country)}"
+              },
+              "fontFamily": {
+                "type": "value",
+                "value": "Arial"
+              },
+              "fontSize": {
+                "type": "value",
+                "value": 14
+              },
+              "color": {
+                "type": "value",
+                "value": {
+                  "r": 0,
+                  "g": 0,
+                  "b": 0
+                }
+              },
+              "opacity": {
+                "type": "value",
+                "value": 1
+              },
+              "visible": {
+                "type": "value",
+                "value": true
+              },
+              "x": {
+                "type": "parent",
+                "parentAttribute": "icx"
+              },
+              "y": {
+                "type": "parent",
+                "parentAttribute": "iy1"
+              }
+            }
+          },
+          {
+            "_id": "ddxzublmxds",
+            "classID": "mark.text",
+            "properties": {
+              "alignment": {
+                "x": "right",
+                "y": "middle",
+                "xMargin": 10,
+                "yMargin": 5
+              },
+              "rotation": 0,
+              "visible": true,
+              "name": "Text3",
+              "exposed": true
+            },
+            "mappings": {
+              "text": {
+                "type": "value",
+                "value": "Other"
+              },
+              "fontFamily": {
+                "type": "value",
+                "value": "Arial"
+              },
+              "fontSize": {
+                "type": "value",
+                "value": 14
+              },
+              "color": {
+                "type": "value",
+                "value": {
+                  "r": 0,
+                  "g": 0,
+                  "b": 0
+                }
+              },
+              "opacity": {
+                "type": "value",
+                "value": 1
+              },
+              "visible": {
+                "type": "scale",
+                "table": "food_supply_per_capita",
+                "expression": "first(Country)",
+                "valueType": "string",
+                "scale": "g17qybysclp",
+                "attribute": "visible"
+              },
+              "x": {
+                "type": "parent",
+                "parentAttribute": "ix1"
+              }
+            }
+          },
+          {
+            "_id": "cm923093lx",
+            "classID": "mark.text",
+            "properties": {
+              "alignment": {
+                "x": "right",
+                "y": "middle",
+                "xMargin": 10,
+                "yMargin": 5
+              },
+              "rotation": 0,
+              "visible": true,
+              "name": "Text4",
+              "exposed": true
+            },
+            "mappings": {
+              "text": {
+                "type": "value",
+                "value": "Meat"
+              },
+              "fontFamily": {
+                "type": "value",
+                "value": "Arial"
+              },
+              "fontSize": {
+                "type": "value",
+                "value": 14
+              },
+              "color": {
+                "type": "value",
+                "value": {
+                  "r": 0,
+                  "g": 0,
+                  "b": 0
+                }
+              },
+              "opacity": {
+                "type": "value",
+                "value": 1
+              },
+              "visible": {
+                "type": "scale",
+                "table": "food_supply_per_capita",
+                "expression": "first(Country)",
+                "valueType": "string",
+                "scale": "g17qybysclp",
+                "attribute": "visible"
+              },
+              "x": {
+                "type": "parent",
+                "parentAttribute": "ix1"
+              }
+            }
+          },
+          {
+            "_id": "rf4eabjqwjb",
+            "classID": "mark.text",
+            "properties": {
+              "alignment": {
+                "x": "right",
+                "y": "middle",
+                "xMargin": 5,
+                "yMargin": 5
+              },
+              "rotation": 0,
+              "visible": true,
+              "name": "Text5",
+              "exposed": true
+            },
+            "mappings": {
+              "text": {
+                "type": "value",
+                "value": "Milk & Eggs"
+              },
+              "fontFamily": {
+                "type": "value",
+                "value": "Arial"
+              },
+              "fontSize": {
+                "type": "value",
+                "value": 14
+              },
+              "color": {
+                "type": "value",
+                "value": {
+                  "r": 0,
+                  "g": 0,
+                  "b": 0
+                }
+              },
+              "opacity": {
+                "type": "value",
+                "value": 1
+              },
+              "visible": {
+                "type": "scale",
+                "table": "food_supply_per_capita",
+                "expression": "first(Country)",
+                "valueType": "string",
+                "scale": "g17qybysclp",
+                "attribute": "visible"
+              },
+              "x": {
+                "type": "parent",
+                "parentAttribute": "ix1"
+              }
+            }
+          },
+          {
+            "_id": "9rhsyo8x7no",
+            "classID": "mark.text",
+            "properties": {
+              "alignment": {
+                "x": "right",
+                "y": "middle",
+                "xMargin": 5,
+                "yMargin": 5
+              },
+              "rotation": 0,
+              "visible": true,
+              "name": "Text6",
+              "exposed": true
+            },
+            "mappings": {
+              "text": {
+                "type": "value",
+                "value": "Sugar & Fat"
+              },
+              "fontFamily": {
+                "type": "value",
+                "value": "Arial"
+              },
+              "fontSize": {
+                "type": "value",
+                "value": 14
+              },
+              "color": {
+                "type": "value",
+                "value": {
+                  "r": 0,
+                  "g": 0,
+                  "b": 0
+                }
+              },
+              "opacity": {
+                "type": "value",
+                "value": 1
+              },
+              "visible": {
+                "type": "scale",
+                "table": "food_supply_per_capita",
+                "expression": "first(Country)",
+                "valueType": "string",
+                "scale": "g17qybysclp",
+                "attribute": "visible"
+              },
+              "x": {
+                "type": "parent",
+                "parentAttribute": "ix1"
+              }
+            }
+          },
+          {
+            "_id": "2ua3mdt9us7",
+            "classID": "mark.text",
+            "properties": {
+              "alignment": {
+                "x": "right",
+                "y": "middle",
+                "xMargin": 5,
+                "yMargin": 5
+              },
+              "rotation": 0,
+              "visible": true,
+              "name": "Text7",
+              "exposed": true
+            },
+            "mappings": {
+              "text": {
+                "type": "value",
+                "value": "Produce"
+              },
+              "fontFamily": {
+                "type": "value",
+                "value": "Arial"
+              },
+              "fontSize": {
+                "type": "value",
+                "value": 14
+              },
+              "color": {
+                "type": "value",
+                "value": {
+                  "r": 0,
+                  "g": 0,
+                  "b": 0
+                }
+              },
+              "opacity": {
+                "type": "value",
+                "value": 1
+              },
+              "visible": {
+                "type": "scale",
+                "table": "food_supply_per_capita",
+                "expression": "first(Country)",
+                "valueType": "string",
+                "scale": "g17qybysclp",
+                "attribute": "visible"
+              },
+              "x": {
+                "type": "parent",
+                "parentAttribute": "ix1"
+              }
+            }
+          },
+          {
+            "_id": "8i41c66oi8y",
+            "classID": "mark.text",
+            "properties": {
+              "alignment": {
+                "x": "right",
+                "y": "middle",
+                "xMargin": 5,
+                "yMargin": 5
+              },
+              "rotation": 0,
+              "visible": true,
+              "name": "Text8",
+              "exposed": true
+            },
+            "mappings": {
+              "text": {
+                "type": "value",
+                "value": "Grain"
+              },
+              "fontFamily": {
+                "type": "value",
+                "value": "Arial"
+              },
+              "fontSize": {
+                "type": "value",
+                "value": 14
+              },
+              "color": {
+                "type": "value",
+                "value": {
+                  "r": 0,
+                  "g": 0,
+                  "b": 0
+                }
+              },
+              "opacity": {
+                "type": "value",
+                "value": 1
+              },
+              "visible": {
+                "type": "scale",
+                "table": "food_supply_per_capita",
+                "expression": "first(Country)",
+                "valueType": "string",
+                "scale": "g17qybysclp",
+                "attribute": "visible"
+              },
+              "x": {
+                "type": "parent",
+                "parentAttribute": "ix1"
+              }
+            }
+          }
+        ],
+        "mappings": {},
+        "constraints": [
+          {
+            "type": "snap",
+            "attributes": {
+              "element": "xod9hyn6z8",
+              "attribute": "y1",
+              "targetElement": "jpbb55fwdcj",
+              "targetAttribute": "y2",
+              "gap": 0
+            }
+          },
+          {
+            "type": "snap",
+            "attributes": {
+              "element": "jxqujydttc",
+              "attribute": "y1",
+              "targetElement": "xod9hyn6z8",
+              "targetAttribute": "y2",
+              "gap": 0
+            }
+          },
+          {
+            "type": "snap",
+            "attributes": {
+              "element": "t2bnxq91fqr",
+              "attribute": "y1",
+              "targetElement": "jxqujydttc",
+              "targetAttribute": "y2",
+              "gap": 0
+            }
+          },
+          {
+            "type": "snap",
+            "attributes": {
+              "element": "28ljvfl1ayk",
+              "attribute": "y1",
+              "targetElement": "t2bnxq91fqr",
+              "targetAttribute": "y2",
+              "gap": 0
+            }
+          },
+          {
+            "type": "snap",
+            "attributes": {
+              "element": "fx1ts60kln",
+              "attribute": "y1",
+              "targetElement": "28ljvfl1ayk",
+              "targetAttribute": "y2",
+              "gap": 0
+            }
+          },
+          {
+            "type": "snap",
+            "attributes": {
+              "element": "ddxzublmxds",
+              "attribute": "y",
+              "targetElement": "fx1ts60kln",
+              "targetAttribute": "cy",
+              "gap": 0
+            }
+          },
+          {
+            "type": "snap",
+            "attributes": {
+              "element": "cm923093lx",
+              "attribute": "y",
+              "targetElement": "28ljvfl1ayk",
+              "targetAttribute": "cy",
+              "gap": 0
+            }
+          },
+          {
+            "type": "snap",
+            "attributes": {
+              "element": "rf4eabjqwjb",
+              "attribute": "y",
+              "targetElement": "t2bnxq91fqr",
+              "targetAttribute": "cy",
+              "gap": 0
+            }
+          },
+          {
+            "type": "snap",
+            "attributes": {
+              "element": "9rhsyo8x7no",
+              "attribute": "y",
+              "targetElement": "jxqujydttc",
+              "targetAttribute": "cy",
+              "gap": 0
+            }
+          },
+          {
+            "type": "snap",
+            "attributes": {
+              "element": "2ua3mdt9us7",
+              "attribute": "y",
+              "targetElement": "xod9hyn6z8",
+              "targetAttribute": "cy",
+              "gap": 0
+            }
+          },
+          {
+            "type": "snap",
+            "attributes": {
+              "element": "8i41c66oi8y",
+              "attribute": "y",
+              "targetElement": "jpbb55fwdcj",
+              "targetAttribute": "cy",
+              "gap": 0
+            }
+          }
+        ]
+      }
+    ],
+    "elements": [
+      {
+        "_id": "bsrttrzmvoj",
+        "classID": "plot-segment.cartesian",
+        "glyph": "gqsnmcwfqxv",
+        "table": "food_supply_per_capita",
+        "filter": null,
+        "mappings": {
+          "x1": {
+            "type": "parent",
+            "parentAttribute": "x1"
+          },
+          "y1": {
+            "type": "parent",
+            "parentAttribute": "y1"
+          },
+          "x2": {
+            "type": "parent",
+            "parentAttribute": "x2"
+          },
+          "y2": {
+            "type": "parent",
+            "parentAttribute": "y2"
+          }
+        },
+        "properties": {
+          "name": "PlotSegment1",
+          "visible": true,
+          "marginX1": 0,
+          "marginY1": 0,
+          "marginX2": 0,
+          "marginY2": 0,
+          "sublayout": {
+            "type": "dodge-x",
+            "order": {
+              "expression": "avg(Grain)"
+            },
+            "ratioX": 0,
+            "ratioY": 0.1,
+            "align": {
+              "x": "start",
+              "y": "start"
+            },
+            "grid": {
+              "direction": "x",
+              "xCount": null,
+              "yCount": null
+            },
+            "packing": {
+              "gravityX": 0.1,
+              "gravityY": 0.1
+            },
+            "jitter": {
+              "vertical": true,
+              "horizontal": true
+            },
+            "orderReversed": false
+          },
+          "exposed": true
+        }
+      },
+      {
+        "_id": "a6itytiwx7o",
+        "classID": "mark.text",
+        "properties": {
+          "name": "Title",
+          "visible": true,
+          "alignment": {
+            "x": "middle",
+            "y": "top",
+            "xMargin": 0,
+            "yMargin": 30
+          },
+          "rotation": 0,
+          "exposed": true
+        },
+        "mappings": {
+          "x": {
+            "type": "parent",
+            "parentAttribute": "cx"
+          },
+          "y": {
+            "type": "parent",
+            "parentAttribute": "oy2"
+          },
+          "text": {
+            "type": "value",
+            "value": "Per Capita Food Supply (Daily Calories) in 2013"
+          },
+          "fontSize": {
+            "type": "value",
+            "value": 24
+          },
+          "color": {
+            "type": "value",
+            "value": {
+              "r": 0,
+              "g": 0,
+              "b": 0
+            }
+          }
+        }
+      }
+    ],
+    "scales": [
+      {
+        "_id": "ujj7fx5usbq",
+        "classID": "scale.linear<number,number>",
+        "properties": {
+          "autoDomainMin": true,
+          "autoDomainMax": true,
+          "name": "Scale1",
+          "domainMin": 0,
+          "domainMax": 65,
+          "exposed": true
+        },
+        "mappings": {
+          "rangeMin": {
+            "type": "value",
+            "value": 0
+          }
+        },
+        "inputType": "number",
+        "outputType": "number"
+      },
+      {
+        "_id": "lr811czhldc",
+        "classID": "scale.linear<number,number>",
+        "properties": {
+          "autoDomainMin": true,
+          "autoDomainMax": true,
+          "name": "Scale2",
+          "domainMin": 0,
+          "domainMax": 3800,
+          "exposed": true
+        },
+        "mappings": {
+          "rangeMin": {
+            "type": "value",
+            "value": 0
+          }
+        },
+        "inputType": "number",
+        "outputType": "number"
+      },
+      {
+        "_id": "g17qybysclp",
+        "classID": "scale.categorical<string,boolean>",
+        "properties": {
+          "enableTooltips": true,
+          "enableContextMenu": true,
+          "enableSelection": true,
+          "name": "Scale3",
+          "mapping": {
+            "Australia": false,
+            "China": false,
+            "Congo": false,
+            "Cuba": false,
+            "France": false,
+            "Iraq": false,
+            "Japan": false,
+            "Pakistan": false,
+            "Peru": false,
+            "South Africa": false,
+            "United States": true,
+            "Zambia": false
+          },
+          "autoDomainMax": true,
+          "autoDomainMin": true
+        },
+        "mappings": {},
+        "inputType": "string",
+        "outputType": "boolean"
+      }
+    ],
+    "scaleMappings": [
+      {
+        "type": "scale",
+        "table": "food_supply_per_capita",
+        "expression": "avg(Grain)",
+        "valueType": "number",
+        "scale": "ujj7fx5usbq",
+        "attribute": "height"
+      },
+      {
+        "type": "scale",
+        "table": "food_supply_per_capita",
+        "expression": "avg(Total)",
+        "valueType": "number",
+        "scale": "lr811czhldc",
+        "attribute": "width"
+      },
+      {
+        "type": "scale",
+        "table": "food_supply_per_capita",
+        "expression": "first(Country)",
+        "valueType": "string",
+        "scale": "g17qybysclp",
+        "attribute": "visible"
+      }
+    ],
+    "constraints": [],
+    "resources": []
+  },
+  "defaultAttributes": {
+    "uvnshgnoxn": {
+      "x": 0,
+      "y": 0
+    },
+    "jpbb55fwdcj": {
+      "x1": -3.6437295127197635,
+      "y1": -23.498433426746875,
+      "x2": 3.643729515444476,
+      "y2": -3.902044938677585,
+      "cx": 1.3623559909821855e-9,
+      "cy": -13.70023918271223,
+      "width": 7.287459028064874,
+      "height": 19.59638848806929,
+      "strokeWidth": 0.1,
+      "opacity": 0.1
+    },
+    "xod9hyn6z8": {
+      "x1": -3.6437295127197635,
+      "y1": -3.902044938677585,
+      "x2": 3.643729515444476,
+      "y2": 2.5524065909193356,
+      "cx": 1.3623559909821855e-9,
+      "cy": -0.6748191738791239,
+      "width": 7.287459028164238,
+      "height": 6.454451529596922,
+      "strokeWidth": 0.1,
+      "opacity": 0.1
+    },
+    "jxqujydttc": {
+      "x1": -3.6437295127197635,
+      "y1": 2.5524065909193356,
+      "x2": 3.643729515444476,
+      "y2": 14.223292581845223,
+      "cx": 1.3623559909821855e-9,
+      "cy": 8.38784958638228,
+      "width": 7.287459028164238,
+      "height": 11.67088599092589,
+      "strokeWidth": 0.1,
+      "opacity": 0.1
+    },
+    "t2bnxq91fqr": {
+      "x1": -3.6437295127197635,
+      "y1": 14.223292581845223,
+      "x2": 3.643729515444476,
+      "y2": 16.701284986442296,
+      "cx": 1.3623559909821855e-9,
+      "cy": 15.462288784143759,
+      "width": 7.287459028164238,
+      "height": 2.47799240459707,
+      "strokeWidth": 0.1,
+      "opacity": 0.1
+    },
+    "28ljvfl1ayk": {
+      "x1": -3.6437295127197635,
+      "y1": 16.701284986442296,
+      "x2": 3.643729515444476,
+      "y2": 21.34042202334008,
+      "cx": 1.3623559909821855e-9,
+      "cy": 19.020853504891193,
+      "width": 7.287459028164238,
+      "height": 4.639137036897787,
+      "strokeWidth": 0.1,
+      "opacity": 0.1
+    },
+    "fx1ts60kln": {
+      "x1": -3.6437295127197635,
+      "y1": 21.34042202334008,
+      "x2": 3.643729515444476,
+      "y2": 23.498433426746875,
+      "cx": 1.3623559909821855e-9,
+      "cy": 22.41942772504348,
+      "width": 7.287459028164238,
+      "height": 2.1580114034028535,
+      "strokeWidth": 0.1,
+      "opacity": 0.1
+    },
+    "p8qtt2gvd1i": {
+      "x": 0,
+      "y": -58.746083566867185,
+      "fontSize": 3.5,
+      "opacity": 0.25
+    },
+    "7q0zfb972un": {
+      "x": 0,
+      "y": -58.746083566867185,
+      "fontSize": 3.5,
+      "opacity": 0.25
+    },
+    "ddxzublmxds": {
+      "x": -9.109323781799409,
+      "y": 56.0485693126087,
+      "fontSize": 3.5,
+      "opacity": 0.25
+    },
+    "cm923093lx": {
+      "x": -9.109323781799409,
+      "y": 47.55213376222798,
+      "fontSize": 3.5,
+      "opacity": 0.25
+    },
+    "rf4eabjqwjb": {
+      "x": -9.109323781799409,
+      "y": 38.655721960359394,
+      "fontSize": 3.5,
+      "opacity": 0.25
+    },
+    "9rhsyo8x7no": {
+      "x": -9.109323781799409,
+      "y": 20.9696239659557,
+      "fontSize": 3.5,
+      "opacity": 0.25
+    },
+    "2ua3mdt9us7": {
+      "x": -9.109323781799409,
+      "y": -1.6870479346978098,
+      "fontSize": 3.5,
+      "opacity": 0.25
+    },
+    "8i41c66oi8y": {
+      "x": -9.109323781799409,
+      "y": -34.250597956780574,
+      "fontSize": 3.5,
+      "opacity": 0.25
+    },
+    "a6itytiwx7o": {
+      "x": 7.5,
+      "y": 75,
+      "fontSize": 6,
+      "opacity": 0.25
+    }
+  },
+  "tables": [
+    {
+      "name": "food_supply_per_capita",
+      "columns": [
+        {
+          "displayName": "Country",
+          "name": "Country",
+          "type": "string",
+          "metadata": {
+            "kind": "categorical",
+            "orderMode": "alphabetically",
+            "examples": "Australia, China, Congo"
+          }
+        },
+        {
+          "displayName": "Grain",
+          "name": "Grain",
+          "type": "number",
+          "metadata": {
+            "kind": "numerical",
+            "examples": "22.96, 46.27, 25.76"
+          }
+        },
+        {
+          "displayName": "Meat",
+          "name": "Meat",
+          "type": "number",
+          "metadata": {
+            "kind": "numerical",
+            "examples": "16.52, 17.43, 7.29"
+          }
+        },
+        {
+          "displayName": "Milk & Eggs",
+          "name": "Milk & Eggs",
+          "type": "number",
+          "metadata": {
+            "kind": "numerical",
+            "examples": "10.35, 1.86, 0.91"
+          }
+        },
+        {
+          "displayName": "Other",
+          "name": "Other",
+          "type": "number",
+          "metadata": {
+            "kind": "numerical",
+            "examples": "6.32, 5.92, 2.94"
+          }
+        },
+        {
+          "displayName": "Produce",
+          "name": "Produce",
+          "type": "number",
+          "metadata": {
+            "kind": "numerical",
+            "examples": "9.95, 16.46, 41.38"
+          }
+        },
+        {
+          "displayName": "Sugar & Fat",
+          "name": "Sugar & Fat",
+          "type": "number",
+          "metadata": {
+            "kind": "numerical",
+            "examples": "33.89, 12.06, 21.73"
+          }
+        },
+        {
+          "displayName": "Total",
+          "name": "Total",
+          "type": "number",
+          "metadata": {
+            "kind": "numerical",
+            "examples": "1930, 2209, 2426"
+          }
+        }
+      ]
+    }
+  ],
+  "inference": [
+    {
+      "objectID": "bsrttrzmvoj",
+      "dataSource": {
+        "table": "food_supply_per_capita"
+      },
+      "expression": {
+        "expression": "avg(Grain)",
+        "property": {
+          "property": "sublayout",
+          "field": [
+            "order",
+            "expression"
+          ]
+        }
+      }
+    },
+    {
+      "objectID": "ujj7fx5usbq",
+      "autoDomainMax": true,
+      "autoDomainMin": true,
+      "scale": {
+        "classID": "scale.linear<number,number>",
+        "expressions": [
+          "avg(Grain)",
+          "avg(Produce)",
+          "avg(`Sugar & Fat`)",
+          "avg(`Milk & Eggs`)",
+          "avg(Meat)",
+          "avg(Other)"
+        ],
+        "properties": {
+          "mapping": "mapping"
+        }
+      },
+      "dataSource": {
+        "table": "food_supply_per_capita"
+      }
+    },
+    {
+      "objectID": "lr811czhldc",
+      "autoDomainMax": true,
+      "autoDomainMin": true,
+      "scale": {
+        "classID": "scale.linear<number,number>",
+        "expressions": [
+          "avg(Total)"
+        ],
+        "properties": {
+          "mapping": "mapping"
+        }
+      },
+      "dataSource": {
+        "table": "food_supply_per_capita"
+      }
+    },
+    {
+      "objectID": "g17qybysclp",
+      "autoDomainMax": true,
+      "autoDomainMin": true,
+      "scale": {
+        "classID": "scale.categorical<string,boolean>",
+        "expressions": [
+          "first(Country)"
+        ],
+        "properties": {
+          "mapping": "mapping"
+        }
+      },
+      "dataSource": {
+        "table": "food_supply_per_capita"
+      }
+    }
+  ],
+  "properties": [
+    {
+      "objectID": "bsrttrzmvoj",
+      "target": {
+        "property": {
+          "property": "sublayout",
+          "field": "order"
+        }
+      },
+      "type": "object",
+      "default": {
+        "expression": "avg(Grain)"
+      },
+      "displayName": "PlotSegment1/sublayout.order"
+    },
+    {
+      "objectID": "jpbb55fwdcj",
+      "target": {
+        "attribute": "fill"
+      },
+      "type": "color",
+      "default": "#f9f1a5",
+      "displayName": "Shape1/fill"
+    },
+    {
+      "objectID": "jpbb55fwdcj",
+      "target": {
+        "attribute": "visible"
+      },
+      "type": "boolean",
+      "default": true,
+      "displayName": "Shape1/visible"
+    },
+    {
+      "objectID": "jpbb55fwdcj",
+      "target": {
+        "attribute": "stroke"
+      },
+      "type": "color",
+      "default": "#ffffff",
+      "displayName": "Shape1/stroke"
+    },
+    {
+      "objectID": "jpbb55fwdcj",
+      "target": {
+        "attribute": "strokeWidth"
+      },
+      "type": "number",
+      "default": 1,
+      "displayName": "Shape1/strokeWidth"
+    },
+    {
+      "objectID": "jpbb55fwdcj",
+      "target": {
+        "property": "strokeStyle"
+      },
+      "type": "enum",
+      "default": "solid",
+      "displayName": "Shape1/strokeStyle"
+    },
+    {
+      "objectID": "jpbb55fwdcj",
+      "target": {
+        "attribute": "opacity"
+      },
+      "type": "number",
+      "default": 1,
+      "displayName": "Shape1/opacity"
+    },
+    {
+      "objectID": "xod9hyn6z8",
+      "target": {
+        "attribute": "fill"
+      },
+      "type": "color",
+      "default": "#79db75",
+      "displayName": "Shape2/fill"
+    },
+    {
+      "objectID": "xod9hyn6z8",
+      "target": {
+        "attribute": "visible"
+      },
+      "type": "boolean",
+      "default": true,
+      "displayName": "Shape2/visible"
+    },
+    {
+      "objectID": "xod9hyn6z8",
+      "target": {
+        "attribute": "stroke"
+      },
+      "type": "color",
+      "default": "#ffffff",
+      "displayName": "Shape2/stroke"
+    },
+    {
+      "objectID": "xod9hyn6z8",
+      "target": {
+        "attribute": "strokeWidth"
+      },
+      "type": "number",
+      "default": 1,
+      "displayName": "Shape2/strokeWidth"
+    },
+    {
+      "objectID": "xod9hyn6z8",
+      "target": {
+        "property": "strokeStyle"
+      },
+      "type": "enum",
+      "default": "solid",
+      "displayName": "Shape2/strokeStyle"
+    },
+    {
+      "objectID": "xod9hyn6z8",
+      "target": {
+        "attribute": "opacity"
+      },
+      "type": "number",
+      "default": 1,
+      "displayName": "Shape2/opacity"
+    },
+    {
+      "objectID": "jxqujydttc",
+      "target": {
+        "attribute": "fill"
+      },
+      "type": "color",
+      "default": "#de94e0",
+      "displayName": "Shape3/fill"
+    },
+    {
+      "objectID": "jxqujydttc",
+      "target": {
+        "attribute": "visible"
+      },
+      "type": "boolean",
+      "default": true,
+      "displayName": "Shape3/visible"
+    },
+    {
+      "objectID": "jxqujydttc",
+      "target": {
+        "attribute": "stroke"
+      },
+      "type": "color",
+      "default": "#ffffff",
+      "displayName": "Shape3/stroke"
+    },
+    {
+      "objectID": "jxqujydttc",
+      "target": {
+        "attribute": "strokeWidth"
+      },
+      "type": "number",
+      "default": 1,
+      "displayName": "Shape3/strokeWidth"
+    },
+    {
+      "objectID": "jxqujydttc",
+      "target": {
+        "property": "strokeStyle"
+      },
+      "type": "enum",
+      "default": "solid",
+      "displayName": "Shape3/strokeStyle"
+    },
+    {
+      "objectID": "jxqujydttc",
+      "target": {
+        "attribute": "opacity"
+      },
+      "type": "number",
+      "default": 1,
+      "displayName": "Shape3/opacity"
+    },
+    {
+      "objectID": "t2bnxq91fqr",
+      "target": {
+        "attribute": "fill"
+      },
+      "type": "color",
+      "default": "#ffb900",
+      "displayName": "Shape4/fill"
+    },
+    {
+      "objectID": "t2bnxq91fqr",
+      "target": {
+        "attribute": "visible"
+      },
+      "type": "boolean",
+      "default": true,
+      "displayName": "Shape4/visible"
+    },
+    {
+      "objectID": "t2bnxq91fqr",
+      "target": {
+        "attribute": "stroke"
+      },
+      "type": "color",
+      "default": "#ffffff",
+      "displayName": "Shape4/stroke"
+    },
+    {
+      "objectID": "t2bnxq91fqr",
+      "target": {
+        "attribute": "strokeWidth"
+      },
+      "type": "number",
+      "default": 1,
+      "displayName": "Shape4/strokeWidth"
+    },
+    {
+      "objectID": "t2bnxq91fqr",
+      "target": {
+        "property": "strokeStyle"
+      },
+      "type": "enum",
+      "default": "solid",
+      "displayName": "Shape4/strokeStyle"
+    },
+    {
+      "objectID": "t2bnxq91fqr",
+      "target": {
+        "attribute": "opacity"
+      },
+      "type": "number",
+      "default": 1,
+      "displayName": "Shape4/opacity"
+    },
+    {
+      "objectID": "28ljvfl1ayk",
+      "target": {
+        "attribute": "fill"
+      },
+      "type": "color",
+      "default": "#e81123",
+      "displayName": "Shape5/fill"
+    },
+    {
+      "objectID": "28ljvfl1ayk",
+      "target": {
+        "attribute": "visible"
+      },
+      "type": "boolean",
+      "default": true,
+      "displayName": "Shape5/visible"
+    },
+    {
+      "objectID": "28ljvfl1ayk",
+      "target": {
+        "attribute": "stroke"
+      },
+      "type": "color",
+      "default": "#ffffff",
+      "displayName": "Shape5/stroke"
+    },
+    {
+      "objectID": "28ljvfl1ayk",
+      "target": {
+        "attribute": "strokeWidth"
+      },
+      "type": "number",
+      "default": 1,
+      "displayName": "Shape5/strokeWidth"
+    },
+    {
+      "objectID": "28ljvfl1ayk",
+      "target": {
+        "property": "strokeStyle"
+      },
+      "type": "enum",
+      "default": "solid",
+      "displayName": "Shape5/strokeStyle"
+    },
+    {
+      "objectID": "28ljvfl1ayk",
+      "target": {
+        "attribute": "opacity"
+      },
+      "type": "number",
+      "default": 1,
+      "displayName": "Shape5/opacity"
+    },
+    {
+      "objectID": "fx1ts60kln",
+      "target": {
+        "attribute": "fill"
+      },
+      "type": "color",
+      "default": "#d9d9d9",
+      "displayName": "Shape6/fill"
+    },
+    {
+      "objectID": "fx1ts60kln",
+      "target": {
+        "attribute": "visible"
+      },
+      "type": "boolean",
+      "default": true,
+      "displayName": "Shape6/visible"
+    },
+    {
+      "objectID": "fx1ts60kln",
+      "target": {
+        "attribute": "stroke"
+      },
+      "type": "color",
+      "default": "#ffffff",
+      "displayName": "Shape6/stroke"
+    },
+    {
+      "objectID": "fx1ts60kln",
+      "target": {
+        "attribute": "strokeWidth"
+      },
+      "type": "number",
+      "default": 1,
+      "displayName": "Shape6/strokeWidth"
+    },
+    {
+      "objectID": "fx1ts60kln",
+      "target": {
+        "property": "strokeStyle"
+      },
+      "type": "enum",
+      "default": "solid",
+      "displayName": "Shape6/strokeStyle"
+    },
+    {
+      "objectID": "fx1ts60kln",
+      "target": {
+        "attribute": "opacity"
+      },
+      "type": "number",
+      "default": 1,
+      "displayName": "Shape6/opacity"
+    },
+    {
+      "objectID": "p8qtt2gvd1i",
+      "target": {
+        "attribute": "fontFamily"
+      },
+      "type": "font-family",
+      "default": "Arial",
+      "displayName": "Text1/fontFamily"
+    },
+    {
+      "objectID": "p8qtt2gvd1i",
+      "target": {
+        "attribute": "fontSize"
+      },
+      "type": "number",
+      "default": 14,
+      "displayName": "Text1/fontSize"
+    },
+    {
+      "objectID": "p8qtt2gvd1i",
+      "target": {
+        "attribute": "color"
+      },
+      "type": "color",
+      "default": "#000000",
+      "displayName": "Text1/color"
+    },
+    {
+      "objectID": "p8qtt2gvd1i",
+      "target": {
+        "attribute": "visible"
+      },
+      "type": "boolean",
+      "default": true,
+      "displayName": "Text1/visible"
+    },
+    {
+      "objectID": "p8qtt2gvd1i",
+      "target": {
+        "attribute": "opacity"
+      },
+      "type": "number",
+      "default": 1,
+      "displayName": "Text1/opacity"
+    },
+    {
+      "objectID": "7q0zfb972un",
+      "target": {
+        "attribute": "fontFamily"
+      },
+      "type": "font-family",
+      "default": "Arial",
+      "displayName": "Text2/fontFamily"
+    },
+    {
+      "objectID": "7q0zfb972un",
+      "target": {
+        "attribute": "fontSize"
+      },
+      "type": "number",
+      "default": 14,
+      "displayName": "Text2/fontSize"
+    },
+    {
+      "objectID": "7q0zfb972un",
+      "target": {
+        "attribute": "color"
+      },
+      "type": "color",
+      "default": "#000000",
+      "displayName": "Text2/color"
+    },
+    {
+      "objectID": "7q0zfb972un",
+      "target": {
+        "attribute": "visible"
+      },
+      "type": "boolean",
+      "default": true,
+      "displayName": "Text2/visible"
+    },
+    {
+      "objectID": "7q0zfb972un",
+      "target": {
+        "attribute": "opacity"
+      },
+      "type": "number",
+      "default": 1,
+      "displayName": "Text2/opacity"
+    },
+    {
+      "objectID": "ddxzublmxds",
+      "target": {
+        "attribute": "fontFamily"
+      },
+      "type": "font-family",
+      "default": "Arial",
+      "displayName": "Text3/fontFamily"
+    },
+    {
+      "objectID": "ddxzublmxds",
+      "target": {
+        "attribute": "fontSize"
+      },
+      "type": "number",
+      "default": 14,
+      "displayName": "Text3/fontSize"
+    },
+    {
+      "objectID": "ddxzublmxds",
+      "target": {
+        "attribute": "color"
+      },
+      "type": "color",
+      "default": "#000000",
+      "displayName": "Text3/color"
+    },
+    {
+      "objectID": "ddxzublmxds",
+      "target": {
+        "attribute": "opacity"
+      },
+      "type": "number",
+      "default": 1,
+      "displayName": "Text3/opacity"
+    },
+    {
+      "objectID": "ddxzublmxds",
+      "target": {
+        "attribute": "text"
+      },
+      "type": "text",
+      "default": "Other",
+      "displayName": "Text3/text"
+    },
+    {
+      "objectID": "cm923093lx",
+      "target": {
+        "attribute": "fontFamily"
+      },
+      "type": "font-family",
+      "default": "Arial",
+      "displayName": "Text4/fontFamily"
+    },
+    {
+      "objectID": "cm923093lx",
+      "target": {
+        "attribute": "fontSize"
+      },
+      "type": "number",
+      "default": 14,
+      "displayName": "Text4/fontSize"
+    },
+    {
+      "objectID": "cm923093lx",
+      "target": {
+        "attribute": "color"
+      },
+      "type": "color",
+      "default": "#000000",
+      "displayName": "Text4/color"
+    },
+    {
+      "objectID": "cm923093lx",
+      "target": {
+        "attribute": "opacity"
+      },
+      "type": "number",
+      "default": 1,
+      "displayName": "Text4/opacity"
+    },
+    {
+      "objectID": "cm923093lx",
+      "target": {
+        "attribute": "text"
+      },
+      "type": "text",
+      "default": "Meat",
+      "displayName": "Text4/text"
+    },
+    {
+      "objectID": "rf4eabjqwjb",
+      "target": {
+        "attribute": "fontFamily"
+      },
+      "type": "font-family",
+      "default": "Arial",
+      "displayName": "Text5/fontFamily"
+    },
+    {
+      "objectID": "rf4eabjqwjb",
+      "target": {
+        "attribute": "fontSize"
+      },
+      "type": "number",
+      "default": 14,
+      "displayName": "Text5/fontSize"
+    },
+    {
+      "objectID": "rf4eabjqwjb",
+      "target": {
+        "attribute": "color"
+      },
+      "type": "color",
+      "default": "#000000",
+      "displayName": "Text5/color"
+    },
+    {
+      "objectID": "rf4eabjqwjb",
+      "target": {
+        "attribute": "opacity"
+      },
+      "type": "number",
+      "default": 1,
+      "displayName": "Text5/opacity"
+    },
+    {
+      "objectID": "rf4eabjqwjb",
+      "target": {
+        "attribute": "text"
+      },
+      "type": "text",
+      "default": "Milk & Eggs",
+      "displayName": "Text5/text"
+    },
+    {
+      "objectID": "9rhsyo8x7no",
+      "target": {
+        "attribute": "fontFamily"
+      },
+      "type": "font-family",
+      "default": "Arial",
+      "displayName": "Text6/fontFamily"
+    },
+    {
+      "objectID": "9rhsyo8x7no",
+      "target": {
+        "attribute": "fontSize"
+      },
+      "type": "number",
+      "default": 14,
+      "displayName": "Text6/fontSize"
+    },
+    {
+      "objectID": "9rhsyo8x7no",
+      "target": {
+        "attribute": "color"
+      },
+      "type": "color",
+      "default": "#000000",
+      "displayName": "Text6/color"
+    },
+    {
+      "objectID": "9rhsyo8x7no",
+      "target": {
+        "attribute": "opacity"
+      },
+      "type": "number",
+      "default": 1,
+      "displayName": "Text6/opacity"
+    },
+    {
+      "objectID": "9rhsyo8x7no",
+      "target": {
+        "attribute": "text"
+      },
+      "type": "text",
+      "default": "Sugar & Fat",
+      "displayName": "Text6/text"
+    },
+    {
+      "objectID": "2ua3mdt9us7",
+      "target": {
+        "attribute": "fontFamily"
+      },
+      "type": "font-family",
+      "default": "Arial",
+      "displayName": "Text7/fontFamily"
+    },
+    {
+      "objectID": "2ua3mdt9us7",
+      "target": {
+        "attribute": "fontSize"
+      },
+      "type": "number",
+      "default": 14,
+      "displayName": "Text7/fontSize"
+    },
+    {
+      "objectID": "2ua3mdt9us7",
+      "target": {
+        "attribute": "color"
+      },
+      "type": "color",
+      "default": "#000000",
+      "displayName": "Text7/color"
+    },
+    {
+      "objectID": "2ua3mdt9us7",
+      "target": {
+        "attribute": "opacity"
+      },
+      "type": "number",
+      "default": 1,
+      "displayName": "Text7/opacity"
+    },
+    {
+      "objectID": "2ua3mdt9us7",
+      "target": {
+        "attribute": "text"
+      },
+      "type": "text",
+      "default": "Produce",
+      "displayName": "Text7/text"
+    },
+    {
+      "objectID": "8i41c66oi8y",
+      "target": {
+        "attribute": "fontFamily"
+      },
+      "type": "font-family",
+      "default": "Arial",
+      "displayName": "Text8/fontFamily"
+    },
+    {
+      "objectID": "8i41c66oi8y",
+      "target": {
+        "attribute": "fontSize"
+      },
+      "type": "number",
+      "default": 14,
+      "displayName": "Text8/fontSize"
+    },
+    {
+      "objectID": "8i41c66oi8y",
+      "target": {
+        "attribute": "color"
+      },
+      "type": "color",
+      "default": "#000000",
+      "displayName": "Text8/color"
+    },
+    {
+      "objectID": "8i41c66oi8y",
+      "target": {
+        "attribute": "opacity"
+      },
+      "type": "number",
+      "default": 1,
+      "displayName": "Text8/opacity"
+    },
+    {
+      "objectID": "8i41c66oi8y",
+      "target": {
+        "attribute": "text"
+      },
+      "type": "text",
+      "default": "Grain",
+      "displayName": "Text8/text"
+    },
+    {
+      "objectID": "a6itytiwx7o",
+      "target": {
+        "attribute": "fontSize"
+      },
+      "type": "number",
+      "default": 24,
+      "displayName": "Title/fontSize"
+    },
+    {
+      "objectID": "a6itytiwx7o",
+      "target": {
+        "attribute": "color"
+      },
+      "type": "color",
+      "default": "#000000",
+      "displayName": "Title/color"
+    },
+    {
+      "objectID": "a6itytiwx7o",
+      "target": {
+        "attribute": "text"
+      },
+      "type": "text",
+      "default": "Per Capita Food Supply (Daily Calories) in 2013",
+      "displayName": "Title/text"
+    },
+    {
+      "objectID": "ujj7fx5usbq",
+      "target": {
+        "property": "domainMin"
+      },
+      "type": "number",
+      "displayName": "Scale1/domainMin"
+    },
+    {
+      "objectID": "ujj7fx5usbq",
+      "target": {
+        "property": "domainMax"
+      },
+      "type": "number",
+      "displayName": "Scale1/domainMax"
+    },
+    {
+      "objectID": "ujj7fx5usbq",
+      "target": {
+        "attribute": "rangeMin"
+      },
+      "type": "number",
+      "default": null,
+      "displayName": "Scale1/rangeMin"
+    },
+    {
+      "objectID": "ujj7fx5usbq",
+      "target": {
+        "attribute": "rangeMax"
+      },
+      "type": "number",
+      "default": null,
+      "displayName": "Scale1/rangeMax"
+    },
+    {
+      "objectID": "lr811czhldc",
+      "target": {
+        "property": "domainMin"
+      },
+      "type": "number",
+      "displayName": "Scale2/domainMin"
+    },
+    {
+      "objectID": "lr811czhldc",
+      "target": {
+        "property": "domainMax"
+      },
+      "type": "number",
+      "displayName": "Scale2/domainMax"
+    },
+    {
+      "objectID": "lr811czhldc",
+      "target": {
+        "attribute": "rangeMin"
+      },
+      "type": "number",
+      "default": null,
+      "displayName": "Scale2/rangeMin"
+    },
+    {
+      "objectID": "lr811czhldc",
+      "target": {
+        "attribute": "rangeMax"
+      },
+      "type": "number",
+      "default": null,
+      "displayName": "Scale2/rangeMax"
+    },
+    {
+      "objectID": "39r3o3hj13v",
+      "target": {
+        "attribute": "marginLeft"
+      },
+      "type": "number",
+      "default": 100,
+      "displayName": "Chart/marginLeft"
+    },
+    {
+      "objectID": "39r3o3hj13v",
+      "target": {
+        "attribute": "marginRight"
+      },
+      "type": "number",
+      "default": 40,
+      "displayName": "Chart/marginRight"
+    },
+    {
+      "objectID": "39r3o3hj13v",
+      "target": {
+        "attribute": "marginTop"
+      },
+      "type": "number",
+      "default": 80,
+      "displayName": "Chart/marginTop"
+    },
+    {
+      "objectID": "39r3o3hj13v",
+      "target": {
+        "attribute": "marginBottom"
+      },
+      "type": "number",
+      "default": 50,
+      "displayName": "Chart/marginBottom"
+    }
+  ]
+}

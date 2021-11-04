@@ -1,0 +1,1121 @@
+{
+  "specification": {
+    "_id": "vylnh5rwtqc",
+    "classID": "chart.rectangle",
+    "properties": {
+      "name": "Chart",
+      "backgroundColor": null,
+      "backgroundOpacity": 1,
+      "exposed": true
+    },
+    "mappings": {
+      "marginTop": {
+        "type": "value",
+        "value": 110
+      },
+      "width": {
+        "type": "value",
+        "value": 800
+      },
+      "height": {
+        "type": "value",
+        "value": 1000
+      },
+      "marginRight": {
+        "type": "value",
+        "value": 60
+      },
+      "marginLeft": {
+        "type": "value",
+        "value": 140
+      },
+      "marginBottom": {
+        "type": "value",
+        "value": 20
+      }
+    },
+    "glyphs": [
+      {
+        "_id": "3y94jhfhs3k",
+        "classID": "glyph.rectangle",
+        "properties": {
+          "name": "Glyph"
+        },
+        "table": "mean_median_income",
+        "marks": [
+          {
+            "_id": "yb6rdqu2lni",
+            "classID": "mark.anchor",
+            "properties": {
+              "name": "Anchor"
+            },
+            "mappings": {
+              "x": {
+                "type": "parent",
+                "parentAttribute": "icx"
+              },
+              "y": {
+                "type": "parent",
+                "parentAttribute": "icy"
+              }
+            }
+          },
+          {
+            "_id": "cb6kfwrx1ym",
+            "classID": "mark.data-axis",
+            "properties": {
+              "dataExpressions": [
+                {
+                  "name": "1ywzycdaeyc",
+                  "expression": "avg(`median income`)"
+                },
+                {
+                  "name": "eewrcrpv72g",
+                  "expression": "avg(`mean income`)"
+                }
+              ],
+              "axis": {
+                "type": "numerical",
+                "expression": "avg(`median income`)",
+                "rawExpression": "first(`median income`)",
+                "valueType": "number",
+                "gapRatio": 0.1,
+                "visible": true,
+                "side": "default",
+                "style": {
+                  "tickColor": {
+                    "r": 0,
+                    "g": 0,
+                    "b": 0
+                  },
+                  "lineColor": {
+                    "r": 0,
+                    "g": 0,
+                    "b": 0
+                  },
+                  "fontFamily": "Arial",
+                  "fontSize": 12,
+                  "tickSize": 5,
+                  "wordWrap": false,
+                  "gridlineStyle": "none",
+                  "gridlineColor": {
+                    "r": 234,
+                    "g": 234,
+                    "b": 234
+                  },
+                  "gridlineWidth": 1
+                },
+                "numericalMode": "linear",
+                "dataKind": "numerical",
+                "autoDomainMax": true,
+                "autoDomainMin": false,
+                "domainMin": 0,
+                "domainMax": 60000,
+                "tickFormat": "{~s}",
+                "tickDataExpression": null
+              },
+              "visible": true,
+              "visibleOn": "last",
+              "name": "DataAxis1",
+              "exposed": true
+            },
+            "mappings": {
+              "x1": {
+                "type": "parent",
+                "parentAttribute": "ix1"
+              },
+              "y1": {
+                "type": "parent",
+                "parentAttribute": "iy2"
+              },
+              "y2": {
+                "type": "parent",
+                "parentAttribute": "iy2"
+              },
+              "x2": {
+                "type": "parent",
+                "parentAttribute": "ix2"
+              }
+            }
+          },
+          {
+            "_id": "iegoq3dim",
+            "classID": "guide.guide-coordinator",
+            "properties": {
+              "enableTooltips": true,
+              "enableContextMenu": true,
+              "enableSelection": true,
+              "name": "GuideCoordinator1",
+              "axis": "y",
+              "count": 6
+            },
+            "mappings": {
+              "x1": {
+                "type": "parent",
+                "parentAttribute": "ix1"
+              },
+              "y1": {
+                "type": "parent",
+                "parentAttribute": "iy2"
+              },
+              "x2": {
+                "type": "parent",
+                "parentAttribute": "ix1"
+              },
+              "y2": {
+                "type": "parent",
+                "parentAttribute": "iy1"
+              }
+            }
+          },
+          {
+            "_id": "h7sbolw2dma",
+            "classID": "mark.rect",
+            "properties": {
+              "visible": true,
+              "strokeStyle": "solid",
+              "shape": "rectangle",
+              "allowFlipping": true,
+              "name": "Shape1",
+              "exposed": true
+            },
+            "mappings": {
+              "fill": {
+                "type": "scale",
+                "table": "mean_median_income",
+                "expression": "get(list(get(get(mean_median_income.columns, 1), \"displayName\"), get(get(mean_median_income.columns, 2), \"displayName\")), 1)",
+                "valueType": "string",
+                "scale": "10reo71t4me",
+                "attribute": "fill",
+                "valueIndex": 0
+              },
+              "strokeWidth": {
+                "type": "value",
+                "value": 1
+              },
+              "opacity": {
+                "type": "value",
+                "value": 1
+              },
+              "visible": {
+                "type": "value",
+                "value": true
+              },
+              "x1": {
+                "type": "parent",
+                "parentAttribute": "ix1"
+              },
+              "y1": {
+                "type": "parent",
+                "parentAttribute": "iy1"
+              },
+              "y2": {
+                "type": "parent",
+                "parentAttribute": "iy2"
+              }
+            }
+          },
+          {
+            "_id": "tkivh8ouagc",
+            "classID": "mark.rect",
+            "properties": {
+              "visible": true,
+              "strokeStyle": "solid",
+              "shape": "rectangle",
+              "allowFlipping": true,
+              "name": "Shape2",
+              "exposed": true
+            },
+            "mappings": {
+              "fill": {
+                "type": "scale",
+                "table": "mean_median_income",
+                "expression": "get(list(get(get(mean_median_income.columns, 1), \"displayName\"), get(get(mean_median_income.columns, 2), \"displayName\")), 0)",
+                "valueType": "string",
+                "scale": "10reo71t4me",
+                "attribute": "fill",
+                "valueIndex": 0
+              },
+              "strokeWidth": {
+                "type": "value",
+                "value": 1
+              },
+              "opacity": {
+                "type": "value",
+                "value": 1
+              },
+              "visible": {
+                "type": "value",
+                "value": true
+              },
+              "x1": {
+                "type": "parent",
+                "parentAttribute": "ix1"
+              }
+            }
+          },
+          {
+            "_id": "kw6wndfuys",
+            "classID": "mark.text",
+            "properties": {
+              "alignment": {
+                "x": "right",
+                "y": "middle",
+                "xMargin": 8.02777796233709,
+                "yMargin": 5
+              },
+              "rotation": 0,
+              "visible": true,
+              "name": "Text1",
+              "exposed": true
+            },
+            "mappings": {
+              "text": {
+                "type": "text",
+                "table": "mean_median_income",
+                "textExpression": "${first(Country)}"
+              },
+              "fontFamily": {
+                "type": "value",
+                "value": "Arial"
+              },
+              "fontSize": {
+                "type": "value",
+                "value": 14
+              },
+              "color": {
+                "type": "value",
+                "value": {
+                  "r": 0,
+                  "g": 0,
+                  "b": 0
+                }
+              },
+              "opacity": {
+                "type": "value",
+                "value": 1
+              },
+              "visible": {
+                "type": "value",
+                "value": true
+              },
+              "x": {
+                "type": "parent",
+                "parentAttribute": "ix1"
+              },
+              "y": {
+                "type": "parent",
+                "parentAttribute": "icy"
+              }
+            }
+          }
+        ],
+        "mappings": {},
+        "constraints": [
+          {
+            "type": "snap",
+            "attributes": {
+              "element": "h7sbolw2dma",
+              "attribute": "x2",
+              "targetElement": "cb6kfwrx1ym",
+              "targetAttribute": "anchorXeewrcrpv72g",
+              "gap": 0
+            }
+          },
+          {
+            "type": "snap",
+            "attributes": {
+              "element": "tkivh8ouagc",
+              "attribute": "x2",
+              "targetElement": "cb6kfwrx1ym",
+              "targetAttribute": "anchorX1ywzycdaeyc",
+              "gap": 0
+            }
+          },
+          {
+            "type": "snap",
+            "attributes": {
+              "element": "tkivh8ouagc",
+              "attribute": "y2",
+              "targetElement": "iegoq3dim",
+              "targetAttribute": "value1",
+              "gap": 0
+            }
+          },
+          {
+            "type": "snap",
+            "attributes": {
+              "element": "tkivh8ouagc",
+              "attribute": "y1",
+              "targetElement": "iegoq3dim",
+              "targetAttribute": "value4",
+              "gap": 0
+            }
+          }
+        ]
+      }
+    ],
+    "elements": [
+      {
+        "_id": "za69mrwolq",
+        "classID": "plot-segment.cartesian",
+        "glyph": "3y94jhfhs3k",
+        "table": "mean_median_income",
+        "filter": null,
+        "mappings": {
+          "x1": {
+            "type": "parent",
+            "parentAttribute": "x1"
+          },
+          "y1": {
+            "type": "parent",
+            "parentAttribute": "y1"
+          },
+          "x2": {
+            "type": "parent",
+            "parentAttribute": "x2"
+          },
+          "y2": {
+            "type": "parent",
+            "parentAttribute": "y2"
+          }
+        },
+        "properties": {
+          "name": "PlotSegment1",
+          "visible": true,
+          "marginX1": 0,
+          "marginY1": 0,
+          "marginX2": 0,
+          "marginY2": 0,
+          "sublayout": {
+            "type": "dodge-y",
+            "order": {
+              "expression": "avg(`mean income`)"
+            },
+            "ratioX": 0.1,
+            "ratioY": 0.15485368448622136,
+            "align": {
+              "x": "start",
+              "y": "start"
+            },
+            "grid": {
+              "direction": "x",
+              "xCount": null,
+              "yCount": null
+            },
+            "packing": {
+              "gravityX": 0.1,
+              "gravityY": 0.1
+            },
+            "jitter": {
+              "vertical": true,
+              "horizontal": true
+            }
+          },
+          "exposed": true
+        }
+      },
+      {
+        "_id": "d20mox3lu0i",
+        "classID": "mark.text",
+        "properties": {
+          "name": "Title",
+          "visible": true,
+          "alignment": {
+            "x": "middle",
+            "y": "top",
+            "xMargin": 0,
+            "yMargin": 15
+          },
+          "rotation": 0,
+          "exposed": true
+        },
+        "mappings": {
+          "x": {
+            "type": "parent",
+            "parentAttribute": "cx"
+          },
+          "y": {
+            "type": "parent",
+            "parentAttribute": "oy2"
+          },
+          "text": {
+            "type": "value",
+            "value": "Average vs Median Income"
+          },
+          "fontSize": {
+            "type": "value",
+            "value": 24
+          },
+          "color": {
+            "type": "value",
+            "value": {
+              "r": 0,
+              "g": 0,
+              "b": 0
+            }
+          }
+        }
+      },
+      {
+        "_id": "exqgddqg4rp",
+        "classID": "legend.custom",
+        "properties": {
+          "scale": "10reo71t4me",
+          "visible": true,
+          "alignX": "start",
+          "alignY": "start",
+          "fontFamily": "Arial",
+          "fontSize": 12,
+          "textColor": {
+            "r": 0,
+            "g": 0,
+            "b": 0
+          },
+          "dataSource": "columnValues",
+          "dataExpressions": [],
+          "markerShape": "rectangle",
+          "orientation": "horizontal",
+          "name": "Legend1",
+          "exposed": true
+        },
+        "mappings": {
+          "x": {
+            "type": "parent",
+            "parentAttribute": "x1"
+          },
+          "mappingOptions": {
+            "type": "scale",
+            "table": "mean_median_income",
+            "expression": "list(get(get(mean_median_income.columns, 1), \"displayName\"), get(get(mean_median_income.columns, 2), \"displayName\"))",
+            "valueType": "string",
+            "scale": "10reo71t4me",
+            "allowSelectValue": true
+          }
+        }
+      },
+      {
+        "_id": "91wq84pnsna",
+        "classID": "guide.guide",
+        "properties": {
+          "baseline": "top",
+          "name": "Guide1",
+          "axis": "y",
+          "exposed": true
+        },
+        "mappings": {
+          "value": {
+            "type": "value",
+            "value": 30
+          }
+        }
+      }
+    ],
+    "scales": [
+      {
+        "_id": "10reo71t4me",
+        "classID": "scale.categorical<string,color>",
+        "properties": {
+          "enableTooltips": true,
+          "enableContextMenu": true,
+          "enableSelection": true,
+          "name": "Scale1",
+          "mapping": {
+            "median income": {
+              "r": 165,
+              "g": 15,
+              "b": 21
+            },
+            "mean income": {
+              "r": 198,
+              "g": 219,
+              "b": 239
+            }
+          },
+          "autoDomainMax": true,
+          "autoDomainMin": true
+        },
+        "mappings": {},
+        "inputType": "string",
+        "outputType": "color"
+      }
+    ],
+    "scaleMappings": [
+      {
+        "type": "scale",
+        "table": "mean_median_income",
+        "expression": "get(list(get(get(mean_median_income.columns, 1), \"displayName\"),get(get(mean_median_income.columns, 2), \"displayName\")), 0)",
+        "valueType": "string",
+        "scale": "10reo71t4me",
+        "attribute": "fill",
+        "valueIndex": 0
+      }
+    ],
+    "constraints": [
+      {
+        "type": "snap",
+        "attributes": {
+          "element": "exqgddqg4rp",
+          "attribute": "y",
+          "targetElement": "91wq84pnsna",
+          "targetAttribute": "computedBaselineValue",
+          "gap": 0
+        }
+      }
+    ],
+    "resources": []
+  },
+  "defaultAttributes": {
+    "yb6rdqu2lni": {
+      "x": 0,
+      "y": 0
+    },
+    "cb6kfwrx1ym": {
+      "x1": -37.499999972683014,
+      "y1": 1.5846493415743128,
+      "x2": 37.499999972683014,
+      "y2": 1.5846493415743128,
+      "anchorX1ywzycdaeyc": -7.446939649747671,
+      "anchorY1ywzycdaeyc": 1.5846493415743128,
+      "anchorXeewrcrpv72g": 16.209913781295292,
+      "anchorYeewrcrpv72g": 1.5846493415743128
+    },
+    "h7sbolw2dma": {
+      "x1": -29.99999997814641,
+      "y1": -1.2677194732594503,
+      "x2": 12.967931025036233,
+      "y2": 1.2677194732594503,
+      "cx": -8.516034476555092,
+      "cy": 0,
+      "width": 42.967931003182656,
+      "height": 2.5354389465189007,
+      "strokeWidth": 0.1,
+      "opacity": 0.1
+    },
+    "tkivh8ouagc": {
+      "x1": -29.99999997814641,
+      "y1": -0.5433083456826213,
+      "x2": -5.957551719798137,
+      "y2": 0.5433083456826213,
+      "cx": -17.978775848972283,
+      "cy": 0,
+      "width": 24.042448258348287,
+      "height": 1.0866166913652426,
+      "strokeWidth": 0.1,
+      "opacity": 0.1
+    },
+    "kw6wndfuys": {
+      "x": -74.99999994536603,
+      "y": 0,
+      "fontSize": 3.5,
+      "opacity": 0.25
+    },
+    "d20mox3lu0i": {
+      "x": 10,
+      "y": 125,
+      "fontSize": 6,
+      "opacity": 0.25
+    }
+  },
+  "tables": [
+    {
+      "name": "mean_median_income",
+      "columns": [
+        {
+          "displayName": "Country",
+          "name": "Country",
+          "type": "string",
+          "metadata": {
+            "kind": "categorical",
+            "orderMode": "alphabetically",
+            "examples": "Ireland, Slovenia, Estonia"
+          }
+        },
+        {
+          "displayName": "median income",
+          "name": "median income",
+          "type": "number",
+          "metadata": {
+            "kind": "numerical",
+            "examples": "13630, 13719, 14053"
+          }
+        },
+        {
+          "displayName": "mean income",
+          "name": "mean income",
+          "type": "number",
+          "metadata": {
+            "kind": "numerical",
+            "examples": "23508, 24529, 24921"
+          }
+        }
+      ]
+    }
+  ],
+  "inference": [
+    {
+      "objectID": "za69mrwolq",
+      "dataSource": {
+        "table": "mean_median_income"
+      },
+      "expression": {
+        "expression": "avg(`mean income`)",
+        "property": {
+          "property": "sublayout",
+          "field": [
+            "order",
+            "expression"
+          ]
+        }
+      }
+    },
+    {
+      "objectID": "cb6kfwrx1ym",
+      "dataSource": {
+        "table": "mean_median_income",
+        "groupBy": null
+      },
+      "axis": {
+        "expression": "avg(`median income`)",
+        "additionalExpressions": [
+          "avg(`median income`)",
+          "avg(`mean income`)"
+        ],
+        "type": "numerical",
+        "property": "axis"
+      },
+      "autoDomainMin": false,
+      "autoDomainMax": true
+    },
+    {
+      "objectID": "cb6kfwrx1ym",
+      "dataSource": {
+        "table": "mean_median_income",
+        "groupBy": null
+      },
+      "expression": {
+        "expression": "avg(`median income`)",
+        "property": {
+          "property": "dataExpressions",
+          "field": [
+            0,
+            "expression"
+          ]
+        }
+      }
+    },
+    {
+      "objectID": "cb6kfwrx1ym",
+      "dataSource": {
+        "table": "mean_median_income",
+        "groupBy": null
+      },
+      "expression": {
+        "expression": "avg(`mean income`)",
+        "property": {
+          "property": "dataExpressions",
+          "field": [
+            1,
+            "expression"
+          ]
+        }
+      }
+    },
+    {
+      "objectID": "10reo71t4me",
+      "autoDomainMax": true,
+      "autoDomainMin": true,
+      "scale": {
+        "classID": "scale.categorical<string,color>",
+        "expressions": [
+          "get(list(get(get(mean_median_income.columns, 1), \"displayName\"), get(get(mean_median_income.columns, 2), \"displayName\")), 1)",
+          "get(list(get(get(mean_median_income.columns, 1), \"displayName\"), get(get(mean_median_income.columns, 2), \"displayName\")), 0)"
+        ],
+        "properties": {
+          "mapping": "mapping"
+        }
+      },
+      "dataSource": {
+        "table": "mean_median_income"
+      }
+    }
+  ],
+  "properties": [
+    {
+      "objectID": "za69mrwolq",
+      "target": {
+        "property": {
+          "property": "sublayout",
+          "field": "order"
+        }
+      },
+      "type": "object",
+      "default": {
+        "expression": "avg(`mean income`)"
+      },
+      "displayName": "PlotSegment1/sublayout.order"
+    },
+    {
+      "objectID": "cb6kfwrx1ym",
+      "target": {
+        "property": {
+          "property": "axis",
+          "field": "style",
+          "subfield": "tickSize"
+        }
+      },
+      "type": "number",
+      "default": 5,
+      "displayName": "DataAxis1/axis.style.tickSize"
+    },
+    {
+      "objectID": "cb6kfwrx1ym",
+      "target": {
+        "property": {
+          "property": "axis",
+          "field": "style",
+          "subfield": "fontSize"
+        }
+      },
+      "type": "number",
+      "default": 12,
+      "displayName": "DataAxis1/axis.style.fontSize"
+    },
+    {
+      "objectID": "cb6kfwrx1ym",
+      "target": {
+        "property": {
+          "property": "axis",
+          "field": "style",
+          "subfield": "fontFamily"
+        }
+      },
+      "type": "font-family",
+      "default": "Arial",
+      "displayName": "DataAxis1/axis.style.fontFamily"
+    },
+    {
+      "objectID": "cb6kfwrx1ym",
+      "target": {
+        "property": {
+          "property": "axis",
+          "field": "style",
+          "subfield": "lineColor"
+        }
+      },
+      "type": "color",
+      "default": "#000000",
+      "displayName": "DataAxis1/axis.style.lineColor"
+    },
+    {
+      "objectID": "cb6kfwrx1ym",
+      "target": {
+        "property": {
+          "property": "axis",
+          "field": "style",
+          "subfield": "tickColor"
+        }
+      },
+      "type": "color",
+      "default": "#000000",
+      "displayName": "DataAxis1/axis.style.tickColor"
+    },
+    {
+      "objectID": "cb6kfwrx1ym",
+      "target": {
+        "property": {
+          "property": "axis",
+          "field": "tickFormat"
+        }
+      },
+      "type": "text",
+      "default": null,
+      "displayName": "DataAxis1/axis.tickFormat"
+    },
+    {
+      "objectID": "cb6kfwrx1ym",
+      "target": {
+        "property": {
+          "property": "axis",
+          "field": "tickDataExpression"
+        }
+      },
+      "type": "text",
+      "default": null,
+      "displayName": "DataAxis1/axis.tickDataExpression"
+    },
+    {
+      "objectID": "cb6kfwrx1ym",
+      "target": {
+        "property": {
+          "property": "axis",
+          "field": "categories"
+        }
+      },
+      "type": "enum",
+      "default": "ascending",
+      "displayName": "DataAxis1/axis.categories"
+    },
+    {
+      "objectID": "h7sbolw2dma",
+      "target": {
+        "attribute": "visible"
+      },
+      "type": "boolean",
+      "default": true,
+      "displayName": "Shape1/visible"
+    },
+    {
+      "objectID": "h7sbolw2dma",
+      "target": {
+        "attribute": "strokeWidth"
+      },
+      "type": "number",
+      "default": 1,
+      "displayName": "Shape1/strokeWidth"
+    },
+    {
+      "objectID": "h7sbolw2dma",
+      "target": {
+        "property": "strokeStyle"
+      },
+      "type": "enum",
+      "default": "solid",
+      "displayName": "Shape1/strokeStyle"
+    },
+    {
+      "objectID": "h7sbolw2dma",
+      "target": {
+        "attribute": "opacity"
+      },
+      "type": "number",
+      "default": 1,
+      "displayName": "Shape1/opacity"
+    },
+    {
+      "objectID": "tkivh8ouagc",
+      "target": {
+        "attribute": "visible"
+      },
+      "type": "boolean",
+      "default": true,
+      "displayName": "Shape2/visible"
+    },
+    {
+      "objectID": "tkivh8ouagc",
+      "target": {
+        "attribute": "strokeWidth"
+      },
+      "type": "number",
+      "default": 1,
+      "displayName": "Shape2/strokeWidth"
+    },
+    {
+      "objectID": "tkivh8ouagc",
+      "target": {
+        "property": "strokeStyle"
+      },
+      "type": "enum",
+      "default": "solid",
+      "displayName": "Shape2/strokeStyle"
+    },
+    {
+      "objectID": "tkivh8ouagc",
+      "target": {
+        "attribute": "opacity"
+      },
+      "type": "number",
+      "default": 1,
+      "displayName": "Shape2/opacity"
+    },
+    {
+      "objectID": "kw6wndfuys",
+      "target": {
+        "attribute": "fontFamily"
+      },
+      "type": "font-family",
+      "default": "Arial",
+      "displayName": "Text1/fontFamily"
+    },
+    {
+      "objectID": "kw6wndfuys",
+      "target": {
+        "attribute": "fontSize"
+      },
+      "type": "number",
+      "default": 14,
+      "displayName": "Text1/fontSize"
+    },
+    {
+      "objectID": "kw6wndfuys",
+      "target": {
+        "attribute": "color"
+      },
+      "type": "color",
+      "default": "#000000",
+      "displayName": "Text1/color"
+    },
+    {
+      "objectID": "kw6wndfuys",
+      "target": {
+        "attribute": "visible"
+      },
+      "type": "boolean",
+      "default": true,
+      "displayName": "Text1/visible"
+    },
+    {
+      "objectID": "kw6wndfuys",
+      "target": {
+        "attribute": "opacity"
+      },
+      "type": "number",
+      "default": 1,
+      "displayName": "Text1/opacity"
+    },
+    {
+      "objectID": "d20mox3lu0i",
+      "target": {
+        "attribute": "fontSize"
+      },
+      "type": "number",
+      "default": 24,
+      "displayName": "Title/fontSize"
+    },
+    {
+      "objectID": "d20mox3lu0i",
+      "target": {
+        "attribute": "color"
+      },
+      "type": "color",
+      "default": "#000000",
+      "displayName": "Title/color"
+    },
+    {
+      "objectID": "d20mox3lu0i",
+      "target": {
+        "attribute": "text"
+      },
+      "type": "text",
+      "default": "Average vs Median Income",
+      "displayName": "Title/text"
+    },
+    {
+      "objectID": "exqgddqg4rp",
+      "target": {
+        "property": "fontFamily"
+      },
+      "type": "font-family",
+      "default": "Arial",
+      "displayName": "Legend1/fontFamily"
+    },
+    {
+      "objectID": "exqgddqg4rp",
+      "target": {
+        "property": "fontSize"
+      },
+      "type": "number",
+      "default": 12,
+      "displayName": "Legend1/fontSize"
+    },
+    {
+      "objectID": "exqgddqg4rp",
+      "target": {
+        "property": "textColor"
+      },
+      "type": "color",
+      "default": "#000000",
+      "displayName": "Legend1/textColor"
+    },
+    {
+      "objectID": "exqgddqg4rp",
+      "target": {
+        "property": "markerShape"
+      },
+      "type": "enum",
+      "default": "rectangle",
+      "displayName": "Legend1/markerShape"
+    },
+    {
+      "objectID": "exqgddqg4rp",
+      "target": {
+        "property": "alignY"
+      },
+      "type": "enum",
+      "default": "start",
+      "displayName": "Legend1/alignY"
+    },
+    {
+      "objectID": "exqgddqg4rp",
+      "target": {
+        "property": "alignX"
+      },
+      "type": "enum",
+      "default": "start",
+      "displayName": "Legend1/alignX"
+    },
+    {
+      "objectID": "91wq84pnsna",
+      "target": {
+        "attribute": "baseline"
+      },
+      "type": "enum",
+      "default": "top",
+      "displayName": "Guide1/baseline"
+    },
+    {
+      "objectID": "91wq84pnsna",
+      "target": {
+        "attribute": "value"
+      },
+      "type": "number",
+      "default": 30,
+      "displayName": "Guide1/value"
+    },
+    {
+      "objectID": "91wq84pnsna",
+      "target": {
+        "attribute": "computedBaselineValue"
+      },
+      "type": "number",
+      "default": 420,
+      "displayName": "Guide1/computedBaselineValue"
+    },
+    {
+      "objectID": "vylnh5rwtqc",
+      "target": {
+        "attribute": "marginLeft"
+      },
+      "type": "number",
+      "default": 140,
+      "displayName": "Chart/marginLeft"
+    },
+    {
+      "objectID": "vylnh5rwtqc",
+      "target": {
+        "attribute": "marginRight"
+      },
+      "type": "number",
+      "default": 60,
+      "displayName": "Chart/marginRight"
+    },
+    {
+      "objectID": "vylnh5rwtqc",
+      "target": {
+        "attribute": "marginTop"
+      },
+      "type": "number",
+      "default": 110,
+      "displayName": "Chart/marginTop"
+    },
+    {
+      "objectID": "vylnh5rwtqc",
+      "target": {
+        "attribute": "marginBottom"
+      },
+      "type": "number",
+      "default": 20,
+      "displayName": "Chart/marginBottom"
+    }
+  ]
+}

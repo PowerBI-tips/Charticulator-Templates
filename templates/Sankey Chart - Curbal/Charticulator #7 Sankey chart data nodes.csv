@@ -1,0 +1,12 @@
+﻿oder,id,Amount,Kind,Type,Color
+8,Bitcoin profit,101000000,C Cost &Profit,Bitcoin profit,Profit
+4,Energy Gen & Storage,494000000,A Revenue Type,Energy Gen & Storage,Revenue
+1,Regulatory Credits,518000000,A Revenue Type,Regulatory Credits,Revenue
+10,Operating profit,594000000,D Gross Profit,Operating profit,Profit
+6,R&D Expenses,606000000,D Gross Profit,R&D Expenses,Cost
+3,Services / Other,893000000,A Revenue Type,Services / Other,Revenue
+9,Sales &Admin,1100000000,D Gross Profit,Sales &Admin,Cost
+7,Gross Profit,2200000000,C Cost &Profit,Gross Profit,Profit
+6,Cost of revenue,8200000000,C Cost &Profit,Cost of revenue,Cost
+2,Automotive Revenue,8500000000,A Revenue Type,Automotive Revenue,Revenue
+5,Total Revenue,10400000000,B Total Revenue,Total Revenue,Revenue

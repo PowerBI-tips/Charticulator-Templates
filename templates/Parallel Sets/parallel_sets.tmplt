@@ -1,0 +1,1255 @@
+{
+  "specification": {
+    "_id": "eksuszpcnkd",
+    "classID": "chart.rectangle",
+    "properties": {
+      "name": "Chart",
+      "backgroundColor": {
+        "r": 0,
+        "g": 0,
+        "b": 0
+      },
+      "backgroundOpacity": 1,
+      "exposed": true
+    },
+    "mappings": {
+      "marginTop": {
+        "type": "value",
+        "value": 70
+      },
+      "marginRight": {
+        "type": "value",
+        "value": 110
+      },
+      "marginBottom": {
+        "type": "value",
+        "value": 30
+      },
+      "marginLeft": {
+        "type": "value",
+        "value": 30
+      }
+    },
+    "glyphs": [
+      {
+        "_id": "8muw2dvg7x",
+        "classID": "glyph.rectangle",
+        "properties": {
+          "name": "Glyph"
+        },
+        "table": "world_greenhouse_gas_emissions_nodes",
+        "marks": [
+          {
+            "_id": "5yow721spgp",
+            "classID": "mark.anchor",
+            "properties": {
+              "name": "Anchor"
+            },
+            "mappings": {
+              "x": {
+                "type": "parent",
+                "parentAttribute": "icx"
+              },
+              "y": {
+                "type": "parent",
+                "parentAttribute": "icy"
+              }
+            }
+          },
+          {
+            "_id": "s4v491jtnwh",
+            "classID": "mark.rect",
+            "properties": {
+              "visible": true,
+              "strokeStyle": "solid",
+              "shape": "rectangle",
+              "allowFlipping": true,
+              "name": "Shape1",
+              "exposed": true
+            },
+            "mappings": {
+              "fill": {
+                "type": "scale",
+                "table": "world_greenhouse_gas_emissions_nodes",
+                "expression": "avg(Value)",
+                "valueType": "number",
+                "scale": "80fpqotu7al",
+                "attribute": "fill"
+              },
+              "strokeWidth": {
+                "type": "value",
+                "value": 1
+              },
+              "opacity": {
+                "type": "value",
+                "value": 1
+              },
+              "visible": {
+                "type": "value",
+                "value": true
+              },
+              "x1": {
+                "type": "parent",
+                "parentAttribute": "ix1"
+              },
+              "y1": {
+                "type": "parent",
+                "parentAttribute": "iy1"
+              },
+              "x2": {
+                "type": "parent",
+                "parentAttribute": "ix2"
+              },
+              "y2": {
+                "type": "parent",
+                "parentAttribute": "iy2"
+              },
+              "height": {
+                "type": "scale",
+                "table": "world_greenhouse_gas_emissions_nodes",
+                "expression": "avg(Value)",
+                "valueType": "number",
+                "scale": "babdpruhw0s",
+                "attribute": "height"
+              },
+              "stroke": {
+                "type": "value",
+                "value": {
+                  "r": 255,
+                  "g": 255,
+                  "b": 255
+                }
+              }
+            }
+          },
+          {
+            "_id": "70nqrxm1s33",
+            "classID": "mark.text",
+            "properties": {
+              "alignment": {
+                "x": "left",
+                "y": "middle",
+                "xMargin": 5,
+                "yMargin": 5
+              },
+              "rotation": 0,
+              "visible": true,
+              "name": "Text1",
+              "exposed": true
+            },
+            "mappings": {
+              "text": {
+                "type": "text",
+                "table": "world_greenhouse_gas_emissions_nodes",
+                "textExpression": "${first(Name)}"
+              },
+              "fontFamily": {
+                "type": "value",
+                "value": "Arial"
+              },
+              "fontSize": {
+                "type": "value",
+                "value": 9
+              },
+              "color": {
+                "type": "value",
+                "value": {
+                  "r": 255,
+                  "g": 255,
+                  "b": 255
+                }
+              },
+              "opacity": {
+                "type": "value",
+                "value": 1
+              },
+              "visible": {
+                "type": "value",
+                "value": true
+              },
+              "x": {
+                "type": "parent",
+                "parentAttribute": "ix2"
+              },
+              "y": {
+                "type": "parent",
+                "parentAttribute": "icy"
+              }
+            }
+          }
+        ],
+        "mappings": {},
+        "constraints": []
+      }
+    ],
+    "elements": [
+      {
+        "_id": "tqcqb9pr2rd",
+        "classID": "links.table",
+        "mappings": {
+          "opacity": {
+            "type": "value",
+            "value": 0.5
+          },
+          "color": {
+            "type": "scale",
+            "table": "world_greenhouse_gas_emissions_nodes",
+            "expression": "avg(Value)",
+            "valueType": "number",
+            "scale": "80fpqotu7al"
+          },
+          "strokeWidth": {
+            "type": "scale",
+            "table": "world_greenhouse_gas_emissions_links",
+            "expression": "avg(Value)",
+            "valueType": "number",
+            "scale": "5ntr6qs6rdh"
+          }
+        },
+        "properties": {
+          "name": "Link1",
+          "linkMarkType": "",
+          "visible": true,
+          "linkType": "band",
+          "interpolationType": "bezier",
+          "anchor1": [
+            {
+              "x": {
+                "element": "s4v491jtnwh",
+                "attribute": "x2"
+              },
+              "y": {
+                "element": "s4v491jtnwh",
+                "attribute": "y1"
+              },
+              "direction": {
+                "x": 1,
+                "y": 0
+              }
+            },
+            {
+              "x": {
+                "element": "s4v491jtnwh",
+                "attribute": "x2"
+              },
+              "y": {
+                "element": "s4v491jtnwh",
+                "attribute": "y2"
+              },
+              "direction": {
+                "x": 1,
+                "y": 0
+              }
+            }
+          ],
+          "anchor2": [
+            {
+              "x": {
+                "element": "s4v491jtnwh",
+                "attribute": "x1"
+              },
+              "y": {
+                "element": "s4v491jtnwh",
+                "attribute": "y1"
+              },
+              "direction": {
+                "x": -1,
+                "y": 0
+              }
+            },
+            {
+              "x": {
+                "element": "s4v491jtnwh",
+                "attribute": "x1"
+              },
+              "y": {
+                "element": "s4v491jtnwh",
+                "attribute": "y2"
+              },
+              "direction": {
+                "x": -1,
+                "y": 0
+              }
+            }
+          ],
+          "linkTable": {
+            "table": "world_greenhouse_gas_emissions_links",
+            "plotSegments": [
+              "733dz7iy4y",
+              "733dz7iy4y"
+            ]
+          },
+          "curveness": 80,
+          "exposed": true
+        }
+      },
+      {
+        "_id": "733dz7iy4y",
+        "classID": "plot-segment.cartesian",
+        "glyph": "8muw2dvg7x",
+        "table": "world_greenhouse_gas_emissions_nodes",
+        "filter": null,
+        "mappings": {
+          "x1": {
+            "type": "parent",
+            "parentAttribute": "x1"
+          },
+          "y1": {
+            "type": "parent",
+            "parentAttribute": "y1"
+          },
+          "x2": {
+            "type": "parent",
+            "parentAttribute": "x2"
+          },
+          "y2": {
+            "type": "parent",
+            "parentAttribute": "y2"
+          }
+        },
+        "properties": {
+          "name": "PlotSegment1",
+          "visible": true,
+          "marginX1": 0,
+          "marginY1": 0,
+          "marginX2": 0,
+          "marginY2": 0,
+          "sublayout": {
+            "type": "dodge-y",
+            "order": null,
+            "ratioX": 0.1,
+            "ratioY": 0.2,
+            "align": {
+              "x": "start",
+              "y": "middle"
+            },
+            "grid": {
+              "direction": "x",
+              "xCount": null,
+              "yCount": null
+            },
+            "packing": {
+              "gravityX": 0.1,
+              "gravityY": 0.1
+            },
+            "jitter": {
+              "vertical": true,
+              "horizontal": true
+            }
+          },
+          "xData": {
+            "type": "categorical",
+            "expression": "first(Kind)",
+            "valueType": "string",
+            "gapRatio": 0.85,
+            "visible": true,
+            "side": "default",
+            "style": {
+              "tickColor": {
+                "r": 0,
+                "g": 0,
+                "b": 0
+              },
+              "lineColor": {
+                "r": 0,
+                "g": 0,
+                "b": 0
+              },
+              "fontFamily": "Arial",
+              "fontSize": 12,
+              "tickSize": 5,
+              "wordWrap": false,
+              "gridlineStyle": "none",
+              "gridlineColor": {
+                "r": 234,
+                "g": 234,
+                "b": 234
+              },
+              "gridlineWidth": 1
+            },
+            "dataKind": "categorical",
+            "orderMode": "alphabetically",
+            "autoDomainMax": true,
+            "autoDomainMin": true,
+            "categories": [
+              "1 Primary",
+              "2 Sector",
+              "3 End User Activity",
+              "4 Gas"
+            ]
+          },
+          "exposed": true
+        }
+      },
+      {
+        "_id": "ffbw6pgu58g",
+        "classID": "mark.text",
+        "properties": {
+          "name": "Title",
+          "visible": true,
+          "alignment": {
+            "x": "left",
+            "y": "bottom",
+            "xMargin": 5,
+            "yMargin": 25
+          },
+          "rotation": 0,
+          "exposed": true
+        },
+        "mappings": {
+          "x": {
+            "type": "parent",
+            "parentAttribute": "x1"
+          },
+          "y": {
+            "type": "parent",
+            "parentAttribute": "y2"
+          },
+          "text": {
+            "type": "value",
+            "value": "World Greenhouse Gas Emissions in 2006"
+          },
+          "fontSize": {
+            "type": "value",
+            "value": 24
+          },
+          "color": {
+            "type": "value",
+            "value": {
+              "r": 255,
+              "g": 255,
+              "b": 255
+            }
+          }
+        }
+      },
+      {
+        "_id": "tg6z5czf87q",
+        "classID": "mark.text",
+        "properties": {
+          "alignment": {
+            "x": "left",
+            "y": "bottom",
+            "xMargin": 5,
+            "yMargin": 5
+          },
+          "rotation": 0,
+          "visible": true,
+          "name": "Text2",
+          "exposed": true
+        },
+        "mappings": {
+          "text": {
+            "type": "value",
+            "value": "Total: 44,153 MtCO2"
+          },
+          "fontFamily": {
+            "type": "value",
+            "value": "Arial"
+          },
+          "fontSize": {
+            "type": "value",
+            "value": 14
+          },
+          "color": {
+            "type": "value",
+            "value": {
+              "r": 255,
+              "g": 255,
+              "b": 255
+            }
+          },
+          "opacity": {
+            "type": "value",
+            "value": 1
+          },
+          "visible": {
+            "type": "value",
+            "value": true
+          },
+          "x": {
+            "type": "parent",
+            "parentAttribute": "x1"
+          },
+          "y": {
+            "type": "parent",
+            "parentAttribute": "y2"
+          }
+        }
+      }
+    ],
+    "scales": [
+      {
+        "_id": "babdpruhw0s",
+        "classID": "scale.linear<number,number>",
+        "properties": {
+          "autoDomainMin": true,
+          "autoDomainMax": true,
+          "name": "Scale1",
+          "domainMin": 0,
+          "domainMax": 80,
+          "exposed": true
+        },
+        "mappings": {
+          "rangeMin": {
+            "type": "value",
+            "value": 0
+          }
+        },
+        "inputType": "number",
+        "outputType": "number"
+      },
+      {
+        "_id": "80fpqotu7al",
+        "classID": "scale.linear<number,color>",
+        "properties": {
+          "enableTooltips": true,
+          "enableContextMenu": true,
+          "enableSelection": true,
+          "name": "Scale2",
+          "domainMin": 0,
+          "domainMax": 80,
+          "range": {
+            "colors": [
+              {
+                "r": 94,
+                "g": 79,
+                "b": 162
+              },
+              {
+                "r": 50,
+                "g": 136,
+                "b": 189
+              },
+              {
+                "r": 102,
+                "g": 194,
+                "b": 165
+              },
+              {
+                "r": 171,
+                "g": 221,
+                "b": 164
+              },
+              {
+                "r": 230,
+                "g": 245,
+                "b": 152
+              },
+              {
+                "r": 255,
+                "g": 255,
+                "b": 191
+              },
+              {
+                "r": 254,
+                "g": 224,
+                "b": 139
+              },
+              {
+                "r": 253,
+                "g": 174,
+                "b": 97
+              },
+              {
+                "r": 244,
+                "g": 109,
+                "b": 67
+              },
+              {
+                "r": 213,
+                "g": 62,
+                "b": 79
+              },
+              {
+                "r": 158,
+                "g": 1,
+                "b": 66
+              }
+            ],
+            "colorspace": "lab"
+          },
+          "autoDomainMax": true,
+          "autoDomainMin": true,
+          "exposed": true
+        },
+        "mappings": {
+          "range": {
+            "type": "value",
+            "value": {
+              "colorspace": "lab",
+              "colors": [
+                {
+                  "r": 255,
+                  "g": 255,
+                  "b": 255
+                },
+                {
+                  "r": 0,
+                  "g": 0,
+                  "b": 0
+                }
+              ]
+            }
+          }
+        },
+        "inputType": "number",
+        "outputType": "color"
+      },
+      {
+        "_id": "5ntr6qs6rdh",
+        "classID": "scale.linear<number,number>",
+        "properties": {
+          "autoDomainMin": true,
+          "autoDomainMax": true,
+          "name": "Scale7",
+          "domainMin": 0,
+          "domainMax": 26,
+          "exposed": true
+        },
+        "mappings": {
+          "rangeMin": {
+            "type": "value",
+            "value": 0
+          },
+          "rangeMax": {
+            "type": "value",
+            "value": 5
+          }
+        },
+        "inputType": "number",
+        "outputType": "number"
+      }
+    ],
+    "scaleMappings": [
+      {
+        "type": "scale",
+        "table": "world_greenhouse_gas_emissions_nodes",
+        "expression": "avg(Value)",
+        "valueType": "number",
+        "scale": "babdpruhw0s",
+        "attribute": "height"
+      },
+      {
+        "type": "scale",
+        "table": "world_greenhouse_gas_emissions_nodes",
+        "expression": "avg(Value)",
+        "valueType": "number",
+        "scale": "80fpqotu7al",
+        "attribute": "fill"
+      }
+    ],
+    "constraints": [],
+    "resources": []
+  },
+  "defaultAttributes": {
+    "5yow721spgp": {
+      "x": 0,
+      "y": 0
+    },
+    "s4v491jtnwh": {
+      "x1": -1.4250000000094314,
+      "y1": -1.951304967347256,
+      "x2": 1.4250000000094314,
+      "y2": 1.951304967347256,
+      "cx": 0,
+      "cy": 0,
+      "width": 2.850000000018863,
+      "height": 3.902609934694512,
+      "strokeWidth": 0.1,
+      "opacity": 0.1
+    },
+    "70nqrxm1s33": {
+      "x": 3.562500000023578,
+      "y": 0,
+      "fontSize": 2.25,
+      "opacity": 0.25
+    },
+    "ffbw6pgu58g": {
+      "x": -105,
+      "y": 57.5,
+      "fontSize": 6,
+      "opacity": 0.25
+    },
+    "tg6z5czf87q": {
+      "x": -105,
+      "y": 57.5,
+      "fontSize": 3.5,
+      "opacity": 0.25
+    }
+  },
+  "tables": [
+    {
+      "name": "world_greenhouse_gas_emissions_nodes",
+      "columns": [
+        {
+          "displayName": "id",
+          "name": "id",
+          "type": "string",
+          "metadata": {
+            "kind": "categorical",
+            "orderMode": "alphabetically",
+            "examples": "Energy, Non-Energy, Transportation"
+          }
+        },
+        {
+          "displayName": "Kind",
+          "name": "Kind",
+          "type": "string",
+          "metadata": {
+            "kind": "categorical",
+            "orderMode": "alphabetically",
+            "examples": "1 Primary, 2 Sector, 3 End User Activity"
+          }
+        },
+        {
+          "displayName": "Name",
+          "name": "Name",
+          "type": "string",
+          "metadata": {
+            "kind": "categorical",
+            "orderMode": "alphabetically",
+            "examples": "Energy, Non-Energy, Transportation"
+          }
+        },
+        {
+          "displayName": "Value",
+          "name": "Value",
+          "type": "number",
+          "metadata": {
+            "kind": "numerical",
+            "examples": "1, 4, 5"
+          }
+        }
+      ]
+    },
+    {
+      "name": "world_greenhouse_gas_emissions_links",
+      "columns": [
+        {
+          "displayName": "source_id",
+          "name": "source_id",
+          "type": "string",
+          "metadata": {
+            "kind": "categorical",
+            "orderMode": "alphabetically",
+            "examples": "Energy, Non-Energy, Transportation"
+          }
+        },
+        {
+          "displayName": "target_id",
+          "name": "target_id",
+          "type": "string",
+          "metadata": {
+            "kind": "categorical",
+            "orderMode": "alphabetically",
+            "examples": "Transportation, Electricity & Heat, Other Fuel Combustion"
+          }
+        },
+        {
+          "displayName": "Value",
+          "name": "Value",
+          "type": "number",
+          "metadata": {
+            "kind": "numerical",
+            "examples": "1, 4, 5"
+          }
+        }
+      ]
+    }
+  ],
+  "inference": [
+    {
+      "objectID": "733dz7iy4y",
+      "dataSource": {
+        "table": "world_greenhouse_gas_emissions_nodes"
+      },
+      "axis": {
+        "expression": "first(Kind)",
+        "type": "categorical",
+        "style": {
+          "tickColor": {
+            "r": 0,
+            "g": 0,
+            "b": 0
+          },
+          "lineColor": {
+            "r": 0,
+            "g": 0,
+            "b": 0
+          },
+          "fontFamily": "Arial",
+          "fontSize": 12,
+          "tickSize": 5,
+          "wordWrap": false,
+          "gridlineStyle": "none",
+          "gridlineColor": {
+            "r": 234,
+            "g": 234,
+            "b": 234
+          },
+          "gridlineWidth": 1
+        },
+        "orderMode": "alphabetically",
+        "property": "xData"
+      },
+      "autoDomainMin": true,
+      "autoDomainMax": true
+    },
+    {
+      "objectID": "babdpruhw0s",
+      "autoDomainMax": true,
+      "autoDomainMin": true,
+      "scale": {
+        "classID": "scale.linear<number,number>",
+        "expressions": [
+          "avg(Value)"
+        ],
+        "properties": {
+          "mapping": "mapping"
+        }
+      },
+      "dataSource": {
+        "table": "world_greenhouse_gas_emissions_nodes"
+      }
+    },
+    {
+      "objectID": "80fpqotu7al",
+      "autoDomainMax": true,
+      "autoDomainMin": true,
+      "scale": {
+        "classID": "scale.linear<number,color>",
+        "expressions": [
+          "avg(Value)"
+        ],
+        "properties": {
+          "mapping": "mapping"
+        }
+      },
+      "dataSource": {
+        "table": "world_greenhouse_gas_emissions_nodes"
+      }
+    },
+    {
+      "objectID": "5ntr6qs6rdh",
+      "autoDomainMax": true,
+      "autoDomainMin": true,
+      "scale": {
+        "classID": "scale.linear<number,number>",
+        "expressions": [
+          "avg(Value)"
+        ],
+        "properties": {
+          "mapping": "mapping"
+        }
+      },
+      "dataSource": {
+        "table": "world_greenhouse_gas_emissions_links",
+        "groupBy": null
+      }
+    }
+  ],
+  "properties": [
+    {
+      "objectID": "tqcqb9pr2rd",
+      "target": {
+        "attribute": "opacity"
+      },
+      "type": "number",
+      "default": 0.5,
+      "displayName": "Link1/opacity"
+    },
+    {
+      "objectID": "733dz7iy4y",
+      "target": {
+        "property": {
+          "property": "xData",
+          "field": "style",
+          "subfield": "tickSize"
+        }
+      },
+      "type": "number",
+      "default": 5,
+      "displayName": "PlotSegment1/xData.style.tickSize"
+    },
+    {
+      "objectID": "733dz7iy4y",
+      "target": {
+        "property": {
+          "property": "xData",
+          "field": "style",
+          "subfield": "fontSize"
+        }
+      },
+      "type": "number",
+      "default": 12,
+      "displayName": "PlotSegment1/xData.style.fontSize"
+    },
+    {
+      "objectID": "733dz7iy4y",
+      "target": {
+        "property": {
+          "property": "xData",
+          "field": "style",
+          "subfield": "fontFamily"
+        }
+      },
+      "type": "font-family",
+      "default": "Arial",
+      "displayName": "PlotSegment1/xData.style.fontFamily"
+    },
+    {
+      "objectID": "733dz7iy4y",
+      "target": {
+        "property": {
+          "property": "xData",
+          "field": "style",
+          "subfield": "lineColor"
+        }
+      },
+      "type": "color",
+      "default": "#000000",
+      "displayName": "PlotSegment1/xData.style.lineColor"
+    },
+    {
+      "objectID": "733dz7iy4y",
+      "target": {
+        "property": {
+          "property": "xData",
+          "field": "style",
+          "subfield": "tickColor"
+        }
+      },
+      "type": "color",
+      "default": "#000000",
+      "displayName": "PlotSegment1/xData.style.tickColor"
+    },
+    {
+      "objectID": "733dz7iy4y",
+      "target": {
+        "property": {
+          "property": "xData",
+          "field": "tickFormat"
+        }
+      },
+      "type": "text",
+      "default": null,
+      "displayName": "PlotSegment1/xData.tickFormat"
+    },
+    {
+      "objectID": "733dz7iy4y",
+      "target": {
+        "property": {
+          "property": "xData",
+          "field": "tickDataExpression"
+        }
+      },
+      "type": "text",
+      "default": null,
+      "displayName": "PlotSegment1/xData.tickDataExpression"
+    },
+    {
+      "objectID": "733dz7iy4y",
+      "target": {
+        "property": {
+          "property": "xData",
+          "field": "categories"
+        }
+      },
+      "type": "enum",
+      "default": "ascending",
+      "displayName": "PlotSegment1/xData.categories"
+    },
+    {
+      "objectID": "s4v491jtnwh",
+      "target": {
+        "attribute": "visible"
+      },
+      "type": "boolean",
+      "default": true,
+      "displayName": "Shape1/visible"
+    },
+    {
+      "objectID": "s4v491jtnwh",
+      "target": {
+        "attribute": "stroke"
+      },
+      "type": "color",
+      "default": "#ffffff",
+      "displayName": "Shape1/stroke"
+    },
+    {
+      "objectID": "s4v491jtnwh",
+      "target": {
+        "attribute": "strokeWidth"
+      },
+      "type": "number",
+      "default": 1,
+      "displayName": "Shape1/strokeWidth"
+    },
+    {
+      "objectID": "s4v491jtnwh",
+      "target": {
+        "property": "strokeStyle"
+      },
+      "type": "enum",
+      "default": "solid",
+      "displayName": "Shape1/strokeStyle"
+    },
+    {
+      "objectID": "s4v491jtnwh",
+      "target": {
+        "attribute": "opacity"
+      },
+      "type": "number",
+      "default": 1,
+      "displayName": "Shape1/opacity"
+    },
+    {
+      "objectID": "70nqrxm1s33",
+      "target": {
+        "attribute": "fontFamily"
+      },
+      "type": "font-family",
+      "default": "Arial",
+      "displayName": "Text1/fontFamily"
+    },
+    {
+      "objectID": "70nqrxm1s33",
+      "target": {
+        "attribute": "fontSize"
+      },
+      "type": "number",
+      "default": 9,
+      "displayName": "Text1/fontSize"
+    },
+    {
+      "objectID": "70nqrxm1s33",
+      "target": {
+        "attribute": "color"
+      },
+      "type": "color",
+      "default": "#ffffff",
+      "displayName": "Text1/color"
+    },
+    {
+      "objectID": "70nqrxm1s33",
+      "target": {
+        "attribute": "visible"
+      },
+      "type": "boolean",
+      "default": true,
+      "displayName": "Text1/visible"
+    },
+    {
+      "objectID": "70nqrxm1s33",
+      "target": {
+        "attribute": "opacity"
+      },
+      "type": "number",
+      "default": 1,
+      "displayName": "Text1/opacity"
+    },
+    {
+      "objectID": "ffbw6pgu58g",
+      "target": {
+        "attribute": "fontSize"
+      },
+      "type": "number",
+      "default": 24,
+      "displayName": "Title/fontSize"
+    },
+    {
+      "objectID": "ffbw6pgu58g",
+      "target": {
+        "attribute": "color"
+      },
+      "type": "color",
+      "default": "#ffffff",
+      "displayName": "Title/color"
+    },
+    {
+      "objectID": "ffbw6pgu58g",
+      "target": {
+        "attribute": "text"
+      },
+      "type": "text",
+      "default": "World Greenhouse Gas Emissions in 2006",
+      "displayName": "Title/text"
+    },
+    {
+      "objectID": "tg6z5czf87q",
+      "target": {
+        "attribute": "fontFamily"
+      },
+      "type": "font-family",
+      "default": "Arial",
+      "displayName": "Text2/fontFamily"
+    },
+    {
+      "objectID": "tg6z5czf87q",
+      "target": {
+        "attribute": "fontSize"
+      },
+      "type": "number",
+      "default": 14,
+      "displayName": "Text2/fontSize"
+    },
+    {
+      "objectID": "tg6z5czf87q",
+      "target": {
+        "attribute": "color"
+      },
+      "type": "color",
+      "default": "#ffffff",
+      "displayName": "Text2/color"
+    },
+    {
+      "objectID": "tg6z5czf87q",
+      "target": {
+        "attribute": "visible"
+      },
+      "type": "boolean",
+      "default": true,
+      "displayName": "Text2/visible"
+    },
+    {
+      "objectID": "tg6z5czf87q",
+      "target": {
+        "attribute": "opacity"
+      },
+      "type": "number",
+      "default": 1,
+      "displayName": "Text2/opacity"
+    },
+    {
+      "objectID": "tg6z5czf87q",
+      "target": {
+        "attribute": "text"
+      },
+      "type": "text",
+      "default": "Total: 44,153 MtCO2",
+      "displayName": "Text2/text"
+    },
+    {
+      "objectID": "babdpruhw0s",
+      "target": {
+        "property": "domainMin"
+      },
+      "type": "number",
+      "displayName": "Scale1/domainMin"
+    },
+    {
+      "objectID": "babdpruhw0s",
+      "target": {
+        "property": "domainMax"
+      },
+      "type": "number",
+      "displayName": "Scale1/domainMax"
+    },
+    {
+      "objectID": "babdpruhw0s",
+      "target": {
+        "attribute": "rangeMin"
+      },
+      "type": "number",
+      "default": null,
+      "displayName": "Scale1/rangeMin"
+    },
+    {
+      "objectID": "babdpruhw0s",
+      "target": {
+        "attribute": "rangeMax"
+      },
+      "type": "number",
+      "default": null,
+      "displayName": "Scale1/rangeMax"
+    },
+    {
+      "objectID": "80fpqotu7al",
+      "target": {
+        "property": "domainMin"
+      },
+      "type": "number",
+      "displayName": "Scale2/domainMin"
+    },
+    {
+      "objectID": "80fpqotu7al",
+      "target": {
+        "property": "domainMax"
+      },
+      "type": "number",
+      "displayName": "Scale2/domainMax"
+    },
+    {
+      "objectID": "5ntr6qs6rdh",
+      "target": {
+        "property": "domainMin"
+      },
+      "type": "number",
+      "displayName": "Scale7/domainMin"
+    },
+    {
+      "objectID": "5ntr6qs6rdh",
+      "target": {
+        "property": "domainMax"
+      },
+      "type": "number",
+      "displayName": "Scale7/domainMax"
+    },
+    {
+      "objectID": "5ntr6qs6rdh",
+      "target": {
+        "attribute": "rangeMin"
+      },
+      "type": "number",
+      "default": null,
+      "displayName": "Scale7/rangeMin"
+    },
+    {
+      "objectID": "5ntr6qs6rdh",
+      "target": {
+        "attribute": "rangeMax"
+      },
+      "type": "number",
+      "default": null,
+      "displayName": "Scale7/rangeMax"
+    },
+    {
+      "objectID": "eksuszpcnkd",
+      "target": {
+        "attribute": "marginLeft"
+      },
+      "type": "number",
+      "default": 30,
+      "displayName": "Chart/marginLeft"
+    },
+    {
+      "objectID": "eksuszpcnkd",
+      "target": {
+        "attribute": "marginRight"
+      },
+      "type": "number",
+      "default": 110,
+      "displayName": "Chart/marginRight"
+    },
+    {
+      "objectID": "eksuszpcnkd",
+      "target": {
+        "attribute": "marginTop"
+      },
+      "type": "number",
+      "default": 70,
+      "displayName": "Chart/marginTop"
+    },
+    {
+      "objectID": "eksuszpcnkd",
+      "target": {
+        "attribute": "marginBottom"
+      },
+      "type": "number",
+      "default": 30,
+      "displayName": "Chart/marginBottom"
+    }
+  ]
+}

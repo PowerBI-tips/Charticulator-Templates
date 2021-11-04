@@ -1,0 +1,201 @@
+Year,Country,Emission,Rank
+1992,China,2695982.1,2
+1992,United States,4911103.1,1
+1992,India,783634.2,5
+1992,Russian Federation,2081840.2,3
+1992,Japan,1123000.4,4
+1992,France,365819.9,6
+1992,"Korea, Republic of",284280.5,8
+1992,Iran (Islamic Republic of),229073.8,9
+1992,Indonesia,202576.1,10
+1992,Saudi Arabia,285534.6,7
+1993,China,2878694.0,2
+1993,United States,5032931.8,1
+1993,India,814297.7,5
+1993,Russian Federation,1941203.5,3
+1993,Japan,1108248.1,4
+1993,France,359861.0,6
+1993,"Korea, Republic of",321951.6,7
+1993,Iran (Islamic Republic of),237768.3,9
+1993,Indonesia,218600.9,10
+1993,Saudi Arabia,313818.2,8
+1994,China,3058241.3,2
+1994,United States,5098475.8,1
+1994,India,864931.6,5
+1994,Russian Federation,1701132.3,3
+1994,Japan,1173883.7,4
+1994,France,338093.7,7
+1994,"Korea, Republic of",344037.9,6
+1994,Iran (Islamic Republic of),265824.5,9
+1994,Indonesia,221413.5,10
+1994,Saudi Arabia,309018.1,8
+1995,China,3320285.2,2
+1995,United States,5138009.7,1
+1995,India,920046.6,5
+1995,Russian Federation,1634312.2,3
+1995,Japan,1183755.3,4
+1995,France,349116.7,7
+1995,"Korea, Republic of",374771.1,6
+1995,Iran (Islamic Republic of),273528.9,8
+1995,Indonesia,224941.1,10
+1995,Saudi Arabia,236253.8,9
+1996,China,3463089.1,2
+1996,United States,5260696.5,1
+1996,India,1002224.1,5
+1996,Russian Federation,1615804.9,3
+1996,Japan,1205408.9,4
+1996,France,375280.8,7
+1996,"Korea, Republic of",403780.7,6
+1996,Iran (Islamic Republic of),276726.5,8
+1996,Indonesia,253290.7,10
+1996,Saudi Arabia,258750.9,9
+1997,China,3469510.0,2
+1997,United States,5375235.3,1
+1997,India,1043939.9,5
+1997,Russian Federation,1528849.3,3
+1997,Japan,1201378.9,4
+1997,France,351507.6,7
+1997,"Korea, Republic of",430032.8,6
+1997,Iran (Islamic Republic of),269979.2,9
+1997,Indonesia,278659.0,8
+1997,Saudi Arabia,216239.3,10
+1998,China,3324344.5,2
+1998,United States,5410918.9,1
+1998,India,1071911.8,5
+1998,Russian Federation,1498343.5,3
+1998,Japan,1158779.3,4
+1998,France,381877.7,6
+1998,"Korea, Republic of",364833.5,7
+1998,Iran (Islamic Republic of),309230.8,8
+1998,Indonesia,210210.8,9
+1998,Saudi Arabia,207680.5,10
+1999,China,3318055.6,2
+1999,United States,5510430.2,1
+1999,India,1144390.0,5
+1999,Russian Federation,1533968.4,3
+1999,Japan,1197873.2,4
+1999,France,373461.9,8
+1999,"Korea, Republic of",399864.3,6
+1999,Iran (Islamic Republic of),382713.8,7
+1999,Indonesia,241989.0,9
+1999,Saudi Arabia,226459.3,10
+2000,China,3405179.9,2
+2000,United States,5701829.3,1
+2000,India,1186663.2,5
+2000,Russian Federation,1558112.0,3
+2000,Japan,1219453.5,4
+2000,France,364063.4,8
+2000,"Korea, Republic of",447561.0,6
+2000,Iran (Islamic Republic of),372702.9,7
+2000,Indonesia,263418.9,10
+2000,Saudi Arabia,296935.3,9
+2001,China,3487566.4,2
+2001,United States,5601404.8,1
+2001,India,1203843.1,4
+2001,Russian Federation,1558002.0,3
+2001,Japan,1202181.9,5
+2001,France,381155.3,8
+2001,"Korea, Republic of",450193.9,6
+2001,Iran (Islamic Republic of),398826.6,7
+2001,Indonesia,294907.5,10
+2001,Saudi Arabia,297214.0,9
+2002,China,3694242.1,2
+2002,United States,5648727.5,1
+2002,India,1226791.2,4
+2002,Russian Federation,1557660.9,3
+2002,Japan,1216725.3,5
+2002,France,378929.4,8
+2002,"Korea, Republic of",465632.0,6
+2002,Iran (Islamic Republic of),402178.2,7
+2002,Indonesia,306737.2,10
+2002,Saudi Arabia,326407.0,9
+2003,China,4525177.0,2
+2003,United States,5679222.2,1
+2003,India,1281913.5,4
+2003,Russian Federation,1604968.9,3
+2003,Japan,1237344.8,5
+2003,France,386333.1,8
+2003,"Korea, Republic of",466215.0,6
+2003,Iran (Islamic Republic of),418859.4,7
+2003,Indonesia,316792.1,10
+2003,Saudi Arabia,327272.4,9
+2004,China,5288166.0,2
+2004,United States,5763456.9,1
+2004,India,1348524.6,4
+2004,Russian Federation,1602955.7,3
+2004,Japan,1259328.5,5
+2004,France,388401.3,9
+2004,"Korea, Republic of",482276.5,6
+2004,Iran (Islamic Republic of),447480.3,7
+2004,Indonesia,337635.4,10
+2004,Saudi Arabia,395834.3,8
+2005,China,5790017.0,2
+2005,United States,5795161.8,1
+2005,India,1411127.6,4
+2005,Russian Federation,1615687.5,3
+2005,Japan,1237623.5,5
+2005,France,390550.2,9
+2005,"Korea, Republic of",462922.1,7
+2005,Iran (Islamic Republic of),469328.3,6
+2005,Indonesia,341991.8,10
+2005,Saudi Arabia,397642.1,8
+2006,China,6414463.1,1
+2006,United States,5703871.8,2
+2006,India,1504364.7,4
+2006,Russian Federation,1669618.1,3
+2006,Japan,1230898.2,5
+2006,France,381467.0,9
+2006,"Korea, Republic of",470655.8,7
+2006,Iran (Islamic Republic of),509889.0,6
+2006,Indonesia,345119.7,10
+2006,Saudi Arabia,432739.0,8
+2007,China,6791804.7,1
+2007,United States,5794923.4,2
+2007,India,1611199.1,4
+2007,Russian Federation,1667597.6,3
+2007,Japan,1250758.7,5
+2007,France,374914.1,10
+2007,"Korea, Republic of",495675.7,7
+2007,Iran (Islamic Republic of),521187.0,6
+2007,Indonesia,375544.8,9
+2007,Saudi Arabia,393535.1,8
+2008,China,7035443.9,1
+2008,United States,5622464.4,2
+2008,India,1793075.0,3
+2008,Russian Federation,1715639.0,4
+2008,Japan,1206732.7,5
+2008,France,371734.8,10
+2008,"Korea, Republic of",507589.8,7
+2008,Iran (Islamic Republic of),546394.0,6
+2008,Indonesia,412387.2,9
+2008,Saudi Arabia,418239.7,8
+2009,China,7692210.9,1
+2009,United States,5274132.4,2
+2009,India,1965820.0,3
+2009,Russian Federation,1574367.8,4
+2009,Japan,1101027.8,5
+2009,France,356626.8,10
+2009,"Korea, Republic of",508862.3,7
+2009,Iran (Islamic Republic of),557039.3,6
+2009,Indonesia,453105.5,9
+2009,Saudi Arabia,484880.1,8
+2010,China,8256969.2,1
+2010,United States,5408869.0,2
+2010,India,1950950.3,3
+2010,Russian Federation,1742540.1,4
+2010,Japan,1168918.6,5
+2010,France,357437.2,10
+2010,"Korea, Republic of",566716.5,7
+2010,Iran (Islamic Republic of),571604.6,6
+2010,Indonesia,436981.7,9
+2010,Saudi Arabia,533093.8,8
+2011,China,9019518.2,1
+2011,United States,5305569.6,2
+2011,India,2074344.9,3
+2011,Russian Federation,1808073.0,4
+2011,Japan,1187657.0,5
+2011,France,338805.1,10
+2011,"Korea, Republic of",589426.2,6
+2011,Iran (Islamic Republic of),586599.0,7
+2011,Indonesia,563984.6,8
+2011,Saudi Arabia,520277.6,9

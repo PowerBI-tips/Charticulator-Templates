@@ -1,0 +1,531 @@
+{
+  "specification": {
+    "_id": "rsmtkcbo9c",
+    "classID": "chart.rectangle",
+    "properties": {
+      "name": "Chart",
+      "backgroundColor": null,
+      "backgroundOpacity": 1,
+      "enableContextMenu": true,
+      "exposed": true
+    },
+    "mappings": {
+      "marginTop": {
+        "type": "value",
+        "value": 50
+      },
+      "marginRight": {
+        "type": "value",
+        "value": 80
+      },
+      "width": {
+        "type": "value",
+        "value": 450
+      },
+      "height": {
+        "type": "value",
+        "value": 400
+      },
+      "marginLeft": {
+        "type": "value",
+        "value": 20
+      },
+      "marginBottom": {
+        "type": "value",
+        "value": 20
+      }
+    },
+    "glyphs": [
+      {
+        "_id": "47alok7qhv",
+        "classID": "glyph.rectangle",
+        "properties": {
+          "name": "Glyph"
+        },
+        "table": "mobile_os_market_share_jul2021",
+        "marks": [
+          {
+            "_id": "bwe0fvnd71u",
+            "classID": "mark.anchor",
+            "properties": {
+              "name": "Anchor"
+            },
+            "mappings": {
+              "x": {
+                "type": "parent",
+                "parentAttribute": "icx"
+              },
+              "y": {
+                "type": "parent",
+                "parentAttribute": "icy"
+              }
+            }
+          },
+          {
+            "_id": "8m8nhjdgsfd",
+            "classID": "mark.rect",
+            "properties": {
+              "enableTooltips": true,
+              "enableContextMenu": true,
+              "enableSelection": true,
+              "exposed": true,
+              "visible": true,
+              "strokeStyle": "solid",
+              "shape": "rectangle",
+              "allowFlipping": true,
+              "name": "Shape1"
+            },
+            "mappings": {
+              "fill": {
+                "type": "scale",
+                "table": "mobile_os_market_share_jul2021",
+                "expression": "first(OS)",
+                "valueType": "string",
+                "scale": "xh9strrnxc",
+                "attribute": "fill",
+                "valueIndex": null
+              },
+              "strokeWidth": {
+                "type": "value",
+                "value": 1
+              },
+              "opacity": {
+                "type": "value",
+                "value": 1
+              },
+              "visible": {
+                "type": "value",
+                "value": true
+              },
+              "x1": {
+                "type": "parent",
+                "parentAttribute": "ix1"
+              },
+              "y1": {
+                "type": "parent",
+                "parentAttribute": "iy1"
+              },
+              "x2": {
+                "type": "parent",
+                "parentAttribute": "ix2"
+              },
+              "y2": {
+                "type": "parent",
+                "parentAttribute": "iy2"
+              }
+            }
+          }
+        ],
+        "mappings": {},
+        "constraints": []
+      }
+    ],
+    "elements": [
+      {
+        "_id": "tzv34cdf50q",
+        "classID": "plot-segment.cartesian",
+        "glyph": "47alok7qhv",
+        "table": "mobile_os_market_share_jul2021",
+        "filter": null,
+        "mappings": {
+          "x1": {
+            "type": "parent",
+            "parentAttribute": "x1"
+          },
+          "y1": {
+            "type": "parent",
+            "parentAttribute": "y1"
+          },
+          "x2": {
+            "type": "parent",
+            "parentAttribute": "x2"
+          },
+          "y2": {
+            "type": "parent",
+            "parentAttribute": "y2"
+          }
+        },
+        "properties": {
+          "name": "PlotSegment1",
+          "visible": true,
+          "marginX1": 0,
+          "marginY1": 0,
+          "marginX2": 0,
+          "marginY2": 0,
+          "sublayout": {
+            "type": "grid",
+            "order": null,
+            "ratioX": 0.1,
+            "ratioY": 0.1,
+            "align": {
+              "x": "start",
+              "y": "start"
+            },
+            "grid": {
+              "direction": "x",
+              "xCount": null,
+              "yCount": null,
+              "gridStartPosition": "RB"
+            },
+            "packing": {
+              "gravityX": 0.1,
+              "gravityY": 0.1
+            },
+            "jitter": {
+              "vertical": true,
+              "horizontal": true
+            }
+          }
+        }
+      },
+      {
+        "_id": "wmxp8cq5tjr",
+        "classID": "mark.text",
+        "properties": {
+          "name": "Title",
+          "visible": true,
+          "alignment": {
+            "x": "middle",
+            "y": "top",
+            "xMargin": 0,
+            "yMargin": 20
+          },
+          "rotation": 0,
+          "exposed": true
+        },
+        "mappings": {
+          "x": {
+            "type": "parent",
+            "parentAttribute": "cx"
+          },
+          "y": {
+            "type": "parent",
+            "parentAttribute": "oy2"
+          },
+          "text": {
+            "type": "value",
+            "value": "Mobile OS Market Share"
+          },
+          "fontSize": {
+            "type": "value",
+            "value": 20
+          },
+          "color": {
+            "type": "value",
+            "value": {
+              "r": 0,
+              "g": 0,
+              "b": 0
+            }
+          }
+        }
+      },
+      {
+        "_id": "9gg4jzlxv7",
+        "classID": "legend.categorical",
+        "properties": {
+          "scale": "xh9strrnxc",
+          "visible": true,
+          "alignX": "start",
+          "alignY": "end",
+          "fontFamily": "Segoe UI",
+          "fontSize": 10,
+          "textColor": {
+            "r": 0,
+            "g": 0,
+            "b": 0
+          },
+          "dataSource": "columnValues",
+          "dataExpressions": [],
+          "markerShape": "rectangle",
+          "order": null,
+          "orientation": "vertical",
+          "name": "Legend1",
+          "exposed": true
+        },
+        "mappings": {
+          "x": {
+            "type": "parent",
+            "parentAttribute": "x2"
+          },
+          "y": {
+            "type": "parent",
+            "parentAttribute": "y2"
+          },
+          "mappingOptions": {
+            "type": "scale",
+            "table": "mobile_os_market_share_jul2021",
+            "expression": "first(OS)",
+            "valueType": "string",
+            "scale": "xh9strrnxc",
+            "allowSelectValue": false
+          }
+        }
+      }
+    ],
+    "scales": [
+      {
+        "_id": "xh9strrnxc",
+        "classID": "scale.categorical<string,color>",
+        "properties": {
+          "enableTooltips": true,
+          "enableContextMenu": true,
+          "enableSelection": true,
+          "exposed": true,
+          "name": "Scale1",
+          "autoDomainMin": true,
+          "autoDomainMax": true,
+          "mapping": {
+            "Android": {
+              "r": 127,
+              "g": 201,
+              "b": 127
+            },
+            "iOS": {
+              "r": 190,
+              "g": 174,
+              "b": 212
+            },
+            "Other": {
+              "r": 253,
+              "g": 192,
+              "b": 134
+            }
+          }
+        },
+        "mappings": {},
+        "inputType": "string",
+        "outputType": "color"
+      }
+    ],
+    "scaleMappings": [
+      {
+        "type": "scale",
+        "table": "mobile_os_market_share_jul2021",
+        "expression": "first(OS)",
+        "valueType": "string",
+        "scale": "xh9strrnxc",
+        "attribute": "fill",
+        "valueIndex": null
+      }
+    ],
+    "constraints": [],
+    "resources": []
+  },
+  "defaultAttributes": {
+    "bwe0fvnd71u": {
+      "x": 0,
+      "y": 0
+    },
+    "8m8nhjdgsfd": {
+      "x1": -1.5749997750002211,
+      "y1": -1.484999999999998,
+      "x2": 1.5749997750002211,
+      "y2": 1.484999999999998,
+      "cx": 0,
+      "cy": 0,
+      "width": 3.1499995500004423,
+      "height": 2.969999999999996,
+      "strokeWidth": 0.1,
+      "opacity": 0.1
+    },
+    "wmxp8cq5tjr": {
+      "x": -7.5,
+      "y": 50,
+      "fontSize": 5,
+      "opacity": 0.25
+    }
+  },
+  "tables": [
+    {
+      "name": "mobile_os_market_share_jul2021",
+      "columns": [
+        {
+          "displayName": "OS",
+          "name": "OS",
+          "type": "string",
+          "metadata": {
+            "kind": "categorical",
+            "orderMode": "alphabetically",
+            "examples": "Android, iOS, Other"
+          }
+        }
+      ]
+    }
+  ],
+  "inference": [
+    {
+      "objectID": "xh9strrnxc",
+      "autoDomainMax": true,
+      "autoDomainMin": true,
+      "scale": {
+        "classID": "scale.categorical<string,color>",
+        "expressions": [
+          "first(OS)"
+        ],
+        "properties": {
+          "mapping": "mapping"
+        }
+      },
+      "dataSource": {
+        "table": "mobile_os_market_share_jul2021"
+      }
+    }
+  ],
+  "properties": [
+    {
+      "objectID": "8m8nhjdgsfd",
+      "target": {
+        "attribute": "visible"
+      },
+      "type": "boolean",
+      "default": true,
+      "displayName": "Shape1/visible"
+    },
+    {
+      "objectID": "8m8nhjdgsfd",
+      "target": {
+        "attribute": "strokeWidth"
+      },
+      "type": "number",
+      "default": 1,
+      "displayName": "Shape1/strokeWidth"
+    },
+    {
+      "objectID": "8m8nhjdgsfd",
+      "target": {
+        "property": "strokeStyle"
+      },
+      "type": "enum",
+      "default": "solid",
+      "displayName": "Shape1/strokeStyle"
+    },
+    {
+      "objectID": "8m8nhjdgsfd",
+      "target": {
+        "attribute": "opacity"
+      },
+      "type": "number",
+      "default": 1,
+      "displayName": "Shape1/opacity"
+    },
+    {
+      "objectID": "wmxp8cq5tjr",
+      "target": {
+        "attribute": "fontSize"
+      },
+      "type": "number",
+      "default": 20,
+      "displayName": "Title/fontSize"
+    },
+    {
+      "objectID": "wmxp8cq5tjr",
+      "target": {
+        "attribute": "color"
+      },
+      "type": "color",
+      "default": "#000000",
+      "displayName": "Title/color"
+    },
+    {
+      "objectID": "wmxp8cq5tjr",
+      "target": {
+        "attribute": "text"
+      },
+      "type": "text",
+      "default": "Mobile OS Market Share",
+      "displayName": "Title/text"
+    },
+    {
+      "objectID": "9gg4jzlxv7",
+      "target": {
+        "property": "fontFamily"
+      },
+      "type": "font-family",
+      "default": "Segoe UI",
+      "displayName": "Legend1/fontFamily"
+    },
+    {
+      "objectID": "9gg4jzlxv7",
+      "target": {
+        "property": "fontSize"
+      },
+      "type": "number",
+      "default": 10,
+      "displayName": "Legend1/fontSize"
+    },
+    {
+      "objectID": "9gg4jzlxv7",
+      "target": {
+        "property": "textColor"
+      },
+      "type": "color",
+      "default": "#000000",
+      "displayName": "Legend1/textColor"
+    },
+    {
+      "objectID": "9gg4jzlxv7",
+      "target": {
+        "property": "markerShape"
+      },
+      "type": "enum",
+      "default": "rectangle",
+      "displayName": "Legend1/markerShape"
+    },
+    {
+      "objectID": "9gg4jzlxv7",
+      "target": {
+        "property": "alignY"
+      },
+      "type": "enum",
+      "default": "end",
+      "displayName": "Legend1/alignY"
+    },
+    {
+      "objectID": "9gg4jzlxv7",
+      "target": {
+        "property": "alignX"
+      },
+      "type": "enum",
+      "default": "start",
+      "displayName": "Legend1/alignX"
+    },
+    {
+      "objectID": "rsmtkcbo9c",
+      "target": {
+        "attribute": "marginLeft"
+      },
+      "type": "number",
+      "default": 20,
+      "displayName": "Chart/marginLeft"
+    },
+    {
+      "objectID": "rsmtkcbo9c",
+      "target": {
+        "attribute": "marginRight"
+      },
+      "type": "number",
+      "default": 80,
+      "displayName": "Chart/marginRight"
+    },
+    {
+      "objectID": "rsmtkcbo9c",
+      "target": {
+        "attribute": "marginTop"
+      },
+      "type": "number",
+      "default": 50,
+      "displayName": "Chart/marginTop"
+    },
+    {
+      "objectID": "rsmtkcbo9c",
+      "target": {
+        "attribute": "marginBottom"
+      },
+      "type": "number",
+      "default": 20,
+      "displayName": "Chart/marginBottom"
+    }
+  ],
+  "version": "2.1.0"
+}
