@@ -1,0 +1,1262 @@
+{
+  "specification": {
+    "_id": "u8vwzetn1t",
+    "classID": "chart.rectangle",
+    "properties": {
+      "name": "Chart",
+      "backgroundColor": null,
+      "backgroundOpacity": 1,
+      "enableContextMenu": true,
+      "exposed": true
+    },
+    "mappings": {
+      "marginTop": {
+        "type": "value",
+        "value": 50
+      },
+      "height": {
+        "type": "value",
+        "value": 800
+      },
+      "width": {
+        "type": "value",
+        "value": 900
+      }
+    },
+    "glyphs": [
+      {
+        "_id": "y76x7qolfs9",
+        "classID": "glyph.rectangle",
+        "properties": {
+          "name": "Glyph"
+        },
+        "table": "20_Largest_Solar_Power_Plants",
+        "marks": [
+          {
+            "_id": "iyb2s5fc55b",
+            "classID": "mark.anchor",
+            "properties": {
+              "name": "Anchor"
+            },
+            "mappings": {
+              "x": {
+                "type": "parent",
+                "parentAttribute": "icx"
+              },
+              "y": {
+                "type": "parent",
+                "parentAttribute": "icy"
+              }
+            }
+          },
+          {
+            "_id": "z9u8dwauxh",
+            "classID": "mark.data-axis",
+            "properties": {
+              "enableTooltips": true,
+              "enableContextMenu": true,
+              "enableSelection": true,
+              "exposed": true,
+              "dataExpressions": [
+                {
+                  "name": "dnqbyvrqrmw",
+                  "expression": "avg(` MWp (Megawatts Peak Capacity) `)"
+                }
+              ],
+              "axis": {
+                "type": "numerical",
+                "expression": "avg(` MWp (Megawatts Peak Capacity) `)",
+                "rawExpression": "first(` MWp (Megawatts Peak Capacity) `)",
+                "valueType": "number",
+                "gapRatio": 0.1,
+                "visible": true,
+                "side": "default",
+                "style": {
+                  "tickColor": {
+                    "r": 0,
+                    "g": 0,
+                    "b": 0
+                  },
+                  "lineColor": {
+                    "r": 0,
+                    "g": 0,
+                    "b": 0
+                  },
+                  "fontFamily": "Segoe UI",
+                  "fontSize": 12,
+                  "tickSize": 5,
+                  "wordWrap": false,
+                  "verticalText": false,
+                  "gridlineStyle": "none",
+                  "gridlineColor": {
+                    "r": 234,
+                    "g": 234,
+                    "b": 234
+                  },
+                  "gridlineWidth": 1
+                },
+                "numericalMode": "linear",
+                "dataKind": "numerical",
+                "order": null,
+                "orderMode": null,
+                "autoDomainMax": true,
+                "autoDomainMin": true,
+                "tickFormat": null,
+                "tickDataExpression": null,
+                "tickFormatType": "none",
+                "domainMin": 0,
+                "domainMax": 2400,
+                "dataDomainMin": null,
+                "dataDomainMax": null,
+                "enablePrePostGap": null,
+                "categories": null,
+                "allCategories": null,
+                "scrollPosition": 0,
+                "allowScrolling": false,
+                "windowSize": 10,
+                "barOffset": 0
+              },
+              "visible": true,
+              "visibleOn": "first",
+              "name": "DataAxis1"
+            },
+            "mappings": {
+              "x1": {
+                "type": "parent",
+                "parentAttribute": "ix1"
+              },
+              "y1": {
+                "type": "parent",
+                "parentAttribute": "iy1"
+              },
+              "x2": {
+                "type": "parent",
+                "parentAttribute": "ix1"
+              },
+              "y2": {
+                "type": "parent",
+                "parentAttribute": "iy2"
+              }
+            }
+          },
+          {
+            "_id": "q16mngy765",
+            "classID": "mark.rect",
+            "properties": {
+              "enableTooltips": true,
+              "enableContextMenu": true,
+              "enableSelection": true,
+              "exposed": true,
+              "visible": true,
+              "strokeStyle": "solid",
+              "shape": "rectangle",
+              "allowFlipping": true,
+              "rx": 0,
+              "ry": 0,
+              "name": "Back"
+            },
+            "mappings": {
+              "fill": {
+                "type": "value",
+                "value": {
+                  "r": 230,
+                  "g": 230,
+                  "b": 230
+                }
+              },
+              "strokeWidth": {
+                "type": "value",
+                "value": 1
+              },
+              "opacity": {
+                "type": "value",
+                "value": 1
+              },
+              "visible": {
+                "type": "value",
+                "value": true
+              },
+              "x1": {
+                "type": "parent",
+                "parentAttribute": "ix1"
+              },
+              "y1": {
+                "type": "parent",
+                "parentAttribute": "iy1"
+              },
+              "x2": {
+                "type": "parent",
+                "parentAttribute": "ix2"
+              },
+              "y2": {
+                "type": "parent",
+                "parentAttribute": "iy2"
+              }
+            }
+          },
+          {
+            "_id": "sbcwfshokhd",
+            "classID": "mark.rect",
+            "properties": {
+              "enableTooltips": true,
+              "enableContextMenu": true,
+              "enableSelection": true,
+              "exposed": true,
+              "visible": true,
+              "strokeStyle": "solid",
+              "shape": "rectangle",
+              "allowFlipping": true,
+              "rx": 0,
+              "ry": 0,
+              "name": "Mark"
+            },
+            "mappings": {
+              "fill": {
+                "type": "scale",
+                "table": "20_Largest_Solar_Power_Plants",
+                "expression": "first(Country)",
+                "valueType": "string",
+                "scale": "wp1rwpv8po",
+                "attribute": "fill",
+                "valueIndex": null
+              },
+              "strokeWidth": {
+                "type": "value",
+                "value": 1
+              },
+              "opacity": {
+                "type": "value",
+                "value": 1
+              },
+              "visible": {
+                "type": "value",
+                "value": true
+              },
+              "x1": {
+                "type": "parent",
+                "parentAttribute": "ix1"
+              },
+              "y1": {
+                "type": "parent",
+                "parentAttribute": "iy1"
+              },
+              "x2": {
+                "type": "parent",
+                "parentAttribute": "ix2"
+              },
+              "width": {
+                "type": "scale",
+                "table": "20_Largest_Solar_Power_Plants",
+                "expression": "avg(` Acres `)",
+                "valueType": "number",
+                "scale": "s64jpyicf3l",
+                "attribute": "width",
+                "valueIndex": null
+              }
+            }
+          },
+          {
+            "_id": "s3vnh1ac1z",
+            "classID": "mark.textbox",
+            "properties": {
+              "enableTooltips": true,
+              "enableContextMenu": true,
+              "enableSelection": true,
+              "exposed": true,
+              "visible": true,
+              "paddingX": 0,
+              "paddingY": 0,
+              "alignX": "middle",
+              "alignY": "end",
+              "wordWrap": true,
+              "overFlow": false,
+              "alignText": "start",
+              "name": "Text"
+            },
+            "mappings": {
+              "text": {
+                "type": "text",
+                "table": "20_Largest_Solar_Power_Plants",
+                "textExpression": "${first(Name)}"
+              },
+              "fontFamily": {
+                "type": "value",
+                "value": "Segoe UI"
+              },
+              "fontSize": {
+                "type": "value",
+                "value": 8
+              },
+              "color": {
+                "type": "value",
+                "value": {
+                  "r": 0,
+                  "g": 0,
+                  "b": 0
+                }
+              },
+              "opacity": {
+                "type": "value",
+                "value": 1
+              },
+              "visible": {
+                "type": "scale",
+                "table": "20_Largest_Solar_Power_Plants",
+                "expression": "min(` Acres `)",
+                "valueType": "number",
+                "scale": "6nr8jch4oqy",
+                "attribute": "visible",
+                "valueIndex": null
+              },
+              "x1": {
+                "type": "parent",
+                "parentAttribute": "ix1"
+              },
+              "x2": {
+                "type": "parent",
+                "parentAttribute": "ix2"
+              },
+              "height": {
+                "type": "value",
+                "value": 50
+              },
+              "y1": {
+                "type": "parent",
+                "parentAttribute": "iy2"
+              }
+            }
+          },
+          {
+            "_id": "wphvvo2vtso",
+            "classID": "mark.text",
+            "properties": {
+              "enableTooltips": true,
+              "enableContextMenu": true,
+              "enableSelection": true,
+              "exposed": true,
+              "alignment": {
+                "x": "middle",
+                "y": "top",
+                "xMargin": 5,
+                "yMargin": 5
+              },
+              "rotation": 0,
+              "visible": true,
+              "name": "Text1"
+            },
+            "mappings": {
+              "enableTooltips": {
+                "type": "value",
+                "value": true
+              },
+              "enableContextMenu": {
+                "type": "value",
+                "value": true
+              },
+              "enableSelection": {
+                "type": "value",
+                "value": true
+              },
+              "exposed": {
+                "type": "value",
+                "value": true
+              },
+              "text": {
+                "type": "text",
+                "table": "20_Largest_Solar_Power_Plants",
+                "textExpression": "${first(Year)}"
+              },
+              "fontFamily": {
+                "type": "value",
+                "value": "Segoe UI"
+              },
+              "fontSize": {
+                "type": "value",
+                "value": 6
+              },
+              "color": {
+                "type": "value",
+                "value": {
+                  "r": 0,
+                  "g": 0,
+                  "b": 0
+                }
+              },
+              "opacity": {
+                "type": "value",
+                "value": 1
+              },
+              "visible": {
+                "type": "scale",
+                "table": "20_Largest_Solar_Power_Plants",
+                "expression": "min(` Acres `)",
+                "valueType": "number",
+                "scale": "6nr8jch4oqy",
+                "attribute": "visible",
+                "valueIndex": null
+              },
+              "x": {
+                "type": "parent",
+                "parentAttribute": "icx"
+              },
+              "y": {
+                "type": "parent",
+                "parentAttribute": "iy2"
+              }
+            }
+          }
+        ],
+        "mappings": {},
+        "constraints": [
+          {
+            "type": "snap",
+            "attributes": {
+              "element": "sbcwfshokhd",
+              "attribute": "y2",
+              "targetElement": "z9u8dwauxh",
+              "targetAttribute": "anchorYdnqbyvrqrmw",
+              "gap": 0
+            }
+          }
+        ]
+      }
+    ],
+    "elements": [
+      {
+        "_id": "tx02sedgue",
+        "classID": "plot-segment.polar",
+        "glyph": "y76x7qolfs9",
+        "table": "20_Largest_Solar_Power_Plants",
+        "filter": null,
+        "mappings": {
+          "x1": {
+            "type": "parent",
+            "parentAttribute": "x1"
+          },
+          "x2": {
+            "type": "parent",
+            "parentAttribute": "x2"
+          },
+          "y1": {
+            "type": "parent",
+            "parentAttribute": "y1"
+          },
+          "y2": {
+            "type": "parent",
+            "parentAttribute": "y2"
+          }
+        },
+        "properties": {
+          "name": "PlotSegment1",
+          "visible": true,
+          "sublayout": {
+            "type": "dodge-x",
+            "order": {
+              "expression": "first(Year)"
+            },
+            "ratioX": 0.1,
+            "ratioY": 0.1,
+            "align": {
+              "x": "start",
+              "y": "start"
+            },
+            "grid": {
+              "direction": "x",
+              "xCount": null,
+              "yCount": null,
+              "gridStartPosition": "LT"
+            },
+            "packing": {
+              "gravityX": 0.1,
+              "gravityY": 0.1
+            },
+            "jitter": {
+              "vertical": true,
+              "horizontal": true
+            }
+          },
+          "xData": null,
+          "yData": null,
+          "marginX1": 0,
+          "marginY1": 0,
+          "marginX2": 0,
+          "marginY2": 0,
+          "startAngle": -90,
+          "endAngle": 90,
+          "innerRatio": 0.2,
+          "outerRatio": 0.9,
+          "autoAlignment": true,
+          "equalizeArea": false
+        }
+      }
+    ],
+    "scales": [
+      {
+        "_id": "s64jpyicf3l",
+        "classID": "scale.linear<number,number>",
+        "properties": {
+          "autoDomainMin": true,
+          "autoDomainMax": true,
+          "name": "Scale1",
+          "domainMin": 0,
+          "domainMax": 20000,
+          "exposed": true
+        },
+        "mappings": {
+          "rangeMin": {
+            "type": "value",
+            "value": 0
+          }
+        },
+        "inputType": "number",
+        "outputType": "number"
+      },
+      {
+        "_id": "wp1rwpv8po",
+        "classID": "scale.categorical<string,color>",
+        "properties": {
+          "enableTooltips": true,
+          "enableContextMenu": true,
+          "enableSelection": true,
+          "exposed": true,
+          "name": "Scale2",
+          "autoDomainMin": true,
+          "autoDomainMax": true,
+          "mapping": {
+            " India": {
+              "r": 245,
+              "g": 127,
+              "b": 23
+            },
+            " China": {
+              "r": 183,
+              "g": 28,
+              "b": 28
+            },
+            " Egypt": {
+              "r": 136,
+              "g": 14,
+              "b": 79
+            },
+            " United Arab Emirates": {
+              "r": 216,
+              "g": 27,
+              "b": 96
+            },
+            " Mexico": {
+              "r": 106,
+              "g": 27,
+              "b": 154
+            },
+            " United States": {
+              "r": 249,
+              "g": 168,
+              "b": 37
+            },
+            " Vietnam": {
+              "r": 49,
+              "g": 27,
+              "b": 146
+            }
+          }
+        },
+        "mappings": {},
+        "inputType": "string",
+        "outputType": "color"
+      },
+      {
+        "_id": "6nr8jch4oqy",
+        "classID": "scale.linear<number,boolean>",
+        "properties": {
+          "enableTooltips": true,
+          "enableContextMenu": true,
+          "enableSelection": true,
+          "exposed": true,
+          "name": "Scale3",
+          "min": 3000,
+          "max": 20000,
+          "mode": "greater",
+          "inclusive": true,
+          "autoDomainMax": true,
+          "autoDomainMin": true
+        },
+        "mappings": {
+          "min": {
+            "type": "value",
+            "value": 0
+          },
+          "max": {
+            "type": "value",
+            "value": 1
+          },
+          "mode": {
+            "type": "value",
+            "value": "interval"
+          },
+          "inclusive": {
+            "type": "value",
+            "value": true
+          }
+        },
+        "inputType": "number",
+        "outputType": "boolean"
+      }
+    ],
+    "scaleMappings": [
+      {
+        "type": "scale",
+        "table": "20_Largest_Solar_Power_Plants",
+        "expression": "avg(` Acres `)",
+        "valueType": "number",
+        "scale": "s64jpyicf3l",
+        "attribute": "width",
+        "valueIndex": null
+      },
+      {
+        "type": "scale",
+        "table": "20_Largest_Solar_Power_Plants",
+        "expression": "first(Country)",
+        "valueType": "string",
+        "scale": "wp1rwpv8po",
+        "attribute": "fill",
+        "valueIndex": null
+      },
+      {
+        "type": "scale",
+        "table": "20_Largest_Solar_Power_Plants",
+        "expression": "min(` Acres `)",
+        "valueType": "number",
+        "scale": "6nr8jch4oqy",
+        "attribute": "visible",
+        "valueIndex": null
+      }
+    ],
+    "constraints": [],
+    "resources": []
+  },
+  "defaultAttributes": {
+    "iyb2s5fc55b": {
+      "x": 0,
+      "y": 0
+    },
+    "z9u8dwauxh": {
+      "x1": -0.6749999748922202,
+      "y1": -20.41631664800124,
+      "x2": -0.6749999748922202,
+      "y2": 20.41631664800124,
+      "anchorXdnqbyvrqrmw": -0.6749999748922202,
+      "anchorYdnqbyvrqrmw": -1.5150608312537595
+    },
+    "q16mngy765": {
+      "x1": -0.4049999849353321,
+      "y1": -12.249789988800744,
+      "x2": 0.4049999849353321,
+      "y2": 12.249789988800744,
+      "cx": 0,
+      "cy": 0,
+      "width": 0.8099999698706642,
+      "height": 24.49957997760149,
+      "strokeWidth": 0.1,
+      "opacity": 0.1
+    },
+    "sbcwfshokhd": {
+      "x1": -0.4049999849353321,
+      "y1": -12.249789988800744,
+      "x2": 0.4049999849353321,
+      "y2": -0.9090364987522557,
+      "cx": 0,
+      "cy": -6.579413243776502,
+      "width": 0.8099999672436172,
+      "height": 11.340753490048495,
+      "strokeWidth": 0.1,
+      "opacity": 0.1
+    },
+    "s3vnh1ac1z": {
+      "x1": -0.4049999849353321,
+      "y1": 12.249789988800744,
+      "x2": 0.4049999849353321,
+      "y2": 17.249789988800742,
+      "cx": 0,
+      "cy": 14.749789988800744,
+      "width": 0.8099999698706642,
+      "height": 5,
+      "opacity": 0.1,
+      "fontSize": 0.8
+    },
+    "wphvvo2vtso": {
+      "x": 0,
+      "y": 30.62447497200186,
+      "fontSize": 1.5,
+      "opacity": 0.25
+    }
+  },
+  "tables": [
+    {
+      "name": "20_Largest_Solar_Power_Plants",
+      "type": "Main",
+      "columns": [
+        {
+          "displayName": "Name",
+          "name": "Name",
+          "type": "string",
+          "metadata": {
+            "kind": "categorical",
+            "orderMode": "alphabetically",
+            "examples": ""
+          }
+        },
+        {
+          "displayName": "Category",
+          "name": "Country",
+          "type": "string",
+          "metadata": {
+            "kind": "categorical",
+            "orderMode": "alphabetically",
+            "examples": ""
+          }
+        },
+        {
+          "displayName": "Measure",
+          "name": " MWp (Megawatts Peak Capacity) ",
+          "type": "number",
+          "metadata": {
+            "kind": "numerical",
+            "unit": null,
+            "order": null,
+            "orderMode": null,
+            "rawColumnName": null,
+            "isRaw": null,
+            "format": null,
+            "examples": ""
+          }
+        },
+        {
+          "displayName": "Measure 2",
+          "name": " Acres ",
+          "type": "number",
+          "metadata": {
+            "kind": "numerical",
+            "examples": ""
+          }
+        },
+        {
+          "displayName": "Order",
+          "name": "Year",
+          "type": "string",
+          "metadata": {
+            "unit": "__year",
+            "kind": "ordinal",
+            "orderMode": "alphabetically",
+            "examples": ""
+          }
+        }
+      ]
+    }
+  ],
+  "inference": [
+    {
+      "objectID": "tx02sedgue",
+      "dataSource": {
+        "table": "20_Largest_Solar_Power_Plants"
+      },
+      "expression": {
+        "expression": "first(Year)",
+        "property": {
+          "property": "sublayout",
+          "field": [
+            "order",
+            "expression"
+          ]
+        }
+      }
+    },
+    {
+      "objectID": "z9u8dwauxh",
+      "dataSource": {
+        "table": "20_Largest_Solar_Power_Plants",
+        "groupBy": null
+      },
+      "axis": {
+        "expression": "avg(` MWp (Megawatts Peak Capacity) `)",
+        "additionalExpressions": [
+          "avg(` MWp (Megawatts Peak Capacity) `)"
+        ],
+        "type": "numerical",
+        "property": "axis",
+        "defineCategories": false
+      },
+      "autoDomainMin": true,
+      "autoDomainMax": true
+    },
+    {
+      "objectID": "z9u8dwauxh",
+      "dataSource": {
+        "table": "20_Largest_Solar_Power_Plants",
+        "groupBy": null
+      },
+      "expression": {
+        "expression": "avg(` MWp (Megawatts Peak Capacity) `)",
+        "property": {
+          "property": "dataExpressions",
+          "field": [
+            0,
+            "expression"
+          ]
+        }
+      }
+    },
+    {
+      "objectID": "s64jpyicf3l",
+      "autoDomainMax": true,
+      "autoDomainMin": true,
+      "scale": {
+        "classID": "scale.linear<number,number>",
+        "expressions": [
+          "avg(` Acres `)"
+        ],
+        "properties": {
+          "mapping": "mapping"
+        }
+      },
+      "dataSource": {
+        "table": "20_Largest_Solar_Power_Plants"
+      }
+    },
+    {
+      "objectID": "wp1rwpv8po",
+      "autoDomainMax": true,
+      "autoDomainMin": true,
+      "scale": {
+        "classID": "scale.categorical<string,color>",
+        "expressions": [
+          "first(Country)"
+        ],
+        "properties": {
+          "mapping": "mapping"
+        }
+      },
+      "dataSource": {
+        "table": "20_Largest_Solar_Power_Plants"
+      }
+    },
+    {
+      "objectID": "6nr8jch4oqy",
+      "autoDomainMax": true,
+      "autoDomainMin": true,
+      "scale": {
+        "classID": "scale.linear<number,boolean>",
+        "expressions": [
+          "min(` Acres `)"
+        ],
+        "properties": {
+          "mapping": "mapping"
+        }
+      },
+      "dataSource": {
+        "table": "20_Largest_Solar_Power_Plants"
+      }
+    }
+  ],
+  "properties": [
+    {
+      "objectID": "z9u8dwauxh",
+      "target": {
+        "property": {
+          "property": "axis",
+          "field": "style",
+          "subfield": "tickSize"
+        }
+      },
+      "type": "number",
+      "default": 5,
+      "displayName": "DataAxis1/axis.style.tickSize"
+    },
+    {
+      "objectID": "z9u8dwauxh",
+      "target": {
+        "property": {
+          "property": "axis",
+          "field": "style",
+          "subfield": "fontSize"
+        }
+      },
+      "type": "number",
+      "default": 12,
+      "displayName": "DataAxis1/axis.style.fontSize"
+    },
+    {
+      "objectID": "z9u8dwauxh",
+      "target": {
+        "property": {
+          "property": "axis",
+          "field": "style",
+          "subfield": "fontFamily"
+        }
+      },
+      "type": "font-family",
+      "default": "Segoe UI",
+      "displayName": "DataAxis1/axis.style.fontFamily"
+    },
+    {
+      "objectID": "z9u8dwauxh",
+      "target": {
+        "property": {
+          "property": "axis",
+          "field": "style",
+          "subfield": "lineColor"
+        }
+      },
+      "type": "color",
+      "default": "#000000",
+      "displayName": "DataAxis1/axis.style.lineColor"
+    },
+    {
+      "objectID": "z9u8dwauxh",
+      "target": {
+        "property": {
+          "property": "axis",
+          "field": "style",
+          "subfield": "tickColor"
+        }
+      },
+      "type": "color",
+      "default": "#000000",
+      "displayName": "DataAxis1/axis.style.tickColor"
+    },
+    {
+      "objectID": "z9u8dwauxh",
+      "target": {
+        "property": {
+          "property": "axis",
+          "field": "tickFormat"
+        }
+      },
+      "type": "text",
+      "default": null,
+      "displayName": "DataAxis1/axis.tickFormat"
+    },
+    {
+      "objectID": "z9u8dwauxh",
+      "target": {
+        "property": {
+          "property": "axis",
+          "field": "tickFormatType"
+        }
+      },
+      "type": "enum",
+      "default": "none",
+      "displayName": "DataAxis1/axis.tickFormatType"
+    },
+    {
+      "objectID": "z9u8dwauxh",
+      "target": {
+        "property": {
+          "property": "axis",
+          "field": "tickDataExpression"
+        }
+      },
+      "type": "text",
+      "default": null,
+      "displayName": "DataAxis1/axis.tickDataExpression"
+    },
+    {
+      "objectID": "z9u8dwauxh",
+      "target": {
+        "property": {
+          "property": "axis",
+          "field": "categories"
+        }
+      },
+      "type": "enum",
+      "default": "ascending",
+      "displayName": "DataAxis1/axis.categories"
+    },
+    {
+      "objectID": "q16mngy765",
+      "target": {
+        "attribute": "fill"
+      },
+      "type": "color",
+      "default": "#e6e6e6",
+      "displayName": "Back/fill"
+    },
+    {
+      "objectID": "q16mngy765",
+      "target": {
+        "attribute": "visible"
+      },
+      "type": "boolean",
+      "default": true,
+      "displayName": "Back/visible"
+    },
+    {
+      "objectID": "q16mngy765",
+      "target": {
+        "attribute": "strokeWidth"
+      },
+      "type": "number",
+      "default": 1,
+      "displayName": "Back/strokeWidth"
+    },
+    {
+      "objectID": "q16mngy765",
+      "target": {
+        "property": "strokeStyle"
+      },
+      "type": "enum",
+      "default": "solid",
+      "displayName": "Back/strokeStyle"
+    },
+    {
+      "objectID": "q16mngy765",
+      "target": {
+        "attribute": "opacity"
+      },
+      "type": "number",
+      "default": 1,
+      "displayName": "Back/opacity"
+    },
+    {
+      "objectID": "q16mngy765",
+      "target": {
+        "property": "rx"
+      },
+      "type": "number",
+      "default": 0,
+      "displayName": "Back/rx"
+    },
+    {
+      "objectID": "q16mngy765",
+      "target": {
+        "property": "ry"
+      },
+      "type": "number",
+      "default": 0,
+      "displayName": "Back/ry"
+    },
+    {
+      "objectID": "sbcwfshokhd",
+      "target": {
+        "attribute": "visible"
+      },
+      "type": "boolean",
+      "default": true,
+      "displayName": "Mark/visible"
+    },
+    {
+      "objectID": "sbcwfshokhd",
+      "target": {
+        "attribute": "strokeWidth"
+      },
+      "type": "number",
+      "default": 1,
+      "displayName": "Mark/strokeWidth"
+    },
+    {
+      "objectID": "sbcwfshokhd",
+      "target": {
+        "property": "strokeStyle"
+      },
+      "type": "enum",
+      "default": "solid",
+      "displayName": "Mark/strokeStyle"
+    },
+    {
+      "objectID": "sbcwfshokhd",
+      "target": {
+        "attribute": "opacity"
+      },
+      "type": "number",
+      "default": 1,
+      "displayName": "Mark/opacity"
+    },
+    {
+      "objectID": "sbcwfshokhd",
+      "target": {
+        "property": "rx"
+      },
+      "type": "number",
+      "default": 0,
+      "displayName": "Mark/rx"
+    },
+    {
+      "objectID": "sbcwfshokhd",
+      "target": {
+        "property": "ry"
+      },
+      "type": "number",
+      "default": 0,
+      "displayName": "Mark/ry"
+    },
+    {
+      "objectID": "s3vnh1ac1z",
+      "target": {
+        "attribute": "fontFamily"
+      },
+      "type": "font-family",
+      "default": "Segoe UI",
+      "displayName": "Text/fontFamily"
+    },
+    {
+      "objectID": "s3vnh1ac1z",
+      "target": {
+        "attribute": "fontSize"
+      },
+      "type": "number",
+      "default": 8,
+      "displayName": "Text/fontSize"
+    },
+    {
+      "objectID": "s3vnh1ac1z",
+      "target": {
+        "attribute": "color"
+      },
+      "type": "color",
+      "default": "#000000",
+      "displayName": "Text/color"
+    },
+    {
+      "objectID": "s3vnh1ac1z",
+      "target": {
+        "attribute": "opacity"
+      },
+      "type": "number",
+      "default": 1,
+      "displayName": "Text/opacity"
+    },
+    {
+      "objectID": "s3vnh1ac1z",
+      "target": {
+        "attribute": "wordWrap"
+      },
+      "type": "boolean",
+      "default": true,
+      "displayName": "Text/wordWrap"
+    },
+    {
+      "objectID": "wphvvo2vtso",
+      "target": {
+        "attribute": "fontFamily"
+      },
+      "type": "font-family",
+      "default": "Segoe UI",
+      "displayName": "Text1/fontFamily"
+    },
+    {
+      "objectID": "wphvvo2vtso",
+      "target": {
+        "attribute": "fontSize"
+      },
+      "type": "number",
+      "default": 6,
+      "displayName": "Text1/fontSize"
+    },
+    {
+      "objectID": "wphvvo2vtso",
+      "target": {
+        "attribute": "color"
+      },
+      "type": "color",
+      "default": "#000000",
+      "displayName": "Text1/color"
+    },
+    {
+      "objectID": "wphvvo2vtso",
+      "target": {
+        "attribute": "opacity"
+      },
+      "type": "number",
+      "default": 1,
+      "displayName": "Text1/opacity"
+    },
+    {
+      "objectID": "s64jpyicf3l",
+      "target": {
+        "property": "domainMin"
+      },
+      "type": "number",
+      "displayName": "Scale1/domainMin"
+    },
+    {
+      "objectID": "s64jpyicf3l",
+      "target": {
+        "property": "domainMax"
+      },
+      "type": "number",
+      "displayName": "Scale1/domainMax"
+    },
+    {
+      "objectID": "s64jpyicf3l",
+      "target": {
+        "attribute": "rangeMin"
+      },
+      "type": "number",
+      "default": null,
+      "displayName": "Scale1/rangeMin"
+    },
+    {
+      "objectID": "s64jpyicf3l",
+      "target": {
+        "attribute": "rangeMax"
+      },
+      "type": "number",
+      "default": null,
+      "displayName": "Scale1/rangeMax"
+    },
+    {
+      "objectID": "6nr8jch4oqy",
+      "target": {
+        "property": "min"
+      },
+      "type": "number",
+      "default": 3000,
+      "displayName": "Scale3/min"
+    },
+    {
+      "objectID": "6nr8jch4oqy",
+      "target": {
+        "property": "inclusive"
+      },
+      "type": "boolean",
+      "default": true,
+      "displayName": "Scale3/inclusive"
+    },
+    {
+      "objectID": "u8vwzetn1t",
+      "target": {
+        "attribute": "marginLeft"
+      },
+      "type": "number",
+      "default": 50,
+      "displayName": "Chart/marginLeft"
+    },
+    {
+      "objectID": "u8vwzetn1t",
+      "target": {
+        "attribute": "marginRight"
+      },
+      "type": "number",
+      "default": 50,
+      "displayName": "Chart/marginRight"
+    },
+    {
+      "objectID": "u8vwzetn1t",
+      "target": {
+        "attribute": "marginTop"
+      },
+      "type": "number",
+      "default": 50,
+      "displayName": "Chart/marginTop"
+    },
+    {
+      "objectID": "u8vwzetn1t",
+      "target": {
+        "attribute": "marginBottom"
+      },
+      "type": "number",
+      "default": 50,
+      "displayName": "Chart/marginBottom"
+    }
+  ],
+  "version": "2.1.0"
+}
